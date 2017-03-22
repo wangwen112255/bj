@@ -31,7 +31,7 @@ return array(
  	'TAGLIB_END'=>'}',
  	'TMPL_ACTION_ERROR' => THINK_PATH . 'Tpl/disjump.html',//修改成功跳转对应的模板文件
  	'TMPL_ACTION_SUCCESS' => THINK_PATH . 'Tpl/disjump.html',//修改成功的
- 	'SHOW_ERROR_MSG' => true,
- 	'ERROR_MESSAGE'  =>    '发生错误！'
- 	// 'ERROR_PAGE' =>'http://www.baidu.com'
+ 	// 'SHOW_ERROR_MSG' => true,
+ 	// 'ERROR_MESSAGE'  =>    '发生错误！'
+ 	
 );
