@@ -1,0 +1,15 @@
+ 	
+   /* 主色调 */
+ 	.bluetop{
+ 	 background:linear-gradient(to bottom,#0060B0,#2B91F7);
+	
+	}
+	.bluebottom:{
+	background:#0065B3 !important;
+	}
+	.bgblue{
+	background:#E9F0FD !important;
+	}
+	.darksblue{
+	background: #0660BA !important;
+	}
