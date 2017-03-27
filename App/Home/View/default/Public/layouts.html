@@ -13,43 +13,9 @@
 
     <!-- <link href="__CSS__style.min.css" rel="stylesheet"> -->
    	<style type="text/css">
-    *{
-      font-family: "微软雅黑";
-    }
-    .WU_header{
-      width: 100%;
-      background: #fee;
-      height: 140px;
-
-    }
-    .WU_top{
-      width: 100%;
-      height: 40px;
-      padding: 0px 5%;
-      color: #fff;
-      line-height: 40px;
-      font-size: 16px;
-      opacity: 0.9;
-
-     }
-     .WU_content{
-      padding:20px 5%;
-     }
-     .relog button{
-    border-radius: 18px;
-    padding: 6px 22px;
    
-    }
-    .WU-nav>li{
-    padding-right:30px ;
-    text-decoration: none;
-    font-size:16px ;
-    }
    	</style>
    	{block name="CSS"}
-	
-
-
    	{/block}
    </head>
 	<body>
@@ -83,57 +49,24 @@
         <button class="btn ">注册</button>
       <button class="btn btn-danger ">登录</button>
    </div>
-    
      </form>
-
       </nav>
       </div>
     </div>
   </div>
   </div>
-
-
  </div>
- </div>
-	
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <button id="top" class="btn btn-success">
-    	
-    	顶部
-    </button>
+  <div class="container-fluid">
+    {block name="content"} 
+    {/block}  
+  </div>
     <script src="__JS__jquery.js"></script>
     <script type="text/javascript" src="__JS__holder.min.js"></script>
     <script type="text/javascript" src="__JS__common.js"></script>
     <script src="__JS__bootstrap.min.js"></script>
-    <script type="text/javascript">
-     $(function(){
-     	function _navautofix(height=350){
-     		$(window).scroll(function(event){
-  				 var winPos = $(window).scrollTop();
-  				 if(winPos>height)
-  				 	$("nav").addClass('navbar-fixed-top').removeClass("navbar-static-top");
-  				 else
-  				 	$("nav").removeClass('navbar-fixed-top').addClass("navbar-static-top");
-
-    			})
-     	}
-  		_navautofix(500)
-  		$("#top").click(function(){
-  			$(window).scrollTop(0);
-  		})
-      $(".WU-nav li").mouseenter(function(){
-        alert(1);
-      });
-    	});
-
-
-    </script>
+    <script type="text/javascript"></script>
    	{block name="JS"}
    	{/block}
-
 </body>
 
 

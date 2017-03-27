@@ -13,44 +13,61 @@
 
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
    	<style type="text/css">
-    *{
-      font-family: "微软雅黑";
-    }
-    .WU_header{
-      width: 100%;
-      background: #fee;
-      height: 140px;
-
-    }
-    .WU_top{
-      width: 100%;
-      height: 40px;
-      padding: 0px 5%;
-      color: #fff;
-      line-height: 40px;
-      font-size: 16px;
-      opacity: 0.9;
-
-     }
-     .WU_content{
-      padding:20px 5%;
-     }
-     .relog button{
-    border-radius: 18px;
-    padding: 6px 22px;
    
-    }
-    .WU-nav>li{
-    padding-right:30px ;
-    text-decoration: none;
-    font-size:16px ;
-    }
    	</style>
    	
-	
+<style type="text/css">
+	.container{
+		width: 1368px !important;
+	}
+	.row{
+
+	}
+	.WU_infoheader{
+		display: inline-block;
+		padding-left:8px;
+		font-size:20px;
+		color:#999;
+		border-left:4px solid #1B71BA;
+	}
+	.WU_inforow{
+		padding-top:15px !important;
+		border-bottom:1px solid #4e2b2b !important;
+		padding-bottom: 10px !important ;
+	}
+	.WU_scrollinfo>span{
+		display: block;
+		width: 20%;
+		float: left;
+		line-height: 50px;
+		color: #fff;
+		text-align: center;
+		font-size: 18px;
+	    background-color: #515151;
+	     border-left: 2px solid #fff; 
+
+	}
+	.WU_scrollli>span{
+		display: block;
+		width: 20%;
+		float: left;
+		line-height: 50px;
+		height: 40px;
+		color: #999;
+		text-align: center;
+		font-size: 16px;
+	   
+	}
+	.WU_scrollli{
+	list-style:none;
+	height:40px;
+	margin-left:-40px;
+	border-bottom: 1px solid #ccc;
+
+	}
+</style>
 
 
-   	
    </head>
 	<body>
   <div class="WU_header">
@@ -83,56 +100,196 @@
         <button class="btn ">注册</button>
       <button class="btn btn-danger ">登录</button>
    </div>
-    
      </form>
-
       </nav>
       </div>
     </div>
   </div>
   </div>
+ </div>
+  <div class="container-fluid">
+    
+<div  class="row">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="holder.js/100px300" alt="...">
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <img src="holder.js/100px300" alt="...">
+      
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+ 
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div class="container" >
+	<div class="WU_info">
+	 <div class="row WU_inforow ">
+ 	<span class='WU_infoheader'>院系查看</span>
+     </div>
+    <div class="row" style="padding-top:15px; ">
+    <div class="col-sm-3">
+    	<div class="thumbnail">
+    	      <img src="holder.js/100px200" alt="...">
+    	      <div class="caption">
+    	        <h3>Thumbnail</h3>
+    	        <p>...</p>
+    	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    	      </div>
+    	</div>
+    </div>
+    <div class="col-sm-3">
+    	<div class="thumbnail">
+    	      <img src="holder.js/100px200" alt="...">
+    	      <div class="caption">
+    	        <h3>Thumbnail</h3>
+    	        <p>...</p>
+    	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    	      </div>
+    	</div>
+    </div>
+    <div class="col-sm-3">
+    	<div class="thumbnail">
+    	      <img src="holder.js/100px200" alt="...">
+    	      <div class="caption">
+    	        <h3>Thumbnail</h3>
+    	        <p>...</p>
+    	        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+    	      </div>
+    	</div>
+    </div>
+    <div class="col-sm-3">
+    	<div class="thumbnail">
+    	      <img src="holder.js/100px200" alt="...">
+    	      <div class="caption">
+    	        <h3>Thumbnail</h3>
+    	        <p>...</p>
+    	        <p><a href="#" class="btn btn-primary" role="button">Button</a>
+    	         <a href="#" class="btn btn-default pull-right" role="button">Button</a></p>
+    	      </div>
+    	</div>
+    </div>
+ 
+
+    </div>
 
 
- </div>
- </div>
-	
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <button id="top" class="btn btn-success">
-    	
-    	顶部
-    </button>
+</div>
+------------------
+	<div class="WU_info">
+	 <div class="row WU_inforow">
+ 	<span class='WU_infoheader'>选课情况</span>
+     </div>
+    <div class="row WU_scrollinfo" style="padding-top:15px; ">
+  
+		<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+
+    </div>
+     <div class="row WU_scrollinfo" style="padding-top:3px; ">
+       <ul>
+       	<li class="WU_scrollli" >
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+        <li class="WU_scrollli" >
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+        <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+
+        <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+		 <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+ <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+ <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+ <li class="WU_scrollli">
+       	<span >学生院系</span>
+		<span >学生专业</span>
+		<span >学生姓名</span>
+		<span >毕设题目</span>
+		<span >指导教师</span>
+        </li>
+
+
+       </ul>
+		
+
+    </div>
+    </div>
+
+</div>
+  
+  </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-     $(function(){
-     	function _navautofix(height=350){
-     		$(window).scroll(function(event){
-  				 var winPos = $(window).scrollTop();
-  				 if(winPos>height)
-  				 	$("nav").addClass('navbar-fixed-top').removeClass("navbar-static-top");
-  				 else
-  				 	$("nav").removeClass('navbar-fixed-top').addClass("navbar-static-top");
-
-    			})
-     	}
-  		_navautofix(500)
-  		$("#top").click(function(){
-  			$(window).scrollTop(0);
-  		})
-      $(".WU-nav li").mouseenter(function(){
-        alert(1);
-      });
-    	});
-
-
-    </script>
+    <script type="text/javascript"></script>
    	
-   	
+
 
 </body>
 

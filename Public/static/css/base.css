@@ -13,3 +13,45 @@
 	.darksblue{
 	background: #0660BA !important;
 	}
+	*{
+	  font-family: "微软雅黑" !important;
+	}
+	.WU_header{
+	  width: 100%;
+	  background: #fee;
+	  height: 140px;
+
+	}
+	.WU_top{
+	  width: 100%;
+	  height: 40px;
+	  padding: 0px 5%;
+	  color: #fff;
+	  line-height: 40px;
+	  font-size: 16px;
+	  opacity: 0.9;
+
+	 }
+	 .WU_content{
+	  padding:20px 5%;
+	 }
+	 .relog button{
+	border-radius: 18px;
+	padding: 6px 22px;
+	
+	}
+	.WU-nav>li{
+	margin-right:30px ;
+	text-decoration: none;
+	font-size:16px ;
+	color: #000;
+	}
+	.WU-nav a{
+	font-size:18px ;
+	color: #000;
+	}
+	
+	.WU-nav>li:hover{
+	  border-bottom: 2px solid #999;
+	
+	}
