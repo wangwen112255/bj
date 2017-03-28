@@ -17,7 +17,18 @@
    	</style>
    	
 <style type="text/css">
+  .WU_scrollli {
+    border-bottom: 1px dashed #ccc !important; 
+  } 
   
+  .WU_scrollinfo > .infotitle span:hover{
+  opacity: 0.5;
+  }
+  
+ /*  .showdetail:hover{
+    cursor: pointer;
+  } */
+
 </style>
 
 
@@ -107,69 +118,17 @@
   <div class="container-fluid" >
 
   <div class="WU_info">
-   <div class="row WU_inforow ">
-  <span class='WU_infoheader'>院系查看</span>
-     </div>
-    <div class="row" style="padding-top:15px; ">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a>
-               <a href="#" class="btn btn-default pull-right" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
- 
-
-    </div>
-
-
-</div>
-------------------
-  <div class="WU_info">
    <div class="row WU_inforow">
-  <span class='WU_infoheader'>选课情况</span>
+   <span class='WU_infoheader'>王文帅老师的毕业设计题目</span>
+
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
-        <div class="col-sm-12 infotitle">
-    <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
+    <div class="col-sm-12 infotitle">
+    <span >课程题目</span>
+    <span >已选名单</span>
+    <span >已选人数</span>
+    <span >课程要求</span>
+    <span >选课/</span>
     </div>
     </div>
      <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
@@ -177,67 +136,23 @@
        <div class="WU_myscroll">
        <ul >
         <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
+        <span >课程题目</span>
+        <span >课程简要</span>
+        <span >已选人数</span>
+        <span ><a  href='' class="showdetail">查看详情</a></span>
+        <span ><button class="btn btn-danger">在线选课</button></span>
         </li>
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
+         <li class="WU_scrollli" >
+        <span >课程题目</span>
+        <span >指导教师</span>
+        <span >已选人数</span>
+        <span ><a  href='' class="showdetail">查看详情</a></span>
+        <span ><button class="btn btn-danger">在线选课</button></span>
         </li>
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-     <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
+       
        </ul>
        </div>
-       <div class="WU_myscrollafter"></div>
-    </div>
+      </div>
     </div>
     </div>
     </div>

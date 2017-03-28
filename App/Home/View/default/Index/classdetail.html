@@ -1,0 +1,75 @@
+
+{extend name='Public:layouts'/}
+{block name='CSS'}
+<style type="text/css">
+  .WU_scrollli {
+    border-bottom: 1px dashed #ccc !important; 
+  } 
+  
+  .WU_scrollinfo > .infotitle span:hover{
+  opacity: 0.5;
+  }
+  
+ /*  .showdetail:hover{
+    cursor: pointer;
+  } */
+
+</style>
+
+{/block}
+
+{block name="content"}
+
+
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+
+  <div class="WU_info">
+   <div class="row WU_inforow">
+   <span class='WU_infoheader'>课程详情</span>
+
+     </div>
+    <div class="row WU_scrollinfo" style="padding-top:15px; ">
+    <div class="col-sm-12">
+      <div class="thumbnail">
+            <img src="holder.js/200x200" class="img-circle" alt="...">
+            <div class="caption">
+              <h3 class="text-center">王文坏</h3>
+              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <p class="text-center">
+              <a href="#" class="btn btn-primary" role="button">选择课程</a>
+               </p>
+            </div>
+      </div>
+    </div>
+    </div>
+
+    
+    </div>
+    </div>
+
+
+{/block}
+{block name="JS"}
+<script type="text/javascript">
+  myscroll=$(".WU_myscroll")[0];
+  myscrollafter=$(".WU_myscrollafter")[0];
+  scrollinfo=$(".WU_scrollinfo")[1];
+  myscrollafter.innerHTML=myscroll.innerHTML;
+  // alert(myscroll.offsetHeight);
+  // alert(scrollinfo.scrollTop);
+    // setInterval(function(){
+    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
+    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
+    //  else
+    //    scrollinfo.scrollTop++;
+    //  },10)
+
+</script>
+{/block}
+

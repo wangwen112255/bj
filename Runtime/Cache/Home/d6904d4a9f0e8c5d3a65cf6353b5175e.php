@@ -17,7 +17,7 @@
    	</style>
    	
 <style type="text/css">
-  
+
 </style>
 
 
@@ -107,11 +107,12 @@
   <div class="container-fluid" >
 
   <div class="WU_info">
+
    <div class="row WU_inforow ">
-  <span class='WU_infoheader'>院系查看</span>
+  <span class='WU_infoheader'  onmouseenter="this.style.background='#999'" onmouseleave="this.style.background='#fff'" style="color:#0065B3">专业详情</span>
      </div>
     <div class="row" style="padding-top:15px; ">
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail">
             <img src="holder.js/100px200" alt="...">
             <div class="caption">
@@ -121,7 +122,7 @@
             </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail">
             <img src="holder.js/100px200" alt="...">
             <div class="caption">
@@ -131,7 +132,7 @@
             </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail">
             <img src="holder.js/100px200" alt="...">
             <div class="caption">
@@ -141,7 +142,7 @@
             </div>
       </div>
     </div>
-    <div class="col-sm-3">
+    <div class="col-sm-4">
       <div class="thumbnail">
             <img src="holder.js/100px200" alt="...">
             <div class="caption">
@@ -159,88 +160,8 @@
 
 </div>
 ------------------
-  <div class="WU_info">
-   <div class="row WU_inforow">
-  <span class='WU_infoheader'>选课情况</span>
-     </div>
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
-        <div class="col-sm-12 infotitle">
-    <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-    </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-       <ul >
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-     <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-       </ul>
-       </div>
-       <div class="WU_myscrollafter"></div>
-    </div>
-    </div>
-    </div>
-    </div>
+  
+</div>
 
 
   
