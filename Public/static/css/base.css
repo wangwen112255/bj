@@ -35,7 +35,7 @@
 	 .WU_content{
 	  padding:20px 5%;
 	 }
-	 .relog button{
+	 .relog a {
 	border-radius: 18px;
 	padding: 6px 22px;
 	
@@ -124,3 +124,14 @@
      background: #ccc;
      opacity: 0.9
    } 
+   .WU_more{
+   font-size: 18px;
+   padding-right: 5px;
+   color: #515151;
+
+
+  }
+  .WU_more:hover{
+   background: #ccc;
+   border-radius: 10px
+  }

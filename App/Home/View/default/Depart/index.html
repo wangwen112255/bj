@@ -1,0 +1,111 @@
+{extend name='Public:layouts'/}
+{block name='CSS'}
+<style type="text/css">
+
+</style>
+
+{/block}
+
+{block name="content"}
+
+
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+
+   <div class="WU_info">
+    <div class="row WU_inforow ">
+   <span class='WU_infoheader'>院系查看</span>
+   <a class='pull-right WU_more' href="">更多>></a>
+
+      </div>
+     <div class="row" style="padding-top:15px; ">
+     <div class="col-sm-4">
+       <div class="thumbnail">
+             <img src="holder.js/100px200" alt="...">
+             <div class="caption">
+               <h3>Thumbnail</h3>
+               <p>...</p>
+               <p>
+               <a href="{:U('detail')}" class="btn btn-success" style="font-size: 16px" role="button">进系查看<span class="badge">访问累计100</span></a>
+                <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+             </div>
+       </div>
+     </div>
+     
+  <div class="col-sm-4">
+    <div class="thumbnail">
+          <img src="holder.js/100px200" alt="...">
+          <div class="caption">
+            <h3>Thumbnail</h3>
+            <p>...</p>
+            <p>
+            <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看<span class="badge">访问累计100</span></a>
+             <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+          </div>
+    </div>
+  </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+            <img src="holder.js/100px200" alt="...">
+            <div class="caption">
+              <h3>Thumbnail</h3>
+              <p>...</p>
+              <p>
+              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看<span class="badge">访问累计100</span></a>
+               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+            </div>
+      </div>
+    </div>
+  
+
+     </div>
+
+
+ </div>
+------------------
+  
+</div>
+
+
+{/block}
+{block name="JS"}
+<script type="text/javascript">
+  myscroll=$(".WU_myscroll")[0];
+  myscrollafter=$(".WU_myscrollafter")[0];
+  scrollinfo=$(".WU_scrollinfo")[1];
+  myscrollafter.innerHTML=myscroll.innerHTML;
+  // alert(myscroll.offsetHeight);
+  // alert(scrollinfo.scrollTop);
+    // setInterval(function(){
+    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
+    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
+    //  else
+    //    scrollinfo.scrollTop++;
+    //  },10)
+
+</script>
+{/block}
+
+<!-- <table class="table table-hover">
+      <thead>
+        <tr>
+        <th>学院</th>
+        <th>专业</th>
+        <th>姓名</th>
+        <th>学号</th>
+        <th>毕设题目</th>
+        <th>指导教师</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td>学院</td>
+        <td>专业</td>
+        <td>姓名</td>
+        <td>学号</td>
+        <td>毕设题目</td>
+        <td>指导教师</td>
+        </tr>
+      </tbody>
+    </table> -->

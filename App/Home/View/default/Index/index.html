@@ -1,7 +1,17 @@
 {extend name='Public:layouts'/}
 {block name='CSS'}
 <style type="text/css">
-  
+  .WU_more{
+   font-size: 18px;
+   padding-right: 5px;
+   color: #515151;
+
+
+  }
+  .WU_more:hover{
+   background: #ccc;
+   border-radius: 10px
+  }
 </style>
 
 {/block}
@@ -12,10 +22,13 @@
     
     <!-- 导航图 -->
   <div class="container-fluid" >
-
+  
+  <!-- ------- -->
   <div class="WU_info">
    <div class="row WU_inforow ">
   <span class='WU_infoheader'>院系查看</span>
+  <a class='pull-right WU_more' href="">更多>></a>
+
      </div>
     <div class="row" style="padding-top:15px; ">
     <div class="col-sm-3">
@@ -24,7 +37,9 @@
             <div class="caption">
               <h3>Thumbnail</h3>
               <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+              <p>
+              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看<span class="badge">访问累计100</span></a>
+               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
             </div>
       </div>
     </div>

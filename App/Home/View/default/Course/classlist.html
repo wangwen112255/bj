@@ -1,4 +1,3 @@
-
 {extend name='Public:layouts'/}
 {block name='CSS'}
 <style type="text/css">
@@ -27,25 +26,15 @@
 
   <div class="WU_info">
    <div class="row WU_inforow">
-   <span class='WU_infoheader'>毕设指导教师</span>
+   <span class='WU_infoheader'>毕设选课详情</span>
 
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/200x200" class="img-circle" alt="...">
-            <div class="caption">
-              <h3 class="text-center">王文坏</h3>
-              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
-              <p class="text-center">
-              <a href="#" class="btn btn-primary" role="button">点击查看</a>
-               <a  class="btn btn-success" role="button">课程数量<span class="badge">10</span></a></p>
-            </div>
-      </div>
+    <div class="col-sm-12 relog" style='margin-bottom: 20px'>
+      <a  href="{:U('classlist')}" class="btn btn-info btn-lg active">班级选题</a>
+      <a  href="{:U('teacherlist')}"  class="btn btn-info btn-lg">指导教师</a>
+      <a  href="{:U('classresult')}"class="btn btn-info btn-lg">选课结果</a>
     </div>
-    </div>
-
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-12 infotitle">
     <span >课程题目</span>
     <span >指导教师</span>
@@ -68,7 +57,7 @@
          <li class="WU_scrollli" >
         <span >课程题目</span>
         <span >指导教师</span>
-        <span >已选人数</span>
+        <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
         <span ><a  href='' class="showdetail">查看详情</a></span>
         <span ><button class="btn btn-danger">在线选课</button></span>
         </li>

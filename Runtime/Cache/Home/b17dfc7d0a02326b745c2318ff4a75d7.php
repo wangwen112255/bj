@@ -1,17 +1,17 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{block name='title'}{/block}</title>
+    <title></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link href="__CSS__bootstrap.min.css" rel="stylesheet">
-    <link href="__CSS__font-awesome.min.css" rel="stylesheet">
-    <link href="__CSS__animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="__CSS__base.css">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
-    <!-- <link href="__CSS__style.min.css" rel="stylesheet"> -->
+    <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
    	<style type="text/css">
    .WU_carousel_dotted{
       width:20px !important;
@@ -19,8 +19,12 @@
       border-radius: 10px !important;
    }
    	</style>
-   	{block name="CSS"}
-   	{/block}
+   	
+<style type="text/css">
+
+</style>
+
+
    </head>
 	<body>
   <div class="WU_header">
@@ -31,15 +35,15 @@
   <div class="WU_navbar">
   <div class="row">
     <div class="col-sm-3">
-      <img src="__IMG__logo.png">
+      <img src="/static/img/logo.png">
     </div>
     <div class="col-sm-9">
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
-       <li><a href="{:U('Index/index')}">首页</a></li>
-       <li><a href="{:U('Depart/index')}">院系展示</a></li>
-       <li><a href="{:U('Teachers/index')}">教师课题</a></li>
-       <li><a href="{:U('Course/index')}">学生选课</a></li>
+       <li><a href="<?php echo U('Index/index');?>">首页</a></li>
+       <li><a href="<?php echo U('Depart/index');?>">院系展示</a></li>
+       <li><a href="<?php echo U('Teachers/index');?>">教师课题</a></li>
+       <li><a href="<?php echo U('Course/index');?>">学生选课</a></li>
      </ul>
     <form class="navbar-form navbar-left" action="ming.html" method="post">
     <div class="input-group " style="position: relative">
@@ -55,16 +59,12 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
+    <form class="navbar-form navbar-right relog ">
     <div class="form-group">
-      <a class="btn  btn-success" href="{:U('Index/register')}">注册</a>
+      <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
       <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
-     </form> -->
-      <form class="navbar-text navbar-right">
-       <img src="__IMG__logo.png">
-       </form>
-<!--  -->
+     </form>
       </nav>
       </div>
     </div>
@@ -140,20 +140,20 @@
    <!-- Wrapper for slides -->
    <div class="carousel-inner" role="listbox">
      <div class="item active">
-       <img src="__IMG__header2.png" alt="...">
+       <img src="/static/img/header2.png" alt="...">
        <div class="carousel-caption">
          ...
        </div>
      </div>
      <div class="item">
-       <img src="__IMG__header1.png" alt="...">
+       <img src="/static/img/header1.png" alt="...">
        
        <div class="carousel-caption">
          ...
        </div>
      </div>
      <div class="item">
-       <img src="__IMG__header4.png" alt="...">
+       <img src="/static/img/header4.png" alt="...">
        
        <div class="carousel-caption">
          ...
@@ -178,14 +178,77 @@
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">
   <div class="container-fluid">
-    {block name="content"} 
-    {/block}  
+    
+
+
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+
+   <div class="WU_info">
+    <div class="row WU_inforow ">
+   <span class='WU_infoheader'>注册管理</span>
+   <a class='pull-right WU_more' href="">更多>></a>
+
+      </div>
+     <div class="row" style="padding-top:15px; ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">注册用户</h3>
+        </div>
+        <div class="panel-body">
+
+         <div class="row">
+           <div class="col-sm-6 col-sm-offset-3">
+            <form action="" method="POST" role="form">
+              <div class="form-group">
+                <label for="">学号/工号</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+              </div>
+              <div class="form-group">
+                <label for="">登录密码</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+              </div>
+              <div class="form-group">
+                <label for="">重复密码</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+              </div>
+              <div class="form-group">
+                <label for="">验证码</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+              </div>
+              <div class="form-group">
+                <label for="">label</label>
+                <input type="text" class="form-control" id="" placeholder="Input field">
+              </div>            
+              
+            
+              <a type="submit" href="ming.html" class="btn btn-primary">注册</a>
+              <button type="reset" class="btn btn-default">取消</button>
+            </form>
+            </div>
+         </div>
+        </div>
+      </div>
+  
+  
+
+     </div>
+
+
+ </div>
+------------------
+  
+</div>
+
+
+  
   </div>
   </div>
      <div class="WU_footer ">
      <div class="row" style="padding-top:10px">
        <div class="col-md-4 col-md-offset-1">
-         <img src="__IMG__/logo.png" alt="">
+         <img src="/static/img//logo.png" alt="">
        </div>
         <div class="col-md-3 ">
          <p class="text-center text-center-footer ">
@@ -209,10 +272,10 @@
      </div>
     
     </div>
-    <script src="__JS__jquery.js"></script>
-    <script type="text/javascript" src="__JS__holder.min.js"></script>
-    <script type="text/javascript" src="__JS__common.js"></script>
-    <script src="__JS__bootstrap.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src="/static/js/common.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
       $('#WU_login_modal').on('show.bs.modal', function (e) {
     
@@ -224,9 +287,11 @@
        });
     </script>
    	
-    {block name="JS"}
+    
+<script type="text/javascript">
 
-   	{/block}
+</script>
+
 </body>
    
 
