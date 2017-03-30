@@ -135,3 +135,63 @@
    background: #ccc;
    border-radius: 10px
   }
+  .WU_login_img{
+	width:60px;
+	height:60px;
+	border:2px solid #fff;
+  }
+  .dropdown-menu_list{
+    left:0px !important;
+    min-width:1px !important;
+    border-radius: 0px !important;
+    }
+   .WU_carousel_dotted{
+      width:20px !important;
+      height:20px !important;
+      border-radius: 10px !important;
+   }
+    h4{
+  color:#515151;
+  }
+   .WU_personal >li>a{
+      text-decoration: none;
+      color: #000;
+  }
+  
+  .WU_personal li:hover{
+      background: #F3F3F3;
+
+  }
+  .WU_scrollli {
+    border-bottom: 1px dashed #ccc !important; 
+  } 
+  
+  .WU_scrollinfo > .infotitle span:hover{
+  opacity: 0.5;
+  }
+  .WU_personal{
+    padding-left: 12px;
+  }
+  
+  .WU_personal li{
+    list-style: none;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    padding-left:10px ;
+    font-size: 16px;
+  
+  }
+  .WU_search{
+    font-size:12px;
+    position:absolute;
+    z-index:8000;
+    top:8px;
+    left:80px;
+  }
+  .WU_search_submit{
+   position: absolute;
+   left:0px;width:50px;
+   opacity: 0;
+   height:40px;top:0px 
+  }

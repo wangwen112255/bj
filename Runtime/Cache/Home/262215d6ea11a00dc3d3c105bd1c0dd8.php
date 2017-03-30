@@ -3,21 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title><?php echo ($title); ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
    	<style type="text/css">
-   .WU_carousel_dotted{
-      width:20px !important;
-      height:20px !important;
-      border-radius: 10px !important;
+  
+   .dropdown-menu-li{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
    }
+   .dropdown-menu-li:hover{
+    background:#0065B3 ;
+    }
+    .dropdown-menu > li > a:hover{
+        background:#0065B3 ;
+    }
+    .dropdown-menu > li > a{
+    line-height: 40px;
+    }
+    
    	</style>
    	
 <style type="text/css">
@@ -40,7 +51,7 @@
 	<body>
   <div class="WU_header">
   <div class="WU_top bluetop">
-      毕业论文很重要请慎重选择
+      毕业论文很重要请慎重选择<span ></span>
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
@@ -59,13 +70,12 @@
     <form class="navbar-form navbar-left" action="ming.html" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
-    <div class="WU_search" style="font-size:12px;position:absolute;z-index:8000;top:8px;left:80px;">
+    <div class="WU_search">
     <button  class="btn btn-xs btn-danger" >教师</button>
     <button class="btn btn-danger btn-xs" >专业</button>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
-      <input type="submit" name="" style="position: absolute;left:0px;width:50px;opacity: 0;height:40px;top:0px" value=>
-
+      <input type="submit" class="WU_search_submit" name=""  value="">
     </div>
     </div>
     
@@ -76,9 +86,32 @@
       <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
      </form> -->
-      <form class="navbar-text navbar-right">
-       <img src="/static/img/logo.png">
-       </form>
+      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
+      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
+      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <div class="pull-right">
+      <p style="margin-left:5px">201316602</p>
+      <p style="margin-left:5px"><b>【学生】</b></p> 
+      </div>
+      </a>
+      <ul class="dropdown-menu dropdown-menu_list ">
+   
+        <!-- <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出</a></li>
+      </ul>
+      </form>
+
+
 <!--  -->
       </nav>
       </div>
@@ -281,14 +314,22 @@
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    $(function(){
       $('#WU_login_modal').on('show.bs.modal', function (e) {
     
       })
-       $('#WU_login_modal').modal({
-          'remote':'http://www.baidu.com'
-          'show':false
+      $('.dropdown').mouseenter(function(){
+        $('.dropdown-menu').show();
+      }).mouseleave(function(event) {
+        $('.dropdown-menu').hide();
+        
+      });
 
-       });
+
+
+
+     })
+
     </script>
    	
     

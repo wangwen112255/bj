@@ -3,24 +3,37 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title><?php echo ($title); ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/static/css/animate.min.css" rel="stylesheet">
+    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
    	<style type="text/css">
-   .WU_carousel_dotted{
-      width:20px !important;
-      height:20px !important;
-      border-radius: 10px !important;
+  
+   .dropdown-menu-li{
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
    }
+   .dropdown-menu-li:hover{
+    background:#0065B3 ;
+    }
+    .dropdown-menu > li > a:hover{
+        background:#0065B3 ;
+    }
+    .dropdown-menu > li > a{
+    line-height: 40px;
+    }
+    
    	</style>
    	
 <style type="text/css">
+ 
+
 
 </style>
 
@@ -29,7 +42,7 @@
 	<body>
   <div class="WU_header">
   <div class="WU_top bluetop">
-      毕业论文很重要请慎重选择
+      毕业论文很重要请慎重选择<span ></span>
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
@@ -48,23 +61,41 @@
     <form class="navbar-form navbar-left" action="ming.html" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
-    <div class="WU_search" style="font-size:12px;position:absolute;z-index:8000;top:8px;left:80px;">
+    <div class="WU_search">
     <button  class="btn btn-xs btn-danger" >教师</button>
     <button class="btn btn-danger btn-xs" >专业</button>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
-      <input type="submit" name="" style="position: absolute;left:0px;width:50px;opacity: 0;height:40px;top:0px" value=>
-
+      <input type="submit" class="WU_search_submit" name=""  value="">
     </div>
     </div>
     
     </form>
-    <form class="navbar-form navbar-right relog ">
+    <!-- <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
       <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
-     </form>
+     </form> -->
+      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
+      <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
+      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <div class="pull-right">
+      <p style="margin-left:5px">201316602</p>
+      <p style="margin-left:5px"><b>【学生】</b></p> 
+      </div>
+      </a>
+      <ul class="dropdown-menu dropdown-menu_list">
+        <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li>
+      </ul>
+      </form>
+
+<!--  -->
       </nav>
       </div>
     </div>
@@ -129,120 +160,80 @@
 
 <!-- ------ -->
  <div  class="row">
- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-   <!-- Indicators -->
-   <ol class="carousel-indicators">
-     <li data-target="#carousel-example-generic " data-slide-to="0" class="active WU_carousel_dotted"></li>
-     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="1"></li>
-     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="2"></li>
-     <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
-   </ol>
-   <!-- Wrapper for slides -->
-   <div class="carousel-inner" role="listbox">
-     <div class="item active">
-       <img src="/static/img/header2.png" alt="...">
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-     <div class="item">
-       <img src="/static/img/header1.png" alt="...">
-       
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-     <div class="item">
-       <img src="/static/img/header4.png" alt="...">
-       
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-  
-   </div>
-
-   <!-- Controls -->
- <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-     <span class="sr-only">Previous</span>
-   </a>
-   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-     <span class="sr-only">Next</span>
-   </a> -->
- </div>
- <!-- --- -->
- <!-- ---- -->
-
+ 
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">
   <div class="container-fluid">
-    
+  <!-- ---- -->
+    <div class="container-fluid" >
 
+    <div class="WU_info">
+     <div class="row WU_inforow">
+     <span class='WU_infoheader'>我的中心</span>
 
-    
-    <!-- 导航图 -->
-  <div class="container-fluid" >
-
-   <div class="WU_info">
-    <div class="row WU_inforow ">
-   <span class='WU_infoheader'>注册管理</span>
-   <a class='pull-right WU_more' href="">更多>></a>
-
+       </div>
+      <div class="row WU_scrollinfo" style="padding-top:15px; ">
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+           <h4>个人中心</h4>
+             <ul class="WU_personal">
+              <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
+              <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+              <li><a href="<?php echo U('Student/classes');?>">班级公示</a></li>
+              <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
+            </ul>
+          </div>
+          <div class="panel-body">
+           <h4>账户设置</h4>
+             <ul class="WU_personal">
+              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
+              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
+              <li><a href="<?php echo U('Student/photo');?>">头像设置</a></li>
+              <li><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+              <li><a href=<?php echo U('Student/logout');?>"><span class=""></span>退出登录</a></li>
+            </ul>
+          </div>
+          </div>
       </div>
-     <div class="row" style="padding-top:15px; ">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title">注册用户</h3>
-        </div>
-        <div class="panel-body">
-
-         <div class="row">
-           <div class="col-sm-6 col-sm-offset-3">
-            <form action="" method="POST" role="form">
-              <div class="form-group">
-                <label for="">学号/工号</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>
-              <div class="form-group">
-                <label for="">登录密码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>
-              <div class="form-group">
-                <label for="">重复密码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>
-              <div class="form-group">
-                <label for="">验证码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>
-              <div class="form-group">
-                <label for="">label</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>            
+        <div class="col-sm-8">
+        <div class="panel panel-primary" style="border-color:#ccc" >
+          <div class="panel-heading" style="border-color:#ccc;background: #fff">
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>班级导师</span></h3>
+          </div>
               
-            
-              <a type="submit" href="ming.html" class="btn btn-primary">注册</a>
-              <button type="reset" class="btn btn-default">取消</button>
-            </form>
-            </div>
+
+<div class="panel-body">
+ <div class="row WU_scrollinfo" style="padding-top:15px; ">
+ <div class="col-sm-3">
+   <div class="thumbnail">
+         <img src="holder.js/200x200" class="img-circle" alt="...">
+         <div class="caption">
+           <h3 class="text-center">王文坏</h3>
+           <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+           <p class="text-center">
+           <a href="<?php echo U('lists');?>" class="btn btn-primary" role="button">点击查看</a>
+            <a  class="btn btn-success" role="button">课程数量<span class="badge">10</span></a></p>
          </div>
+   </div>
+ </div>
+ </div>
+</div>
+  
+
+
+  
         </div>
       </div>
+
+      </div>
+
+      
+      </div>
+      </div>
   
-  
 
-     </div>
-
-
- </div>
-------------------
-  
-</div>
-
-
-  
+    <!-- ------ -->
   </div>
   </div>
      <div class="WU_footer ">
@@ -277,20 +268,29 @@
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+    $(function(){
       $('#WU_login_modal').on('show.bs.modal', function (e) {
     
       })
-       $('#WU_login_modal').modal({
-          'remote':'http://www.baidu.com'
-          'show':false
+      $('.dropdown').mouseenter(function(){
+        $('.dropdown-menu').show();
+      }).mouseleave(function(event) {
+        $('.dropdown-menu').hide();
+        
+      });
 
-       });
+
+
+
+     })
+
     </script>
    	
     
 <script type="text/javascript">
-
+  
 </script>
+
 
 </body>
    

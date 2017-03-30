@@ -32,17 +32,8 @@
    	</style>
    	
 <style type="text/css">
-  .WU_scrollli {
-    border-bottom: 1px dashed #ccc !important; 
-  } 
-  
-  .WU_scrollinfo > .infotitle span:hover{
-  opacity: 0.5;
-  }
-  
- /*  .showdetail:hover{
-    cursor: pointer;
-  } */
+ 
+
 
 </style>
 
@@ -87,24 +78,23 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px">201316602</p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
       </div>
       </a>
-      <ul class="dropdown-menu dropdown-menu_list ">
-   
-        <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li>
+      <ul class="dropdown-menu dropdown-menu_list">
+        <li class="dropdown-menu-li"><a ref="<?php echo U('Teacher/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出</a></li>
+
       </ul>
       </form>
-      
 
 <!--  -->
       </nav>
@@ -171,109 +161,71 @@
 
 <!-- ------ -->
  <div  class="row">
- <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-   <!-- Indicators -->
-   <ol class="carousel-indicators">
-     <li data-target="#carousel-example-generic " data-slide-to="0" class="active WU_carousel_dotted"></li>
-     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="1"></li>
-     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="2"></li>
-     <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
-   </ol>
-   <!-- Wrapper for slides -->
-   <div class="carousel-inner" role="listbox">
-     <div class="item active">
-       <img src="/static/img/header2.png" alt="...">
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-     <div class="item">
-       <img src="/static/img/header1.png" alt="...">
-       
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-     <div class="item">
-       <img src="/static/img/header4.png" alt="...">
-       
-       <div class="carousel-caption">
-         ...
-       </div>
-     </div>
-  
-   </div>
-
-   <!-- Controls -->
- <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-     <span class="sr-only">Previous</span>
-   </a>
-   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-     <span class="sr-only">Next</span>
-   </a> -->
- </div>
- <!-- --- -->
- <!-- ---- -->
-
+ 
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">
   <div class="container-fluid">
-    
+  <!-- ---- -->
+    <div class="container-fluid" >
 
+    <div class="WU_info">
+     <div class="row WU_inforow">
+     <span class='WU_infoheader'>我的中心uo</span>
 
-    
-    <!-- 导航图 -->
-  <div class="container-fluid" >
-
-  <div class="WU_info">
-   <div class="row WU_inforow">
-   <span class='WU_infoheader'>毕设选课详情</span>
-
-     </div>
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
-    <div class="col-sm-12 relog" style='margin-bottom: 20px'>
-      <a  href="<?php echo U('classlist');?>" class="btn btn-info btn-lg active">班级选题</a>
-      <a  href="<?php echo U('teacherlist');?>"  class="btn btn-info btn-lg">指导教师</a>
-      <a  href="<?php echo U('classresult');?>"class="btn btn-info btn-lg">选课结果</a>
-    </div>
-    <div class="col-sm-12 infotitle">
-    <span >课程题目</span>
-    <span >指导教师</span>
-    <span >已选人数</span>
-    <span >课程要求</span>
-    <span >选课/</span>
-    </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-       <ul >
-        <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >指导教师</span>
-        <span >已选人数</span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
-         <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >指导教师</span>
-        <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
-       
-       </ul>
        </div>
+      <div class="row WU_scrollinfo" style="padding-top:15px; ">
+      <div class="col-sm-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+           <h4>个人中心</h4>
+             <ul class="WU_personal">
+              <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
+              <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级公示SD</a></li>
+              <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
+
+            </ul>
+          </div>
+          <div class="panel-body">
+           <h4>账户设置</h4>
+             <ul class="WU_personal">
+              <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
+              <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
+              <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
+              <li><a href=<?php echo U('Teacher/logout');?>"><span class=""></span>退出登录</a></li>
+            </ul>
+          </div>
+          </div>
       </div>
-    </div>
-    </div>
-    </div>
+        <div class="col-sm-8">
+        <div class="panel panel-primary" style="border-color:#ccc" >
+          <div class="panel-heading" style="border-color:#ccc;background: #fff">
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的通知</span></h3>
+          </div>
+              
+
+<div class="panel-body">
+ <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">待回复</a></li>
+  <li role="presentation"><a href="#">已回复</a></li>
+  
+</ul>
+</div>
+  
 
 
   
+        </div>
+      </div>
+
+      </div>
+
+      
+      </div>
+      </div>
+  
+
+    <!-- ------ -->
   </div>
   </div>
      <div class="WU_footer ">
@@ -328,20 +280,9 @@
    	
     
 <script type="text/javascript">
-  myscroll=$(".WU_myscroll")[0];
-  myscrollafter=$(".WU_myscrollafter")[0];
-  scrollinfo=$(".WU_scrollinfo")[1];
-  myscrollafter.innerHTML=myscroll.innerHTML;
-  // alert(myscroll.offsetHeight);
-  // alert(scrollinfo.scrollTop);
-    // setInterval(function(){
-    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
-    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
-    //  else
-    //    scrollinfo.scrollTop++;
-    //  },10)
-
+  
 </script>
+
 
 </body>
    
