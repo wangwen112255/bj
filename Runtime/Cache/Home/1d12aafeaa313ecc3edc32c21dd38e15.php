@@ -174,14 +174,14 @@
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
               <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级公示SD</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
               <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
 
             </ul>

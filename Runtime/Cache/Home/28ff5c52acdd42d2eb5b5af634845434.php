@@ -170,18 +170,18 @@
 
     <div class="WU_info">
      <div class="row WU_inforow">
-     <span class='WU_infoheader'>我的中心uo</span>
+     <span class='WU_infoheader'>我的中心</span>
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
               <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级公示SD</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
               <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
 
             </ul>
@@ -200,14 +200,14 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的选课</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的题目</span></h3>
           </div>
               
 
 <div class="panel-body">
  <ul class="nav nav-tabs">
   <li role="presentation" class="active"><a href="#">所有题目</a></li>
-  <li role="presentation" class="active"><a href="#">已选题目</a></li>
+  <li role="presentation" class="active"><a href="#">被选题目</a></li>
 </ul>
 </div>
   

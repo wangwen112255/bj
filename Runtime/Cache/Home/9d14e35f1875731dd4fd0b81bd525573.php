@@ -200,34 +200,15 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>班级公示</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的头像</span></h3>
           </div>
               
 
 <div class="panel-body">
-   <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-      <div class="col-sm-12">
-     <div class="WU_myscroll">
-     <ul >
-      <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span >已选人数</span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
-      </li>
-       <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
-      </li>
-     
-     </ul>
-     </div>
-    </div>
-  </div>
+<div class="alert alert-danger">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <strong>后续开发中.......</strong> 
+</div>
 </div>
   
 

@@ -7,11 +7,11 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
-    <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
+    <link href="/static/css/style.min.css" rel="stylesheet">
    	<style type="text/css">
   
    .dropdown-menu-li{
@@ -220,8 +220,7 @@
      <span class="sr-only">Next</span>
    </a> -->
  </div>
- <!-- --- -->
- <!-- ---- -->
+
 
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">

@@ -7,8 +7,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
 
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
@@ -51,7 +51,7 @@
 	<body>
   <div class="WU_header">
   <div class="WU_top bluetop">
-      毕业论文很重要请慎重选择<span ></span>
+      毕业论文很重要请慎重选择
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
@@ -220,8 +220,7 @@
      <span class="sr-only">Next</span>
    </a> -->
  </div>
- <!-- --- -->
- <!-- ---- -->
+
 
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">
