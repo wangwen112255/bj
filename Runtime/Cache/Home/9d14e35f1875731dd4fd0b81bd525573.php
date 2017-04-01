@@ -170,11 +170,11 @@
 
     <div class="WU_info">
      <div class="row WU_inforow">
-     <span class='WU_infoheader'>我的中心uo</span>
+     <span class='WU_infoheader'>我的中心</span>
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>

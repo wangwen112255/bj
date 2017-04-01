@@ -12,7 +12,9 @@
  /*  .showdetail:hover{
     cursor: pointer;
   } */
+.relog a{ 
 
+}
 </style>
 
 {/block}
@@ -33,7 +35,7 @@
     <div class="col-sm-12 relog" style='margin-bottom: 20px'>
       <a  href="{:U('classlist')}" class="btn btn-info btn-lg active">班级选题</a>
       <a  href="{:U('teacherlist')}"  class="btn btn-info btn-lg">指导教师</a>
-      <a  href="{:U('classresult')}"class="btn btn-info btn-lg">选课结果</a>
+      <a  href="{:U('classresult')}" class="btn btn-info btn-lg">选课结果</a>
     </div>
     <div class="col-sm-12 infotitle">
     <span >课程题目</span>
@@ -51,7 +53,7 @@
         <span >课程题目</span>
         <span >指导教师</span>
         <span >已选人数</span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
+        <span ><a  href="{:U('detail')}" class="showdetail">查看详情</a></span>
         <span ><button class="btn btn-danger">在线选课</button></span>
         </li>
          <li class="WU_scrollli" >

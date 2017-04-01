@@ -6,12 +6,13 @@
     <title><?php echo ($title); ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
-
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    
    	<style type="text/css">
   
    .dropdown-menu-li{
@@ -32,9 +33,7 @@
    	</style>
    	
 <style type="text/css">
- 
-
-
+  
 </style>
 
 
@@ -42,7 +41,7 @@
 	<body>
   <div class="WU_header">
   <div class="WU_top bluetop">
-      毕业论文很重要请慎重选择<span ></span>
+      毕业论文很重要请慎重选择
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
@@ -82,19 +81,31 @@
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px">201316602</p>
-      <p style="margin-left:5px"><b>【学生】</b></p> 
+      <p style="margin-left:5px"><b>【学生<span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
-      <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a ref="<?php echo U('Teacher/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出</a></li>
-
+      <ul class="dropdown-menu dropdown-menu_list ">
+   
+        <!-- <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">
+       基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息
+        <span class="glyphicon glyphicon-bell"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目
+        <span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置
+        <span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出
+        <span class=" glyphicon glyphicon-log-out"></span></a></li>
       </ul>
       </form>
+
 
 <!--  -->
       </nav>
@@ -161,71 +172,148 @@
 
 <!-- ------ -->
  <div  class="row">
- 
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+   <!-- Indicators -->
+   <ol class="carousel-indicators">
+     <li data-target="#carousel-example-generic " data-slide-to="0" class="active WU_carousel_dotted"></li>
+     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="1"></li>
+     <li data-target="#carousel-example-generic" class="WU_carousel_dotted" data-slide-to="2"></li>
+     <!-- <li data-target="#carousel-example-generic" data-slide-to="2"></li> -->
+   </ol>
+   <!-- Wrapper for slides -->
+   <div class="carousel-inner" role="listbox">
+     <div class="item active">
+       <img src="/static/img/header2.png" alt="...">
+       <div class="carousel-caption">
+         ...
+       </div>
+     </div>
+     <div class="item">
+       <img src="/static/img/header1.png" alt="...">
+       
+       <div class="carousel-caption">
+         ...
+       </div>
+     </div>
+     <div class="item">
+       <img src="/static/img/header4.png" alt="...">
+       
+       <div class="carousel-caption">
+         ...
+       </div>
+     </div>
+  
+   </div>
+
+   <!-- Controls -->
+ <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a> -->
+ </div>
+
+
  </div>
   <div style="padding-right: 50px;padding-left: 50px;">
   <div class="container-fluid">
-  <!-- ---- -->
-    <div class="container-fluid" >
+    
 
-    <div class="WU_info">
-     <div class="row WU_inforow">
-     <span class='WU_infoheader'>我的中心</span>
 
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+  
+  <!-- ------- -->
+------------------
+  <div class="WU_info">
+   <div class="row WU_inforow">
+  <span class='WU_infoheader'>选课情况</span>
+     </div>
+    <div class="row WU_scrollinfo" style="padding-top:15px; ">
+        <div class="col-sm-12 infotitle">
+    <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+    </div>
+    </div>
+     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+        <div class="col-sm-12">
+       <div class="WU_myscroll">
+       <ul >
+        <li class="WU_scrollli" >
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+        <li class="WU_scrollli" >
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+        <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+
+        <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+     <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+       <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+       <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+       <li class="WU_scrollli">
+        <span >学生院系</span>
+    <span >学生专业</span>
+    <span >学生姓名</span>
+    <span >毕设题目</span>
+    <span >指导教师</span>
+        </li>
+
+       </ul>
        </div>
-      <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3" style="height:650px">
-        <div class="panel panel-default">
-          <div class="panel-body">
-           <h4>个人中心</h4>
-             <ul class="WU_personal">
-              <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
-              <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
-              <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
-
-            </ul>
-          </div>
-          <div class="panel-body">
-           <h4>账户设置</h4>
-             <ul class="WU_personal">
-              <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
-              <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
-              <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-              <li><a href=<?php echo U('Teacher/logout');?>"><span class=""></span>退出登录</a></li>
-            </ul>
-          </div>
-          </div>
-      </div>
-        <div class="col-sm-8">
-        <div class="panel panel-primary" style="border-color:#ccc" >
-          <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的通知</span></h3>
-          </div>
-              
-
-<div class="panel-body">
- <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">待回复</a></li>
-  <li role="presentation"><a href="#">已回复</a></li>
-  
-</ul>
-</div>
-  
+       <div class="WU_myscrollafter"></div>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
   
-        </div>
-      </div>
-
-      </div>
-
-      
-      </div>
-      </div>
-  
-
-    <!-- ------ -->
   </div>
   </div>
      <div class="WU_footer ">
@@ -241,7 +329,7 @@
            <span>我的博客</span>
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
+          <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
 
        </div>
         <div class="col-md-4 ">
@@ -270,19 +358,18 @@
         $('.dropdown-menu').hide();
         
       });
-
-
-
-
+      $(".thumbnail").mouseover(function(){
+        
+      })
      })
 
     </script>
    	
     
 <script type="text/javascript">
-  
-</script>
 
+
+</script>
 
 </body>
    

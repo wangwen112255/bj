@@ -6,12 +6,13 @@
     <title><?php echo ($title); ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/static/css/animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
-
+    <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/style.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css">
+    
    	<style type="text/css">
   
    .dropdown-menu-li{
@@ -39,10 +40,31 @@
   .WU_scrollinfo > .infotitle span:hover{
   opacity: 0.5;
   }
-  
- /*  .showdetail:hover{
-    cursor: pointer;
-  } */
+  .img-circle{
+  transition: transform linear 0.6s;
+  }
+  .img-circle:hover{
+  transform: rotateY(180deg)
+  }
+ @keyframes myanite {
+   0%{
+   transform:translateX(20px);
+   }
+
+   50%{
+   transform:translateX(0px);
+   }
+   100%{
+  transform:translateX(-20px);
+   }
+
+ }
+
+ .WU_Te_thumbnail:hover{
+   animation-name:myanite;
+   animation-duration:2s;
+   animation-timing-function:linear;
+ }
 
 </style>
 
@@ -91,7 +113,7 @@
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px">201316602</p>
-      <p style="margin-left:5px"><b>【学生】</b></p> 
+      <p style="margin-left:5px"><b>【学生<span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list ">
@@ -102,12 +124,17 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">
+       基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息
+        <span class="glyphicon glyphicon-bell"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目
+        <span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置
+        <span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出
+        <span class=" glyphicon glyphicon-log-out"></span></a></li>
       </ul>
       </form>
 
@@ -239,8 +266,8 @@
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/200x200" class="img-circle" alt="...">
+      <div class="thumbnail WU_Te_thumbnail">
+            <img src="/static/img/a2.jpg" class="img-circle" alt="...">
             <div class="caption">
               <h3 class="text-center">王文坏</h3>
               <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
@@ -273,7 +300,7 @@
            <span>我的博客</span>
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
+          <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
 
        </div>
         <div class="col-md-4 ">
@@ -302,10 +329,9 @@
         $('.dropdown-menu').hide();
         
       });
-
-
-
-
+      $(".thumbnail").mouseover(function(){
+        
+      })
      })
 
     </script>

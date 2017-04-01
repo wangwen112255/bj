@@ -184,3 +184,15 @@
         })
 
         }
+    srheight=document.documentElement.scrollHeight;
+    clheight=document.documentElement.clientHeight;
+    topheight=document.body.scrollTop;
+    // alert(srheight)
+    // alert(clheight)
+
+    // alert(topheight)
+    // alert(topheight)
+   
+
+   
+   

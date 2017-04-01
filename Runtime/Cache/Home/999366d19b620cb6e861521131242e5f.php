@@ -44,6 +44,7 @@
    background: #ccc;
    border-radius: 10px
   }
+
 </style>
 
 
@@ -244,7 +245,10 @@
   <a class='pull-right WU_more' href="">更多>></a>
 
      </div>
-    <div class="row" style="padding-top:15px; ">
+    <div class="row" style="padding-top:15px; overflow: hidde2">
+  
+    	
+
     <div class="col-sm-3">
       <div class="thumbnail">
             <img src="holder.js/100px200" alt="...">
@@ -252,48 +256,101 @@
               <h3>Thumbnail</h3>
               <p>...</p>
               <p>
-              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看<span class="badge">访问累计100</span></a>
-               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+              <a href="<?php echo U('Depart/detail');?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看结果
+               <a href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞</a></p>
+               <p  class="WU_slidep">
+              <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+              	<span class="badge" style="font-size: 16px">学生访问累计量100</span>
+              </button>
+              </p>
+            
+               
             </div>
       </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p><a href="#" class="btn btn-primary" role="button">Button</a>
-               <a href="#" class="btn btn-default pull-right" role="button">Button</a></p>
-            </div>
-      </div>
-    </div>
- 
+	<div class="col-sm-3">
+	  <div class="thumbnail">
+	        <img src="holder.js/100px200" alt="...">
+	        <div class="caption">
+	          <h3>Thumbnail</h3>
+	          <p>...</p>
+	          <p>
+	          <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
+	           <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+	           <p  class="WU_slidep">
+	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+	          	<span class="badge" style="font-size: 16px">学生访问累计量100</span>
+	          </button>
+	          </p>
+	        
+	           
+	        </div>
+	  </div>
+	</div>
+	<div class="col-sm-3">
+	  <div class="thumbnail">
+	        <img src="holder.js/100px200" alt="...">
+	        <div class="caption">
+	          <h3>Thumbnail</h3>
+	          <p>...</p>
+	          <p>
+	          <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
+	           <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+	           <p  class="WU_slidep">
+	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+	          	<span class="badge" style="font-size: 16px">学生访问累计量100</span>
+	          </button>
+	          </p>
+	        
+	           
+	        </div>
+	  </div>
+	</div>
+	<div class="col-sm-3">
+	  <div class="thumbnail">
+	        <img src="holder.js/100px200" alt="...">
+	        <div class="caption">
+	          <h3>Thumbnail</h3>
+	          <p>...</p>
+	          <p>
+	          <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
+	           <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+	           <p  class="WU_slidep">
+	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+	          	<span class="badge" style="font-size: 16px">学生访问累计量100</span>
+	          </button>
+	          </p>
+	        
+	           
+	        </div>
+	  </div>
+	</div>
+	<div class="col-sm-3">
+	  <div class="thumbnail">
+	        <img src="holder.js/100px200" alt="...">
+	        <div class="caption">
+	          <h3>Thumbnail</h3>
+	          <p>...</p>
+	          <p>
+	          <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
+	           <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+	           <p  class="WU_slidep">
+	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+	          	<span class="badge" style="font-size: 16px">学生访问累计量100</span>
+	          </button>
+	          </p>
+	        
+	           
+	        </div>
+	  </div>
+	</div>
+
+   
 
     </div>
 
 
-</div>
+<!-- </div> -->
 ------------------
   <div class="WU_info">
    <div class="row WU_inforow">
@@ -425,7 +482,7 @@
         
       });
       $(".thumbnail").mouseover(function(){
-        alert(0)
+        
       })
      })
 

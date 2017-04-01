@@ -170,7 +170,7 @@
 
     <div class="WU_info">
      <div class="row WU_inforow">
-     <span class='WU_infoheader'>我的中心uo</span>
+     <span class='WU_infoheader'>我的中心</span>
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">

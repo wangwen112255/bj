@@ -49,11 +49,16 @@
 	.WU-nav a{
 	font-size:18px ;
 	color: #000;
+  /* transition:background-color  linear 0.6s; */
+  transition:transform   linear 0.6s;
 	}
-	
+  .WU-nav a:hover{
+  transform: rotateY(180deg);
+  }
+ 
 	.WU-nav>li:hover{
-	  border-bottom: 2px solid #999;
-	
+    border-bottom: 2px solid #999;
+    /* background: blue !important; */
 	}
 	.WU_footer{
 		width: 100%;
@@ -198,3 +203,33 @@
   body{
   	overflow-x: hidden;
   }
+    .thumbnail{
+      position: relative;
+      overflow: hidden;
+      transition: transform linear 0.4s;
+    }
+    .thumbnail:hover  .WU_slidep{
+    bottom: 40%;
+
+    }
+    .thumbnail:hover {
+    transform: scale(1.1,1.2);
+    box-shadow: 2px 2px 2px #eeee;
+    }
+    .WU_slidep{
+      width: 100%;
+      background: blue;
+      position: absolute;
+      left: 0px;
+      bottom: 100%;
+      background: #515151;
+      opacity: 0.4;
+      height: 100%;
+      transition: bottom linear 0.2s;
+    }
+    .WU_leiji{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+
+    }

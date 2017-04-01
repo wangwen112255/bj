@@ -9,10 +9,31 @@
   .WU_scrollinfo > .infotitle span:hover{
   opacity: 0.5;
   }
-  
- /*  .showdetail:hover{
-    cursor: pointer;
-  } */
+  .img-circle{
+  transition: transform linear 0.6s;
+  }
+  .img-circle:hover{
+  transform: rotateY(180deg)
+  }
+ @keyframes myanite {
+   0%{
+   transform:translateX(20px);
+   }
+
+   50%{
+   transform:translateX(0px);
+   }
+   100%{
+  transform:translateX(-20px);
+   }
+
+ }
+
+ .WU_Te_thumbnail:hover{
+   animation-name:myanite;
+   animation-duration:2s;
+   animation-timing-function:linear;
+ }
 
 </style>
 
@@ -32,8 +53,8 @@
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/200x200" class="img-circle" alt="...">
+      <div class="thumbnail WU_Te_thumbnail">
+            <img src="__IMG__a2.jpg" class="img-circle" alt="...">
             <div class="caption">
               <h3 class="text-center">王文坏</h3>
               <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
