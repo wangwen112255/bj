@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'LOAD_EXT_CONFIG'=>"wx.db",
+	'LOAD_EXT_CONFIG'=>"wx,db",
 	"SESSION_AUTO_START"=>true,
 	// "SHOW_PAGE_TRACE"=>true,//开启调试页面
 	"URL_CASE_INSENSITIVE"=>true,

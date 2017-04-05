@@ -4,9 +4,9 @@
  		 'DB_USER'=>"root",
  		 "db_pwd"=>"123456",
  		 "db_host"=>"localhost",
- 		 "db_name"=>"rubydb",
-       	 "db_prefix"=>"think_",
-       	 "db_charset"=>"utf8",
+ 		 "db_name"=>"xk",
+       	 "db_prefix"=>"xk_",
+       	 "db_charset"=>"utf8"
 
 
  	)

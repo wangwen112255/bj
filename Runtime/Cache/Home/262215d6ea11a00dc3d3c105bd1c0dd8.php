@@ -44,7 +44,9 @@
  /*  .showdetail:hover{
     cursor: pointer;
   } */
+.relog a{ 
 
+}
 </style>
 
 

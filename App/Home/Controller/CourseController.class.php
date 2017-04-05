@@ -2,6 +2,10 @@
 namespace Home\Controller;
 use Think\Controller;
 class   CourseController extends BasedController {
+   public $dao;
+   public function _initialize(){
+        $this->dao=M('order');
+    }
     public function index(){
     	$this->display("");
     }
@@ -13,6 +17,9 @@ class   CourseController extends BasedController {
     }
     public function classresult(){
     	 $this->display();
+    }
+    public function indexshows(){
+         return $this->dao->limit('200')->select();
     }
 }
 
