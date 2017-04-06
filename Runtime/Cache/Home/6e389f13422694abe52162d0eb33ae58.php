@@ -265,18 +265,27 @@
 
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
-    <div class="col-sm-3">
+     <?php if(empty($tedata)): ?><div class="jumbotron">
+      <div class="container">
+        <h1>已经尽力了</h1>
+        <p>暂时还没有搜索到任何的教师信息，敬请关注</p>
+        <p>
+          <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+        </p>
+      </div>
+    </div><?php endif; ?>
+    <?php if(is_array($tedata)): $i = 0; $__LIST__ = $tedata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-sm-2">
       <div class="thumbnail WU_Te_thumbnail">
-            <img src="/static/img/a2.jpg" class="img-circle" alt="...">
+            <img src="<?php echo ((isset($data["photo"]) && ($data["photo"] !== ""))?($data["photo"]):'/static/img/a2.jpg'); ?>" class="img-circle" alt="...">
             <div class="caption">
-              <h3 class="text-center">王文坏</h3>
-              <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+              <h3 class="text-center"><?php echo ($data["realname"]); ?></h3>
+              <p class="text-center"><?php echo ((isset($data["desct"]) && ($data["desct"] !== ""))?($data["desct"]):"该老师很优秀"); ?></p>
               <p class="text-center">
-              <a href="<?php echo U('lists');?>" class="btn btn-primary" role="button">点击查看</a>
-               <a  class="btn btn-success" role="button">课程数量<span class="badge">10</span></a></p>
+              <a href="<?php echo U('lists',array('id'=>$data['idt']));?>" class="btn btn-primary" role="button">点击查看</a>
+               <a  class="btn btn-success" role="button">课程数量<span class="badge"><?php echo ($data["total"]); ?></span></a></p>
             </div>
       </div>
-    </div>
+    </div><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
 
     

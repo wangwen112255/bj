@@ -14,7 +14,9 @@ class IndexController extends Controller {
        $codata=$co->indexshows();
        $this->assign("dedata",$dedata);
        $this->assign("codata",$codata);
+       // dump($codata);
        $this->display();
+       
    }
 
     

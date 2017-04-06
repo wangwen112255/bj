@@ -2,6 +2,11 @@
 namespace Home\Controller;
 use Think\Controller;
 class TeacherController extends BaseController {
+	protected $dao;
+	public function _initialize(){
+		//parent::initalize();
+		 $this->dao=M('Teacher');
+	} 
     public function index(){
         $this->display();
     }
@@ -23,4 +28,5 @@ class TeacherController extends BaseController {
     public function classes(){
     	$this->display();
     }
+   
 }

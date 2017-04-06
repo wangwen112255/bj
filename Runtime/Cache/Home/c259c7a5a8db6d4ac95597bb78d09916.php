@@ -231,10 +231,10 @@
 ------------------
   <div class="WU_info">
    <div class="row WU_inforow">
-  <span class='WU_infoheader'>选课情况</span>
+  <span class='WU_infoheader'><?php echo ($departname['departname']); ?>选课情况</span>
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
-        <div class="col-sm-12 infotitle">
+    <div class="col-sm-12 infotitle">
     <span >学生院系</span>
     <span >学生专业</span>
     <span >学生姓名</span>
@@ -246,65 +246,25 @@
         <div class="col-sm-12">
        <div class="WU_myscroll">
        <ul >
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-     <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
+        <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+        <span ><?php echo ($data["dename"]); ?></span>
+        <span ><?php echo ($data["clname"]); ?></span>
+        <span ><?php echo ($data["stuname"]); ?></span>
+        <span ><?php echo ($data["coname"]); ?></span>
+        <span ><?php echo ($data["tename"]); ?></span>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
        </ul>
+        <?php if(empty($codata)): ?><div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>暂时还没有选课结果，敬请关注</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div><?php endif; ?>
+     
        </div>
        <div class="WU_myscrollafter"></div>
     </div>

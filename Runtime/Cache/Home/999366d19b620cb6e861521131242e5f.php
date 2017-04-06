@@ -252,13 +252,13 @@
 
     <?php if(is_array($dedata)): $i = 0; $__LIST__ = $dedata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-sm-3">
 	  <div class="thumbnail">
-	        <img src="holder.js/100px200" alt="...">
+	        <img  width="100%" src="<?php echo ((isset($data["img "]) && ($data["img "] !== ""))?($data["img "]):'/static/img/a2.jpg'); ?>" alt="...">
 	        <div class="caption">
 	          <h3><?php echo ($data["departname"]); ?></h3>
-	          <p><?php echo ($data["desc"]); ?></p>
+	          <p><?php echo ((isset($data["desc"]) && ($data["desc"] !== ""))?($data["desc"]):'华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'); ?></p>
 	          <p>
-	          <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
-	           <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
+	          <a href="<?php echo U('Depart/detail');?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
+	           <button href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞[<?php echo ($data["clicknum"]); ?>]</button></p>
 	           <p  class="WU_slidep">
 	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
 	          	<span class="badge" style="font-size: 16px">学生访问累计量<?php echo ($data["visitnum"]); ?></span>
@@ -278,7 +278,7 @@
 
 
 <!-- </div> -->
-------------------
+<!-- ------------------ -->
   <div class="WU_info">
    <div class="row WU_inforow">
   <span class='WU_infoheader'>选课情况</span>
@@ -292,68 +292,18 @@
     <span >指导教师</span>
     </div>
     </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: scroll ">
         <div class="col-sm-12">
        <div class="WU_myscroll">
        <ul >
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-     <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
+        <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+        <span ><?php echo ($data["dename"]); ?></span>
+	    <span ><?php echo ($data["clname"]); ?></span>
+	    <span ><?php echo ($data["stuname"]); ?></span>
+	    <span ><?php echo ($data["coname"]); ?></span>
+	    <span ><?php echo ($data["tename"]); ?></span>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?>
+      
        </ul>
        </div>
        <div class="WU_myscrollafter"></div>
@@ -420,16 +370,15 @@
   myscroll=$(".WU_myscroll")[0];
   myscrollafter=$(".WU_myscrollafter")[0];
   scrollinfo=$(".WU_scrollinfo")[1];
-  myscrollafter.innerHTML=myscroll.innerHTML;
-  // alert(myscroll.offsetHeight);
-  // alert(scrollinfo.scrollTop);
-    // setInterval(function(){
-    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
-    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
-    //  else
-    //    scrollinfo.scrollTop++;
-    //  },10)
-
+    if(myscroll.offsetHeight>600){
+    myscrollafter.innerHTML=myscroll.innerHTML;
+    setInterval(function(){
+     if(scrollinfo.scrollTop>myscroll.offsetHeight)
+       scrollinfo.scrollTop=0;
+     else
+       scrollinfo.scrollTop++;
+     },10)
+    }
 </script>
 
 </body>

@@ -229,87 +229,31 @@
 
    <div class="WU_info">
     <div class="row WU_inforow ">
-   <span class='WU_infoheader'>院系查看</span>
-   <a class='pull-right WU_more' href="">更多>></a>
+   <span class='WU_infoheader'>所有院系</span>
+   
 
       </div>
      <div class="row" style="padding-top:15px; ">
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p>
-              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
-               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
-               <p  class="WU_slidep">
-              <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
-                <span class="badge" style="font-size: 16px">学生访问累计量100</span>
-              </button>
-              </p>
-            
-               
-            </div>
-      </div>
+    <?php if(is_array($dedata)): $i = 0; $__LIST__ = $dedata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-sm-3">
+    <div class="thumbnail">
+          <img  width="100%" src="<?php echo ((isset($data["img "]) && ($data["img "] !== ""))?($data["img "]):'/static/img/a2.jpg'); ?>" alt="...">
+          <div class="caption">
+            <h3><?php echo ($data["departname"]); ?></h3>
+            <p><?php echo ((isset($data["desc"]) && ($data["desc"] !== ""))?($data["desc"]):'华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'); ?></p>
+            <p>
+            <a href="<?php echo U('Depart/detail',array('id'=>$data['id']));?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
+             <button href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞[<?php echo ($data["clicknum"]); ?>]</button></p>
+             <p  class="WU_slidep">
+            <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
+              <span class="badge" style="font-size: 16px">学生访问累计量<?php echo ($data["visitnum"]); ?></span>
+            </button>
+            </p>
+          
+             
+          </div>
     </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p>
-              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
-               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
-               <p  class="WU_slidep">
-              <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
-                <span class="badge" style="font-size: 16px">学生访问累计量100</span>
-              </button>
-              </p>
-            
-               
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-            <div class="caption">
-              <h3>Thumbnail</h3>
-              <p>...</p>
-              <p>
-              <a href="#" class="btn btn-success" style="font-size: 16px" role="button">进系查看
-               <a href="#" class="btn btn-default pull-right" role="button">选课结果公示</a></p>
-               <p  class="WU_slidep">
-              <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
-                <span class="badge" style="font-size: 16px">学生访问累计量100</span>
-              </button>
-              </p>
-            
-               
-            </div>
-      </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="thumbnail">
-            <img src="holder.js/100px200" alt="...">
-         <div class="caption">
-           <h3>Thumbnail</h3>
-           <p>...</p>
-           <p>
-           <a href="<?php echo U('Depart/detail');?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看结果
-            <a href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞</a></p>
-            <p  class="WU_slidep">
-           <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
-            <span class="badge" style="font-size: 16px">学生访问累计量100</span>
-           </button>
-           </p>
-         
-            
-         </div>
-      </div>
-    </div>
+    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+    
   
   
 
