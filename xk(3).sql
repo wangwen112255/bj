@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2017 �?04 �?05 �?17:36
+-- 生成日期: 2017 �?04 �?06 �?17:34
 -- 服务器版本: 5.5.47
 -- PHP 版本: 5.5.30
 
@@ -60,14 +60,23 @@ CREATE TABLE IF NOT EXISTS `xk_course` (
   `creattime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '课程的时间',
   PRIMARY KEY (`id`),
   KEY `teacher` (`teacher_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- 转存表中的数据 `xk_course`
 --
 
 INSERT INTO `xk_course` (`id`, `coursename`, `desc`, `teacher_id`, `limitnum`, `choosenum`, `status`, `creattime`) VALUES
-(1, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32');
+(1, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-06 06:45:26'),
+(2, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 2, 0, '2017-04-06 07:13:48'),
+(3, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 1, 0, '2017-04-06 08:15:58'),
+(4, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(5, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(6, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(7, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(8, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(9, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32'),
+(10, 'PHP 选课系统', '一个基于PHP d的选课系统', 1, 2, 0, 0, '2017-04-05 08:56:32');
 
 -- --------------------------------------------------------
 
@@ -100,7 +109,7 @@ INSERT INTO `xk_depart` (`id`, `desc`, `departname`, `visitnum`, `clicknum`, `pi
 --
 
 CREATE TABLE IF NOT EXISTS `xk_order` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `student_id` int(10) unsigned NOT NULL COMMENT '学生id',
   `isreceive` tinyint(4) NOT NULL COMMENT '是否教师回复',
   `creattime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '生成时间',
@@ -111,14 +120,29 @@ CREATE TABLE IF NOT EXISTS `xk_order` (
   KEY `student` (`student_id`),
   KEY `sdfsd` (`depart_id`),
   KEY `xk` (`course_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- 转存表中的数据 `xk_order`
 --
 
 INSERT INTO `xk_order` (`id`, `student_id`, `isreceive`, `creattime`, `depart_id`, `is_success`, `course_id`) VALUES
-(1, 1, 0, '2017-04-05 09:06:29', 1, 0, 1);
+(1, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(2, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(3, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(4, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(5, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(6, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(7, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(8, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(9, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(10, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(11, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(12, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(13, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(14, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(15, 1, 0, '2017-04-05 09:06:29', 1, 0, 1),
+(16, 1, 0, '2017-04-05 09:06:29', 1, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -149,7 +173,7 @@ CREATE TABLE IF NOT EXISTS `xk_student` (
 --
 
 INSERT INTO `xk_student` (`id`, `username`, `pwd`, `photo`, `class_id`, `depart_id`, `studentid`, `ceatetime`, `isonline`, `iscomplete`, `realname`) VALUES
-(1, 'wangwen', '123456', '', 1, 1, '201316602', '2017-03-31 05:29:56', 0, 0, NULL),
+(1, 'wangwen', '123456', '', 1, 1, '201316602', '2017-04-06 03:39:51', 0, 0, '王文帅'),
 (2, 'wangwen', '123456', '', 1, 1, '201316602', '2017-03-31 05:29:56', 0, 0, NULL);
 
 -- --------------------------------------------------------
@@ -167,17 +191,19 @@ CREATE TABLE IF NOT EXISTS `xk_teacher` (
   `depart_id` int(10) unsigned NOT NULL COMMENT '院系id',
   `realname` char(5) NOT NULL COMMENT '真实姓名',
   `createtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '注册时间',
+  `desc` varchar(60) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `class` (`class_id`),
   KEY `depart` (`depart_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- 转存表中的数据 `xk_teacher`
 --
 
-INSERT INTO `xk_teacher` (`id`, `username`, `pwd`, `photo`, `class_id`, `depart_id`, `realname`, `createtime`) VALUES
-(1, 'admin', 'admin', '', 1, 1, '郑作勇', '2017-04-05 08:56:27');
+INSERT INTO `xk_teacher` (`id`, `username`, `pwd`, `photo`, `class_id`, `depart_id`, `realname`, `createtime`, `desc`) VALUES
+(1, 'admin', 'admin', '', 1, 1, '郑作勇', '2017-04-05 08:56:27', ''),
+(2, 'admin', 'admin', '', 1, 1, '郑作勇', '2017-04-05 08:56:27', '');
 
 -- --------------------------------------------------------
 
