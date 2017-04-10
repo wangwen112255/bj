@@ -217,18 +217,16 @@
   <div style="padding-right: 50px;padding-left: 50px;">
   <div class="container-fluid">
     
-<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
-<div class="modal fade" id="modal-id">
+
+
+<div class="modal fade" id="modals" style="z-index: 999999999;">
   <div class="modal-dialog">
     <div class="modal-content">
-      
-        
-   
-  
+    
+      </div>
     </div>
   </div>
 </div>
-
 <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-12 infotitle">
     <span >课程题目</span>
@@ -257,15 +255,15 @@
         <span >
         <!-- <?php echo ($data["choosenum"]); ?> -->
         <div class="progress " style="width:60%;margin:10px auto;">
-          <div class="progress-bar progress-bar-success  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($data['choosenum']/$data['limitnum']*100); ?>%">
+          <div class="progress-bar progress-bar-<?php echo ($data['choosenum']==$data['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($data['choosenum']/$data['limitnum']*100); ?>%">
            <?php echo ($data['choosenum']/$data['limitnum']*100); ?>%(<?php echo ($data['choosenum']); ?>人)
           </div>
         </div>
         </span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <?php if(($data["choosenum"]) == $data['limitnum']): ?><span ><button class="btn btn-primary disabled">选课已满</button></span>
+        <span ><a  href='javascript:' numid="<?php echo U('detail',array('numid'=>$data['id']));?>" class="showdetail">查看详情</a></span>
+        <?php if(($data["choosenum"]) == $data['limitnum']): ?><span ><button class="btn btn-danger ">选课已满</button></span>
         <?php else: ?>
-        <span ><button class="btn btn-danger">在线选课</button></span><?php endif; ?>
+        <span ><button class="btn btn-success ">在线选课</button></span><?php endif; ?>
         </li><?php endforeach; endif; else: echo "" ;endif; ?>
        </ul>
        </div>
@@ -325,11 +323,21 @@
    	
     
 <script type="text/javascript">
-$("#modal-id").modal({
-    
-    remote: "http://www.baidu.com"
 
+$('.showdetail').click(function(){
+   
+    var numids=$(this).attr('numid');
+    $('#modals').modal({
+     show : true,
+     backdrop : false,
+     keyboard : false,
+     remote :numids
+    })
 });
+
+$("#modals").on("hidden.bs.modal", function() {  
+    $(this).removeData("bs.modal");  
+}); 
 
 </script>
 

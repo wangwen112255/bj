@@ -1,87 +1,15 @@
+        <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"><b>毕设题目--</b>{$codata.coursename}</h4>
+            </div>
+            <div class="modal-body">
+                <p>上传时间 <small>{$codata.creattime}</small></p>
 
-{extend name='Public:layouts'/}
-{block name='CSS'}
-<style type="text/css">
-  .WU_scrollli {
-    border-bottom: 1px dashed #ccc !important; 
-  } 
-  
-  .WU_scrollinfo > .infotitle span:hover{
-  opacity: 0.5;
-  }
-  
- /*  .showdetail:hover{
-    cursor: pointer;
-  } */
+                <p><big><b>内容详情</b></big>{$codata.desc}</p>
 
-</style>
-
-{/block}
-
-{block name="content"}
-
-
-    
-    <!-- 导航图 -->
-  <div class="container-fluid" >
-
-  <div class="WU_info">
-   <div class="row WU_inforow">
-   <span class='WU_infoheader'>王文帅老师的毕业设计题目</span>
-
-     </div>
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
-    <div class="col-sm-12 infotitle">
-    <span >课程题目</span>
-    <span >已选名单</span>
-    <span >已选人数</span>
-    <span >课程要求</span>
-    <span >选课/</span>
-    </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-       <ul >
-        <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >课程简要</span>
-        <span >已选人数</span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
-         <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >指导教师</span>
-        <span >已选人数</span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
-       
-       </ul>
-       </div>
-      </div>
-    </div>
-    </div>
-    </div>
-
-
-{/block}
-{block name="JS"}
-<script type="text/javascript">
-  myscroll=$(".WU_myscroll")[0];
-  myscrollafter=$(".WU_myscrollafter")[0];
-  scrollinfo=$(".WU_scrollinfo")[1];
-  myscrollafter.innerHTML=myscroll.innerHTML;
-  // alert(myscroll.offsetHeight);
-  // alert(scrollinfo.scrollTop);
-    // setInterval(function(){
-    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
-    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
-    //  else
-    //    scrollinfo.scrollTop++;
-    //  },10)
-
-</script>
-{/block}
-
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger " data-dismiss="modal">要求人数<span class="badge">{$codata.limitnum}</span></button>
+                <button type="button" class="btn btn-success " data-dismiss="modal">已选人数<span class="badge">{$codata.choosenum}</span>  </button>
+                <button type="button" class="btn btn-primary " data-dismiss="modal">朕已查看</button>
+            </div>

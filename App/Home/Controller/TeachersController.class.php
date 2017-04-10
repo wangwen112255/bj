@@ -22,7 +22,14 @@ class   TeachersController extends Controller {
 	   $this->assign('codata',$codata);
 	   $this->display();
 	}
+    public function detail(){
+    	$numid=I('numid');
+    	$co=M('Course');
+    	$codata=$co->find($numid);
+    	$this->assign('codata',$codata);
+    	$this->display();
 
+    }
 	
 
 }
