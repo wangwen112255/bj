@@ -70,13 +70,13 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
+    <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
+      <a class="btn btn-danger " id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
-     </form> -->
-      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
+     </form>
+      <!-- <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
@@ -84,7 +84,7 @@
       <p style="margin-left:5px"><b>【学生<span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
-      <ul class="dropdown-menu dropdown-menu_list ">
+      <ul class="dropdown-menu dropdown-menu_list "> -->
    
         <!-- <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
@@ -92,7 +92,8 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+
+   <!--      <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息
@@ -104,7 +105,7 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
       </ul>
-      </form>
+      </form> -->
 
 
 <!--  -->
@@ -121,10 +122,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">登录</h4>
+          <h4 class="modal-title">用户登录</h4>
         </div>
         <div class="modal-body">
-          <form action="ming.html" class="form-horizontal" method="post">
+          <form action="<?php echo U('Login/dologin');?>" id='loginform' class="form-horizontal" method="post">
             <div class="form-group">
               <label class="col-sm-3 control-label">用户名</label>
               <div class="col-sm-6">
@@ -134,14 +135,23 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">密码</label>
               <div class="col-sm-6">
-              <input type="text" name="username" class="form-control" placeholder="请输进去密码">
+              <input type="text" name="password" class="form-control" placeholder="请输进去密码">
+              </div>
+            </div> 
+            <div class="form-group">
+              <label class="col-sm-3 control-label">验证码</label>
+              <div class="col-sm-3">
+              <input type="text" name="validate" class="form-control" placeholder="请输进去密码">
+              </div>
+              <div class="col-sm-3">
+              <button class="btn btn-primary">获取验证码</button>
               </div>
             </div> 
             <div class="form-group">
                <div class="col-sm-offset-3   col-sm-3">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <input type="radio"   name="role" aria-label="">
+                        <input type="radio"  value="st"  name="role" >
                       </span>
                       <input type="" value="学生" disabled class="form-control" aria-label="">
                       </div>
@@ -150,7 +160,7 @@
                  <div class="col-sm-3">
                       <div class="input-group">
                         <span class="input-group-addon">
-                          <input type="radio"  name="role"   aria-label="">
+                          <input type="radio"  value="te" name="role"   >
                         </span>
                         <input type="" value="教师" disabled class="form-control" aria-label="">
                         </div>
@@ -160,7 +170,7 @@
             <div class="form-group">
               <div class="col-sm-9 col-sm-offset-3">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                  <button type="submit" class="btn btn-primary" id="login">登录</button>
+                  <button  class="btn btn-primary" id="login">登录</button>
               </div>
             </div>
            
@@ -314,7 +324,24 @@
       $(".thumbnail").mouseover(function(){
         
       })
-     })
+       messageslogin={
+       username:{
+        required:'输进去用户名'
+       }
+
+      }
+       ruleslogin={
+        username:{
+          required:true
+         
+        }
+      }
+      _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
+
+
+      })
+       
+// _validade({rules:rule,messages:message,class:'help-block'});
 
     </script>
    	

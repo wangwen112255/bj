@@ -83,14 +83,15 @@
     }
 
     function _validadeCallback(form){
-     $(form).find('button').eq(0).html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled');
+     // $(form).find('').eq(0).html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled');
      // layer.load();
+     // $(form).find('a').last().html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled');
+    
       _ajax({
           url:$(form).attr("action"),
           data:$(form).serialize(),
           id:form
           })
-        
         }
 
     function _validade(objform){
@@ -98,7 +99,7 @@
     var message=objform.messages;
     var id=objform.id||'signupForm';
     var submitHandler=objform. callback||_validadeCallback;
-    var errorclass=objform.class;
+    var errorclass=objform.class||'help-block';
     $("#"+id).validate({
         rules:rule,
         messages:message,

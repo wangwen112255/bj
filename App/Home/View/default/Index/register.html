@@ -28,7 +28,7 @@
 
          <div class="row">
            <div class="col-sm-6 col-sm-offset-3">
-            <form action="" method="POST" role="form">
+            <form action="{:U('Login/register')}" method="post" role="form">
               <div class="form-group">
                 <label for="">学号/工号</label>
                 <input type="text" class="form-control" id="" placeholder="Input field">
@@ -45,35 +45,41 @@
                 <label for="">验证码</label>
                 <input type="text" class="form-control" id="" placeholder="Input field">
               </div>
-              <div class="form-group">
-                <label for="">label</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>            
-              
+            <div class="form-group">
+                 <select name=""  class="form-control">
+                   <option value="st">我是学生</option>
+                   <option value="te">我是教师</option>
+                 </select>
+            </div>           
+             
             
-              <a type="submit" href="ming.html" class="btn btn-primary">注册</a>
+              <button type="submit" href="" class="btn btn-primary">注册</button>
               <button type="reset" class="btn btn-default">取消</button>
+            
             </form>
             </div>
          </div>
         </div>
       </div>
-  
-  
-
+      {notempty name='islog'}
+      <input type="hidden" name="islog" value="1"> 
+      {/notempty}
      </div>
 
 
  </div>
-------------------
-  
+<!-- ------------------ -->
+
 </div>
 
 
 {/block}
 {block name="JS"}
 <script type="text/javascript">
-
+if($('input[type="hidden"]').val()==1){
+  $('#loging').click();
+}
 </script>
 {/block}
+
 

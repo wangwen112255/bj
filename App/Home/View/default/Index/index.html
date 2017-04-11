@@ -44,7 +44,7 @@
 	          <h3>{$data.departname}</h3>
 	          <p>{$data.desc|default='华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'}</p>
 	          <p>
-	          <a href="{:U('Depart/detail')}" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
+	          <a href="{:U('Depart/detail',array('id'=>$data['id']))}" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
 	           <button href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞[{$data.clicknum}]</button></p>
 	           <p  class="WU_slidep">
 	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">

@@ -69,14 +69,23 @@ $('.showdetail').click(function(){
     $('#modals').modal({
      show : true,
      backdrop : false,
-     keyboard : false,
+     keyboard : true,
      remote :numids
     })
+    // setTimeout(function(){
+    //   $('#modals').show().slideDown('fast');
+    // },500)
+    
 });
 
-$("#modals").on("hidden.bs.modal", function() {  
+// $("#modals").on("hidden.bs.modal", function() {  
+//     $(this).removeData("bs.modal");  
+// }); 
+$("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
-}); 
+});
+
+
 
 </script>
 

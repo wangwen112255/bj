@@ -1,0 +1,2998 @@
+[ 2017-04-11T09:09:40+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id= ) 
+
+[ 2017-04-11T09:09:46+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id= ) 
+
+[ 2017-04-11T09:09:47+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id= ) 
+
+[ 2017-04-11T09:10:00+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id= ) 
+
+[ 2017-04-11T09:10:12+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:10:18+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:10:29+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:10:34+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=holder.js ) 
+
+[ 2017-04-11T09:10:38+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:10:43+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:10:51+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.085005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:10:58+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/4.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:11:07+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/9.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:11:48+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/5.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:12:05+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:12:09+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/4.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:12:11+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:19:24+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:25:03+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:25:58+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:26:30+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:27:24+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:28:09+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:28:12+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:29:10+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:29:16+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:29:20+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:41+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:44+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:31:45+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:46+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:31:47+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:48+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:31:50+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-04-11T09:31:51+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:52+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:31:53+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:32:02+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:32:07+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:32:47+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:32:52+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:32:57+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:33:42+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:33:46+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T09:35:22+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/6.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 6 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:35:26+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/7.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:35:29+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/9.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:35:35+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/13.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:35:41+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:35:45+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/13.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T09:36:15+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:36:17+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:36:35+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=holder.js ) 
+
+[ 2017-04-11T09:36:45+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:36:48+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=holder.js ) 
+
+[ 2017-04-11T09:36:50+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T09:36:52+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=holder.js ) 
+
+[ 2017-04-11T09:54:05+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 1  
+
+[ 2017-04-11T09:54:18+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 1  
+
+[ 2017-04-11T10:00:09+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 1  
+
+[ 2017-04-11T10:00:12+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:00:16+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:00:20+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:00:24+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:01:43+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:01:45+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:01:47+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 1  
+
+[ 2017-04-11T10:02:06+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 1  
+
+[ 2017-04-11T10:07:14+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=1 ) LIMIT 0,10  
+
+[ 2017-04-11T10:07:37+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/p/1.html
+ERR: 1066:Not unique table/alias: 'xk_course'
+ [ SQL语句 ] : SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_course` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.depart_id=p ) LIMIT 0,10  
+
+[ 2017-04-11T10:09:36+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/p/1.html
+ERR: 1054:Unknown column 'p' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( id=p ) LIMIT 1  
+
+[ 2017-04-11T10:24:22+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T10:24:25+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T10:24:32+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T10:25:49+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T10:26:27+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/1.html
+ERR: 1054:Unknown column 'depart_id1' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id1 ) LIMIT 1  
+
+[ 2017-04-11T10:26:38+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T10:27:57+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T13:57:19+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:57:23+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:57:26+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:57:28+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:57:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:57:32+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:57:34+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:57:36+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:57:40+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:57:49+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:58:36+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:58:36+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:58:40+08:00 ] 127.0.0.1 /index.php/Depart/detail.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id= ) LIMIT 1  
+
+[ 2017-04-11T13:59:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:59:17+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:59:19+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:59:22+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T13:59:26+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T13:59:29+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T14:00:28+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T14:00:31+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:00:35+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T14:00:36+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:00:40+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T14:00:58+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:01:06+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T14:01:09+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T14:01:13+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T14:06:45+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:06:52+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:06:56+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:07:01+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:07:26+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:07:31+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:08:47+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: Think\Controller:initalize方法不存在！
+
+[ 2017-04-11T14:51:40+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: Think\Controller:initalize方法不存在！
+
+[ 2017-04-11T14:52:32+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:52:36+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:52:41+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:17+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:19+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:20+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:20+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:21+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:39+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:40+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:41+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:41+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:56:43+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:58:09+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T14:58:13+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:00:56+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: 模板不存在:../App/Home/View/default/D/\phpStudy\WWW\BJ\TP/Tpl/disjump.html.html
+
+[ 2017-04-11T15:03:29+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:03:31+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:03:32+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:03:33+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:03:34+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:44+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:45+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:49+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:51+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:04:51+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:05:12+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:06:11+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:06:34+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:06:35+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:06:38+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:07:13+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:07:58+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:07:59+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:08:00+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:08:00+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:08:34+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:10:15+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:10:22+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:10:23+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: Think\Controller:_initialize方法不存在！
+
+[ 2017-04-11T15:10:31+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: Think\Controller:_initialize方法不存在！
+
+[ 2017-04-11T15:10:33+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:10:36+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:10:37+08:00 ] 127.0.0.1 /index.php/Course/index.html
+ERR: Think\Controller:_initialize方法不存在！
+
+[ 2017-04-11T15:11:25+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:12:38+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:13:50+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:13:54+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:17:26+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:20:39+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:20:45+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:21:04+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/3.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T15:21:09+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/1.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T15:21:36+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:27:17+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:28:19+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:31:55+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:31:57+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:31:57+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:31:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:09+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:09+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:09+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:10+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:10+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:24+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:24+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:28+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:28+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:49+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:51+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:52+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:52+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:53+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:53+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:54+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:55+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:55+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:33:55+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:01+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:03+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:05+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:06+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:07+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:11+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:16+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:34:18+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:36:35+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:36:39+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:36:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:36:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:37:05+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:37:08+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:37:13+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:38:16+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:38:18+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:38:29+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:38+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:40+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:41+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:50+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:51+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:56+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:58+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:39:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:00+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:00+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:02+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:02+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:12+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:16+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:25+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:27+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:28+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:29+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:40:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:58+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:59+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:59+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:41:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:42:07+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:28+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:29+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:32+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:32+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:34+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:35+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:43:37+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:35+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:37+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:38+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:39+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:40+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:41+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:42+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:48+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:49+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:50+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:56+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:44:58+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:01+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:01+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:03+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:10+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:10+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:11+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:12+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:45:13+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:46:11+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:46:12+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:46:13+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:46:13+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:46:14+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:09+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:10+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:11+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:12+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:13+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:13+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:14+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:15+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:47:16+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:18+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:21+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:24+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:26+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:27+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:28+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:29+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:29+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:30+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:32+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:48:34+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:27+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:30+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:32+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:37+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:42+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:49:44+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:55:17+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:55:20+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:55:23+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:55:26+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:27+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:30+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:31+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:32+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:33+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:50+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:51+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:56:53+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:57:26+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:57:26+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:57:29+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:57:56+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:57:57+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T15:58:00+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:00:09+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:00:55+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:00:56+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:00:58+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:40:36+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/2.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T16:40:38+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:40:41+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:43:20+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:43:21+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:43:58+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:44:09+08:00 ] 127.0.0.1 /index.php/Depart/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T16:44:11+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:44:12+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:45:07+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:45:53+08:00 ] 127.0.0.1 /index.php/Login/index/islog/1.html
+ERR: Think\Controller:_initialize方法不存在！
+
+[ 2017-04-11T16:54:28+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:29+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:36+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:38+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:39+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:40+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:41+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:54:43+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:55:18+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:55:20+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:55:47+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:55:58+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:24+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:43+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:50+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:51+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:51+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:56:51+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:18+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:20+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:22+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:26+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T16:59:59+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:00:10+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:27+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:32+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:35+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:39+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:40+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:01:45+08:00 ] 127.0.0.1 /index.php/Login/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:01:46+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:03:16+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:03:17+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:04:02+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:04:05+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:04:06+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:04:08+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:04:09+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:04:11+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:04:12+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:04:56+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:54+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:56+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:56+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:57+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:57+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:05:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:06:15+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:06:16+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:07:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:08:17+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:08:29+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:08:31+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:22+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:24+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:10:26+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:26+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:27+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:27+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:27+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:27+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:31+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:32+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:10:33+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:44+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:48+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:10:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:10:51+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:10:53+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:11:20+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:12:22+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:12:53+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:13:22+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:13:33+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:14:07+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:14:16+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:14:37+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:15:08+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:15:13+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:15:38+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:15:38+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:15:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:21+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:16:23+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:16:53+08:00 ] 127.0.0.1 /index.php/Index/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:16:56+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:17:32+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:17:33+08:00 ] 127.0.0.1 /index.php/Login/register.html
+ERR: 非法操作:register
+
+[ 2017-04-11T17:17:35+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:17:53+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:17:56+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 非法操作:dologin
+
+[ 2017-04-11T17:18:22+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 模板不存在:../App/Home/View/default/Login/dologin.html
+
+[ 2017-04-11T17:18:39+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 模板不存在:../App/Home/View/default/Login/dologin.html
+
+[ 2017-04-11T17:18:42+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+ERR: 模板不存在:../App/Home/View/default/Login/dologin.html
+
+[ 2017-04-11T17:19:30+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:19:31+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:19:32+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:19:32+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:21:59+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:47+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:51+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:52+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:52+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:55+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:27:57+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:28:52+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:28:52+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:28:54+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:29:03+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:29:22+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:29:22+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:29:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:29:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:30:00+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:30:26+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:31:10+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:31:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:31:17+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:31:17+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:31:42+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:32:20+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:33:07+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:33:07+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:33:12+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:33:29+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:17+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:24+08:00 ] 127.0.0.1 /index.php/Login/register.html
+ERR: 模板不存在:../App/Home/View/default/Login/register.html
+
+[ 2017-04-11T17:34:26+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:29+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:31+08:00 ] 127.0.0.1 /index.php/Login/register.html
+ERR: 模板不存在:../App/Home/View/default/Login/register.html
+
+[ 2017-04-11T17:34:33+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:37+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:42+08:00 ] 127.0.0.1 /index.php/Login/ming.html
+ERR: 非法操作:ming
+
+[ 2017-04-11T17:34:43+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:52+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:54+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:34:57+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:35:00+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:35:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:38:36+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:38:40+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:38:43+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:38:55+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:39:08+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:39:09+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:48:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:48:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:48:50+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:48:53+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:48:56+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:49:01+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:49:47+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:49:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:53:55+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:53:56+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:53:58+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:01+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:24+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:24+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:42+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:42+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:44+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:44+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:44+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:44+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:47+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:54:48+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:55:21+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:55:22+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:57:11+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:57:14+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:57:15+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:57:15+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:58:10+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:58:12+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:59:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:59:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:59:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:59:28+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T17:59:31+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:00:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:00:16+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:02:07+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:02:10+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:02:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:03:26+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:27:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:27:16+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:27:29+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:27:34+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:27:39+08:00 ] 127.0.0.1 /index.php/Depart/detail/id/holder.js/80x80
+ERR: 1054:Unknown column 'holder.js' in 'where clause'
+ [ SQL语句 ] : SELECT COUNT(*) AS tp_count FROM `xk_order` WHERE ( depart_id=holder.js ) LIMIT 1  
+
+[ 2017-04-11T18:27:54+08:00 ] 127.0.0.1 /index.php/Depart/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:28:02+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:28:09+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:28:12+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:28:55+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:10+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:11+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:11+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:12+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:13+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:16+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:20+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:23+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:30+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:50+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:31:53+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:32:04+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:32:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:32:15+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:32:15+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:34:06+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:34:07+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:34:07+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:34:11+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:37:09+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:37:11+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:37:15+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:38:48+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:39:19+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:39:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:39:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:40:08+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:40:11+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:40:11+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:40:11+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:40:31+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:44:17+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:44:23+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:44:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:45:01+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:45:09+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:45:28+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:47:21+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:47:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:47:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:48:13+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:48:13+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:52:51+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:52:54+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:52:55+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:52:57+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:53:00+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:53:07+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:53:12+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:53:14+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:54:13+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:13+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:14+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:54:17+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:54:18+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:54:19+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:54:58+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:55:01+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:02+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:02+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:24+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:55:28+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:55:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:55:29+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:30+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:55:30+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:56:10+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:56:45+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:56:45+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:56:45+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:56:51+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:56:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:57:08+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:57:10+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:59:22+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T18:59:26+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:59:27+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:59:27+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:59:27+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T18:59:28+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T18:59:28+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-11T19:00:57+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T19:01:01+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-11T19:01:10+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-11T19:01:14+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

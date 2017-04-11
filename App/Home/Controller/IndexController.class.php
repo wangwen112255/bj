@@ -10,7 +10,7 @@ class IndexController extends Controller {
     public function index(){
        $de=A('Depart');
        $dedata=$de->indexshows();
-       $co=A('Course');
+       $co=A('Order');
        $codata=$co->indexshows();
        $this->assign("dedata",$dedata);
        $this->assign("codata",$codata);

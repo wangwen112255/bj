@@ -81,13 +81,13 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
+    <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
+      <a class="btn btn-danger " id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
-     </form> -->
-      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
+     </form>
+      <!-- <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
@@ -95,7 +95,7 @@
       <p style="margin-left:5px"><b>【学生<span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
-      <ul class="dropdown-menu dropdown-menu_list ">
+      <ul class="dropdown-menu dropdown-menu_list "> -->
    
         <!-- <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
@@ -103,7 +103,8 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+
+   <!--      <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息
@@ -115,7 +116,7 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
       </ul>
-      </form>
+      </form> -->
 
 
 <!--  -->
@@ -257,7 +258,7 @@
 	          <h3><?php echo ($data["departname"]); ?></h3>
 	          <p><?php echo ((isset($data["desc"]) && ($data["desc"] !== ""))?($data["desc"]):'华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'); ?></p>
 	          <p>
-	          <a href="<?php echo U('Depart/detail');?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
+	          <a href="<?php echo U('Depart/detail',array('id'=>$data['id']));?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
 	           <button href="#" class="btn btn-default pull-right" role="button"><span class="fa fa-star"></span>点赞[<?php echo ($data["clicknum"]); ?>]</button></p>
 	           <p  class="WU_slidep">
 	          <button type="button" class="WU_leiji btn btn-large btn-block btn-success">
@@ -361,7 +362,7 @@
       $(".thumbnail").mouseover(function(){
         
       })
-     })
+      })
 
     </script>
    	
