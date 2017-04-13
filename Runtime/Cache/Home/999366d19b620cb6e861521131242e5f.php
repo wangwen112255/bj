@@ -84,7 +84,7 @@
     <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
+      <a class="btn btn-danger btnfinish"   id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
      </form>
       <!-- <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
@@ -133,10 +133,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">登录</h4>
+          <h4 class="modal-title">用户登录</h4>
         </div>
         <div class="modal-body">
-          <form action="ming.html" class="form-horizontal" method="post">
+          <form action="<?php echo U('Login/dologin');?>" id='loginform' class="form-horizontal" method="post">
             <div class="form-group">
               <label class="col-sm-3 control-label">用户名</label>
               <div class="col-sm-6">
@@ -146,23 +146,32 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">密码</label>
               <div class="col-sm-6">
-              <input type="text" name="username" class="form-control" placeholder="请输进去密码">
+              <input type="text" name="password" class="form-control" placeholder="请输进去密码">
+              </div>
+            </div> 
+            <div class="form-group">
+              <label class="col-sm-3 control-label">验证码</label>
+              <div class="col-sm-3">
+              <input type="text" name="validate" class="form-control" placeholder="请输进去密码">
+              </div>
+              <div class="col-sm-3">
+              <button class="btn btn-primary">获取验证码</button>
               </div>
             </div> 
             <div class="form-group">
                <div class="col-sm-offset-3   col-sm-3">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <input type="radio"   name="role" aria-label="">
+                        <input type="radio"  value="st" checked name="role" >
                       </span>
-                      <input type="" value="学生" disabled class="form-control" aria-label="">
+                      <input type="" value="学生" disabled checked class="form-control" aria-label="">
                       </div>
              <!-- --- -->
                </div>
                  <div class="col-sm-3">
                       <div class="input-group">
                         <span class="input-group-addon">
-                          <input type="radio"  name="role"   aria-label="">
+                          <input type="radio"  value="te" name="role"   >
                         </span>
                         <input type="" value="教师" disabled class="form-control" aria-label="">
                         </div>
@@ -172,7 +181,7 @@
             <div class="form-group">
               <div class="col-sm-9 col-sm-offset-3">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                  <button type="submit" class="btn btn-primary" id="login">登录</button>
+                  <button  class="btn btn-primary" id="login">登录</button>
               </div>
             </div>
            
@@ -346,6 +355,7 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -362,8 +372,41 @@
       $(".thumbnail").mouseover(function(){
         
       })
-      })
+      jQuery.validator.addMethod("isChinese", function(value, element) {  
+      return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
+      }, "用户名必须是字母或数字组成");
+      var icon="<span class='fa fa-error'></span>";   
+       messageslogin={
+       username:{
+        required:icon+'输进去用户名',
+        minlength:icon+'请输进去正确长度的用户名'
+       },
+       password:{
+        required:icon+'请输输入正确的密码',
+        minlength:icon+'密码长度不正确'
+       }
+     
 
+      };
+       ruleslogin={
+        username:{
+          isChinese:true,
+          required:true,
+          minlength:5,
+        },
+      
+        password:{
+          required:true,
+          minlength:5
+        }
+      };
+
+      _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
+    
+
+      })
+       
+// _validade({rules:rule,messages:message,class:'help-block'});
     </script>
    	
     

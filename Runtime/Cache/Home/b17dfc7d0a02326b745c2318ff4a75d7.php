@@ -151,9 +151,9 @@
                <div class="col-sm-offset-3   col-sm-3">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <input type="radio"  value="st"  name="role" >
+                        <input type="radio"  value="st" checked name="role" >
                       </span>
-                      <input type="" value="学生" disabled class="form-control" aria-label="">
+                      <input type="" value="学生" disabled checked class="form-control" aria-label="">
                       </div>
              <!-- --- -->
                </div>
@@ -250,38 +250,57 @@
         </div>
         <div class="panel-body">
 
-         <div class="row">
-           <div class="col-sm-6 col-sm-offset-3">
-            <form action="<?php echo U('Login/register');?>" method="post" role="form">
+         <!-- <div class="row"> -->
+            <form action="<?php echo U('Login/doregister');?>" id='regisform' method="post" role="form" class="form-horizontal">
               <div class="form-group">
-                <label for="">学号/工号</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
+                <label for="" class='control-label col-sm-3'>用户名</label>
+                <div class="col-sm-6">
+                <input type="text"  name='username' class="form-control " id="" placeholder="请输入正确的用户名(字母或数字)">
+              </div>
               </div>
               <div class="form-group">
-                <label for="">登录密码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
+                <label for="" class='control-label col-sm-3'>密　　码</label>
+                <div class="col-sm-6">
+                <input type="text"  name='pwd' class="form-control " id="pwd" placeholder="请输入正确的密码">
+              </div>
               </div>
               <div class="form-group">
-                <label for="">重复密码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
+                <label for="" class='control-label col-sm-3'>重复密码</label>
+                <div class="col-sm-6">
+                <input type="text"  name='repwd' class="form-control " id="" placeholder="请重复输入密码">
+              </div>
               </div>
               <div class="form-group">
-                <label for="">验证码</label>
-                <input type="text" class="form-control" id="" placeholder="Input field">
-              </div>
-            <div class="form-group">
-                 <select name=""  class="form-control">
+               
+                <label class="col-sm-3 control-label">我的身份</label>
+                <div class="col-sm-6">
+                 <select name="role"  class="form-control">
+                   <option value="">--请选择您的身份--</option>
                    <option value="st">我是学生</option>
                    <option value="te">我是教师</option>
-                 </select>
-            </div>           
+                  </select>
+                  </div>
+              </div>
+              <div class="form-group">
+               
+                <div class="col-sm-3 col-md-offset-3">
+                <input type="text"  name='validatecode' class="form-control " id="" placeholder="请输入验证码">
+              </div>
+                <div class="col-sm-2 ">
+                <!-- <button class="btn btn-success" onclick="return false;">获取验证码</button> -->
+                <img id='verify' src="<?php echo U('Public/verifys',array());?>">
+                <?php  var_dump($_SESSION); ?>
+              </div>
+              </div>           
              
-            
+              <div class="form-group">
+              <div class="col-sm-6 col-md-offset-3">
               <button type="submit" href="" class="btn btn-primary">注册</button>
               <button type="reset" class="btn btn-default">取消</button>
-            
+              </div>
+              </div>
             </form>
-            </div>
+            <!-- </div> -->
          </div>
         </div>
       </div>
@@ -344,16 +363,32 @@
       $(".thumbnail").mouseover(function(){
         
       })
+      jQuery.validator.addMethod("isChinese", function(value, element) {  
+      return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
+      }, "用户名必须是字母或数字组成");
+      var icon="<span class='fa fa-error'></span>";   
        messageslogin={
        username:{
-        required:'输进去用户名'
+        required:icon+'输进去用户名',
+        minlength:icon+'请输进去正确长度的用户名'
+       },
+       password:{
+        required:icon+'请输输入正确的密码',
+        minlength:icon+'密码长度不正确'
        }
+     
 
       };
        ruleslogin={
         username:{
-          required:true
-         
+          isChinese:true,
+          required:true,
+          minlength:5,
+        },
+      
+        password:{
+          required:true,
+          minlength:5
         }
       };
 
@@ -363,14 +398,86 @@
       })
        
 // _validade({rules:rule,messages:message,class:'help-block'});
-
     </script>
    	
     
+<script type="text/javascript" src='/static/js/hcPwdCheck.js'></script>
 <script type="text/javascript">
+$(function(){
 if($('input[type="hidden"]').val()==1){
   $('#loging').click();
 }
+  $('#verify').click(function(){
+  // rand=Math.rand()*1000;
+    nowtime=new Date()
+    randtime=nowtime.getTime();
+  // this.src="<?php echo U('Public/verifys','ids="+randtime+"');?>"
+  // })
+  this.src="/index.php/Public/verifys/id/"+randtime;
+  // alert('sadfsdaf'+randtime+'fdsfsdaf')
+  
+  })
+  $('#pwd').hcPwdCheck('showPwdCheckRes');
+  jQuery.validator.addMethod("isChinese", function(value, element) {  
+  return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
+  }, "用户名必须是字母或数字组成");
+  jQuery.validator.addMethod("isChinesepwd", function(value, element) {  
+  return this.optional(element) || !(/^[\u4e00-\u9fa5]+$/.test(value));       
+  }, "密码中不能出现中文");
+  var icon="<span class='fa fa-error'></span>";   
+   messageslogin={
+   username:{
+    required:icon+'输进去用户名',
+    minlength:icon+'请输进去正确长度的用户名'
+   },
+   pwd:{
+    required:icon+'请输输入正确的密码',
+    minlength:icon+'密码长度不正确'
+   },
+   repwd:{
+    required:icon+'请输输入正确的密码',
+    minlength:icon+'密码长度不正确',
+    equalTo:icon+'两次密码不一致'
+   },
+   validatecode:{
+    required:'请输入验证码',
+   },
+   role:{
+    required:'请选择您的身份'
+   }
+  
+
+  };
+   ruleslogin={
+    username:{
+      isChinese:true,
+      required:true,
+      minlength:5,
+    },
+  
+    pwd:{
+      required:true,
+      minlength:5,
+      isChinesepwd:true
+    },
+    repwd:{
+      required:true,
+      minlength:5,
+      equalTo:'#pwd',
+      isChinesepwd:true
+    },
+    validatecode:{
+     required:true
+    },
+    role:{
+      required:true
+    }
+  };
+
+  _validade({id:'regisform',rules:ruleslogin,messages:messageslogin})
+
+})
+
 </script>
 
 </body>

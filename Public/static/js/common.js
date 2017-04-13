@@ -98,7 +98,7 @@
     var rule=objform.rules;
     var message=objform.messages;
     var id=objform.id||'signupForm';
-    var submitHandler=objform. callback||_validadeCallback;
+    var submitHandler=objform.callbacks||_validadeCallback;
     var errorclass=objform.class||'help-block';
     $("#"+id).validate({
         rules:rule,

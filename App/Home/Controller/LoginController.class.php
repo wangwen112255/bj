@@ -15,9 +15,13 @@ class   LoginController extends Controller{
       dump($_POST);
     }
     public function register(){
+
     	 $this->display();
     }
-   
+   public function doregister(){
+     // $this->display();
+   }
+   public function checkcode(){]}
    
 
 
