@@ -15,14 +15,24 @@ class   LoginController extends Controller{
       dump($_POST);
     }
     public function register(){
-
     	 $this->display();
     }
    public function doregister(){
-     // $this->display();
+    if(I('role')=='st'){
+      $this->dao=D('Student');
+      if($this->dao->create()){
+        $this->ajaxReturn(toJson(true,'注册成功'));
+      }
+      else{
+        $this->ajaxReturn(toJson($this->dao->getError()));
+      }
+
+    }
+    else{
+      $this->dao=D('student');
+    }
    }
-   public function checkcode(){]}
-   
+
 
 
 }

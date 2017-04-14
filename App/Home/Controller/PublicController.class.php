@@ -23,23 +23,37 @@ class PublicController extends Controller{
 		$Verify->entry();
 
 	}
-	function check()  
-	  {  
+	function check()  {
 	
-	      $code = $_GET['code'];  
-	
+	      $code = $_POST['code'];  
 	      if(check_verify($code) === true)  
 	      {  
-	          // $this->success("正确") ; 
-	          echo"zhengque"; 
+	       $data['isCode']=1;
+	       $this->ajaxReturn($data);
 	      }else  
 	      {  
-	      		echo "cuwu";
-	          // $this->error("验证码错误") ;  
+			$data['isCode']=0;
+	       $this->ajaxReturn($data);	          // $this->
 	      }  
 	
 	  }  
+	  function checks()  {
+	
+	      $code = $_GET['code'];  
+	      if(check_verify($code) === true)  
+	      {  
+	       // $data['isCode']=1;
+	       // $this->ajaxReturn($data);
+	       echo '成功';
+	      }else  
+	      {  
+			// $data['isCode']=0;
+	       // $this->ajaxReturn($data);	          // $this->
+	       echo 'shibai';
 
+	      }  
+	
+	  } 
 }
 
 

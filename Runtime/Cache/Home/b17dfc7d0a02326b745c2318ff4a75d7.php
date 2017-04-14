@@ -240,7 +240,7 @@
    <div class="WU_info">
     <div class="row WU_inforow ">
    <span class='WU_infoheader'>注册管理</span>
-   <a class='pull-right WU_more' href="">更多>></a>
+   
 
       </div>
      <div class="row" style="padding-top:15px; ">
@@ -284,12 +284,12 @@
               <div class="form-group">
                
                 <div class="col-sm-3 col-md-offset-3">
-                <input type="text"  name='validatecode' class="form-control " id="" placeholder="请输入验证码">
+                <input type="text"  name='validatecode' class="form-control " id="verify_code" placeholder="请输入验证码">
               </div>
                 <div class="col-sm-2 ">
                 <!-- <button class="btn btn-success" onclick="return false;">获取验证码</button> -->
                 <img id='verify' src="<?php echo U('Public/verifys',array());?>">
-                <?php  var_dump($_SESSION); ?>
+                <!-- <?php  var_dump($_SESSION); ?> -->
               </div>
               </div>           
              
@@ -417,6 +417,8 @@ if($('input[type="hidden"]').val()==1){
   // alert('sadfsdaf'+randtime+'fdsfsdaf')
   
   })
+  $('#')
+
   $('#pwd').hcPwdCheck('showPwdCheckRes');
   jQuery.validator.addMethod("isChinese", function(value, element) {  
   return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
@@ -424,7 +426,29 @@ if($('input[type="hidden"]').val()==1){
   jQuery.validator.addMethod("isChinesepwd", function(value, element) {  
   return this.optional(element) || !(/^[\u4e00-\u9fa5]+$/.test(value));       
   }, "密码中不能出现中文");
-  var icon="<span class='fa fa-error'></span>";   
+  jQuery.validator.addMethod("isCode", function(value, element) {  
+        var  ok=this.optional(element);
+         if(!ok){
+          $.ajax({
+           url: '/index.php/Public/check',
+           type: 'POST',
+           dataType: 'json',
+           data: {'code': value},
+           async: false,
+           success:function(data){
+           if(data.isCode==1)
+            ok=true;
+          else
+            ok=false;
+           },
+           error:function(){alert('请检查网络');ok=false;}
+         })
+       }
+       return ok;
+        
+         
+  }, "验证码输入不正确");
+  var icon="<span class='glyphicon glyphicon-remove-sign'></span>";   
    messageslogin={
    username:{
     required:icon+'输进去用户名',
@@ -440,10 +464,11 @@ if($('input[type="hidden"]').val()==1){
     equalTo:icon+'两次密码不一致'
    },
    validatecode:{
-    required:'请输入验证码',
+    required:icon+'请输入验证码',
+    isCode:'验证码不正确'
    },
    role:{
-    required:'请选择您的身份'
+    required:icon+'请选择您的身份'
    }
   
 
@@ -467,7 +492,8 @@ if($('input[type="hidden"]').val()==1){
       isChinesepwd:true
     },
     validatecode:{
-     required:true
+     required:true,
+     isCode:true
     },
     role:{
       required:true
