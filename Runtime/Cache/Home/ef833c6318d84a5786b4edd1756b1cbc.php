@@ -73,7 +73,7 @@
     <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
+      <a class="btn btn-danger btnfinish"   id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
    </div>
      </form>
       <!-- <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
@@ -151,9 +151,9 @@
                <div class="col-sm-offset-3   col-sm-3">
                     <div class="input-group">
                       <span class="input-group-addon">
-                        <input type="radio"  value="st"  name="role" >
+                        <input type="radio"  value="st" checked name="role" >
                       </span>
-                      <input type="" value="学生" disabled class="form-control" aria-label="">
+                      <input type="" value="学生" disabled checked class="form-control" aria-label="">
                       </div>
              <!-- --- -->
                </div>
@@ -308,6 +308,7 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -324,25 +325,41 @@
       $(".thumbnail").mouseover(function(){
         
       })
+      jQuery.validator.addMethod("isChinese", function(value, element) {  
+      return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
+      }, "用户名必须是字母或数字组成");
+      var icon="<span class='fa fa-error'></span>";   
        messageslogin={
        username:{
-        required:'输进去用户名'
+        required:icon+'输进去用户名',
+        minlength:icon+'请输进去正确长度的用户名'
+       },
+       password:{
+        required:icon+'请输输入正确的密码',
+        minlength:icon+'密码长度不正确'
        }
+     
 
-      }
+      };
        ruleslogin={
         username:{
-          required:true
-         
+          isChinese:true,
+          required:true,
+          minlength:5,
+        },
+      
+        password:{
+          required:true,
+          minlength:5
         }
-      }
-      _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
+      };
 
+      _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
+    
 
       })
        
 // _validade({rules:rule,messages:message,class:'help-block'});
-
     </script>
    	
     

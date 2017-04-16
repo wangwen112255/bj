@@ -51,17 +51,13 @@
         },1500);
         }
       else{
-        if(data.msg){
         layer.alert(data.msg, {icon: 5},function(index){
-        layer.close(index);
-        window.location.reload(); }); 
-        }else{ 
-        layer.alert('连接失败，服务器开小差了', {icon: 5},function(index){
         layer.close(index);
         window.location.reload(); }); 
         }
       }
-    }
+      
+    
   
     function _ajax(objajax){
       var url=objajax.url;

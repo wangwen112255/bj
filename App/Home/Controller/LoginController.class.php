@@ -18,9 +18,13 @@ class   LoginController extends Controller{
     	 $this->display();
     }
    public function doregister(){
+    $code=$_POST['validatecode'];
+    if(check_verify($code)){
     if(I('role')=='st'){
       $this->dao=D('Student');
+      $_POST['pwd']=md5($_POST['pwd']);
       if($this->dao->create()){
+        $this->dao->add();
         $this->ajaxReturn(toJson(true,'注册成功'));
       }
       else{
@@ -29,10 +33,21 @@ class   LoginController extends Controller{
 
     }
     else{
-      $this->dao=D('student');
+      $this->dao=D('Teacher');
+      if($this->dao->create()){
+        $this->dao->add();
+        $this->ajaxReturn(toJson(true,'注册成功'));
+      }
+      else{
+        $this->ajaxReturn(toJson($this->dao->getError()));
+      }
+
     }
+   }else{
+    $this->ajaxReturn(toJson('验证码有误'));
    }
 
+ }
 
 
 }

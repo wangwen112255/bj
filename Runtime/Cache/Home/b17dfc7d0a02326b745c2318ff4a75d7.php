@@ -32,6 +32,7 @@
     
    	</style>
    	
+<!-- <link rel="stylesheet" href="/static/css/plugins/layer/layer.min.css"> -->
 <style type="text/css">
 
 </style>
@@ -261,13 +262,13 @@
               <div class="form-group">
                 <label for="" class='control-label col-sm-3'>密　　码</label>
                 <div class="col-sm-6">
-                <input type="text"  name='pwd' class="form-control " id="pwd" placeholder="请输入正确的密码">
+                <input type="password"  name='pwd' class="form-control " id="pwd" placeholder="请输入正确的密码">
               </div>
               </div>
               <div class="form-group">
                 <label for="" class='control-label col-sm-3'>重复密码</label>
                 <div class="col-sm-6">
-                <input type="text"  name='repwd' class="form-control " id="" placeholder="请重复输入密码">
+                <input type="password"  name='repwd' class="form-control " id="" placeholder="请重复输入密码">
               </div>
               </div>
               <div class="form-group">
@@ -402,6 +403,7 @@
    	
     
 <script type="text/javascript" src='/static/js/hcPwdCheck.js'></script>
+<script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
 <script type="text/javascript">
 $(function(){
 if($('input[type="hidden"]').val()==1){
