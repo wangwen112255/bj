@@ -81,17 +81,17 @@
       <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
-      <p style="margin-left:5px">201316602</p>
+      <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
       </ul>
       </form>
 
@@ -188,10 +188,9 @@
            <h4>账户设置</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
-              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
               <li><a href="<?php echo U('Student/photo');?>">头像设置</a></li>
               <li><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-              <li><a href=<?php echo U('Student/logout');?>"><span class=""></span>退出登录</a></li>
+              <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
           </div>

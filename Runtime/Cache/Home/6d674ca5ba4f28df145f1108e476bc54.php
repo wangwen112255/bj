@@ -81,12 +81,12 @@
       <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
-      <p style="margin-left:5px">201316602</p>
+      <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>

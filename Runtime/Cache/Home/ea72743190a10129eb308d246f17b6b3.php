@@ -81,12 +81,12 @@
       <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
-      <p style="margin-left:5px">201316602</p>
-      <p style="margin-left:5px"><b>【学生】</b></p> 
+      <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
+      <p style="margin-left:5px"><b>【教师】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a ref="<?php echo U('Teacher/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
@@ -170,11 +170,11 @@
 
     <div class="WU_info">
      <div class="row WU_inforow">
-     <span class='WU_infoheader'>我的中心uo</span>
+     <span class='WU_infoheader'>我的中心</span>
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>

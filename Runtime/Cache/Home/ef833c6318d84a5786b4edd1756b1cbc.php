@@ -70,43 +70,37 @@
     </div>
     
     </form>
-    <form class="navbar-form navbar-right relog ">
+    <?php if(empty($_SESSION['_username_'])): ?><form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
       <a class="btn btn-danger btnfinish"   id='loging' data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
-   </div>
+      </div>
      </form>
-      <!-- <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
+     <?php else: ?>
+      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
+       
+      <a href='/index.php/<?php echo (session('role')); ?>/index' class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
-      <p style="margin-left:5px">201316602</p>
-      <p style="margin-left:5px"><b>【学生<span class="glyphicon glyphicon-user"></span>】</b></p> 
+      <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
+      <p style="margin-left:5px">
+      <b>【<?php if(($_SESSION['role']) == "Student"): ?>学生<?php else: ?>教师<?php endif; ?><span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
-      <ul class="dropdown-menu dropdown-menu_list "> -->
-   
-        <!-- <li class="dropdown-menu-li"><a ref="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li> -->
-
-   <!--      <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">
+      <ul class="dropdown-menu dropdown-menu_list ">
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/intro">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的消息
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
         <span class="glyphicon glyphicon-bell"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/course">我的课目
         <span class="glyphicon glyphicon-tasks"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/safe">安全设置
         <span class="glyphicon glyphicon-wrench"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
       </ul>
-      </form> -->
-
+      </form><?php endif; ?>
 
 <!--  -->
       </nav>
@@ -138,7 +132,7 @@
               <input type="text" name="password" class="form-control" placeholder="请输进去密码">
               </div>
             </div> 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
               <label class="col-sm-3 control-label">验证码</label>
               <div class="col-sm-3">
               <input type="text" name="validate" class="form-control" placeholder="请输进去密码">
@@ -215,15 +209,7 @@
   
    </div>
 
-   <!-- Controls -->
- <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-     <span class="sr-only">Previous</span>
-   </a>
-   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-     <span class="sr-only">Next</span>
-   </a> -->
+
  </div>
 
 
@@ -309,6 +295,7 @@
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -328,11 +315,34 @@
       jQuery.validator.addMethod("isChinese", function(value, element) {  
       return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
       }, "用户名必须是字母或数字组成");
-      var icon="<span class='fa fa-error'></span>";   
+     jQuery.validator.addMethod("isExit", function(value, element) {  
+           var  ok=this.optional(element);
+            if(!ok){
+             $.ajax({
+              url: '/index.php/Public/checkusername',
+              type: 'POST',
+              dataType: 'json',
+              data: {'username': value},
+              async: false,
+              success:function(data){
+              if(data.isExit==1)
+               ok=true;
+             else
+               ok=false;
+              },
+              error:function(){alert('请检查网络');ok=false;}
+            })
+          }
+          return ok;
+           
+            
+     }, "用户名不存在,请先注册");
+      var icon="<span class='glyphicon glyphicon-remove'></span>";   
        messageslogin={
        username:{
         required:icon+'输进去用户名',
-        minlength:icon+'请输进去正确长度的用户名'
+        minlength:icon+'请输进去正确长度的用户名',
+
        },
        password:{
         required:icon+'请输输入正确的密码',
@@ -346,6 +356,7 @@
           isChinese:true,
           required:true,
           minlength:5,
+          isExit:true
         },
       
         password:{
@@ -356,7 +367,7 @@
 
       _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
     
-
+     
       })
        
 // _validade({rules:rule,messages:message,class:'help-block'});

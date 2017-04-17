@@ -23,7 +23,7 @@ class PublicController extends Controller{
 		$Verify->entry();
 
 	}
-	function check()  {
+	   function check()  {
 	
 	      $code = $_POST['code'];  
 	      if(check_verify($code) === true)  
@@ -54,6 +54,26 @@ class PublicController extends Controller{
 	      }  
 	
 	  } 
+	  public function checkusername(){
+	  	$condition['username']=$_POST['username'];
+	  	$Stu=M('Student');
+	  	$Tea=M('Teacher');
+	  	$s=$Stu->where($condition)->find();
+	  	$t=$Tea->where($condition)->find();
+	  	if($s!=null || $t!=null){
+	  	    $data['isExit']=1;
+	       $this->ajaxReturn($data);
+	   }
+	   else{
+	   		 $data['isExit']=0;
+	   	     $this->ajaxReturn($data);
+	   }
+	  	// }
+	  	// else{
+	  	// 	$data['isExit']=0;
+	   //     $this->ajaxReturn($data);	
+	  	// }
+	  }
 }
 
 

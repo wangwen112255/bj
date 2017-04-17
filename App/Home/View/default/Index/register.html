@@ -96,7 +96,6 @@
 {/block}
 {block name="JS"}
 <script type="text/javascript" src='__JS__hcPwdCheck.js'></script>
-<script type="text/javascript" src="__JS__plugins/layer/layer.min.js"></script>
 <script type="text/javascript">
 $(function(){
 if($('input[type="hidden"]').val()==1){
@@ -112,7 +111,7 @@ if($('input[type="hidden"]').val()==1){
   // alert('sadfsdaf'+randtime+'fdsfsdaf')
   
   })
-  $('#')
+  
 
   $('#pwd').hcPwdCheck('showPwdCheckRes');
   jQuery.validator.addMethod("isChinese", function(value, element) {  
@@ -121,6 +120,28 @@ if($('input[type="hidden"]').val()==1){
   jQuery.validator.addMethod("isChinesepwd", function(value, element) {  
   return this.optional(element) || !(/^[\u4e00-\u9fa5]+$/.test(value));       
   }, "密码中不能出现中文");
+  jQuery.validator.addMethod("isRegister", function(value, element) {  
+        var  ok=this.optional(element);
+         if(!ok){
+          $.ajax({
+           url: '/index.php/Public/checkusername',
+           type: 'POST',
+           dataType: 'json',
+           data: {'username': value},
+           async: false,
+           success:function(data){
+           if(data.isExit==1)
+            ok=false;
+          else
+            ok=true;
+           },
+           error:function(){alert('请检查网络');ok=false;}
+         })
+       }
+       return ok;
+        
+         
+  }, "用户名已经存在");
   jQuery.validator.addMethod("isCode", function(value, element) {  
         var  ok=this.optional(element);
          if(!ok){
@@ -147,7 +168,8 @@ if($('input[type="hidden"]').val()==1){
    messageslogin={
    username:{
     required:icon+'输进去用户名',
-    minlength:icon+'请输进去正确长度的用户名'
+    minlength:icon+'请输进去正确长度的用户名',
+
    },
    pwd:{
     required:icon+'请输输入正确的密码',
@@ -173,6 +195,7 @@ if($('input[type="hidden"]').val()==1){
       isChinese:true,
       required:true,
       minlength:5,
+      isRegister:true
     },
   
     pwd:{

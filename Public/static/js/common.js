@@ -44,16 +44,29 @@
     }
     function _ajaxSuccess(data){
       if(data.code==200){
-        layer.msg(data.msg,{icon:1});
-        setTimeout(function(){
-          window.parent.location.reload();
+        layer.msg(data.msg,{icon:1,time:2000},function(){
+        // setTimeout(function(){
+         if(data.data)
+         window.location.href=data.data;
+         else
+         window.location.reload();
+          // $('form').reset();
             // _layCloseIframe();
-        },1500);
-        }
+        // window.parent.$('form').reset();
+        // alert(0);
+      
+        });
+        // $('#loging').click();
+      }
       else{
         layer.alert(data.msg, {icon: 5},function(index){
         layer.close(index);
-        window.location.reload(); }); 
+        window.location.reload(); 
+        });
+        setTimeout(function(){
+          location.reload(); 
+        },2000); 
+        
         }
       }
       
@@ -81,15 +94,17 @@
     function _validadeCallback(form){
      // $(form).find('').eq(0).html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled');
      // layer.load();
-     // $(form).find('a').last().html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled');
-    
+     // $(form).find('a').html();
+      lastbtnval=$(form).find('button').last().html();
+      $(form).find('button').last().html("正在提交中<span style='font-size:18px' class='fa fa-spinner fa-spin'></span>").addClass('disabled')
       _ajax({
           url:$(form).attr("action"),
           data:$(form).serialize(),
           id:form
           })
-        }
-
+      // $(form).reset();
+        // alert(0)
+      }
     function _validade(objform){
     var rule=objform.rules;
     var message=objform.messages;
@@ -97,6 +112,10 @@
     var submitHandler=objform.callbacks||_validadeCallback;
     var errorclass=objform.class||'help-block';
     $("#"+id).validate({
+        // onfocusout: false,
+        onclick:false,
+        onkeyup:false,
+        // onsubmit:false, 
         rules:rule,
         messages:message,
         submitHandler:submitHandler,
