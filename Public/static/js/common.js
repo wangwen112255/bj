@@ -40,7 +40,8 @@
     function _ajaxError(){
       layer.alert('连接失败，服务器开小差了', {icon: 5},function(index){
         layer.close(index);
-        window.location.reload();}); 
+        window.location.reload();
+      }); 
     }
     function _ajaxSuccess(data){
       if(data.code==200){
@@ -61,11 +62,11 @@
       else{
         layer.alert(data.msg, {icon: 5},function(index){
         layer.close(index);
-        window.location.reload(); 
+        // window.location.reload(); 
         });
-        setTimeout(function(){
-          location.reload(); 
-        },2000); 
+        // setTimeout(function(){
+        //   location.reload(); 
+        // },2000); 
         
         }
       }
@@ -121,14 +122,12 @@
         submitHandler:submitHandler,
         errorClass : errorclass,
         errorPlacement: function(error, element) {  
-          // element.parent().parent().removeClass('has-success');
-          // element.parent().parent().addClass('has-error');
           error.appendTo(element.parent().parent());  
         },
         success:function(label){
         // label.parent().removeClass('has-error');
         // label.parent().addClass('has-success');
-        label.html("<span  style='font-size:18px;color:green;' class='fa fa-check'></span>");
+        label.html("<span  style='font-size:18px;color:green;' class='glyphicon glyphicon-ok'></span>");
         },
        // errorContainer: "#errors",
        // errorLabelContainer: $("#errors"),

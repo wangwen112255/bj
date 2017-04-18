@@ -15,7 +15,7 @@ class   LoginController extends Controller{
     }
     public function dologin(){
       if($this->dao->create($_POST,4)){
-        $password= $this->dao->where('username='.$_POST['username'])->getField('pwd');
+        $password=$this->dao->where("username=".$_POST['username'])->getField('pwd');
         if($password==md5($_POST['password'])){
           $_SESSION['_username_']=$_POST['username'];
           $_SESSION['role']=$_POST['role']=="st"?'Student':'Teacher';
@@ -26,7 +26,7 @@ class   LoginController extends Controller{
         }
          // $this->ajaxReturn(toJson($password));
       }else{
-        $this->ajaxReturn(toJson('用户名有误'));
+        $this->ajaxReturn(toJson($this->dao->getError()));
       }
      
     }

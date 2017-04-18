@@ -74,7 +74,9 @@ class PublicController extends Controller{
 	   //     $this->ajaxReturn($data);	
 	  	// }
 	  }
-}
+	 
+	  
+     }
 
 
 

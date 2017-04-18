@@ -202,49 +202,57 @@
           </div>
               
 <div class="row">
-<div class="col-sm-6 col-sm-offset-3">
+<div class="col-sm-8 col-sm-offset-2">
 <div class="panel-body">
-  <form action="" method="POST" role="form">
+  <form action="<?php echo U('intro');?>" method="POST" role="form" id='introform'>
    
   
     <div class="form-group">
       <label for="">姓名</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <div class="row">
+      <div class="col-sm-8">
+      <input type="text" class="form-control" value="<?php echo ($Userdata['realname']); ?>" name="realname" placeholder="请输入您的真实姓名">
+      </div>
+
+      </div>
     </div>
-    <div class="form-group">
-      <label for="">学号</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
-    </div>
+   
+   <div class="form-group">
+     <label for="">学号</label>
+     <div class="row">
+     <div class="col-sm-8">
+     <input type="text" class="form-control" value="<?php echo ($Userdata['studentid']); ?>"  name="studentid" placeholder="请输入您的学号">
+     </div>
+     </div>
+   </div>   
    <div class="row">
-   <div class="col-sm-6">
+   <div class="col-sm-4">
     <div class="form-group">
-      <label for="">专业</label>
-       <select class="form-control">
-       <option>1</option>
-       <option>2</option>
-    </select>
+      <label for="">院系</label>
+       <select class="form-control" id='depart' name="depart_id">
+        <option value=''>--请选择您的院系--</option>
+        <?php if(is_array($Dedata)): foreach($Dedata as $key=>$vo): ?><option value='<?php echo ($vo["id"]); ?>' <?php if(($vo["id"]) == $Userdata['depart_id']): ?>selected<?php endif; ?>><?php echo ($vo["departname"]); ?></option><?php endforeach; endif; ?>
+       </select>
     </div>
     </div>
-      <div class="col-sm-6">
+      <div class="col-sm-4">
        <div class="form-group">
-         <label for="">院系</label>
-          <select class="form-control">
-          <option>1</option>
-          <option>2</option>
+         <label for="">专业</label>
+          <select class="form-control" name='class_id' id='classes'>
+          <option value=''>--请选择您的专业--</option>
+           <?php if(is_array($Cldata)): foreach($Cldata as $key=>$vo): ?><option value='<?php echo ($vo["id"]); ?>' <?php if(($vo["id"]) == $Userdata['class_id']): ?>selected<?php endif; ?>><?php echo ($vo["classname"]); ?></option><?php endforeach; endif; ?>
        </select>
        </div>
        </div>
     </div>
-    <button type="submit"  class="btn btn-primary">提交</button>
-    <button type="submit"  class="btn btn-primary">修改</button>
+    <button type="submit" <?php if(($_GET['isIntro']) != "1"): ?>disabled<?php endif; ?> class="btn btn-primary">提交</button>
+    <button type="submit"  class="btn btn-success">修改</button>
      </div> 
     
   </form>
   </div>
   </div>
 </div>
-  
-
 
   
         </div>
@@ -289,6 +297,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -312,7 +322,70 @@
    	
     
 <script type="text/javascript">
-  
+    <?php if(($_GET['isIntro']) == "1"): ?>// layer.msg('请您先完善一下个人信息,以免信息不全给您造成不便',{icon:6,time:2000})
+    layer.confirm('请您先完善一下个人信息,以免信息不全给您造成不便',{icon:3,title:'提示',btn:['我同意','稍后再说']})<?php endif; ?>
+
+    jQuery.validator.addMethod("isChinesname", function(value, element) {  
+    return this.optional(element) || !(/[^\u4e00-\u9fa5]+/.test(value));       
+    }, "真实名字必须是中文");
+   
+   
+    var icon="<span class='glyphicon glyphicon-remove-sign'></span>";   
+     messageslogin={
+     realname:{
+      required:icon+'请输入真实姓名',
+      maxlength:icon+'请输输入正确长度的用户名,不能超过5',
+      isChinesname:icon+'真实名字必须是中文'
+     },
+     studentid:{
+      required:icon+'请输输入学号',
+      maxlength:icon+'学号长度不能超过15',
+      number:icon+'学号/必须是数字'
+     },
+     class_id:{
+      required:icon+'请选择专业',
+     },
+     depart_id:{
+      required:icon+'请选择院系',
+     }
+    
+    
+
+    };
+     ruleslogin={
+     realname:{
+      required:true,
+      maxlength:5,
+      isChinesname:true
+     },
+     studentid:{
+      required:true,
+      maxlength:15,
+      number:true
+     }
+     // class_id:{
+     //  required:true,
+     // },
+     // depart_id:{
+     //  required:true,
+     // }
+    };
+
+    _validade({id:'introform',rules:ruleslogin,messages:messageslogin})
+    $('#depart').change(function(){
+        txt=$(this).val();
+       $('#classes')[0].options.length = 0;
+       // $('#classes')[0].options.add(new Option('','--请选择您的专业--'))
+        $.post('/index.php/Class/changeClass',{de:txt},function(data){
+            $.each(data,function(index,val){
+              $('#classes')[0].options.add(new Option(val,index))
+            })
+
+        })
+    })
+
+
+
 </script>
 
 

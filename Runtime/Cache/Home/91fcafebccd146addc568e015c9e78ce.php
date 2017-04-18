@@ -264,6 +264,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
