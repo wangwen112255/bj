@@ -36,7 +36,7 @@ function setUser($user){
 }
 function getUser(){
 	if(!isset($_SESSION['_username_'])||empty($_SESSION['_username_'])){
-	redirect("/admin/Login/dologin");
+	redirect('/index.php/Login/index');
 	}
 }
 function toJson($res,$msg,$data){

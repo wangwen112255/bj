@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -255,6 +256,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -268,7 +271,7 @@
         $('.dropdown-menu').hide();
         
       });
-
+      
 
 
 

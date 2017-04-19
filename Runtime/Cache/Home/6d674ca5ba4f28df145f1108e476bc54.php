@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -91,7 +92,7 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
       </ul>
       </form>
 
@@ -188,10 +189,9 @@
            <h4>账户设置</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
-              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
               <li><a href="<?php echo U('Student/photo');?>">头像设置</a></li>
               <li><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-              <li><a href=<?php echo U('Student/logout');?>"><span class=""></span>退出登录</a></li>
+              <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
           </div>
@@ -274,6 +274,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -287,7 +289,7 @@
         $('.dropdown-menu').hide();
         
       });
-
+      
 
 
 

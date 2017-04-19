@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -209,16 +210,17 @@
   
     <div class="form-group">
       <label for="">用户名</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <input type="text" readonly="true"  name="username" class="form-control" value="<?php echo ($Userdata['username']); ?>" id="" placeholder="Input field">
     </div>
     <div class="form-group">
       <label for="">密码</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <input type="password" readonly="true" name='pwd' class="form-control" id="" value="<?php echo ($Userdata['pwd']); ?>" placeholder="Input field">
     </div>
-    <button type="submit"  class="btn btn-primary">修改</button>
+
+    <a   class="btn btn-primary" onclick="_openLayerUrl('<?php echo U('safe',array('md'=>'st'));?>','修改密码','60%','45%',['250px','28%'])">修改</a>
      </div> 
-    
   </form>
+
   </div>
   </div>
 </div>
@@ -283,7 +285,7 @@
         $('.dropdown-menu').hide();
         
       });
-
+      
 
 
 
@@ -293,7 +295,18 @@
    	
     
 <script type="text/javascript">
-  
+  $('#btns').click(function(){
+   //此处用于演示
+        layer.open({
+          type: 2,
+          title: '很多时候，我们想最大化看，比如像这个页面。',
+          shadeClose: true,
+          shade: false,
+          maxmin: true, //开启最大化最小化按钮
+          area: ['893px', '600px'],
+          content: '//fly.layui.com/'
+        });
+   });
 </script>
 
 

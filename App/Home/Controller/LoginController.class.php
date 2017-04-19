@@ -15,7 +15,7 @@ class   LoginController extends Controller{
     }
     public function dologin(){
       if($this->dao->create($_POST,4)){
-        $password=$this->dao->where("username=".$_POST['username'])->getField('pwd');
+        $password=$this->dao->where(array("username"=>$_POST['username']))->getField('pwd');
         if($password==md5($_POST['password'])){
           $_SESSION['_username_']=$_POST['username'];
           $_SESSION['role']=$_POST['role']=="st"?'Student':'Teacher';
@@ -31,17 +31,17 @@ class   LoginController extends Controller{
      
     }
    
-    
+
     public function register(){
     	 $this->display();
     }
-   public function doregister(){
+    public function doregister(){
     $code=$_POST['validatecode'];
     if(check_verify($code)){
     if(I('role')=='st'){
       $this->dao=D('Student');
-      $_POST['pwd']=md5($_POST['pwd']);
       if($this->dao->create($_POST,1)){
+        $this->dao->pwd=md5($_POST['pwd']);
         $this->dao->add();
         $this->ajaxReturn(toJson(true,'注册成功'));
       }

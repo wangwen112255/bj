@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -212,6 +213,7 @@
       <div class="row">
       <div class="col-sm-8">
       <input type="text" class="form-control" value="<?php echo ($Userdata['realname']); ?>" name="realname" placeholder="请输入您的真实姓名">
+      <input type="hidden" value="<?php echo ($_GET['isIntro']); ?>" name="isIntro" >
       </div>
 
       </div>
@@ -246,7 +248,7 @@
        </div>
     </div>
     <button type="submit" <?php if(($_GET['isIntro']) != "1"): ?>disabled<?php endif; ?> class="btn btn-primary">提交</button>
-    <button type="submit"  class="btn btn-success">修改</button>
+    <button type="submit"  <?php if(($_GET['isIntro']) == "1"): ?>disabled<?php endif; ?> class="btn btn-success">修改</button>
      </div> 
     
   </form>
@@ -312,7 +314,7 @@
         $('.dropdown-menu').hide();
         
       });
-
+      
 
 
 
@@ -340,7 +342,8 @@
      studentid:{
       required:icon+'请输输入学号',
       maxlength:icon+'学号长度不能超过15',
-      number:icon+'学号/必须是数字'
+      number:icon+'学号/必须是数字',
+      rangelength:icon+'学号必须是九位数字'
      },
      class_id:{
       required:icon+'请选择专业',
@@ -361,7 +364,8 @@
      studentid:{
       required:true,
       maxlength:15,
-      number:true
+      number:true,
+      rangelength:[9,9]
      }
      // class_id:{
      //  required:true,

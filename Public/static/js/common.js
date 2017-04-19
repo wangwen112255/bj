@@ -1,23 +1,18 @@
-    function _openLayerUrl(url,title,width,height,offset)
+function _openLayerUrl(url,title,width,height,offset)
 {
- // var  loads=layer.load();
- // setTimeout(function(){
- // layer.close(loads);
- // },1000);
+
  var width=width||'100%';
  var height=height||'100%';
  var offset=offset||'0px';
-
  var title=title||'操作';
  layer.open({
    type: 2,
    anim: 2,
    title: title,
-   content: url,
-   //offset
-   // shadeClose: true,
+   content:url,
+   offset:offset,
    area: [width,height],
-   maxmin: false,
+   // maxmin: false,
    success:function(layero,index){
    	var body = layer.getChildFrame('body', index);
     var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：iframeWin.method();
@@ -31,6 +26,7 @@
    }
 
  })
+ 
 }   
 
     function _layCloseIframe(){
@@ -45,14 +41,14 @@
     }
     function _ajaxSuccess(data){
       if(data.code==200){
-        layer.msg(data.msg,{icon:1,time:2000},function(){
+        layer.msg(data.msg,{icon:1,time:1000},function(){
         // setTimeout(function(){
          if(data.data)
          window.location.href=data.data;
          else
          window.location.reload();
-          // $('form').reset();
-            // _layCloseIframe();
+        // $('form').reset();
+        // _layCloseIframe();
         // window.parent.$('form').reset();
         // alert(0);
       
@@ -62,12 +58,12 @@
       else{
         layer.alert(data.msg, {icon: 5},function(index){
         layer.close(index);
+        $(selector).find('button').last().html(lastbtnval).removeClass('disabled');
         // window.location.reload(); 
         });
         // setTimeout(function(){
         //   location.reload(); 
         // },2000); 
-        
         }
       }
       
@@ -79,7 +75,7 @@
       var data=objajax.data;
       var success=objajax.success||_ajaxSuccess;
       var error=objajax.error||_ajaxError;
-      var selector=objajax.id;
+      selector=objajax.id;
       $.ajax({
         'url':url,
         'type':type,
@@ -154,7 +150,7 @@
     }
   
     } 
-    //改变状态
+    改变状态
         function _setStatus(id,url){
         layer.confirm("您确定要修改状态吗？",{'btn':['确定','取消']},function(index){
               _ajax({

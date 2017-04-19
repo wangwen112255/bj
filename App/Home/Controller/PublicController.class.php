@@ -2,6 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class PublicController extends Controller{
+	public $dao;
 	public function verifys(){
 		ob_clean();
 		session_start();
@@ -74,7 +75,7 @@ class PublicController extends Controller{
 	   //     $this->ajaxReturn($data);	
 	  	// }
 	  }
-	 
+	
 	  
      }
 

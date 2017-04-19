@@ -7,6 +7,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -266,7 +267,7 @@
         $('.dropdown-menu').hide();
         
       });
-
+      
 
 
 
