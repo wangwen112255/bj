@@ -143,6 +143,7 @@
               <input type="text" name="password" class="form-control" placeholder="请输进去密码">
               </div>
             </div> 
+          
             <div class="form-group" style="display: none">
               <label class="col-sm-3 control-label">验证码</label>
               <div class="col-sm-3">
@@ -172,6 +173,12 @@
                <!-- --- -->
                  </div>
              </div>
+            <div class="form-group">
+              <div class="col-sm-6 col-sm-offset-3">
+                  <a>没有账号，立即注册</a>
+                  <a class='pull-right'>忘记密码</a>
+              </div>
+            </div>
             <div class="form-group">
               <div class="col-sm-9 col-sm-offset-3">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
