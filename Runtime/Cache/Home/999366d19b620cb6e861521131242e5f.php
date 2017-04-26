@@ -175,8 +175,8 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <a>没有账号，立即注册</a>
-                  <a class='pull-right'>忘记密码</a>
+                  <span>没有账号,</span><a style="cursor:pointer">立即注册</a>
+                  <a class='pull-right' style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
             <div class="form-group">

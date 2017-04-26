@@ -205,18 +205,18 @@
 
 <div class="panel-body">
  <div class="row WU_scrollinfo" style="padding-top:15px; ">
- <div class="col-sm-3">
+ <?php if(is_array($Tedata)): foreach($Tedata as $key=>$vo): ?><div class="col-sm-3">
    <div class="thumbnail">
-         <img src="holder.js/200x200" class="img-circle" alt="...">
+         <img src="<?php echo ((isset($vo["photo"]) && ($vo["photo"] !== ""))?($vo["photo"]):'/static/img/a2.jpg'); ?>" class="img-circle" alt="...">
          <div class="caption">
-           <h3 class="text-center">王文坏</h3>
-           <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+           <h3 class="text-center"><?php echo ($vo["realname"]); ?></h3>
+           <p class="text-center"><?php echo ($vo["desct"]); ?></p>
            <p class="text-center">
-           <a href="<?php echo U('lists');?>" class="btn btn-primary" role="button">点击查看</a>
-            <a  class="btn btn-success" role="button">课程数量<span class="badge">10</span></a></p>
+           <a href="<?php echo U('Teachers/lists',array('id'=>$vo['idt']));?>" class="btn btn-primary" role="button">点击查看</a>
+            <a  class="btn btn-success" role="button">课程数量<span class="badge"><?php echo ($vo["total"]); ?></span></a></p>
          </div>
    </div>
- </div>
+ </div><?php endforeach; endif; ?>
  </div>
 </div>
   

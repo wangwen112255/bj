@@ -438,6 +438,7 @@ if($('input[type="hidden"]').val()==1){
   })
   
 
+
   $('#pwd').hcPwdCheck('showPwdCheckRes');
   jQuery.validator.addMethod("isChinese", function(value, element) {  
   return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
@@ -489,6 +490,7 @@ if($('input[type="hidden"]').val()==1){
         
          
   }, "验证码输入不正确");
+  
   var icon="<span class='glyphicon glyphicon-remove-sign'></span>";   
    messageslogin={
    username:{

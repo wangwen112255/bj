@@ -73,24 +73,25 @@
       </div>
      </form>
      <?php else: ?>
-      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
+      <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
+       
+      <a href='/index.php/<?php echo (session('role')); ?>/index' class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
-      <p style="margin-left:5px">201316602</p>
+      <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px">
       <b>【<?php if(($_SESSION['role']) == "Student"): ?>学生<?php else: ?>教师<?php endif; ?><span class="glyphicon glyphicon-user"></span>】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list ">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Think.session.role/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Think.session.role/intro');?>">
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/intro">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Think.session.role/info');?>">我的消息
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
         <span class="glyphicon glyphicon-bell"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Think.session.role/course');?>">我的课目
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/course">我的课目
         <span class="glyphicon glyphicon-tasks"></span></a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Think.session.role/safe');?>">安全设置
+        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/safe">安全设置
         <span class="glyphicon glyphicon-wrench"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
@@ -127,6 +128,7 @@
               <input type="text" name="password" class="form-control" placeholder="请输进去密码">
               </div>
             </div> 
+          
             <div class="form-group" style="display: none">
               <label class="col-sm-3 control-label">验证码</label>
               <div class="col-sm-3">
@@ -156,6 +158,12 @@
                <!-- --- -->
                  </div>
              </div>
+            <div class="form-group">
+              <div class="col-sm-6 col-sm-offset-3">
+                  <span>没有账号,</span><a style="cursor:pointer">立即注册</a>
+                  <a class='pull-right' style="cursor:pointer">忘记密码?</a>
+              </div>
+            </div>
             <div class="form-group">
               <div class="col-sm-9 col-sm-offset-3">
                   <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
@@ -204,15 +212,7 @@
   
    </div>
 
-   <!-- Controls -->
- <!--   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-     <span class="sr-only">Previous</span>
-   </a>
-   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-     <span class="sr-only">Next</span>
-   </a> -->
+
  </div>
 
 
@@ -264,9 +264,12 @@
         </div>
         </span>
         <span ><a  href='javascript:' numid="<?php echo U('detail',array('numid'=>$data['id']));?>" class="showdetail">查看详情</a></span>
-        <?php if(($data["choosenum"]) == $data['limitnum']): ?><span ><button class="btn btn-danger ">选课已满</button></span>
-        <?php else: ?>
-        <span ><button class="btn btn-success ">在线选课</button></span><?php endif; ?>
+        <?php if(($data["status"]) == "1"): ?><span ><button class="btn">选课结束</button></span>
+          <?php else: ?>
+          <?php if(($data["choosenum"]) == $data['limitnum']): ?><span ><button class="btn btn-danger">选课已满</button></span>
+          <?php else: ?>
+          <span ><button id='selectclass' class="btn btn-success ">在线选课</button></span><?php endif; endif; ?>
+      
         </li><?php endforeach; endif; else: echo "" ;endif; ?>
        </ul>
        </div>
@@ -400,14 +403,12 @@ $('.showdetail').click(function(){
     // },500)
     
 });
-
-// $("#modals").on("hidden.bs.modal", function() {  
-//     $(this).removeData("bs.modal");  
-// }); 
 $("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
 });
-
+$('#selectclass').click(function(){
+alert(0);
+});
 
 
 </script>

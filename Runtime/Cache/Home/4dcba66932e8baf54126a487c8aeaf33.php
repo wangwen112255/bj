@@ -27,7 +27,7 @@
  	</div>
 	<div class='form-group'>
 	<div class="col-sm-offset-3 col-sm-5">
- 	<button type="" class="btn btn-default">取消</button>
+ 	<button type="" id='close' class="btn btn-default">关闭</button>
  	<button type="submit" class="btn btn-success">确认修改</button>
 	</div>
 	</div>	
@@ -70,7 +70,10 @@
 
 		_validade({id:'changeform',rules:ruleslogin,messages:messageslogin})
 
-		
+		$('#close').click(function(){
+		var index = parent.layer.getFrameIndex(window.name); 
+		parent.layer.close(index);
+		})
 		})
 
 	// alert(0)

@@ -47,11 +47,16 @@
         </div>
         </span>
         <span ><a  href='javascript:' numid="{:U('detail',array('numid'=>$data['id']))}" class="showdetail">查看详情</a></span>
-        {eq name='data.choosenum' value="$data['limitnum']"}
-        <span ><button class="btn btn-danger ">选课已满</button></span>
-        {else/}
-        <span ><button class="btn btn-success ">在线选课</button></span>
-         {/eq}
+        {eq name='data.status' value='1'}
+          <span ><button class="btn">选课结束</button></span>
+          {else/}
+          {eq name='data.choosenum' value="$data['limitnum']"}
+          <span ><button class="btn btn-danger">选课已满</button></span>
+          {else/}
+          <span ><button id='selectclass' class="btn btn-success ">在线选课</button></span>
+           {/eq}
+        {/eq}
+      
         </li>
        
          {/volist}
@@ -77,14 +82,12 @@ $('.showdetail').click(function(){
     // },500)
     
 });
-
-// $("#modals").on("hidden.bs.modal", function() {  
-//     $(this).removeData("bs.modal");  
-// }); 
 $("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
 });
-
+$('#selectclass').click(function(){
+alert(0);
+});
 
 
 </script>
