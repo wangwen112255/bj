@@ -8,14 +8,15 @@ class StudentController extends BaseController {
         parent::_initialize();
         $this->dao=D('Student');
         $condition['username']=session('_username_');
-        if(ACTION_NAME!='intro'){
         $this->datainfo=$this->dao->where($condition)->find();
-        if($this->datainfo['class_id']==0)
+        if(ACTION_NAME!='intro'){
+        if($this->datainfo['class_id']==0){
             // echo "<script>alert('请先完善信息')</script>";
             $this->redirect('Student/intro',array('isIntro'=>1));
             // $this->display('intro');
         }
-
+        }
+        $this->assign('Userdata',$this->datainfo);
     }
     public function index(){
        
@@ -25,8 +26,8 @@ class StudentController extends BaseController {
     	$this->display();
     }
     public function intro(){
-        $Condition['username']=session('_username_');
-        $Userdata=$this->dao->where($Condition)->find();
+        // $Condition['username']=session('_username_');
+        // $Userdata=$this->dao->where($Condition)->find();
         if(!empty(I('realname')) && isset($_POST['realname'])){
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
@@ -109,7 +110,7 @@ class StudentController extends BaseController {
             $this->assign('showpage',$show);
             $this->assign('codata',$codata);
             var_dump($codata);
-            // $this->display();
+          
 
  
         }
@@ -120,11 +121,6 @@ class StudentController extends BaseController {
         $this->assign('Tedata',$Tedata);
         $this->display();
     }
-    public function selectCourse(){
-
-
-    
-
-    }
+   
 
 }

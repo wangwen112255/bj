@@ -1,0 +1,1044 @@
+[ 2017-04-28T13:53:04+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T13:53:07+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T13:53:09+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1400s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T13:53:10+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1740s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T13:53:11+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2370s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-28T13:53:15+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:53:21+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:34+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:35+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:36+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:39+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:43+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T13:56:52+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:02+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:02+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:10+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:15+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:16+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:21+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:23+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:27+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:29+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:31+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:36+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:37+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:39+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:03:43+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:10:29+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:10:42+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:10:47+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:13:17+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:13:24+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T14:21:20+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:21:24+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:21:30+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:21:33+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:21:43+08:00 ] 127.0.0.1 /index.php/Student/safe
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `xk_student` SET `pwd`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 45 [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-04-28T14:21:50+08:00 ] 127.0.0.1 /index.php/Student/safe
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2690s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `xk_student` SET `pwd`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 45 [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-04-28T14:21:53+08:00 ] 127.0.0.1 /index.php/Student/safe
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `xk_student` SET `pwd`='e10adc3949ba59abbe56e057f20f883e' WHERE `id` = 45 [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\StudentController.class.php on line 70 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-04-28T14:22:33+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:23:27+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:23:37+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T14:37:33+08:00 ] 127.0.0.1 /index.php/Teacher/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\BJ\Runtime\Cache\Home\35f7c8ac4d12d132e078cb0a5ba0424c.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:32:00+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/:U('Teacher/selectclass')
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\BJ\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:32:41+08:00 ] 127.0.0.1 /index.php/Teacher/selectclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+ERR: 非法操作:selectclass
+
+[ 2017-04-28T15:32:44+08:00 ] 127.0.0.1 /index.php/Teacher/selectclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1170s ]
+ERR: 非法操作:selectclass
+
+[ 2017-04-28T15:32:46+08:00 ] 127.0.0.1 /index.php/Teacher/selectclass.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+ERR: 非法操作:selectclass
+
+[ 2017-04-28T15:34:10+08:00 ] 127.0.0.1 /index.php/Teacher/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1990s ]
+ERR: 非法操作:selectcourse
+
+[ 2017-04-28T15:34:34+08:00 ] 127.0.0.1 /index.php/Teacher/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+ERR: 非法操作:selectcourse
+
+[ 2017-04-28T15:34:35+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:40:15+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:47:51+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:47:53+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.3020s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:48:20+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1360s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:09+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:11+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2540s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:12+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:14+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1520s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:15+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2040s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:17+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.4350s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:18+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0680s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:19+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.5890s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:21+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1760s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:22+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1580s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:56:23+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.3400s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:25+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.3630s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:56:26+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1490s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:57:47+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.4940s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.2710s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:57:51+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T15:58:11+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:58:17+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:58:24+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:59:13+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:59:20+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-04-28T15:59:56+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T15:59:59+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:00:49+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1320s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:00:50+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:00:51+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0560s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T16:00:55+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2130s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:01:00+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.3170s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:01:26+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T16:01:39+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:01:43+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:01:49+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:02:01+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:02:02+08:00 ] 127.0.0.1 /index.php/Login/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1490s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\BJ\Runtime\Cache\Home\b17dfc7d0a02326b745c2318ff4a75d7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:02:08+08:00 ] 127.0.0.1 /index.php/Student/selectcourse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:02:10+08:00 ] 127.0.0.1 /index.php/Login/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.3310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\BJ\Runtime\Cache\Home\b17dfc7d0a02326b745c2318ff4a75d7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-04-28T16:03:59+08:00 ] 127.0.0.1 /index.php/Teachers/detail/numid/14.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_course` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-04-28T16:06:16+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:06:25+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:08:56+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:08:59+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:09:04+08:00 ] 127.0.0.1 /index.php/Login/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:09:13+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-28T16:09:22+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0580s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2017-04-28T16:09:24+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.2490s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T16:09:27+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:09:32+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:09:42+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:09:59+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:10:04+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:10:14+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:10:17+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:10:36+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:10:38+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:01+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:02+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:05+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:07+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:25+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:28+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:30+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:38+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:39+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:40+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:48+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:11:49+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:12:07+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:12:47+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:12:54+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:13:05+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:13:15+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:13:29+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:21:36+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:21:51+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:21:53+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:21:53+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:53+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:54+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:55+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:56+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:56+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:57+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:22:58+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:23:11+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:23:12+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:23:12+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:23:18+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:24:32+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:24:41+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:27:13+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:27:17+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:33:46+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T16:43:22+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:02:52+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:02:55+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:03:06+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:03:14+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.1570s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T17:03:18+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-28T17:03:20+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T17:03:27+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:07+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:10+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:13+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:19+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:22+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:09:26+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:10:01+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:10:04+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:10:11+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:12:22+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:12:26+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:12:34+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:13:59+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:14:04+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = '123456' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-04-28T17:14:08+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.1990s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T17:14:11+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T17:14:13+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-04-28T17:14:16+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:15:24+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:15:45+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:15:49+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:15:55+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-04-28T17:28:43+08:00 ] 127.0.0.1 /index.php/Course/holder.js/80x80
+ERR: 非法操作:holder.js
+

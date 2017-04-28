@@ -47,16 +47,18 @@
         </div>
         </span>
         <span ><a  href='javascript:' numid="{:U('detail',array('numid'=>$data['id']))}" class="showdetail">查看详情</a></span>
+        <span>
         {eq name='data.status' value='1'}
-          <span ><button class="btn">选课结束</button></span>
+         <button class="btn">选课结束</button>
           {else/}
           {eq name='data.choosenum' value="$data['limitnum']"}
-          <span ><button class="btn btn-danger">选课已满</button></span>
+          <button class="btn btn-danger">选课已满</button>
           {else/}
-          <span ><button id='selectclass' class="btn btn-success ">在线选课</button></span>
+         <button  onclick="location.href='{:U('Course/index')}'" class="btn btn-success">在线选课</button>
            {/eq}
         {/eq}
-      
+       <!--  {eq name="data['id']" value='$Userinfo["class_id"]'}<button class='btn btn-success'>我已选择</button>{else/}{/eq} -->
+      </span>
         </li>
        
          {/volist}
@@ -77,17 +79,11 @@ $('.showdetail').click(function(){
      keyboard : true,
      remote :numids
     })
-    // setTimeout(function(){
-    //   $('#modals').show().slideDown('fast');
-    // },500)
-    
-});
+  });
 $("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
 });
-$('#selectclass').click(function(){
-alert(0);
-});
+
 
 
 </script>

@@ -264,12 +264,14 @@
         </div>
         </span>
         <span ><a  href='javascript:' numid="<?php echo U('detail',array('numid'=>$data['id']));?>" class="showdetail">查看详情</a></span>
-        <?php if(($data["status"]) == "1"): ?><span ><button class="btn">选课结束</button></span>
+        <span>
+        <?php if(($data["status"]) == "1"): ?><button class="btn">选课结束</button>
           <?php else: ?>
-          <?php if(($data["choosenum"]) == $data['limitnum']): ?><span ><button class="btn btn-danger">选课已满</button></span>
+          <?php if(($data["choosenum"]) == $data['limitnum']): ?><button class="btn btn-danger">选课已满</button>
           <?php else: ?>
-          <span ><button id='selectclass' class="btn btn-success ">在线选课</button></span><?php endif; endif; ?>
-      
+         <button  onclick="location.href='<?php echo U('Course/index');?>'" class="btn btn-success">在线选课</button><?php endif; endif; ?>
+       <!--  <?php if(($data['id']) == $Userinfo["class_id"]): ?><button class='btn btn-success'>我已选择</button><?php else: endif; ?> -->
+      </span>
         </li><?php endforeach; endif; else: echo "" ;endif; ?>
        </ul>
        </div>
@@ -398,17 +400,11 @@ $('.showdetail').click(function(){
      keyboard : true,
      remote :numids
     })
-    // setTimeout(function(){
-    //   $('#modals').show().slideDown('fast');
-    // },500)
-    
-});
+  });
 $("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
 });
-$('#selectclass').click(function(){
-alert(0);
-});
+
 
 
 </script>

@@ -249,7 +249,6 @@
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-12 relog" style='margin-bottom: 20px'>
       <a  href="<?php echo U('classlist');?>" class="btn btn-info btn-lg active">班级选题</a>
-      <a  href="<?php echo U('teacherlist');?>"  class="btn btn-info btn-lg">指导教师</a>
       <a  href="<?php echo U('classresult');?>"class="btn btn-info btn-lg">选课结果</a>
     </div>
     <div class="col-sm-12 infotitle">

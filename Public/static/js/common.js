@@ -150,7 +150,7 @@ function _openLayerUrl(url,title,width,height,offset)
     }
   
     } 
-    改变状态
+
         function _setStatus(id,url){
         layer.confirm("您确定要修改状态吗？",{'btn':['确定','取消']},function(index){
               _ajax({

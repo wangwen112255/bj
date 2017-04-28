@@ -1,108 +1,15 @@
-{extend name='Public:layouts'/}
-{block name='CSS'}
-<style type="text/css">
-  
-</style>
+        <div class="modal-header" >
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"><b>毕设题目--</b>{$codata.coursename}</h4>
+            </div>
+            <div class="modal-body">
+                <p>上传时间 <small>{$codata.creattime}</small></p>
 
-{/block}
+                <p><big><b>内容详情</b></big>{$codata.desc}</p>
 
-{block name="content"}
-
-
-    
-    <!-- 导航图 -->
-  <div class="container-fluid" >
-  
-  <!-- ------- -->
-------------------
-  <div class="WU_info">
-   <div class="row WU_inforow">
-  <span class='WU_infoheader'>选课情况</span>
-     </div>
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
-        <div class="col-sm-12 infotitle">
-    <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-    </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-       <ul >
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli" >
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-        <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-     <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-       <li class="WU_scrollli">
-        <span >学生院系</span>
-    <span >学生专业</span>
-    <span >学生姓名</span>
-    <span >毕设题目</span>
-    <span >指导教师</span>
-        </li>
-
-       </ul>
-       </div>
-       <div class="WU_myscrollafter"></div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-{/block}
-{block name="JS"}
-<script type="text/javascript">
-
-
-</script>
-{/block}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger " data-dismiss="modal">要求人数<span class="badge">{$codata.limitnum}</span></button>
+                <button type="button" class="btn btn-success " data-dismiss="modal">已选人数<span class="badge">{$codata.choosenum}</span>  </button>
+                <button type="button" class="btn btn-primary " data-dismiss="modal"><span class="fa fa-check"></span>朕已查看</button>
+            </div>
