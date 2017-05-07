@@ -29,7 +29,6 @@ class   TeachersController extends Controller {
     	$codata=$co->find($numid);
     	$this->assign('codata',$codata);
     	$this->display();
-
     }
 	
 

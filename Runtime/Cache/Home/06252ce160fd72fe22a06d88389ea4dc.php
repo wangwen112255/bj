@@ -40,7 +40,9 @@
   .WU_scrollinfo > .infotitle span:hover{
   opacity: 0.5;
   }
-  
+   .relog .active{
+     opacity: 0.3;
+  }
  /*  .showdetail:hover{
     cursor: pointer;
   } */
@@ -248,35 +250,34 @@
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-12 relog" style='margin-bottom: 20px'>
-      <a  href="<?php echo U('classlist');?>" class="btn btn-info btn-lg active">班级选题</a>
-      <a  href="<?php echo U('classresult');?>"class="btn btn-info btn-lg">选课结果</a>
+      <a  href="<?php echo U('index');?>" class="btn btn-info btn-lg active">班级选题</a>
+      <a  href="<?php echo U('classresult');?>" class="btn btn-info btn-lg ">选课结果</a>
     </div>
     <div class="col-sm-12 infotitle">
+    <span >学生姓名</span>
     <span >课程题目</span>
-    <span >指导教师</span>
-    <span >已选人数</span>
+    <span >指导老师</span>
     <span >课程要求</span>
-    <span >选课/</span>
+    <span >选课状态</span>
     </div>
     </div>
      <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
         <div class="col-sm-12">
        <div class="WU_myscroll">
        <ul >
-        <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >指导教师</span>
-        <span >已选人数</span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
-         <li class="WU_scrollli" >
-        <span >课程题目</span>
-        <span >指导教师</span>
-        <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
-        <span ><a  href='' class="showdetail">查看详情</a></span>
-        <span ><button class="btn btn-danger">在线选课</button></span>
-        </li>
+          <?php if(is_array($resultdata)): $i = 0; $__LIST__ = $resultdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+        <span ><?php echo ($vo["strealname"]); ?></span>
+        <span ><?php echo ($vo["coursename"]); ?></span>
+        <span ><?php echo ($vo["terealname"]); ?></span>
+        <span ><?php echo ($vo["createtime"]); ?></span>
+        <span >
+         <?php if(($vo["is_success"]) == "1"): ?><button class="btn">成功选课</button>
+          <?php else: ?>
+          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">已选课</button>
+          <?php else: ?>
+         <button   class="btn btn-danger">已拒绝</button><?php endif; endif; ?>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?> 
+        
        
        </ul>
        </div>
