@@ -32,9 +32,6 @@
    	</style>
    	
 <style type="text/css">
- 
-
-
 </style>
 
 
@@ -78,7 +75,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/index');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -91,7 +88,7 @@
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
 
       </ul>
       </form>
@@ -192,7 +189,7 @@
               <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
               <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
               <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-              <li><a href=<?php echo U('Teacher/logout');?>"><span class=""></span>退出登录</a></li>
+              <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
           </div>
@@ -211,16 +208,17 @@
   
     <div class="form-group">
       <label for="">用户名</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <input type="text" readonly="true"  name="username" class="form-control" value="<?php echo ($Userdata['username']); ?>" id="" placeholder="Input field">
     </div>
     <div class="form-group">
       <label for="">密码</label>
-      <input type="text" class="form-control" id="" placeholder="Input field">
+      <input type="password" readonly="true" name='pwd' class="form-control" id="" value="<?php echo ($Userdata['pwd']); ?>" placeholder="Input field">
     </div>
-    <button type="submit"  class="btn btn-primary">修改</button>
+
+    <a   class="btn btn-primary" onclick="_openLayerUrl('<?php echo U('safe',array('md'=>'st'));?>','修改密码','60%','45%',['250px','28%'])">修改</a>
      </div> 
-    
   </form>
+
   </div>
   </div>
 </div>
@@ -270,6 +268,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">
@@ -293,7 +293,7 @@
    	
     
 <script type="text/javascript">
-  
+
 </script>
 
 

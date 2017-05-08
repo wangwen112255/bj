@@ -7,7 +7,6 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -79,20 +78,21 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" target="_blank" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/index');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
-      <p style="margin-left:5px"><b>【学生】</b></p> 
+      <p style="margin-left:5px"><b>【教师】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+
       </ul>
       </form>
 
@@ -174,23 +174,24 @@
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>
              <ul class="WU_personal">
-              <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
-              <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-              <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
-              <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
+              <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
+              <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级正选公示</a></li>
+              <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
+
             </ul>
           </div>
           <div class="panel-body">
            <h4>账户设置</h4>
              <ul class="WU_personal">
-              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
-              <li><a href="<?php echo U('Student/photo');?>">头像设置</a></li>
-              <li><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+              <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
+              <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
+              <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
               <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
@@ -199,60 +200,60 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的选课</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>毕业班学生</span></h3>
           </div>
               
 
 <div class="panel-body">
- <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">已选题目</a></li>
-</ul>
-<table class="table table-striped table-hover">
-	<thead>
-		<tr>
-			<th>毕设题目</th>
-		
-			<th>课程要求</th>
-		
-			<th>指导老师</th>
-			
-			<th>课程状态</th>
-		
-			<th>操作</th>
-		</tr>
-	</thead>
-	<tbody>
-	
-	<?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-			<td><?php echo ($vo["coname"]); ?></td>
-			<td><?php echo ($vo["codesc"]); ?></td>
-			<td><?php echo ($vo["tename"]); ?></td>
-			<td>
-			<?php if($vo['isreceive'] == 0): ?><span class="badge btn-success">待审核</span></td>
-			<td>
-			<input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
-			<button id="trash" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
-			</td>
-			<?php else: ?>
-			<?php if(($vo["is_success"]) == "1"): ?><span class="badge" style="background: #5cb85c">已正选</span></td>
-			<td><button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-heart">恭喜您 </span></button></td>
-			<?php else: ?><span class="badge" style="background: #d9534f">已拒绝</span></td>
-			<td><button type="button" class="btn btn-success" ></span class="">试试其他的 </span></button></td><?php endif; endif; ?>
-			
-		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-	</tbody>
-</table>
-		 <?php if(empty($Codata)): ?><div class="jumbotron">
-		          <div class="container">
-		            <h1>已经尽力了</h1>
-		            <p>您还没有开始选课呢,抓紧时间</p>
-		            <p>
-		              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-		            </p>
-		          </div>
-		        </div><?php endif; ?>
+ <div class="row WU_scrollinfo" style="padding-top:15px; ">
+  <div class="WU_info">
+  
+    <div class="row WU_scrollinfo">
+  
+    <div class="col-sm-12 infotitle">
+    <span >学生姓名</span>
+    <span >课程题目</span>
+    <span >指导老师</span>
+    <span >课程要求</span>
+    <span >选课状态</span>
+    </div>
+    </div>
+     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+        <div class="col-sm-12">
+       <div class="WU_myscroll">
+         <?php if(empty($Stdetaildata)): ?><div class="jumbotron">
+          <div class="container">
+            <h1>已经尽力了</h1>
+            <p>该学生给你还没有开始选课，敬请关注</p>
+            <p>
+              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+            </p>
+          </div>
+        </div><?php endif; ?>
+       <ul>
+          <?php if(is_array($Stdetaildata)): $i = 0; $__LIST__ = $Stdetaildata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+        <span ><?php echo ($vo["strealname"]); ?></span>
+        <span ><?php echo ($vo["coursename"]); ?></span>
+        <span ><?php echo ($vo["terealname"]); ?></span>
+        <span ><?php echo ($vo["createtime"]); ?></span>
+        <span >
+         <?php if(($vo["is_success"]) == "1"): ?><button class="btn">成功选课</button>
+          <?php else: ?>
+          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">已选课</button>
+          <?php else: ?>
+         <button   class="btn btn-danger">已拒绝</button><?php endif; endif; ?>
+        </li><?php endforeach; endif; else: echo "" ;endif; ?> 
+        
+       
+       </ul>
+       </div>
+      </div>
+    </div>
+    </div>
+    </div>
+ </div>
 </div>
-
+  
 
 
   
@@ -313,7 +314,7 @@
         $('.dropdown-menu').hide();
         
       });
-      
+
 
 
 
@@ -323,10 +324,7 @@
    	
     
 <script type="text/javascript">
-$("#trash").click(function(){
- var oid=$(this).prev().val();
-  _ajaxmodify({url:'/index.php/Student/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
-})
+  
 </script>
 
 

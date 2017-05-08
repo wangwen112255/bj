@@ -79,7 +79,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
+      <a href="<?php echo U('Student/index');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -181,7 +181,7 @@
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
               <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-              <li><a href="<?php echo U('Student/classes');?>">班级公示</a></li>
+              <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
               <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
             </ul>
           </div>
@@ -205,6 +205,15 @@
 
 <div class="panel-body">
  <div class="row WU_scrollinfo" style="padding-top:15px; ">
+  <?php if(empty($Tedata)): ?><div class="jumbotron">
+          <div class="container">
+            <h1>已经尽力了</h1>
+            <p>指导老师还在路上正在赶来，请耐心等候</p>
+            <p>
+              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+            </p>
+          </div>
+        </div><?php endif; ?>
  <?php if(is_array($Tedata)): foreach($Tedata as $key=>$vo): ?><div class="col-sm-3">
    <div class="thumbnail">
          <img src="<?php echo ((isset($vo["photo"]) && ($vo["photo"] !== ""))?($vo["photo"]):'/static/img/a2.jpg'); ?>" class="img-circle" alt="...">

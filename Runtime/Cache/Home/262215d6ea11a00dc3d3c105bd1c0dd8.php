@@ -257,7 +257,7 @@
      </div>
     <div class="row WU_scrollinfo" style="padding-top:15px; ">
     <div class="col-sm-12 relog" style='margin-bottom: 20px'>
-      <a  href="<?php echo U('classlist');?>" class="btn btn-info btn-lg ">班级选题</a>
+      <a  href="<?php echo U('index');?>" class="btn btn-info btn-lg ">班级选题</a>
       <a  href="<?php echo U('classresult');?>" class="btn btn-info btn-lg active">选课结果</a>
     </div>
     <div class="col-sm-12 infotitle">
@@ -283,7 +283,7 @@
        <ul >
        <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
         <span ><?php echo ($vo["coursename"]); ?></span>
-        <span ><?php echo ($vo["realname"]); ?></span>
+        <span ><a href="<?php echo U('Teachers/lists',array('id'=>$vo['idt']));?>" target="_blank"><?php echo ($vo["realname"]); ?></a></span>
         <span >
           <div class="progress " style="width:60%;margin:10px auto;">
           <div class="progress-bar progress-bar-<?php echo ($data['choosenum']==$data['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%">
@@ -305,7 +305,10 @@
        
        </ul>
        </div>
+      <?php echo ($show); ?>
+      
       </div>
+
     </div>
     </div>
     </div>
@@ -436,38 +439,9 @@ $('.showdetail').click(function(){
 $("#modals").on("show.bs.modal", function() {  
     $(this).removeData("bs.modal");  
 });
-$('#selectcourse').click(function(){
-layer.confirm('您确定要选择这门课程吗?',{icon:6,title:"慎重考虑机会不多"},function(){
- $.ajax({
-  dataTpye:'json',
-  type:'post',
-  data:{idc:$('#selectcourse').prev().val()},
-  url:"/index.php/Course/selectcourse",
-  success:function(data){
- if(data.code==200){
-        layer.msg(data.msg,{icon:1,time:1000},function(){
-         if(data.data)
-         window.location.href=data.data;
-        else
-          window.location.reload();
-        });
-      }
-      else{
-        layer.alert(data.msg, {icon: 5},function(index){
-        layer.close(index);
-        });
-        }
-      }, 
- 
-  error:function(){
-    layer.msg("连接出现异常请检查网络",{icon:5});
-  } 
 
-
- })
-
-});
-
+$("#selectcourse").click(function(){
+_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'/index.php/Course/selectcourse',data:{idc:14}})
 
 })
 

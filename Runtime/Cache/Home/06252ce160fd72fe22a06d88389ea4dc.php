@@ -268,12 +268,12 @@
           <?php if(is_array($resultdata)): $i = 0; $__LIST__ = $resultdata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
         <span ><?php echo ($vo["strealname"]); ?></span>
         <span ><?php echo ($vo["coursename"]); ?></span>
-        <span ><?php echo ($vo["terealname"]); ?></span>
+        <span ><a href="<?php echo U('Teachers/lists',array('id'=>$vo['idt']));?>" target="_blank"><?php echo ($vo["terealname"]); ?></a></span>
         <span ><?php echo ($vo["createtime"]); ?></span>
         <span >
          <?php if(($vo["is_success"]) == "1"): ?><button class="btn">成功选课</button>
           <?php else: ?>
-          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">已选课</button>
+          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">正选</button>
           <?php else: ?>
          <button   class="btn btn-danger">已拒绝</button><?php endif; endif; ?>
         </li><?php endforeach; endif; else: echo "" ;endif; ?> 
@@ -281,7 +281,9 @@
        
        </ul>
        </div>
+        <?php echo ($show); ?>
       </div>
+
     </div>
     </div>
     </div>

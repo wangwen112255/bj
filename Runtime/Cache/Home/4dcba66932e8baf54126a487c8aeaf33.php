@@ -11,7 +11,7 @@
 <p></p>
 <p></p>
 <div class="col-sm-12" style="margin-top:60px">
- <form action="/index.php/Student/safe" method="POST" class="form-horizontal" role="form" id='changeform'>
+ <form action="/index.php/Teacher/safe" method="POST" class="form-horizontal" role="form" id='changeform'>
  	
  	<div class="form-group">
  	  <label for="" class='control-label col-sm-3'>密　　码</label>

@@ -6,6 +6,8 @@ class StudentController extends BaseController {
     protected $datainfo;
     public function _initialize(){
         parent::_initialize();
+        if($_SESSION['role']!="Student")
+        $this->redirect('Student/index');
         $this->dao=D('Student');
         $condition['username']=session('_username_');
         $this->datainfo=$this->dao->where($condition)->find();
@@ -32,7 +34,7 @@ class StudentController extends BaseController {
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
 
-                if($this->dao->where('id='.$Userdata['id'])->save())
+                if($this->dao->where('id='.$this->datainfo['id'])->save())
                 $this->ajaxReturn(toJson(true,'修改成功',U(CONTROLLER_NAME.'/intro')));
                 else
                 $this->ajaxReturn(toJson('修改失败或未进行修改'.$_GET['isIntro']));
@@ -65,8 +67,11 @@ class StudentController extends BaseController {
             if($this->dao->create()){
                 $Condition['id']=$this->datainfo['id'];
                 $this->dao->pwd=md5($_POST['pwd']);
-                if($this->dao->where($Condition)->save())
-                $this->ajaxReturn(toJson(true,'密码修改成功',U('Login/logout')));
+                if($this->dao->where($Condition)->save()){
+                // $_SESSION['_username_']="null"
+                session("_username_",null);
+                $this->ajaxReturn(toJson(true,'密码修改成功'));
+                }
                 else
                 $this->ajaxReturn(toJson('密码修改失败或未修改'));
             }else{
@@ -84,35 +89,35 @@ class StudentController extends BaseController {
     }
 
     public function course(){
-    	
-
-
-
-
+        $Or=M('Order');
+        $codata=$Or->where("student_id=".$this->datainfo['id'])
+                 ->field("xk_teacher.realname as tename,xk_order.id as oid,xk_course.coursename as coname,xk_course.desc as codesc,xk_order.id as oid,is_success,isreceive")
+                 ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
+                 ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
+                 ->select();
+        $this->assign("Codata",$codata);         
         $this->display();
     }
     public function classes(){
 
             $Co=M('Order');
-            $counts= $Co->where('class_id='.$this->datainfo['class_id'])->count();
+            $condition['xk_order.class_id']=$this->datainfo['class_id'];
+            $condition['is_success']=1;
+            $counts= $Co->where($condition)->count();
             $Page=new  \Think\Page($counts,10);
             $show=$Page->show();
             // dump($show);
             $codata= $Co
-            ->where('xk_order.class_id='.$this->datainfo['class_id'])
-            ->field("departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname")
+            ->where($condition)
+            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,studentid")
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
             ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
-            ->join('LEFT JOIN __DEPART__ ON __STUDENT__.depart_id=__DEPART__.id')
-            ->join('LEFT JOIN __CLASS__ ON __STUDENT__.class_id=__CLASS__.id')
             ->limit($Page->firstRow.','.$Page->listRows)->select();
-            $this->assign('showpage',$show);
+            $this->assign('show',$show);
             $this->assign('codata',$codata);
-            var_dump($codata);
-          
-
- 
+            dump($codata);
+            $this->show();
         }
     public function guide(){
         $Te=M('Teacher');
@@ -121,6 +126,23 @@ class StudentController extends BaseController {
         $this->assign('Tedata',$Tedata);
         $this->display();
     }
-   
+    public function trashcourse(){
+        if(IS_AJAX){
+            $condition['id']=$_POST['id'];
+            $condition['student_id']=$this->datainfo['id'];
+            $Or=M('Order');
+            if($Or->where($condition)->delete()){
+            $this->ajaxReturn(toJson(true,'撤销成功,不可恢复！'));
+            }
+            else{
+            $this->ajaxReturn(toJson('撤销失败,稍后重试！'));
+            } 
+            }else{
+            $this->ajaxReturn(toJson("对不起,请求数据有误"));
+            }
+        
+        }
 
-}
+    }
+
+

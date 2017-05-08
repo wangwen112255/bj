@@ -15,19 +15,25 @@
 
 <div class="panel-body">
  <div class="row WU_scrollinfo" style="padding-top:15px; ">
+
+ {foreach  name='Tedata' item='vo'}
  <div class="col-sm-3">
+
    <div class="thumbnail">
-         <img src="holder.js/200x200" class="img-circle" alt="...">
+         {eq name="vo.iscomplete" value='1'}<button class="btn btn-danger" style="position: absolute;width:120px;top:50%;left:50%;margin-left:-60px;opacity: 0.8">该生已完成选课</button>{/eq}
+         <img src="{$vo.photo|default='__IMG__a2.jpg'}" class="img-circle" alt="...">
          <div class="caption">
-           <h3 class="text-center">王文坏</h3>
-           <p class="text-center">课程题目数量课程题目数量课程题目数量课程题目数量课程题目数量</p>
+           <h3 class="text-center">{$vo.realname}</h3>
+           <p class="text-center">{$vo.desct}</p>
            <p class="text-center">
-           <a href="{:U('lists')}" class="btn btn-primary" role="button">点击查看</a>
-            <a  class="btn btn-success" role="button">课程数量<span class="badge">10</span></a></p>
+           <a href="{:U('Teacher/studentdetail',array('id'=>$vo['id']))}" class="btn btn-primary" role="button">点击查看</a>
+            <!-- /<a  class="btn btn-success" role="button">课程数量<span class="badge">{$vo.total}</span></a></p> -->
          </div>
    </div>
  </div>
+ {/foreach}
  </div>
+  {$show}
 </div>
   
 

@@ -9,7 +9,7 @@
 </style>
 
 {/block}
-{block name="panel-title"}<span>班级公示</span>{/block}
+{block name="panel-title"}<span>正选公示</span>{/block}
 
 {block name="panel-body"}
 
@@ -18,22 +18,36 @@
       <div class="col-sm-12">
      <div class="WU_myscroll">
      <ul >
-      <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span >已选人数</span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >指导老师</span>
+      <span >选课结果</span>
       </li>
+      
+      {volist name="codata" id="vo"}
        <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
+      <span >{$vo.studentid}</span>
+      <span >{$vo.stuname}</span>
+      <span >{$vo.coname}</span>
+      <span >{$vo.tename}</span>
+      <span ><button class="btn btn-success"><span class="badge ">正选</span></button></span>
       </li>
-     
+      {/volist} 
      </ul>
+     {empty name='codata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>班级中的所有同学正在努力选课中,请稍后再查</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
+     {$show}
      </div>
     </div>
   </div>

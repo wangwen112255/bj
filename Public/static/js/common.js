@@ -45,8 +45,11 @@ function _openLayerUrl(url,title,width,height,offset)
         // setTimeout(function(){
          if(data.data)
          window.location.href=data.data;
+         else if(window.parent)
+         window.parent.location.reload();
          else
          window.location.reload();
+
         // $('form').reset();
         // _layCloseIframe();
         // window.parent.$('form').reset();
@@ -151,6 +154,8 @@ function _openLayerUrl(url,title,width,height,offset)
   
     } 
 
+      
+
         function _setStatus(id,url){
         layer.confirm("您确定要修改状态吗？",{'btn':['确定','取消']},function(index){
               _ajax({
@@ -175,34 +180,34 @@ function _openLayerUrl(url,title,width,height,offset)
 
         }
         //
-         function _del(id,url){
-        layer.confirm("您确定要删除吗？",{'btn':['确定','取消']},function(index){
+        function _ajaxmodify(obj){
+        layer.confirm(obj.msg,{'btn':['确定','取消'],icon:3,title:'请慎重选择'},function(index){
               _ajax({
-                'url':url,
-                'data':{'id':id},
-                success:function(data){
-                  if(data.code===200){
-                    layer.msg(data.msg,{icon:1,time:700});
-                    $("#del"+id).parent().parent().remove();
-                  }
-                  else{
-                   layer.alert(data.msg,{icon:5});
-                  }
+                'url':obj.url,
+                'data':obj.data,
+                 success:function(data){
+                 if(data.code==200){
+                 layer.msg(data.msg,{icon:1,time:1000},function(){
+                 if(data.data)
+                 window.location.href=data.data;
+                else
+                  window.location.reload();
+                });
                 }
-
-            });
+                else{
+                layer.alert(data.msg, {icon: 5},function(index){
+                layer.close(index);
+                });
+                }
+                }, 
+                });
               layer.close(index);
         })
-
         }
     srheight=document.documentElement.scrollHeight;
     clheight=document.documentElement.clientHeight;
     topheight=document.body.scrollTop;
-    // alert(srheight)
-    // alert(clheight)
-
-    // alert(topheight)
-    // alert(topheight)
+   
    
 
    

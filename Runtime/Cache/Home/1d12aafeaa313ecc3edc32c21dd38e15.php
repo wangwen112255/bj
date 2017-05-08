@@ -78,7 +78,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/index');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -181,7 +181,7 @@
              <ul class="WU_personal">
               <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
               <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级正选公示</a></li>
               <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
 
             </ul>
@@ -192,7 +192,7 @@
               <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
               <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
               <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-              <li><a href=<?php echo U('Teacher/logout');?>"><span class=""></span>退出登录</a></li>
+              <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
           </div>
@@ -206,9 +206,8 @@
 
 <div class="panel-body">
  <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">待回复</a></li>
-  <li role="presentation"><a href="#">已回复</a></li>
-  
+  <li role="presentation" class="active"><a href="#">待审核</a></li>
+  <li role="presentation"><a href="#">已审核</a></li>
 </ul>
 </div>
   
@@ -257,6 +256,8 @@
     </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
+    <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
+    <script type="text/javascript" src="/static/js/plugins/layer/layer.min.js"></script>
     <script type="text/javascript" src="/static/js/common.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
     <script type="text/javascript">

@@ -79,7 +79,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
+      <a href="<?php echo U('Student/index');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -181,7 +181,7 @@
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
               <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-              <li><a href="<?php echo U('Student/classes');?>">班级公示</a></li>
+              <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
               <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
             </ul>
           </div>
@@ -199,7 +199,7 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>班级公示</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>正选公示</span></h3>
           </div>
               
 
@@ -208,22 +208,32 @@
       <div class="col-sm-12">
      <div class="WU_myscroll">
      <ul >
-      <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span >已选人数</span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >指导老师</span>
+      <span >选课结果</span>
       </li>
-       <li class="WU_scrollli" >
-      <span >课程题目</span>
-      <span >指导教师</span>
-      <span ><button class="btn btn-success"> <span class="badge ">42</span></button></span>
-      <span ><a  href='' class="showdetail">查看详情</a></span>
-      <span ><button class="btn btn-danger">在线选课</button></span>
-      </li>
-     
+      
+      <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+      <span ><?php echo ($vo["studentid"]); ?></span>
+      <span ><?php echo ($vo["stuname"]); ?></span>
+      <span ><?php echo ($vo["coname"]); ?></span>
+      <span ><?php echo ($vo["tename"]); ?></span>
+      <span ><button class="btn btn-success"><span class="badge ">正选</span></button></span>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?> 
      </ul>
+     <?php if(empty($codata)): ?><div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>班级中的所有同学正在努力选课中,请稍后再查</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div><?php endif; ?>
+     <?php echo ($show); ?>
      </div>
     </div>
   </div>
