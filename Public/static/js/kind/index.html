@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src='kindeditor-all-min.js'></script>
+	<!-- <script type="text/javascript" src='jquery-1.8.0.min.js'></script> -->
+</head>
+<body>
+	<textarea id="editor_id" name="content" style="width:700px;height:300px;">
+&lt;strong&gt;HTML内容&lt;/strong&gt;
+</textarea>
+<script>
+        KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id');
+        });
+</script>
+</body>
+</html>

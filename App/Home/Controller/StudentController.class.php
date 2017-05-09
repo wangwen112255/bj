@@ -28,8 +28,8 @@ class StudentController extends BaseController {
     	$this->display();
     }
     public function intro(){
-        // $Condition['username']=session('_username_');
-        // $Userdata=$this->dao->where($Condition)->find();
+        $Condition['username']=session('_username_');
+        $Userdata=$this->dao->where($Condition)->find();
         if(!empty(I('realname')) && isset($_POST['realname'])){
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
@@ -99,7 +99,6 @@ class StudentController extends BaseController {
         $this->display();
     }
     public function classes(){
-
             $Co=M('Order');
             $condition['xk_order.class_id']=$this->datainfo['class_id'];
             $condition['is_success']=1;

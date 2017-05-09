@@ -182,6 +182,7 @@ function _openLayerUrl(url,title,width,height,offset)
         //
         function _ajaxmodify(obj){
         layer.confirm(obj.msg,{'btn':['确定','取消'],icon:3,title:'请慎重选择'},function(index){
+               action=obj.action||'window.location.reload()';
               _ajax({
                 'url':obj.url,
                 'data':obj.data,
@@ -191,7 +192,7 @@ function _openLayerUrl(url,title,width,height,offset)
                  if(data.data)
                  window.location.href=data.data;
                 else
-                  window.location.reload();
+                   eval("("+action+")");
                 });
                 }
                 else{

@@ -3,7 +3,9 @@
 
 {block name='CSS'}
 <style type="text/css">
- 
+ .checked{
+	display:none; 
+ }
 
 
 </style>
@@ -15,9 +17,68 @@
 
 <div class="panel-body">
  <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">待审核</a></li>
-  <li role="presentation"><a href="#">已审核</a></li>
+  <li role="presentation" class="active"><a href="javascript:">待审核</a></li>
+  <li role="presentation" class=""><a href="javascript:">已审核</a></li>
 </ul>
+ <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+      <div class="col-sm-12">
+     <div class="WU_myscroll">
+     <ul >
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >学生状态</span>
+      <span >操作</span>
+      </li>
+      
+      {volist name="codata" id="vo"}
+       <li class="WU_scrollli {eq name='vo.isreceive' value='0'} uncheck {else/} checked
+       {/eq}" >
+      <span >{$vo.stid}</span>
+      <span >{$vo.stuname}</span>
+      <span >{$vo.coname}</span>
+      {eq name='vo.iscomplete' value='0'}
+      <span>
+      <button class="btn btn-primary"><span class="badge ">待录取</span></button>
+	  </span>
+	  <!-- --------d -->
+	  {eq name='vo.isreceive' value='0'}  
+	  <span>
+	  <input type="hidden" name="cid" value="{$vo.cid}">
+	  <button type="button" oid='{$vo.oid}' class="btn btn-success pass"><span class="glyphicon glyphicon-check">
+	  
+	  </span>审核通过</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" oid='{$vo.oid}' class=" refuse btn btn-success"><span class="glyphicon  glyphicon-remove-circle" ></span>拒绝</button></span>
+	  {else/} 
+	  <span ><button class="btn btn-success">已审核</button></span>
+	  {/eq}
+	  <!-- ------d- -->
+      {else/}
+	  <span>
+      <button class="btn btn-success">
+     <span class="badge"> {eq name='vo.is_success' value='1'}我已录取<span class="glyphicon glyphicon-ok"></span>{else/}已被录取{/eq}</span></button>
+      </span>
+      <span >
+      {eq name='vo.isreceive' value='0'} <button oid='{$vo.oid}' class="btn btn-success sawed">加入已审核</button>{else/}<button class="btn btn-success">已审核</button>{/eq}</span>
+      {/eq}
+      </li>
+      {/volist} 
+     </ul>
+     {empty name='codata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>还没有收到同学们的选课申请，请您耐心稍候</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
+     {$show}
+     </div>
+    </div>
+  </div>
 </div>
   
 
@@ -28,7 +89,28 @@
 
 {block name='JS'}
 <script type="text/javascript">
-  
+  $(".nav-tabs li").click(function(){
+ 	$(this).siblings().removeClass('active');
+ 	$(this).addClass('active');
+ 	$('.checked').toggle();
+ 	$('.uncheck').toggle();
+  })
+  $('.pass').click(function(){
+  	var cid=$(this).prev().val()
+  	var sid=$(this).parent().prevAll().last().html();
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'__CONTROLLER__/accept','msg':'您确定要接受该生的申请吗？','data':{'oid':oid,'sid':sid,'cid':cid}});
+  })
+    $('.sawed').click(function(){
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'__CONTROLLER__/joincheck','msg':'希望该生可以出色的和其他导师完成毕业设计','data':{'oid':oid}
+  	})
+	})
+	 $('.refuse').click(function(){
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'__CONTROLLER__/refuse','msg':'您确定要接受该生的申请吗？','data':{'oid':oid}});
+  	})
+
 </script>
 
 {/block}

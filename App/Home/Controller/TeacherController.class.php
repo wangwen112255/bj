@@ -66,11 +66,13 @@ class TeacherController extends BaseController {
             // dump($show);
             $codata= $Co
             ->where($condition)
-            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_order.id as oid,is_success,isreceive")
+            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_order.id as oid,is_success,isreceive,iscomplete,xk_student.studentid as stid,xk_order.course_id as cid")
+            ->order('xk_course.coursename')
             ->join('RIGHT JOIN __ORDER__ ON __ORDER__.course_id=__COURSE__.id')
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id') 
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
             ->select();
+            $this->assign('codata',$codata);
             dump($codata);
             $this->display();
     }
@@ -102,11 +104,12 @@ class TeacherController extends BaseController {
     }
 
     public function course(){
-        
-
-
-
-
+        // $Or=M('Order');
+        $Co=M('Course');
+        $codata=$Co->where('teacher_id='.$this->datainfo['id'])->select();
+        $this->assign('Codata',$codata);
+        $status=array("进行中",'结束了');
+        $this->assign('status',$status);
         $this->display();
     }
     public function classes(){
@@ -126,9 +129,9 @@ class TeacherController extends BaseController {
             ->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('show',$show);
             $this->assign('codata',$codata);
-            dump($codata);
-            $this->show();
-          
+            // dump($codata);
+            $this->display();
+         
         }
     public function guide(){
         $Te=M('Student');
@@ -151,6 +154,80 @@ class TeacherController extends BaseController {
                   ->select();
         $this->assign("Stdetaildata",$Stdetaildata);
         $this->display();
+
+    }
+    public function accept(){
+      if(IS_AJAX){
+        $Or=M('Order');
+        $condition['is_success']=1;
+        $condition['isreceive']=1;
+        $condition0['is_success']=0;
+        $condition0['isreceive']=1;
+        $St=M('Student');
+        // && $Or->where('id='.I('oid'))->setField($condition) && 
+        if($Or->where('course_id='.I('cid'))->setField($condition0) && $Or->where('id='.I('oid'))->setField($condition) && $St->where('studentid='.I('sid'))->setField('iscomplete',1) ){
+          $this->ajaxReturn(toJson(true,'恭喜您审核通过,马上提醒同学联系您'));
+        }else{
+          $this->ajaxReturn(toJson('数据有误，审核失败'));
+
+        }
+      }else {
+          $this->ajaxReturn(toJson('您的数据有误请检查'));
+      }
+
+    }
+    public function joincheck(){
+        if(IS_AJAX){
+        $Or=M('Order');
+        $condition['is_success']=0;
+        $condition['isreceive']=1;
+        if($Or->where('id='.I('oid'))->setField($condition)){
+          $this->ajaxReturn(toJson(true,"已加入"));
+        }else{
+          $this->ajaxReturn(toJson('数据有误，审核失败'));
+
+        }
+      }else {
+          $this->ajaxReturn(toJson('您的数据有误请检查'));
+      }
+
+
+    }
+     public function refuse(){
+        if(IS_AJAX){
+        $Or=M('Order');
+        $condition['is_success']=0;
+        $condition['isreceive']=1;
+        if($Or->where('id='.I('oid'))->setField($condition)){
+          $this->ajaxReturn(toJson(true,"恭喜您拒绝成功"));
+        }else{
+          $this->ajaxReturn(toJson('数据有误，审核失败'));
+
+        }
+      }else {
+          $this->ajaxReturn(toJson('您的数据有误请检查'));
+      }
+
+    }
+    public function create(){
+    $this->display();
+
+    }
+    public function changestatus(){
+        if(IS_AJAX){
+        $Co=M('Course');
+        $status= $Co->where("id=".I('cid'))->getField('status');
+        $condition['status']=abs($status-1);
+        if($Co->where('id='.I('cid'))->setField($condition)){
+          $this->ajaxReturn(toJson(true,"修改成功"));
+        }else{
+          $this->ajaxReturn(toJson('数据有误，审核失败'));
+
+        }
+      }else {
+          $this->ajaxReturn(toJson('您的数据有误请检查'));
+      }
+
 
     }
    

@@ -1,0 +1,1658 @@
+[ 2017-05-09T09:56:27+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0610s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T09:56:35+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T09:56:36+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T09:56:41+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:56:44+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:56:48+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:56:50+08:00 ] 127.0.0.1 /index.php/Student/classes.html
+ERR: 1052:Column 'studentid' in field list is ambiguous
+ [ SQL语句 ] : SELECT xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,`studentid` FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id  WHERE xk_order.class_id = '1' AND `is_success` = 1 LIMIT 0,10  
+
+[ 2017-05-09T09:56:57+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:57:21+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:57:22+08:00 ] 127.0.0.1 /index.php/Student/classes.html
+ERR: 1052:Column 'studentid' in field list is ambiguous
+ [ SQL语句 ] : SELECT xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,`studentid` FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id  WHERE xk_order.class_id = '1' AND `is_success` = 1 LIMIT 0,10  
+
+[ 2017-05-09T09:57:25+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:57:27+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:57:46+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:57:50+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:58:06+08:00 ] 127.0.0.1 /index.php/Student/classes.html
+ERR: 1052:Column 'studentid' in field list is ambiguous
+ [ SQL语句 ] : SELECT xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,`studentid` FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id  WHERE xk_order.class_id = '1' AND `is_success` = 1 LIMIT 0,10  
+
+[ 2017-05-09T09:58:11+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:58:13+08:00 ] 127.0.0.1 /index.php/Student/classes.html
+ERR: 1052:Column 'studentid' in field list is ambiguous
+ [ SQL语句 ] : SELECT xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,`studentid` FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id  WHERE xk_order.class_id = '1' AND `is_success` = 1 LIMIT 0,10  
+
+[ 2017-05-09T09:58:15+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:58:18+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:58:22+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:58:27+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:59:17+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:59:19+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:59:22+08:00 ] 127.0.0.1 /index.php/Student/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T09:59:27+08:00 ] 127.0.0.1 /index.php/Index/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:00:34+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-09T10:00:37+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T10:00:38+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T10:00:47+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-09T10:00:48+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T10:00:55+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-09T10:00:56+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T10:01:15+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T10:01:16+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\LoginController.class.php on line 25 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T10:01:21+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T10:01:23+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1190s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\BJ\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT `pwd` FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-09T10:01:26+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:01:29+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:01:37+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:01:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:01:56+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:02:03+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:02:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:03:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:04:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:04:53+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:05:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:05:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:06:39+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:07:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:12:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:12:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:12:58+08:00 ] 127.0.0.1 /index.php/Teacher/info.html
+ERR: 1052:Column 'studentid' in field list is ambiguous
+ [ SQL语句 ] : SELECT xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_order.id as oid,`is_success`,`isreceive`,`iscomplete`,`studentid` FROM `xk_course` RIGHT JOIN xk_order ON xk_order.course_id=xk_course.id LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id  WHERE `teacher_id` = '8' ORDER BY xk_course.coursename 
+
+[ 2017-05-09T10:13:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:18:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:18:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:22:16+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:22:37+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:24:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:24:28+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:24:58+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:25:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:29:22+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:29:40+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:30:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:30:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:31:15+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:31:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:54:26+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:57:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:58:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:59:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T10:59:58+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:00:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:01:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:04:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:04:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:05:08+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:06:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:07:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:07:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:08:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:08:23+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:08:34+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:09:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:10:13+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:10:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:11:16+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:12:21+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:12:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:12:49+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:13:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:14:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:14:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:15:58+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:18:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:18:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:18:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:19:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:19:19+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:20:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:23:14+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:28:40+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:32:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:32:23+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:32:27+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:accept
+
+[ 2017-05-09T11:33:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:33:34+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 159 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 159 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T11:45:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:49:56+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:50:46+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:50:51+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:50:58+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0100s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 164 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T11:51:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:56:31+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:56:35+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0960s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T11:56:56+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0660s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.2120s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T11:59:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:59:26+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T11:59:29+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0080s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=27 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316619 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 165 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T11:59:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:39:58+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:41:16+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0130s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T12:42:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:45:09+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:45:35+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0120s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T12:47:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:48:44+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:48:54+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0150s ]
+SQL: UPDATE `xk_order` SET `is_success`='1' WHERE ( id=30 ) [ RunTime:0.0020s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316603 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 165 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T12:48:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:49:08+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:49:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:50:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:50:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:52:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:52:34+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0000s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316603 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 165 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T12:52:37+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T12:52:53+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:03:30+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0130s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=27 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316619 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 165 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T13:03:31+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:03:35+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=27 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 167 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:06:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:06:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:07:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:07:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:08:19+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:10:51+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:10:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:10:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:11:04+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:11:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:12:45+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:13:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:21:42+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:22:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:22:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:22:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:22:44+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0110s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:25:46+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:29:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:29:09+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0190s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:30:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:30:39+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0990s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0280s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0270s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 169 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:32:44+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:32:56+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0170s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='0' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 168 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T13:33:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:33:55+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:33:59+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='0' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:34:15+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:34:22+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0160s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='0' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 168 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T13:34:25+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:34:31+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:35:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:35:04+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='0' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:35:26+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0160s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='0' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 170 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T13:36:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:36:19+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0180s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0020s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 168 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T13:36:22+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:38:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:39:36+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:44:51+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:46:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:46:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:46:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:47:09+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:48:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:49:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:52:59+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0130s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316603 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 168 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T13:53:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:54:14+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:55:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T13:56:18+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:01:27+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:09:08+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:16:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:18:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:18:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:19:14+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:21:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:23:58+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:33:44+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:34:29+08:00 ] 127.0.0.1 /index.php/Teacher/joincheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0940s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:joincheck
+
+[ 2017-05-09T14:34:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:37:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:37:32+08:00 ] 127.0.0.1 /index.php/Teacher/joincheck
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.1600s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( id=27 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 184 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T14:37:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:37:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:37:57+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id=14 ) [ RunTime:0.0010s ]
+SQL: UPDATE `xk_order` SET `is_success`='1',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0000s ]
+SQL: UPDATE `xk_student` SET `iscomplete`='1' WHERE ( studentid=201316603 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 168 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T14:38:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:38:53+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:42:28+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:42:31+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0100s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:42:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:42:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:42:44+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:42:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:43:02+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:43:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:43:51+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1450s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0120s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:43:54+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:43:59+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0110s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:45:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:46:03+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0090s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:46:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:46:14+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:46:18+08:00 ] 127.0.0.1 /index.php/Teacher/accept
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0140s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( course_id= )
+
+[ 2017-05-09T14:47:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:47:13+08:00 ] 127.0.0.1 /index.php/Teacher/refuse
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0670s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0230s ]
+SQL: UPDATE `xk_order` SET `is_success`='0',`isreceive`='1' WHERE ( id=30 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 201 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T14:47:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:48:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:49:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:49:23+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:50:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:55:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:55:05+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:55:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:56:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:56:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:56:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:56:43+08:00 ] 127.0.0.1 /index.php/Teacher/ming.html
+ERR: 非法操作:ming
+
+[ 2017-05-09T14:56:45+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:59:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T14:59:50+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T14:59:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:01:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:12:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:12:25+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:12:26+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:12:31+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:12:34+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:12:36+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:13:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:14:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:14:13+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:16:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:16:40+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:16:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:17:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:17:09+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:19:00+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:19:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:20:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:20:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:20:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:21:46+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:22:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:22:51+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:22:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:23:04+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:23:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:23:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:24:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:24:33+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:26:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:29:18+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:29:53+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:30:55+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:31:20+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:31:42+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:31:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:32:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:32:57+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:50:08+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:52:49+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:52:51+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:53:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:53:04+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:53:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:54:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:54:04+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:54:06+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:54:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:54:34+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:54:36+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:55:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:55:25+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:56:49+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:56:50+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:56:56+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:57:02+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:57:08+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:57:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:57:37+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:57:39+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T15:58:36+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T15:58:37+08:00 ] 127.0.0.1 /index.php/Teacher/create.html
+ERR: 非法操作:create
+
+[ 2017-05-09T16:00:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:00:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:00:52+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:03:21+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:06:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:10:09+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:10:59+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:13:20+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:47:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:47:29+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T16:48:26+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:01:20+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:01:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:07:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:08:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:09:17+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:09:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:09:51+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:10:10+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:26:19+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:26:24+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:26:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:27:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:28:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:29:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:31:06+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:32:21+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:33:38+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:39:37+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:42:35+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:48:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:49:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:52:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:52:28+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:52:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:53:12+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:54:20+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:55:14+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:55:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:55:53+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T17:55:58+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 218 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 218 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+
+[ 2017-05-09T18:02:16+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:02:18+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.2250s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0320s ]
+NOTIC: [8] Undefined variable: Or D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php 第 221 行.
+
+[ 2017-05-09T18:03:01+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:04:48+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:04:51+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.2250s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:04:55+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:05:07+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:05:11+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:05:15+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.2110s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.3210s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:05:18+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:05:20+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.1020s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:05:23+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:05:27+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:05:30+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:09:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:09:48+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:12:49+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:12:50+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0090s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:12:56+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:13:02+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0120s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:13:54+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:13:56+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0110s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:14:41+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:14:43+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.3810s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0140s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:14:47+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:16:44+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:16:46+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.2410s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0100s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xk_course` SET `status`='0' WHERE ( id=14 ) [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+
+[ 2017-05-09T18:17:02+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:17:04+08:00 ] 127.0.0.1 /index.php/Teacher/changestatus
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT `status` FROM `xk_course` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
+

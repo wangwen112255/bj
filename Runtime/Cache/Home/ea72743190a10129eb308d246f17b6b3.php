@@ -178,7 +178,7 @@
              <ul class="WU_personal">
               <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
               <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级正选公示</a></li>
               <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
 
             </ul>

@@ -31,12 +31,15 @@
     
    	</style>
    	
+
 <style type="text/css">
- 
-
-
+.layui-layer-setwin .layui-layer-close1 {
+        display:block !important;
+    }
+.table>tbody>tr>td{
+vertical-align:middle 
+}
 </style>
-
 
    </head>
 	<body>
@@ -205,7 +208,65 @@
               
 
 <div class="panel-body">
- 
+     <div style="width: 100%;height: 50px;">
+            <div class="col-sm-2 pull-left">
+            <div class="btn-group">
+                <button type="button" class="btn  btn-outline btn-default" title="增加" onclick="_openLayerUrl('<?php echo U('create');?>','添加毕业设计题目','60%','45%',['250px','28%'])"><span class="glyphicon glyphicon-plus"></span></button>
+             <button type="button" onclick="_delall();" class="btn btn-default  btn-outline" title="删除"><span class="glyphicon glyphicon-trash"></span></button>
+            </div>
+            </div>
+            <div class="col-sm-4 pull-right">
+              <form>
+                   <div class="btn-group pull-right">
+                    <button class="btn btn-outline btn-default " title="搜索"><span class="glyphicon glyphicon-search"></span></button>
+                    <a  href="" class="btn btn-outline btn-default" title="刷新"><span class="glyphicon glyphicon-repeat"></span></a>
+                  
+                    </div>
+                     <div class="pull-right" style="margin-right: 8px">
+                    <input type="text" name="" id="input"  class="form-control " value="" placeholder="搜你想搜得"  required="required" pattern="" title=""> 
+                   </div>
+                </form>
+             </div>
+        </div>
+        <div class="col-sm-12">
+      <table class="table table-striped table-hover  table-bordered ">
+	<thead>
+		<tr>
+			<th>毕设题目</th>
+		
+			<th>课程要求</th>
+		
+			<th>选课情况</th>
+			
+			<th>课程状态</th>
+		
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+	<?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+			<td><?php echo ($vo["coursename"]); ?></td>
+			<td><?php echo ($vo["desc"]); ?></td>
+			<td>
+			<div class="progress " style="width:90%;">
+          <div class="progress-bar progress-bar-<?php echo ($vo['choosenum']==$vo['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%">
+           <?php echo ($data['choosenum']/$data['limitnum']*100); ?>%(<?php echo ($data['choosenum']); ?>人)
+         	</div>
+        	</div>
+			</td>
+			<td>
+			
+			   	<button type="button"  cid='<?php echo ($vo["id"]); ?>'  class="changestatus <?php if(($vo["status"]) == "0"): ?>btn btn-success<?php else: ?>btn btn-default<?php endif; ?>"><?php  $m=$vo['status'];echo $status[$m];?></button>
+			</td>
+			<td>
+			  <button type="button"  id='status<?php echo ($v["id"]); ?>' onclick="_openLayerUrl('<?php echo U('create',array('id'=>$v['id']));?>','编辑','100%','70%')" class="btn btn-info"><span class="fa fa-edit"></span ><span >编辑</span></button>
+                <button type="button" class="btn btn-warning"  id="del<?php echo ($v["id"]); ?>" onclick="_del(<?php echo ($v["id"]); ?>,'<?php echo U('del');?>')" ><span class="fa fa-trash"></span>删除</button>
+			</td>
+		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	</tbody>
+</table>
+</div>
 </div>
   
 
@@ -278,7 +339,10 @@
    	
     
 <script type="text/javascript">
-  
+   $('.changestatus').click(function(){
+  	var cid=$(this).attr('cid');
+  	_ajaxmodify({url:'/index.php/Teacher/changestatus','msg':'您确定修改该题目的课程状态吗？','data':{'cid':cid},'action':'alert($(this).attr("cid"))'});
+  	});
 </script>
 
 

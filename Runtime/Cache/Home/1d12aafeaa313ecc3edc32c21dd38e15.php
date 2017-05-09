@@ -32,7 +32,9 @@
    	</style>
    	
 <style type="text/css">
- 
+ .checked{
+	display:none; 
+ }
 
 
 </style>
@@ -206,9 +208,59 @@
 
 <div class="panel-body">
  <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">待审核</a></li>
-  <li role="presentation"><a href="#">已审核</a></li>
+  <li role="presentation" class="active"><a href="javascript:">待审核</a></li>
+  <li role="presentation" class=""><a href="javascript:">已审核</a></li>
 </ul>
+ <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+      <div class="col-sm-12">
+     <div class="WU_myscroll">
+     <ul >
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >学生状态</span>
+      <span >操作</span>
+      </li>
+      
+      <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli <?php if(($vo["isreceive"]) == "0"): ?>uncheck <?php else: ?> checked<?php endif; ?>" >
+      <span ><?php echo ($vo["stid"]); ?></span>
+      <span ><?php echo ($vo["stuname"]); ?></span>
+      <span ><?php echo ($vo["coname"]); ?></span>
+      <?php if(($vo["iscomplete"]) == "0"): ?><span>
+      <button class="btn btn-primary"><span class="badge ">待录取</span></button>
+	  </span>
+	  <!-- --------d -->
+	  <?php if(($vo["isreceive"]) == "0"): ?><span>
+	  <input type="hidden" name="cid" value="<?php echo ($vo["cid"]); ?>">
+	  <button type="button" oid='<?php echo ($vo["oid"]); ?>' class="btn btn-success pass"><span class="glyphicon glyphicon-check">
+	  
+	  </span>审核通过</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" oid='<?php echo ($vo["oid"]); ?>' class=" refuse btn btn-success"><span class="glyphicon  glyphicon-remove-circle" ></span>拒绝</button></span>
+	  <?php else: ?> 
+	  <span ><button class="btn btn-success">已审核</button></span><?php endif; ?>
+	  <!-- ------d- -->
+      <?php else: ?>
+	  <span>
+      <button class="btn btn-success">
+     <span class="badge"> <?php if(($vo["is_success"]) == "1"): ?>我已录取<span class="glyphicon glyphicon-ok"></span><?php else: ?>已被录取<?php endif; ?></span></button>
+      </span>
+      <span >
+      <?php if(($vo["isreceive"]) == "0"): ?><button oid='<?php echo ($vo["oid"]); ?>' class="btn btn-success sawed">加入已审核</button><?php else: ?><button class="btn btn-success">已审核</button><?php endif; ?></span><?php endif; ?>
+      </li><?php endforeach; endif; else: echo "" ;endif; ?> 
+     </ul>
+     <?php if(empty($codata)): ?><div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>还没有收到同学们的选课申请，请您耐心稍候</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div><?php endif; ?>
+     <?php echo ($show); ?>
+     </div>
+    </div>
+  </div>
 </div>
   
 
@@ -281,7 +333,28 @@
    	
     
 <script type="text/javascript">
-  
+  $(".nav-tabs li").click(function(){
+ 	$(this).siblings().removeClass('active');
+ 	$(this).addClass('active');
+ 	$('.checked').toggle();
+ 	$('.uncheck').toggle();
+  })
+  $('.pass').click(function(){
+  	var cid=$(this).prev().val()
+  	var sid=$(this).parent().prevAll().last().html();
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'/index.php/Teacher/accept','msg':'您确定要接受该生的申请吗？','data':{'oid':oid,'sid':sid,'cid':cid}});
+  })
+    $('.sawed').click(function(){
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'/index.php/Teacher/joincheck','msg':'希望该生可以出色的和其他导师完成毕业设计','data':{'oid':oid}
+  	})
+	})
+	 $('.refuse').click(function(){
+  	var oid=$(this).attr('oid');
+  	_ajaxmodify({url:'/index.php/Teacher/refuse','msg':'您确定要接受该生的申请吗？','data':{'oid':oid}});
+  	})
+
 </script>
 
 
