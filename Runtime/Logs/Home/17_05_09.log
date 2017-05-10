@@ -1656,3 +1656,15 @@ SQL: UPDATE `xk_course` SET `status`='1' WHERE ( id=14 ) [ RunTime:0.0000s ]
 NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\BJ\App\Home\Controller\TeacherController.class.php on line 222 and defined D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 42 行.
 NOTIC: [8] Undefined variable: data D:\phpStudy\WWW\BJ\App\Common\Common\function.php 第 44 行.
 
+[ 2017-05-09T18:45:18+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:45:21+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:45:27+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+ERR: 非法操作:holder.js
+
+[ 2017-05-09T18:45:32+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+ERR: 非法操作:holder.js
+

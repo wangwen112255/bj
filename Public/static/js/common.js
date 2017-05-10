@@ -143,11 +143,11 @@ function _openLayerUrl(url,title,width,height,offset)
           }); 
           $(jscheck).eq(i).change(function() {
            if(this.checked){
-              $(this).siblings('input').val(1);
+              $(this).siblings('input').val(0);
               //console.log($(this).next().next());
              }
              else{
-             $(this).siblings('input').val(0);
+             $(this).siblings('input').val(1);
              }
            });
     }

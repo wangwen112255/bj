@@ -106,10 +106,14 @@ class TeacherController extends BaseController {
     public function course(){
         // $Or=M('Order');
         $Co=M('Course');
-        $codata=$Co->where('teacher_id='.$this->datainfo['id'])->select();
+        $counts=$Co->where('teacher_id='.$this->datainfo['id'])->count();
+        $page=new \Think\Page($counts,10);
+        $show=$page->show();
+        $codata=$Co->where('teacher_id='.$this->datainfo['id'])->limit($page->firstRow.','.$page->listRows)->select();
         $this->assign('Codata',$codata);
         $status=array("进行中",'结束了');
         $this->assign('status',$status);
+        $this->assign("show",$show);
         $this->display();
     }
     public function classes(){
@@ -164,8 +168,9 @@ class TeacherController extends BaseController {
         $condition0['is_success']=0;
         $condition0['isreceive']=1;
         $St=M('Student');
+        $Co=M('Course');
         // && $Or->where('id='.I('oid'))->setField($condition) && 
-        if($Or->where('course_id='.I('cid'))->setField($condition0) && $Or->where('id='.I('oid'))->setField($condition) && $St->where('studentid='.I('sid'))->setField('iscomplete',1) ){
+        if($Or->where('course_id='.I('cid'))->setField($condition0) && $Or->where('id='.I('oid'))->setField($condition) && $St->where('studentid='.I('sid'))->setField('iscomplete',1) && $Co->where('id='.I('cid'))->setField("status",1) ){
           $this->ajaxReturn(toJson(true,'恭喜您审核通过,马上提醒同学联系您'));
         }else{
           $this->ajaxReturn(toJson('数据有误，审核失败'));
@@ -209,10 +214,7 @@ class TeacherController extends BaseController {
       }
 
     }
-    public function create(){
-    $this->display();
-
-    }
+  
     public function changestatus(){
         if(IS_AJAX){
         $Co=M('Course');
@@ -230,6 +232,85 @@ class TeacherController extends BaseController {
 
 
     }
+    public function create(){
+    if(!empty($_GET['cid'])&&isset($_GET['cid'])){
+        $Co=M("Course");
+        $Codata=$Co->find($_GET['cid']);
+        $this->assign("codata",$Codata);
+        // dump($Codata);
+        $this->display();
+    }else{
+        $this->display();
+    }
+    }
+
+
+    public function saves(){
+    $Co=M("Course");
+    $_POST['teacher_id']=$this->datainfo['id'];
+    $_POST['desc']=I('post.desc',"htmlspecialchars");
+    //$Codata=$Co->where('teacher_id='.$this->datainfo['id'])->select();
+    if(IS_AJAX){
+     if(!empty($_POST['cid'])&&isset($_POST['cid'])){
+       if($Co->create()){
+            if($Co->where('id='.$_POST['cid'])->save())
+            $this->ajaxReturn(toJson(true,"恭喜您,修改成功"));
+            else
+            $this->ajaxReturn(toJson("修改失败请稍候"));
+        }else{
+        $this->ajaxReturn(toJson($this->getError()));
+        } 
+     }else{
+        if($Co->create()){
+            if($Co->add())
+            $this->ajaxReturn(toJson(true,"设计添加成功，同学们可以选课了"));
+            else
+            $this->ajaxReturn("添加失败请稍候");
+        }else{
+        $this->ajaxReturn(toJson($this->getError()));
+        }
+     }
+
+    }else{
+        $this->ajaxReturn(toJson('数据来源有误请重新填写'));
+    }
+  
+  }
+    public function delcourse(){
+    $Co=M("Course");
+    if(IS_AJAX){
+     if(!empty($_POST['cid'])&&isset($_POST['cid'])){
+            if($Co->delete($_POST['cid']))
+            $this->ajaxReturn(toJson(true,"删除成功"));
+            else
+            $this->ajaxReturn(toJson("删除失败请稍候"));
+        }else{
+        $this->ajaxReturn(toJson("数据有误，删除失败"));
+        }
+    }
+    else{
+        $this->ajaxReturn(toJson('数据来源有误请重新填写'));
+    }
+    }
+    public function resetcourse(){
+    $Co=M("Course");
+    if(IS_AJAX){
+     if(!empty($_POST['cid'])&&isset($_POST['cid'])){
+            if($Co->where($_POST['cid'])->setField('choosenum',0))
+            $this->ajaxReturn(toJson(true,"该课程重置成功,可以重新开始选课了"));
+            else
+            $this->ajaxReturn(toJson("重置失败请稍候"));
+        }else{
+        $this->ajaxReturn(toJson("数据有误，重置失败"));
+        }
+    }
+    else{
+        $this->ajaxReturn(toJson('数据来源有误请重新填写'));
+    }
+    }
+
+    }
+
+    
    
 
-}

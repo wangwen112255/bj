@@ -30,6 +30,9 @@ class   TeachersController extends Controller {
     	$this->assign('codata',$codata);
     	$this->display();
     }
+    public function delcourse(){
+    	$this->ajaxReturn(toJson("fasdf"));
+    }
 	
 
 }

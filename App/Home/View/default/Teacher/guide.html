@@ -33,6 +33,17 @@
  </div>
  {/foreach}
  </div>
+    {empty name='Tedata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>您所在班级的学生给你还没有查询到信息呢</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
   {$show}
 </div>
   
