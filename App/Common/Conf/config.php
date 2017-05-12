@@ -33,5 +33,9 @@ return array(
  	'TMPL_ACTION_SUCCESS' => THINK_PATH . 'Tpl/disjump.html',//修改成功的
  	// 'SHOW_ERROR_MSG' => true,
  	// 'ERROR_MESSAGE'  =>    '发生错误！'
- 	
+ 	 'THINK_SDK_QQ' => array(
+        'APP_KEY'    => '101377642', 
+        'APP_SECRET' => '9eb7d7b7cecacda0e39122ff1af10cc5', //应用注册成功后分配的KEY
+         'CALLBACK'   => 'http://bs.equxue.cn/index.php/Ming/callback'//回调网址
+   )
 );
