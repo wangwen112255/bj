@@ -42,7 +42,7 @@
         <!-- {$data.choosenum} -->
         <div class="progress " style="width:60%;margin:10px auto;">
           <div class="progress-bar progress-bar-{$data['choosenum']==$data['limitnum']?'danger':'success'}  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:{$data['choosenum']/$data['limitnum']*100}%">
-           {$data['choosenum']/$data['limitnum']*100}%({$data['choosenum']}人)
+           <?php  echo floor($data['choosenum']/$data['limitnum']*100);  ?>%({$data['choosenum']}人)
           </div>
         </div>
         </span>

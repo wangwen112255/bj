@@ -55,7 +55,18 @@ function check_verify($code,$id=''){
 $verify = new \Think\Verify();	
 return $verify->check($code,$id);
 }
-
+function getOauth($type){
+	if($type){
+	$name = ucfirst(strtolower($type)) . 'SDK';
+	$names="Org\ThinkSDK\sdk"."\\".$name;
+	return $names;
+	}
+	else{
+		return false;
+	}
+	
+}
  ?>
+
 
 

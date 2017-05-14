@@ -85,3 +85,72 @@ ERR: 实例化一个不存在的类！:QqSDK
 [ 2017-05-12T18:15:36+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
 ERR: 实例化一个不存在的类！:QqSDK
 
+[ 2017-05-12T22:41:14+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:44:29+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:35+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:36+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:36+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:37+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:37+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:45:37+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:52:05+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:52:07+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:52:08+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:52:08+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:52:10+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T22:53:41+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:00:25+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:00:26+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:00:26+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:00:26+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:21:27+08:00 ] 127.0.0.1 /index.php/Ming/getOauth
+ERR: 实例化一个不存在的类！:QqSDK
+
+[ 2017-05-12T23:22:59+08:00 ] 127.0.0.1 /index.php/Indexx/login/type/sina.html
+ERR: 请配置您申请的APP_KEY和APP_SECRET
+
+[ 2017-05-12T23:23:05+08:00 ] 127.0.0.1 /index.php/Indexx/login/type/renren.html
+ERR: 请配置您申请的APP_KEY和APP_SECRET
+
+[ 2017-05-12T23:23:13+08:00 ] 127.0.0.1 /index.php/Indexx/login/type/github.html
+ERR: 请配置您申请的APP_KEY和APP_SECRET
+
+[ 2017-05-12T23:34:22+08:00 ] 127.0.0.1 /index.php/Indexx/login/type/qq.html
+ERR: 请配置您申请的APP_KEY和APP_SECRET
+

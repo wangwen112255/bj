@@ -87,12 +87,12 @@
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料<span class="glyphicon glyphicon-bell"></span></a></li>
         <!-- <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目<span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置<span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出<span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
       </form>
 
@@ -199,18 +199,59 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的通知</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的选课</span></h3>
           </div>
               
 
 <div class="panel-body">
  <ul class="nav nav-tabs">
-  <li role="presentation"><a href="#">消息通知</a></li>
-  
+  <li role="presentation" class="active"><a href="#">已选题目</a></li>
 </ul>
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>毕设题目</th>
+		
+			<th>课程要求</th>
+		
+			<th>指导老师</th>
+			
+			<th>课程状态</th>
+		
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+	<?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+			<td><?php echo ($vo["coname"]); ?></td>
+			<td><span class="badge">已选<?php echo ($vo["choosenum"]); ?>人</span></td>
+			<td><?php echo ($vo["tename"]); ?></td>
+			<td>
+			<?php if($vo['isreceive'] == 0): ?><span class="badge btn-success">待审核</span></td>
+			<td>
+			<input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
+			<button id="trash" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
+			</td>
+			<?php else: ?>
+			<?php if(($vo["is_success"]) == "1"): ?><span class="badge" style="background: #5cb85c">已正选</span></td>
+			<td><button type="button" class="btn btn-success" ><span class="glyphicon glyphicon-heart">恭喜您 </span></button></td>
+			<?php else: ?><span class="badge" style="background: #d9534f">已拒绝</span></td>
+			<td><button type="button" class="btn btn-success" ></span class="">试试其他的 </span></button></td><?php endif; endif; ?>
+			
+		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	</tbody>
+</table>
+		 <?php if(empty($Codata)): ?><div class="jumbotron">
+		          <div class="container">
+		            <h1>已经尽力了</h1>
+		            <p>您还没有开始选课呢,抓紧时间</p>
+		            <p>
+		              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+		            </p>
+		          </div>
+		        </div><?php endif; ?>
 </div>
-  
-
 
   
         </div>
@@ -280,7 +321,10 @@
    	
     
 <script type="text/javascript">
-  
+$("#trash").click(function(){
+ var oid=$(this).prev().val();
+  _ajaxmodify({url:'/index.php/Student/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
+})
 </script>
 
 

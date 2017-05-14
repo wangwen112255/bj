@@ -73,7 +73,7 @@
         <span >
           <div class="progress " style="width:60%;margin:10px auto;">
           <div class="progress-bar progress-bar-{$data['choosenum']==$data['limitnum']?'danger':'success'}  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:{$vo['choosenum']/$vo['limitnum']*100}%">
-           {$vo['choosenum']/$vo['limitnum']*100}%({$vo['choosenum']}人)
+           <?php echo floor($vo['choosenum']/$vo['limitnum']*100)  ?> %({$vo['choosenum']}人)
           </div>
         </div>
 
@@ -88,7 +88,7 @@
           <button class="btn btn-danger ">选课已满</button>
           {else/}
           <input type="hidden" name="idc" value='{$vo.idc}'>
-         <button  id="selectcourse" class="btn btn-success">在线选课</button>
+         <button  class=" selectcourse btn btn-success">在线选课</button>
            {/eq}
         {/eq}
         </li>
@@ -121,8 +121,9 @@ $("#modals").on("show.bs.modal", function() {
     $(this).removeData("bs.modal");  
 });
 
-$("#selectcourse").click(function(){
-_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'__CONTROLLER__/selectcourse',data:{idc:14}})
+$(".selectcourse").click(function(){
+var id=$(this).prev().val();
+_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'__CONTROLLER__/selectcourse',data:{idc:id}})
 
 })
 

@@ -11,7 +11,8 @@ class   CourseController extends BaseController{
       $this->ajaxReturn(toJson('请先核实您的身份'));
     }
     else{
-      $this->redirect('Teacher/index');
+      echo "<script>alert(0)</script>";
+      $this->redirect('Teacher/Course');
     }
    }
    $this->dao=D('Student');
@@ -21,10 +22,12 @@ class   CourseController extends BaseController{
     public function index(){
       $classid=$this->datainfo['class_id'];
       $Te=M("Teacher");
-      $counts=$Te->where(array('class_id'=>$classid))->join("RIGHT JOIN __COURSE__ ON __COURSE__.teacher_id=__TEACHER__.id")->count();
+      $condition['class_id']=$classid;
+      $condition['status']=0;
+      $counts=$Te->where($condition)->join("RIGHT JOIN __COURSE__ ON __COURSE__.teacher_id=__TEACHER__.id")->count();
       $Page=new  \Think\Page($counts,10);
       $show=$Page->show();
-      $codata=$Te->field('xk_teacher.realname,xk_teacher.id as idt,xk_course.coursename,xk_course.limitnum,xk_course.choosenum,xk_course.id as idc,xk_course.status')->where(array('class_id'=>$classid))->group('xk_teacher.id')->join("RIGHT JOIN __COURSE__ ON __COURSE__.teacher_id=__TEACHER__.id")->limit($Page->firstRow.','.$Page->listRows)->select();
+      $codata=$Te->field('xk_teacher.realname,xk_teacher.id as idt,xk_course.coursename,xk_course.limitnum,xk_course.choosenum,xk_course.id as idc,xk_course.status')->where($condition)->join("RIGHT JOIN __COURSE__ ON __COURSE__.teacher_id=__TEACHER__.id")->limit($Page->firstRow.','.$Page->listRows)->select();
 
     $this->assign("codata",$codata);
     $this->assign("show",$show);

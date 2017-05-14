@@ -3,7 +3,7 @@ return array(
 	//'配置项'=>'配置值'
 	'LOAD_EXT_CONFIG'=>"wx,db",
 	"SESSION_AUTO_START"=>true,
-	"SHOW_PAGE_TRACE"=>true,//开启调试页面
+	// "SHOW_PAGE_TRACE"=>true,//开启调试页面
 	"URL_CASE_INSENSITIVE"=>true,
 	'URL_HTML_SUFFIX'=>'html|shtml',
 	"URL_MODEL"=>1,
@@ -36,6 +36,7 @@ return array(
  	 'THINK_SDK_QQ' => array(
         'APP_KEY'    => '101377642', 
         'APP_SECRET' => '9eb7d7b7cecacda0e39122ff1af10cc5', //应用注册成功后分配的KEY
-         'CALLBACK'   => 'http://bs.equxue.cn/index.php/Ming/callback'//回调网址
+         'CALLBACK'   => 'http://bs.equxue.cn/index.php/Ming/callback/type/qq'//回调网址
    )
+ 	 
 );

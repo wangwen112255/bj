@@ -16,6 +16,7 @@ class   TeachersController extends Controller {
 	    // $condition['status']=0;
 	    $course=M('Course');
 	    $name=$this->dao->find($condition['teacher_id']);
+	    $condition['status']=0;
 	    $codata=$course->where($condition)->select();
 	    // dump($codata);
 	   $this->assign('name',$name);
@@ -27,6 +28,7 @@ class   TeachersController extends Controller {
     	$numid=I('numid');
     	$co=M('Course');
     	$codata=$co->find($numid);
+    	$codata['desc']=strip_tags(htmlspecialchars_decode($codata['desc']));
     	$this->assign('codata',$codata);
     	$this->display();
     }

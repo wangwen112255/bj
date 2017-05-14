@@ -91,10 +91,11 @@ class StudentController extends BaseController {
     public function course(){
         $Or=M('Order');
         $codata=$Or->where("student_id=".$this->datainfo['id'])
-                 ->field("xk_teacher.realname as tename,xk_order.id as oid,xk_course.coursename as coname,xk_course.desc as codesc,xk_order.id as oid,is_success,isreceive")
+                 ->field("xk_teacher.realname as tename,xk_order.id as oid,xk_course.coursename as coname,choosenum,xk_order.id as oid,is_success,isreceive")
                  ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
                  ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
                  ->select();
+     
         $this->assign("Codata",$codata);         
         $this->display();
     }
@@ -108,14 +109,14 @@ class StudentController extends BaseController {
             // dump($show);
             $codata= $Co
             ->where($condition)
-            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,studentid")
+            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stuid")
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
             ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
             ->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('show',$show);
             $this->assign('codata',$codata);
-            dump($codata);
+            // dump($codata);
             $this->show();
         }
     public function guide(){
@@ -130,7 +131,9 @@ class StudentController extends BaseController {
             $condition['id']=$_POST['id'];
             $condition['student_id']=$this->datainfo['id'];
             $Or=M('Order');
-            if($Or->where($condition)->delete()){
+            $cid=$Or->where('id='.$condition['id'])->getField('class_id');
+            $Co=M('Course');
+            if($Or->where($condition)->delete()&&  $Co->where('id='.$cid)->setDec('choosenum',1)){
             $this->ajaxReturn(toJson(true,'撤销成功,不可恢复！'));
             }
             else{

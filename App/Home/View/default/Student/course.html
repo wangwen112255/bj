@@ -69,7 +69,7 @@
 	{volist name="Codata" id="vo"}
 		<tr>
 			<td>{$vo.coname}</td>
-			<td>{$vo.codesc}</td>
+			<td><span class="badge">已选{$vo.choosenum}人</span></td>
 			<td>{$vo.tename}</td>
 			<td>
 			{if condition="$vo['isreceive'] eq 0"}<span class="badge btn-success">待审核</span></td>

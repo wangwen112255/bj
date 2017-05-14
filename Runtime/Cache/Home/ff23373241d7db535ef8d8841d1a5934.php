@@ -46,11 +46,11 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="row" style="width:1200px">
+    <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
@@ -78,7 +78,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" target="_blank" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -181,7 +181,7 @@
              <ul class="WU_personal">
               <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
               <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
-              <li><a href="<?php echo U('Teacher/classes');?>">班级情况公示</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级正选公示</a></li>
               <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
 
             </ul>

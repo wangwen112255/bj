@@ -58,11 +58,11 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="row" style="width:1200px">
+    <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
-    <div class="col-sm-9">
+    <div class="col-xs-10" >
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
@@ -92,7 +92,7 @@
      <?php else: ?>
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
-      <a href='/index.php/<?php echo (session('role')); ?>/index' class="dropdown-toggle" >
+      <a href='/index.php/<?php echo (session('role')); ?>/Course' class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -104,7 +104,7 @@
         <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
         <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/intro">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
+        <li class="dropdown-menu-li" <?php if(($_SESSION['role']) == "Student"): ?>style="display: none"<?php endif; ?>><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
         <span class="glyphicon glyphicon-bell"></span></a></li>
         <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/course">我的课目
         <span class="glyphicon glyphicon-tasks"></span></a></li>
@@ -177,8 +177,8 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <span>没有账号,</span><a style="cursor:pointer">立即注册</a>
-                  <a class='pull-right' style="cursor:pointer">忘记密码?</a>
+                  <span>没有账号,</span><a href="/index.php/Course/register" style="cursor:pointer">立即注册</a>
+                  <a class='pull-right' href="<?php echo U('Public/Forgetpwd');?>" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
             <div class="form-group">
@@ -187,8 +187,22 @@
                   <button  class="btn btn-primary" id="login">登录</button>
               </div>
             </div>
-           
+                    
           </form>
+
+          <div class="row">
+           <hr> 
+           <div class="col-sm-9 col-sm-offset-3">
+                第三方登陆
+                <a href="<?php echo U('Ming/getOauth',array('type'=>'qq'));?>" target='_blank' style="display:inline-block;width:36px;height:32px;background-image: url('/static/img/login-third-party.png');background-position: -110px;"></a>&nbsp;&nbsp;
+                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
+               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>" style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
+          </div>
+
+          </div>
+
+         
+       
         </div>
       </div>
     </div>
@@ -287,7 +301,7 @@
         <span >
           <div class="progress " style="width:60%;margin:10px auto;">
           <div class="progress-bar progress-bar-<?php echo ($data['choosenum']==$data['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%">
-           <?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%(<?php echo ($vo['choosenum']); ?>人)
+           <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?> %(<?php echo ($vo['choosenum']); ?>人)
           </div>
         </div>
 
@@ -300,7 +314,7 @@
           <?php if(($vo["choosenum"]) == $vo['limitnum']): ?><button class="btn btn-danger ">选课已满</button>
           <?php else: ?>
           <input type="hidden" name="idc" value='<?php echo ($vo["idc"]); ?>'>
-         <button  id="selectcourse" class="btn btn-success">在线选课</button><?php endif; endif; ?>
+         <button  class=" selectcourse btn btn-success">在线选课</button><?php endif; endif; ?>
         </li><?php endforeach; endif; else: echo "" ;endif; ?> 
        
        </ul>
@@ -440,8 +454,9 @@ $("#modals").on("show.bs.modal", function() {
     $(this).removeData("bs.modal");  
 });
 
-$("#selectcourse").click(function(){
-_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'/index.php/Course/selectcourse',data:{idc:14}})
+$(".selectcourse").click(function(){
+var id=$(this).prev().val();
+_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'/index.php/Course/selectcourse',data:{idc:id}})
 
 })
 

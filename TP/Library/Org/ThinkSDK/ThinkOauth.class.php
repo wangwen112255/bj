@@ -11,6 +11,8 @@
 // | ThinkOauth.class.php 2013-02-25
 // +----------------------------------------------------------------------
 namespace Org\ThinkSDK;
+use \Exception;
+// use Org\ThinkSDK\sdk\QqSDK;
 abstract class ThinkOauth{
 	/**
 	 * oauth版本
@@ -91,13 +93,14 @@ abstract class ThinkOauth{
 	public function __construct($token = null){
 		//设置SDK类型
 		$class = get_class($this);
-		$this->Type = strtoupper(substr($class, 0, strlen($class)-3));
-		
-
+		// $this->Type = strtoupper(substr($class, 0, 2));//这个有问题
+		$this->Type =end(explode("\\", substr($class, 0, strlen($class)-3)));
 		//获取应用配置
+		// $this->Type="Qq";
+		// $_SESSION['authtype']=$class;
 		$config = C("THINK_SDK_{$this->Type}");
 		if(empty($config['APP_KEY']) || empty($config['APP_SECRET'])){
-			echo "sdf";
+			echo "你还有在配置文文件中填写您的APP_KEY以及APP_SECRET<br>格式是<pre>THINK_SDK_QQ=>Array('APP_KEY']=>'12456456')</pre>";
 			// throw new Exception('请配置您申请的APP_KEY和APP_SECRET');
 		} else {
 			$this->AppKey    = $config['APP_KEY'];
@@ -111,11 +114,15 @@ abstract class ThinkOauth{
      * @static
      * @return mixed 返回Oauth
      */
+    //这个函数有bug
     public static function getInstance($type, $token = null) {
     	$name = ucfirst(strtolower($type)) . 'SDK';
-    	require_once "sdk/{$name}.class.php";
+    	// $name='QqSDK';
+    	// require_once "sdk/{$name}.class.php";
     	if (class_exists($name)) {
-    		return new $name($token);
+    		$classname="Org\ThinkSDK\sdk".$name;
+    		return new $classname($token);
+    		// return new QqSDK($token);
     	} else {
     		E(L('_CLASS_NOT_EXIST_') . ':' . $name);
     	}
@@ -125,7 +132,7 @@ abstract class ThinkOauth{
 	 * 初始化配置
 	 */
 	protected function config(){
-		$config = C("THINK_SDK_{$this->Type}");
+		$config = C("THINK_SDK_".$this->Type);
 		if(!empty($config['AUTHORIZE']))
 			$this->Authorize = $config['AUTHORIZE'];
 		if(!empty($config['CALLBACK']))

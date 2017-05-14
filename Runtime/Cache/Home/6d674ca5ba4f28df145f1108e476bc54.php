@@ -47,11 +47,11 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="row" style="width:1200px">
+    <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
@@ -79,7 +79,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" target="_blank" class="dropdown-toggle" >
+      <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -89,7 +89,7 @@
       <ul class="dropdown-menu dropdown-menu_list">
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+        <!-- <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
@@ -180,7 +180,7 @@
            <h4>个人中心</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
-              <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
+              <!-- <li><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
               <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
               <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
             </ul>
@@ -217,7 +217,7 @@
       </li>
       
       <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
-      <span ><?php echo ($vo["studentid"]); ?></span>
+      <span ><?php echo ($vo["stuid"]); ?></span>
       <span ><?php echo ($vo["stuname"]); ?></span>
       <span ><?php echo ($vo["coname"]); ?></span>
       <span ><?php echo ($vo["tename"]); ?></span>
@@ -227,7 +227,7 @@
      <?php if(empty($codata)): ?><div class="jumbotron">
          <div class="container">
            <h1>已经尽力了</h1>
-           <p>班级中的所有同学正在努力选课中,请稍后再查</p>
+           <p>班级中的其他同学正在努力选课中,请稍后再查</p>
            <p>
              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
            </p>

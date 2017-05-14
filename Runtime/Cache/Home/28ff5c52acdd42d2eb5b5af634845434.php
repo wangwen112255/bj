@@ -49,11 +49,11 @@ vertical-align:middle
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="row" style="width:1200px">
+    <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
@@ -81,7 +81,7 @@ vertical-align:middle
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Teacher/index');?>" target="_blank" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -89,12 +89,12 @@ vertical-align:middle
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料<span class="glyphicon glyphicon-folder-open"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知<span class="glyphicon glyphicon-bell"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目<span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置<span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出<span class="glyphicon glyphicon-log-out"></span></a></li>
 
       </ul>
       </form>
@@ -232,7 +232,7 @@ vertical-align:middle
       <table class="table table-striped table-hover  table-bordered ">
 	<thead>
 		<tr>
-			<th style="width:35%">毕设题目</th>
+			<th style="width:25%">毕设题目</th>
 			<th>选课情况</th>
 			<th>课程状态</th>
 			<th>创建时间</th>	
@@ -248,7 +248,9 @@ vertical-align:middle
 			<td>
 			<div class="progress " style="width:100%;">
           <div class="progress-bar progress-bar-<?php echo ($vo['choosenum']==$vo['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%;font-size: 8px">
-           <span style="font-size: 8px"><?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%-<?php echo ($vo['choosenum']); ?>人</span>
+           <span style="font-size: 8px">
+			<?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
+          	%-<?php echo ($vo['choosenum']); ?>人</span>
          	</div>
         	</div>
 			</td>

@@ -7,7 +7,6 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" type="text/css" href="/static/css/plugins/layer/layui.css"> -->
     <!-- <link href="/static/css/font-awesome.min.css" rel="stylesheet"> -->
     <!-- <link href="/static/css/animate.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="/static/css/base.css">
@@ -32,12 +31,15 @@
     
    	</style>
    	
+
 <style type="text/css">
- 
-
-
+.layui-layer-setwin .layui-layer-close1 {
+        display:block !important;
+    }
+.table>tbody>tr>td{
+vertical-align:middle 
+}
 </style>
-
 
    </head>
 	<body>
@@ -79,20 +81,21 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
+      <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
       <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
-      <p style="margin-left:5px"><b>【学生】</b></p> 
+      <p style="margin-left:5px"><b>【教师】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <!-- <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/intro');?>">基本资料<span class="glyphicon glyphicon-folder-open"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/info');?>">我的通知<span class="glyphicon glyphicon-bell"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/course');?>">我的课目<span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Teacher/safe');?>">安全设置<span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出<span class="glyphicon glyphicon-log-out"></span></a></li>
+
       </ul>
       </form>
 
@@ -174,23 +177,24 @@
 
        </div>
       <div class="row WU_scrollinfo" style="padding-top:15px; ">
-      <div class="col-sm-3">
+      <div class="col-sm-3" style="height:650px">
         <div class="panel panel-default">
           <div class="panel-body">
            <h4>个人中心</h4>
              <ul class="WU_personal">
-              <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
-              <!-- <li><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
-              <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
-              <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
+              <li><a href="<?php echo U('Teacher/course');?>">我的题目</a></li>
+              <li><a href="<?php echo U('Teacher/info');?>">我的消息</a></li>
+              <li><a href="<?php echo U('Teacher/classes');?>">班级正选公示</a></li>
+              <li><a href="<?php echo U('Teacher/guide');?>">毕业班学生</a></li>
+
             </ul>
           </div>
           <div class="panel-body">
            <h4>账户设置</h4>
              <ul class="WU_personal">
-              <li><a href="<?php echo U('Student/intro');?>">基本信息</a></li>
-              <li><a href="<?php echo U('Student/photo');?>">头像设置</a></li>
-              <li><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
+              <li><a href="<?php echo U('Teacher/intro');?>">基本信息</a></li>
+              <li><a href="<?php echo U('Teacher/photo');?>">头像设置</a></li>
+              <li><a href="<?php echo U('Teacher/safe');?>">安全设置</a></li>
               <li><a href="<?php echo U('Login/logout');?>"><span class=""></span>退出登录</a></li>
             </ul>
           </div>
@@ -199,15 +203,84 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的通知</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>我的选课</span></h3>
           </div>
               
 
 <div class="panel-body">
- <ul class="nav nav-tabs">
-  <li role="presentation"><a href="#">消息通知</a></li>
-  
-</ul>
+     <div style="width: 100%;height: 50px;">
+            <div class="col-sm-2 pull-left">
+            <div class="btn-group">
+                <button type="button" class="btn  btn-outline btn-default" title="增加" onclick="_openLayerUrl('<?php echo U('create');?>','添加毕业设计题目','100%','100%',['0px','0px'])"><span class="glyphicon glyphicon-plus"></span></button>
+             <button type="button" onclick="_delall();" class="btn btn-default  btn-outline" title="删除"><span class="glyphicon glyphicon-trash"></span></button>
+            </div>
+            </div>
+            <div class="col-sm-4 pull-right">
+              <form>
+                   <div class="btn-group pull-right">
+                    <button class="btn btn-outline btn-default " title="搜索"><span class="glyphicon glyphicon-search"></span></button>
+                    <a  href="" class="btn btn-outline btn-default" title="刷新"><span class="glyphicon glyphicon-repeat"></span></a>
+                  
+                    </div>
+                     <div class="pull-right" style="margin-right: 8px">
+                    <input type="text" name="" id="input"  class="form-control " value="" placeholder="搜你想搜得"  required="required" pattern="" title=""> 
+                   </div>
+                </form>
+             </div>
+        </div>
+        <div class="col-sm-12">
+      <table class="table table-striped table-hover  table-bordered ">
+	<thead>
+		<tr>
+			<th style="width:25%">毕设题目</th>
+			<th>选课情况</th>
+			<th>课程状态</th>
+			<th>创建时间</th>	
+			<th>操作</th>
+		</tr>
+	</thead>
+	<tbody>
+	
+	<?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+
+			<td><?php echo ($vo["coursename"]); ?></td>
+			
+			<td>
+			<div class="progress " style="width:100%;">
+          <div class="progress-bar progress-bar-<?php echo ($vo['choosenum']==$vo['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%;font-size: 8px">
+           <span style="font-size: 8px">
+			<?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
+          	%-<?php echo ($vo['choosenum']); ?>人</span>
+         	</div>
+        	</div>
+			</td>
+			<td>
+			   	<button type="button"  cid='<?php echo ($vo["id"]); ?>' statusid='<?php echo ($vo["status"]); ?>'  class="changestatus <?php if(($vo["status"]) == "0"): ?>btn btn-success<?php else: ?>btn btn-default<?php endif; ?>"><?php  $m=$vo['status'];echo $status[$m];?></button>
+			</td>
+			<td><?php echo ($vo["creattime"]); ?></td>
+			<td>
+			  <button type="button"  id='status<?php echo ($v["id"]); ?>' onclick="_openLayerUrl('<?php echo U('create',array('cid'=>$vo['id']));?>','修改毕业设计题目','60%','55%',['250px','28%'])"  class="btn btn-info"><span class="glyphicon glyphicon-edit"></span ><span >&nbsp;&nbsp;编辑</span></button>
+                <button type="button" class="btn btn-warning delcourse" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon-trash glyphicon"></span>&nbsp;&nbsp;删除</button>
+                <?php if(($vo["status"]) == "1"): ?><button type="button" class="btn btn-success" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;查看结果</button>
+                <?php else: ?>
+                <?php if(($vo["choosenum"]) != "0"): ?><button type="button" class="btn btn-success resetcourse" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon glyphicon-repeat"></span>&nbsp;&nbsp;重置再选</button>
+                <?php else: ?>
+                <button type="button" class="btn btn-success" cid="<?php echo ($vo["id"]); ?>"><span class="gglyphicon glyphicon-pencil"></span>&nbsp;&nbsp;正在选课</button><?php endif; endif; ?>
+			</td>
+		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
+	</tbody>
+</table>
+  <?php if(empty($Codata)): ?><div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>您还没有添加课程呢,抓紧时间去添加吧</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div><?php endif; ?>
+<?php echo ($show); ?>
+</div>
 </div>
   
 
@@ -270,7 +343,7 @@
         $('.dropdown-menu').hide();
         
       });
-      
+
 
 
 
@@ -280,6 +353,36 @@
    	
     
 <script type="text/javascript">
+   $('.changestatus').click(function(){
+   	ownobj=$(this);
+   	staid=$(this).attr('statusid');
+  	//ownobj.html(statsshow[staid]'});
+   	statsshow=new Array("进行中","结束了");
+   	classshow=new Array("btn btn-success","btn btn-default");
+  	var cid=$(this).attr('cid');
+  	_ajaxmodify({url:'/index.php/Teacher/changestatus','msg':'您确定修改该题目的课程状态吗？','data':{'cid':cid},'action':'ownobj.html(statsshow[Math.abs(staid-1)]).removeClass(classshow[staid]).addClass(classshow[Math.abs(staid-1)]).attr("statusid",Math.abs(staid-1))'});
+  		
+  	});
+   $(".delcourse").click(function(){
+   	ownobj=$(this);
+   	var cid=$(this).attr('cid');
+  	_ajaxmodify({url:'/index.php/Teacher/delcourse','msg':'您确定要删除该题目？','data':{'cid':cid},'action':'ownobj.parent().parent().remove()'});
+  		
+  	});
+    $(".resetcourse").click(function(){
+   	ownobj=$(this);
+   	icon="<span class='glyphicon glyphicon-pencil'></span>";
+   	var cid=$(this).attr('cid');
+  	_ajaxmodify({url:'/index.php/Teacher/resetcourse','msg':'您确定要重置该题目？','data':{'cid':cid},'action':'ownobj.html(icon+"&nbsp;&nbsp;正在选课")'});
+  		
+  	});
+
+  	$(".resultcourse").click(function(){
+   	ownobj=$(this);
+   	var cid=$(this).attr('cid');
+  	_ajaxmodify({url:'/index.php/Teacher/resultcourse','msg':'您要查看该结果？','data':{'cid':cid},'action':'ownobj.parent().parent().remove()'});
+  		
+  	});
   
 </script>
 
