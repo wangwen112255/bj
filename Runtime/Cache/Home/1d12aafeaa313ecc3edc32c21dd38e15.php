@@ -242,7 +242,7 @@
       <?php else: ?>
 	  <span>
       <button class="btn btn-success">
-     <span class="badge"> <?php if(($vo["is_success"]) == "1"): ?>我已录取<span class="glyphicon glyphicon-ok"></span><?php else: ?>已被录取<?php endif; ?></span></button>
+     <span class="badge"> <?php if(($vo["is_success"]) == "1"): ?>我已录取<span class="glyphicon glyphicon-ok"></span><?php else: ?>已完成选课<?php endif; ?></span></button>
       </span>
       <span >
       <?php if(($vo["isreceive"]) == "0"): ?><button oid='<?php echo ($vo["oid"]); ?>' class="btn btn-success sawed">加入已审核</button><?php else: ?><button class="btn btn-success">已审核</button><?php endif; ?></span><?php endif; ?>
@@ -352,7 +352,7 @@
 	})
 	 $('.refuse').click(function(){
   	var oid=$(this).attr('oid');
-  	_ajaxmodify({url:'/index.php/Teacher/refuse','msg':'您确定要接受该生的申请吗？','data':{'oid':oid}});
+  	_ajaxmodify({url:'/index.php/Teacher/refuse','msg':'您确定要拒绝该生的申请吗？','data':{'oid':oid}});
   	})
 
 </script>

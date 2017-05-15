@@ -19,7 +19,9 @@ class  DepartController extends Controller {
         // $codata=$co->departshows($id);
      	$this->assign('departname',$departname);
      	$Co=M('Order');
-     	$counts= $Co->where('depart_id='.$id)->count();
+        $condition['depart_id']=$id;
+        $condition['is_success']=1;
+     	$counts= $Co->where( $condition)->count();
      	$Page=new  \Think\Page($counts,10);
      	$show=$Page->show();
     	// dump($show);

@@ -200,11 +200,15 @@
         <div class="col-sm-8">
         <div class="panel panel-primary" style="border-color:#ccc" >
           <div class="panel-heading" style="border-color:#ccc;background: #fff">
-            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>正选公示</span></h3>
+            <h3 class="panel-title" style="border-color:#ccc;color:#515151"><span>正选结果公示</span></h3>
           </div>
               
 
 <div class="panel-body">
+   <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="javascript:">全班正选结果</a></li>
+  <li role="presentation" class=""><a href="javascript:">我的课程正选结果</a></li>
+  </ul>
    <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
       <div class="col-sm-12">
      <div class="WU_myscroll">
@@ -217,7 +221,7 @@
       <span >选课结果</span>
       </li>
       
-      <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
+      <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli <?php if(($vo["teid"]) == $userid): ?>myresult<?php else: ?>allresult<?php endif; ?>"  >
       <span ><?php echo ($vo["stid"]); ?></span>
       <span ><?php echo ($vo["stuname"]); ?></span>
       <span ><?php echo ($vo["coname"]); ?></span>
@@ -327,7 +331,11 @@
    	
     
 <script type="text/javascript">
-  
+   $(".nav-tabs li").click(function(){
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  $('.allresult').toggle('slow');
+  })
 </script>
 
 

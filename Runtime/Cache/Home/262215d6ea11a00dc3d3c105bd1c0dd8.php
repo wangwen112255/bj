@@ -304,7 +304,7 @@
            <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?> %(<?php echo ($vo['choosenum']); ?>人)
           </div>
         </div>
-
+         
 
         </span>
         <span ><a  numid="<?php echo U('Teachers/detail',array('numid'=>$vo['idc']));?>" href="javascript:" class="showdetail">查看详情</a></span>

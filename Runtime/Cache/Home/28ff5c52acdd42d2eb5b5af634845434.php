@@ -211,7 +211,7 @@ vertical-align:middle
      <div style="width: 100%;height: 50px;">
             <div class="col-sm-2 pull-left">
             <div class="btn-group">
-                <button type="button" class="btn  btn-outline btn-default" title="增加" onclick="_openLayerUrl('<?php echo U('create');?>','添加毕业设计题目','100%','50%',['0px','0px'])"><span class="glyphicon glyphicon-plus"></span></button>
+                <button type="button" class="btn  btn-outline btn-default" title="增加" onclick="_openLayerUrl('<?php echo U('create');?>','添加毕业设计题目','100%','100%',['0px','0px'])"><span class="glyphicon glyphicon-plus"></span></button>
              <button type="button" onclick="_delall();" class="btn btn-default  btn-outline" title="删除"><span class="glyphicon glyphicon-trash"></span></button>
             </div>
             </div>
@@ -249,10 +249,11 @@ vertical-align:middle
 			<div class="progress " style="width:100%;">
           <div class="progress-bar progress-bar-<?php echo ($vo['choosenum']==$vo['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%;font-size: 8px">
            <span style="font-size: 8px">
-			<?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
+			     <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
           	%-<?php echo ($vo['choosenum']); ?>人</span>
          	</div>
         	</div>
+
 			</td>
 			<td>
 			   	<button type="button"  cid='<?php echo ($vo["id"]); ?>' statusid='<?php echo ($vo["status"]); ?>'  class="changestatus <?php if(($vo["status"]) == "0"): ?>btn btn-success<?php else: ?>btn btn-default<?php endif; ?>"><?php  $m=$vo['status'];echo $status[$m];?></button>
@@ -261,7 +262,7 @@ vertical-align:middle
 			<td>
 			  <button type="button"  id='status<?php echo ($v["id"]); ?>' onclick="_openLayerUrl('<?php echo U('create',array('cid'=>$vo['id']));?>','修改毕业设计题目','60%','55%',['250px','28%'])"  class="btn btn-info"><span class="glyphicon glyphicon-edit"></span ><span >&nbsp;&nbsp;编辑</span></button>
                 <button type="button" class="btn btn-warning delcourse" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon-trash glyphicon"></span>&nbsp;&nbsp;删除</button>
-                <?php if(($vo["status"]) == "1"): ?><button type="button" class="btn btn-success" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;查看结果</button>
+                <?php if(($vo["status"]) == "1"): ?><button type="button" class="btn btn-success  resultcourse"  cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;查看结果</button>
                 <?php else: ?>
                 <?php if(($vo["choosenum"]) != "0"): ?><button type="button" class="btn btn-success resetcourse" cid="<?php echo ($vo["id"]); ?>"><span class="glyphicon glyphicon-repeat"></span>&nbsp;&nbsp;重置再选</button>
                 <?php else: ?>
@@ -378,11 +379,10 @@ vertical-align:middle
   	});
 
   	$(".resultcourse").click(function(){
-   	ownobj=$(this);
    	var cid=$(this).attr('cid');
-  	_ajaxmodify({url:'/index.php/Teacher/resultcourse','msg':'您要查看该结果？','data':{'cid':cid},'action':'ownobj.parent().parent().remove()'});
-  		
+  	_ajaxmodify({url:'/index.php/Teacher/resultcourse','msg':'您要查看该结果？','data':{'cid':cid}});
   	});
+  
   
 </script>
 

@@ -287,7 +287,7 @@
         <span >
          <?php if(($vo["is_success"]) == "1"): ?><button class="btn">成功选课</button>
           <?php else: ?>
-          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">正选</button>
+          <?php if(($vo["isreceive"]) == "0"): ?><button class="btn btn-success ">审核中</button>
           <?php else: ?>
          <button   class="btn btn-danger">已拒绝</button><?php endif; endif; ?>
         </li><?php endforeach; endif; else: echo "" ;endif; ?> 

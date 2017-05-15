@@ -47,6 +47,11 @@ class   CourseController extends BaseController{
         $data['class_id'] = $this->datainfo['class_id'];
         $data['course_id'] = $_POST["idc"];
         $isSelect=$Or->where('student_id='.$data['student_id'])->getField('course_id',true);
+        if($this->datainfo['iscomplete']==1){
+        $this->ajaxReturn(toJson("您已经成功选过课了请把机会留给其他同学吧"));
+        exit;
+
+        }
         if(count($isSelect)>2){
         $this->ajaxReturn(toJson("您已经超过选课数量的限制了"));
         exit;

@@ -19,7 +19,7 @@ class   LoginController extends Controller{
         if($password==md5($_POST['password'])){
           $_SESSION['_username_']=$_POST['username'];
           $_SESSION['role']=$_POST['role']=="st"?'Student':'Teacher';
-          $link=U($_SESSION['role']."course");
+          $link=U($_SESSION['role']."/course");
           $this->ajaxReturn(toJson(true,'登录成功',$link));
         }else{
           $this->ajaxReturn(toJson('用户密码有误'));

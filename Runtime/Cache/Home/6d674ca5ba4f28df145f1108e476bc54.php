@@ -87,12 +87,12 @@
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料<span class="glyphicon glyphicon-bell"></span></a></li>
         <!-- <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目<span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置<span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出<span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
       </form>
 
@@ -218,7 +218,7 @@
       
       <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
       <span ><?php echo ($vo["stuid"]); ?></span>
-      <span ><?php echo ($vo["stuname"]); ?></span>
+      <span ><?php echo ($vo["stname"]); ?></span>
       <span ><?php echo ($vo["coname"]); ?></span>
       <span ><?php echo ($vo["tename"]); ?></span>
       <span ><button class="btn btn-success"><span class="badge ">正选</span></button></span>

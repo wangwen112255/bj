@@ -30,7 +30,7 @@ class TeacherController extends BaseController {
     public function intro(){
         $Condition['username']=session('_username_');
         $Userdata=$this->dao->where($Condition)->find();
-        if(!empty(I('realname')) && isset($_POST['realname'])){
+        if(!empty($_POST['realname']) && isset($_POST['realname'])){
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
 
@@ -73,7 +73,7 @@ class TeacherController extends BaseController {
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
             ->select();
             $this->assign('codata',$codata);
-            dump($codata);
+            // dump($codata);
             $this->display();
     }
     public function safe(){
@@ -126,12 +126,13 @@ class TeacherController extends BaseController {
             // dump($show);
             $codata= $Co
             ->where($condition)
-            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stid")
+            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stid,xk_teacher.id as teid")
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
             ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
             ->limit($Page->firstRow.','.$Page->listRows)->select();
             $this->assign('show',$show);
+            $this->assign('userid',$this->datainfo['id']);
             $this->assign('codata',$codata);
             // dump($codata);
             $this->display();
@@ -296,7 +297,7 @@ class TeacherController extends BaseController {
     $Co=M("Course");
     if(IS_AJAX){
      if(!empty($_POST['cid'])&&isset($_POST['cid'])){
-            if($Co->where($_POST['cid'])->setField('choosenum',0))
+            if($Co->where('id='.$_POST['cid'])->setField('choosenum',0))
             $this->ajaxReturn(toJson(true,"该课程重置成功,可以重新开始选课了"));
             else
             $this->ajaxReturn(toJson("重置失败请稍候"));
@@ -308,8 +309,36 @@ class TeacherController extends BaseController {
         $this->ajaxReturn(toJson('数据来源有误请重新填写'));
     }
     }
+    public function resultcourse(){
+   // $Co=M('Course');
+   $Or=M('Order');
+    if(IS_AJAX){
+     if(!empty($_POST['cid'])&&isset($_POST['cid'])){
+           $condition['course_id']=$_POST['cid'];
+           $condition['is_success']=1;
+           $sid=$Or->where($condition)->getField('student_id');
+             $St=M('Student');
+             $stname=$St->where("id=".$sid)->getField('realname');
+            if($stname)
+            $this->ajaxReturn(toJson(true,'正选的结果是：'.$stname));
+            else
+            $this->ajaxReturn(toJson("数据有误，重置失败"));
+
+        }else{
+        $this->ajaxReturn(toJson("数据有误，重置失败"));
+        }
+    }
+    else{
+        $this->ajaxReturn(toJson('数据来源有误请重新填写'));
+    }
 
     }
+
+
+    
+
+    }
+
 
     
    

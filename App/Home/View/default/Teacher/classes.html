@@ -9,11 +9,15 @@
 </style>
 
 {/block}
-{block name="panel-title"}<span>正选公示</span>{/block}
+{block name="panel-title"}<span>正选结果公示</span>{/block}
 
 {block name="panel-body"}
 
 <div class="panel-body">
+   <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="javascript:">全班正选结果</a></li>
+  <li role="presentation" class=""><a href="javascript:">我的课程正选结果</a></li>
+  </ul>
    <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
       <div class="col-sm-12">
      <div class="WU_myscroll">
@@ -27,7 +31,7 @@
       </li>
       
       {volist name="codata" id="vo"}
-       <li class="WU_scrollli" >
+       <li class="WU_scrollli {eq name='vo.teid' value='$userid'} myresult{else/}allresult{/eq}"  >
       <span >{$vo.stid}</span>
       <span >{$vo.stuname}</span>
       <span >{$vo.coname}</span>
@@ -78,7 +82,11 @@
 
 {block name='JS'}
 <script type="text/javascript">
-  
+   $(".nav-tabs li").click(function(){
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  $('.allresult').toggle('slow');
+  })
 </script>
 
 {/block}

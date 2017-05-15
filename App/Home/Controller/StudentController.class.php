@@ -30,7 +30,7 @@ class StudentController extends BaseController {
     public function intro(){
         $Condition['username']=session('_username_');
         $Userdata=$this->dao->where($Condition)->find();
-        if(!empty(I('realname')) && isset($_POST['realname'])){
+        if(!empty($_POST['realname']) && isset($_POST['realname'])){
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
 
@@ -109,7 +109,7 @@ class StudentController extends BaseController {
             // dump($show);
             $codata= $Co
             ->where($condition)
-            ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stuid")
+            ->field("xk_student.realname as stname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stuid")
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
             ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
             ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
@@ -131,7 +131,7 @@ class StudentController extends BaseController {
             $condition['id']=$_POST['id'];
             $condition['student_id']=$this->datainfo['id'];
             $Or=M('Order');
-            $cid=$Or->where('id='.$condition['id'])->getField('class_id');
+            $cid=$Or->where('id='.$condition['id'])->getField('course_id');
             $Co=M('Course');
             if($Or->where($condition)->delete()&&  $Co->where('id='.$cid)->setDec('choosenum',1)){
             $this->ajaxReturn(toJson(true,'撤销成功,不可恢复！'));

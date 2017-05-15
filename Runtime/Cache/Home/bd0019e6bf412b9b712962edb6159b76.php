@@ -225,7 +225,7 @@
 	
 	<?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
 			<td><?php echo ($vo["coname"]); ?></td>
-			<td><?php echo ($vo["codesc"]); ?></td>
+			<td><span class="badge">已选<?php echo ($vo["choosenum"]); ?>人</span></td>
 			<td><?php echo ($vo["tename"]); ?></td>
 			<td>
 			<?php if($vo['isreceive'] == 0): ?><span class="badge btn-success">待审核</span></td>

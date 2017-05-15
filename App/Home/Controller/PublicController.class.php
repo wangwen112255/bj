@@ -75,8 +75,41 @@ class PublicController extends Controller{
 	   //     $this->ajaxReturn($data);	
 	  	// }
 	  }
+	  public function forgetpwd(){
+	  	if(isset($_POST["cid"])){
+	  		if(!isset($_POST["username"])||empty($_POST["username"])){
+	  		$this->error('信息有误无法发查询');
+	  		exit;
+	  		}
+	  		if(!isset($_POST["pwd"])||empty($_POST["pwd"])){
+	  		$this->error('信息有误无法发查询');
+	  		exit;
+	  		}
+	  		if(!isset($_POST["studentid"])||empty($_POST["studentid"])){
+	  		$this->error('信息有误无法发查询');
+	  		exit;
+	  		}
+	  		if(!isset($_POST["realname"])||empty($_POST["realname"])){
+	  		$this->error('信息有误无法发查询');
+	  		exit;
+	  		}
+	  		$St=M('Student');
+	  		$Condition['username']=$_POST["username"];
+	  		$Condition['studentid']=$_POST["studentid"];
+	  		$Condition['realname']=$_POST["realname"];
+	  	if($St->where($Condition)->setField('pwd',$value))
+	  		$this->success('设置成功');
+	  	else
+	  		$this->error('信息有误无法发查询');
+	  	}
+	    else
+	  	$this->display();
+	  }
 	
-	  
+	  public function uploadfile(){
+	  		$this->ajaxReturn(toJson('cheng'));
+
+	  } 
      }
 
 

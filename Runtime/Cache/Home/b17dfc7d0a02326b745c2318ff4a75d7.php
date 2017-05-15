@@ -165,7 +165,7 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <span>没有账号,</span><a href="/index.php/Index/register" style="cursor:pointer">立即注册</a>
+                  <span>没有账号,</span><a href="/index.php/Login/register" style="cursor:pointer">立即注册</a>
                   <a class='pull-right' href="<?php echo U('Public/Forgetpwd');?>" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
