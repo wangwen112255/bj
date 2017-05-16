@@ -128,11 +128,12 @@ class PublicController extends Controller{
 	  	    	  $image->open('.'.$url);
 	  	    	  $suffx=strchr($url,'.');
 	  	    	  $thumurl=substr($url,0,strripos($url,'.')).'_thumb'.$suffx;
+	  	    	  unlink('.'.$url);
 	  	    	  $image->thumb(200, 200,\Think\Image::IMAGE_THUMB_FIXED)->save('.'.$thumurl); 
 	  	    	  if($Dao->where($condition)->setField('photo',$thumurl))
 	  	    	  {
 	  	    	   session('_pic_',$thumurl); 		
-	  	    	   $this->ajaxReturn(toJson(true,$image->width(),$thumurl));
+	  	    	   $this->ajaxReturn(toJson(true,"恭喜您成功上传",$thumurl));
 	  	    	  }
 	  	    	  else
 	  	    	  $this->ajaxReturn(toJson('服务器有问题上传失败'));

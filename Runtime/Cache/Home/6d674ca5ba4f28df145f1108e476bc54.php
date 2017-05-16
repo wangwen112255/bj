@@ -47,7 +47,7 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row" style="width:1200px">
+  <div class="row" style="width:100%">
     <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
@@ -72,15 +72,10 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
-    <div class="form-group">
-      <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
-   </div>
-     </form> -->
+
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 

@@ -72,7 +72,7 @@
    </div>
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="{:U('Teacher/course')}" target="_blank" class="dropdown-toggle" >
+      <a href="{empty name='Think.session._pic_'}__IMG__logo.png{else/}{$Think.session._pic_ }{/empty}" target="_blank" class="dropdown-toggle" >
       <img src="{$Userdata['photo']|default='__IMG__logo.png'}"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px">{$Think.session._username_}</p>
