@@ -112,7 +112,7 @@
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
       <a href='/index.php/<?php echo (session('role')); ?>/Course' class="dropdown-toggle" >
-      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px">
@@ -161,7 +161,7 @@
             <div class="form-group">
               <label class="col-sm-3 control-label">密码</label>
               <div class="col-sm-6">
-              <input type="text" name="password" class="form-control" placeholder="请输进去密码">
+              <input type="password" name="password" class="form-control" placeholder="请输进去密码">
               </div>
             </div> 
           
@@ -197,7 +197,7 @@
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
                   <span>没有账号,</span><a href="/index.php/Teachers/register" style="cursor:pointer">立即注册</a>
-                  <a class='pull-right' href="<?php echo U('Public/Forgetpwd');?>" style="cursor:pointer">忘记密码?</a>
+                  <a class='pull-right' href="<?php echo U('Public/forgetpwd');?>" target="_blank" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
             <div class="form-group">

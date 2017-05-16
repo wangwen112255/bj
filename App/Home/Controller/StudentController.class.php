@@ -7,7 +7,7 @@ class StudentController extends BaseController {
     public function _initialize(){
         parent::_initialize();
         if($_SESSION['role']!="Student")
-        $this->redirect('Student/index');
+        $this->redirect('Teacher/index');
         $this->dao=D('Student');
         $condition['username']=session('_username_');
         $this->datainfo=$this->dao->where($condition)->find();

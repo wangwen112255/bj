@@ -44,11 +44,11 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row">
-    <div class="col-sm-3">
+  <div class="row" style="width:1200px">
+    <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
-    <div class="col-sm-9">
+    <div class="col-sm-10">
     <nav class="navbar ">
      <ul class="nav navbar-nav WU-nav">
        <li><a href="<?php echo U('Index/index');?>">首页</a></li>
@@ -69,27 +69,22 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
-    <div class="form-group">
-      <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
-   </div>
-     </form> -->
+
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
-      <a href="<?php echo U('Student/index');?>" class="dropdown-toggle" >
-      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
+      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list">
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置</a></li>
-        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出</a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/photo');?>">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/intro');?>">基本资料<span class="glyphicon glyphicon-bell"></span></a></li>
+        <!-- <li class="dropdown-menu-li"><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/course');?>">我的课目<span class="glyphicon glyphicon-tasks"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Student/safe');?>">安全设置<span class="glyphicon glyphicon-wrench"></span></a></li>
+        <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出<span class="glyphicon glyphicon-log-out"></span></a></li>
       </ul>
       </form>
 
@@ -177,8 +172,8 @@
            <h4>个人中心</h4>
              <ul class="WU_personal">
               <li><a href="<?php echo U('Student/course');?>">我的选课</a></li>
-              <li><a href="<?php echo U('Student/info');?>">我的通知</a></li>
-              <li><a href="<?php echo U('Student/classes');?>">班级公示</a></li>
+              <!-- <li><a href="<?php echo U('Student/info');?>">我的通知</a></li> -->
+              <li><a href="<?php echo U('Student/classes');?>">正选公示</a></li>
               <li><a href="<?php echo U('Student/guide');?>">指导教师</a></li>
             </ul>
           </div>

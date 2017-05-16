@@ -15,9 +15,10 @@ class   LoginController extends Controller{
     }
     public function dologin(){
       if($this->dao->create($_POST,4)){
-        $password=$this->dao->where(array("username"=>$_POST['username']))->getField('pwd');
-        if($password==md5($_POST['password'])){
+        $info=$this->dao->where(array("username"=>$_POST['username']))->find();
+        if($info['pwd']==md5($_POST['password'])){
           $_SESSION['_username_']=$_POST['username'];
+          $_SESSION['_pic_']=$info['photo'];
           $_SESSION['role']=$_POST['role']=="st"?'Student':'Teacher';
           $link=U($_SESSION['role']."/course");
           $this->ajaxReturn(toJson(true,'登录成功',$link));
@@ -32,13 +33,9 @@ class   LoginController extends Controller{
     }
     public function authlogin($type = null){
     empty($type) && $this->error('参数错误');
-
-    //加载ThinkOauth类并实例化一个对象
     $name = ucfirst(strtolower($type)) . 'SDK';
       $names="Common\OauthSDK\sdk"."\\".$name;
     $oauth=new $names();
-
-    //跳转到授权页面
     redirect($oauth->getRequestCodeURL());
   }   
 

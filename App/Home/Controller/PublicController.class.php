@@ -106,10 +106,41 @@ class PublicController extends Controller{
 	  	$this->display();
 	  }
 	
-	  public function uploadfile(){
-	  		$this->ajaxReturn(toJson('cheng'));
-
-	  } 
+	  public function uploadfile($itemname='photo'){
+	  	    if(session('_username_')){
+	  	    	$Dao=M(session('role'));
+	  	    	$config = array( 
+	  	    		'maxSize'    =>    3145728,
+	  	    		    'savePath'   =>    './'.$itemname.'/',  
+	  	    		    'exts'       =>    array('jpg', 'gif', 'png', 'jpeg'),   
+	  	    		    'autoSub'    =>    true,   
+	  	    		    'subName'    =>    array('date','Ymd'),
+	  	    		    );
+	  	    	$upload = new \Think\Upload($config);// 实例化上传类
+	  	    	$upload->saveName = date('YmdHis',time()).'_'.mt_rand();
+	  	    	$info=$upload->uploadOne($_FILES['myfile']);
+	  	    	if(!$info){
+	  	    	  $this->ajaxReturn(toJson($upload->getError()));
+	  	    	  }else{
+	  	    	  $condition['username']=session('_username_');
+	  	    	  $url='/Uploads'.ltrim($info['savepath'].$info['savename'],'.');
+	  	    	  $image = new \Think\Image();
+	  	    	  $image->open('.'.$url);
+	  	    	  $suffx=strchr($url,'.');
+	  	    	  $thumurl=substr($url,0,strripos($url,'.')).'_thumb'.$suffx;
+	  	    	  $image->thumb(200, 200,\Think\Image::IMAGE_THUMB_FIXED)->save('.'.$thumurl); 
+	  	    	  if($Dao->where($condition)->setField('photo',$thumurl))
+	  	    	  {
+	  	    	   session('_pic_',$thumurl); 		
+	  	    	   $this->ajaxReturn(toJson(true,$image->width(),$thumurl));
+	  	    	  }
+	  	    	  else
+	  	    	  $this->ajaxReturn(toJson('服务器有问题上传失败'));
+	  	    	
+	  	    	}
+	  	    }
+	  	
+	    } 
      }
 
 

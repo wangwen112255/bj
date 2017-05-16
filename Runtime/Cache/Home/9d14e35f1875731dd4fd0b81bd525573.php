@@ -31,8 +31,9 @@
     
    	</style>
    	
+
+<link rel="stylesheet" type="text/css" href="/static/css/plugins/fileinput/fileinput.min.css">
 <style type="text/css">
- 
 
 
 </style>
@@ -79,7 +80,7 @@
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【教师】</b></p> 
@@ -205,10 +206,11 @@
               
 
 <div class="panel-body">
-<div class="alert alert-danger">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>后续开发中.......</strong> 
-</div>
+ <div class="row" >
+            <div class="col-sm-10 col-sm-offset-1">
+             <input id="file" name="myfile" type="file" data-show-caption="true">  
+            </div>
+    </div>
 </div>
   
 
@@ -280,8 +282,48 @@
     </script>
    	
     
+<script type="text/javascript" src="/static/js/plugins/fileinput/fileinput.min.js"></script>
+<script type="text/javascript" src="/static/js/plugins/fileinput/zh.js"></script>
 <script type="text/javascript">
-  
+    function _uploadFile(uploadid,uploadurl) {
+    $("#" + uploadid).fileinput({
+        language: 'zh', //设置语言
+        uploadUrl: uploadurl, //上传的地址
+        allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+        //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
+        uploadAsync: true, //默认异步上传
+        showUpload: true, //是否显示上传按钮
+        showRemove: true, //显示移除按钮
+        showPreview: true, //是否显示预览
+        showCaption: false,//是否显示标题
+        autoReplace: true,
+        browseClass: "btn btn-primary", //按钮样式
+        dropZoneEnabled: true,//是否显示拖拽区
+        maxImageHeight: 1000,//图片的最大高度
+        maxFileCount: 1,
+        validateInitialCount: true,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！"
+    }).on("fileuploaded", function (e, data) {
+        var remsg=data.response;
+        if(remsg.code==200) {
+        layer.msg(remsg.msg,{icon:1,time:500});
+        $('.WU_login_img ').attr('src',remsg.data);
+
+        }
+        else{
+        $(".progress-bar-success").attr('style','width:20%');
+        layer.alert(remsg.msg, {icon: 5},function(index){
+        layer.close(index);
+        });
+        }
+        // console.log(data.response);
+    });
+}
+        $(function () {  
+            _uploadFile("file",'<?php echo U("Public/uploadfile",array("itemname"=>"tephoto"));?>');  
+              
+        })  
 </script>
 
 

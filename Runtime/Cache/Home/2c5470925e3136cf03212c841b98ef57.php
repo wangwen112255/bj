@@ -73,15 +73,10 @@
     </div>
     
     </form>
-    <!-- <form class="navbar-form navbar-right relog ">
-    <div class="form-group">
-      <a class="btn  btn-success" href="<?php echo U('Index/register');?>">注册</a>
-      <a class="btn btn-danger " data-toggle="modal"  data-target='#WU_login_modal' >登录</a>
-   </div>
-     </form> -->
+
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="/static/img/logo.png"   class="WU_login_img img-circle"> 
+      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
@@ -284,32 +279,6 @@
 <script type="text/javascript" src="/static/js/plugins/fileinput/fileinput.min.js"></script>
 <script type="text/javascript" src="/static/js/plugins/fileinput/zh.js"></script>
 <script type="text/javascript">
-    // function initFileInput(ctrlName,uploadUrl) {      
-    //         var control = $('#' + ctrlName);   
-    //         control.fileinput({  
-    //             language: 'zh', //设置语言  
-    //             uploadUrl: uploadUrl,  //上传地址  
-    //             showUpload: false, //是否显示上传按钮  
-    //             showRemove:true,  
-    //              dropZoneEnabled: false,  
-    //             showCaption: true,//是否显示标题  
-    //             allowedPreviewTypes: ['image'],  
-    //             allowedFileTypes: ['image'],  
-    //             allowedFileExtensions:  ['jpg', 'png'],  
-    //             maxFileSize : 2000,  
-    //             maxFileCount: 1,  
-    //             // initialPreview: [   
-    //             //         预览图片的设置  
-    //             //        "<img src='http://127.0.0.1:8080/NewsManageSys/plugin/umeditor1_2_2/jsp/upload/20161030/55061                       477813913474.jpg' class='file-preview-image' alt='肖像图片' title='肖像图片'>",  
-    //             // ],  
-                  
-    //         }).on("filebatchselected", function(event, files) {  
-    //             $(this).fileinput("upload");  
-    //             })  
-    //             .on("fileuploaded", function(event, data) {  
-    //                 $("#path").attr("value",data.response);  
-    //         });  
-    //     }  
     function _uploadFile(uploadid,uploadurl) {
     $("#" + uploadid).fileinput({
         language: 'zh', //设置语言
@@ -330,13 +299,24 @@
         previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
         msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！"
     }).on("fileuploaded", function (e, data) {
-        layer.msg("上传成功",{icon:1,time:500});
+    	var remsg=data.response;
+    	if(remsg.code==200) {
+    		 layer.msg(remsg.msg,{icon:1,time:500});
+    		 $('.WU_login_img ').attr('src',remsg.data);
+    	}
+    	else{
+    	$(".progress-bar-success").attr('style','width:20%');
+    	layer.alert(remsg.msg, {icon: 5},function(index){
+    	layer.close(index);
+
+    	});
+    	
+    	}
         // console.log(data.response);
     });
 }
-
         $(function () {  
-            _uploadFile("file",'<?php echo U("Public/uploadfile");?>');  
+            _uploadFile("file",'<?php echo U("Public/uploadfile",array("itemname"=>"stphoto"));?>');  
               
         })  
 </script>

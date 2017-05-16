@@ -16,18 +16,11 @@ public function getOauth($type){
     // $sns = \Org\ThinkSDK\ThinkOauth::getInstance('qq');
     		$classname=getOauth($type)?getOauth($type):$this->error("参数不退");
     		$oauth=new  $classname();
-
-    		//跳转到授权页面
     		redirect($oauth->getRequestCodeURL());
     
-
 }
 public function callback($type = null, $code = null){
-		// $type='qq';
-		// $type=$_SESSION['authtype'];
 		(empty($type) ||empty($code)) && $this->error('参数错误1');
-		//加载ThinkOauth类并实例化一个对象
-
 		$name = ucfirst(strtolower($type)) . 'SDK';
     	$names="\Common\OauthSDK\sdk"."\\".$name;
 		$oauth=new $names();
@@ -41,17 +34,31 @@ public function callback($type = null, $code = null){
 		//调用方法，实例化SDK对象的时候直接作为构造函数的第二个参数传入
 		//如： $qq = ThinkOauth::getInstance('qq', $token);
 		$token = $oauth->getAccessToken($code , $extend);
-		// dump($token);
-		// 获取当前登录用户信息
 		if(is_array($token)){
 			$auth=new  \Org\ThinkSDK\TypeEvent();
 			$user_info = $auth->$type($token);
-
-			echo("<h1>恭喜！使用 {$type} 用户登录成功</h1><br>");
-			echo("授权信息为：<br>");
-			dump($token);
-			echo("当前登录用户信息为：<br>");
-			dump($user_info);
+			// echo("<h1>恭喜！使用 {$type} 用户登录成功</h1><br>");
+			// echo("授权信息为：<br>");
+			$Dao=M('Student');
+			// $condition['username']=time().$user_info['name'];
+			$condition['pwd']=$token['openid'];
+			$info=$Dao->where($condition)->find();
+			if($info){
+				session('_username_',$info['username']);
+				session('role','Student');
+				$this->redirect('Student/course');
+				}else{
+			$condition['username']=$user_info['name'].time();
+			$Dao->add($condition);
+			session('_username_',$condition['username']);
+			session('role','Student');
+			$this->redirect('Student/course');
+			
+			}
+			
+		}
+		else{
+			$this->error('授权失败');
 		}
 	}
 }
