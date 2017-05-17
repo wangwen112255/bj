@@ -1,0 +1,99 @@
+{extend name='Public:layouts'/}
+{block name='CSS'}
+<style type="text/css">
+  .WU_scrollli {
+    border-bottom: 1px dashed #ccc !important; 
+  } 
+  
+  .WU_scrollinfo > .infotitle span:hover{
+  opacity: 0.5;
+  }
+   .relog .active{
+     opacity: 0.3;
+  }
+ /*  .showdetail:hover{
+    cursor: pointer;
+  } */
+
+</style>
+
+{/block}
+
+{block name="content"}
+
+
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+
+  <div class="WU_info">
+   <div class="row WU_inforow">
+   <span class='WU_infoheader'>毕设选课详情</span>
+
+     </div>
+    <div class="row WU_scrollinfo" style="padding-top:15px; ">
+    <div class="col-sm-12 relog" style='margin-bottom: 20px'>
+      <a  href="{:U('index')}" class="btn btn-info btn-lg active">班级选题</a>
+      <a  href="{:U('classresult')}" class="btn btn-info btn-lg ">选课结果</a>
+    </div>
+    <div class="col-sm-12 infotitle">
+    <span >学生姓名</span>
+    <span >课程题目</span>
+    <span >指导老师</span>
+    <span >课程要求</span>
+    <span >选课状态</span>
+    </div>
+    </div>
+     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+        <div class="col-sm-12">
+       <div class="WU_myscroll">
+       <ul >
+          {volist name="resultdata" id="vo"}
+        <li class="WU_scrollli" >
+        <span >{$vo.strealname}</span>
+        <span >{$vo.coursename}</span>
+        <span ><a href="{:U('Teachers/lists',array('id'=>$vo['idt']))}" target="_blank">{$vo.terealname}</a></span>
+        <span >{$vo.createtime}</span>
+        <span >
+         {eq name='vo.is_success' value='1'}
+         <button class="btn">成功选课</button>
+          {else/}
+          {eq name='vo.isreceive' value="0"}
+          <button class="btn btn-success ">审核中</button>
+          {else/}
+         <button   class="btn btn-danger">已拒绝</button>
+           {/eq}
+        {/eq}
+        </li>
+       {/volist} 
+        
+       
+       </ul>
+       </div>
+        {$show}
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+
+{/block}
+{block name="JS"}
+<script type="text/javascript">
+  myscroll=$(".WU_myscroll")[0];
+  myscrollafter=$(".WU_myscrollafter")[0];
+  scrollinfo=$(".WU_scrollinfo")[1];
+  myscrollafter.innerHTML=myscroll.innerHTML;
+  // alert(myscroll.offsetHeight);
+  // alert(scrollinfo.scrollTop);
+    // setInterval(function(){
+    //  if(scrollinfo.scrollTop>=myscroll.offsetHeight)
+    //    scrollinfo.scrollTop=scrollinfo.scrollTop-myscroll.offsetHeight;
+    //  else
+    //    scrollinfo.scrollTop++;
+    //  },10)
+
+</script>
+{/block}
+

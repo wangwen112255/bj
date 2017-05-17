@@ -111,7 +111,7 @@
      <?php else: ?>
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
-      <a href='/index.php/<?php echo (session('role')); ?>/Course' class="dropdown-toggle" >
+      <a href='/index.php/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
       <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>

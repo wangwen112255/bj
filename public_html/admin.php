@@ -21,7 +21,7 @@ define('APP_DEBUG',True);
 define('APP_PATH','../App/');
 define('RUNTIME_PATH','../Runtime/');
 define('THINK_PATH',realpath("../TP")."/");
-define("BIND_MODULE","Admins");
+define("BIND_MODULE","Admin");
 define("BUILD_CONTROLLER_LIST","Index,Teacher,Student,Class");
 
 // 引入ThinkPHP入口文件

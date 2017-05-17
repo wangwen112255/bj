@@ -333,12 +333,8 @@
   
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
+  </div>
+     <div class="WU_footer " style="width:100%">
          <p class="text-center text-center-footer ">
            <span>关于选课</span>
            <span>联系me</span>
@@ -347,19 +343,41 @@
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
-
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
+          <div style="floatright;">
+          <p class="text-center text-center-footer ">
            <img src="holder.js/80x80">
 
            <img src="holder.js/80x80">
-         </p>         
+         </p>  
+         </div>       
   
-       </div>
      </div>
     
-    </div>
+   
+   <!--  <div class="row" style="padding-top:10px">
+      <div class="col-md-4 col-md-offset-1">
+        <img src="/static/img//logo.png" alt="">
+      </div>
+       <div class="col-md-3 ">
+        <p class="text-center text-center-footer ">
+          <span>关于选课</span>
+          <span>联系me</span>
+          <span>关于php</span>
+          <span>我的博客</span>
+        </p>         
+         <p class="text-center">公安备案号豫ICP备16036348号 </p>
+         <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+
+      </div>
+       <div class="col-md-4 ">
+        <p class="text-center text-center-footer ">
+          <img src="holder.js/80x80">
+
+          <img src="holder.js/80x80">
+        </p>         
+    
+      </div>
+    </div> -->
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>

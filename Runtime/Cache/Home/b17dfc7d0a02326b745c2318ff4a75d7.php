@@ -80,7 +80,7 @@
      <?php else: ?>
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
-      <a href='/index.php/<?php echo (session('role')); ?>/Course' class="dropdown-toggle" >
+      <a href='/index.php/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
       <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -183,8 +183,8 @@
            <div class="col-sm-9 col-sm-offset-3">
                 第三方登陆
                 <a href="<?php echo U('Ming/getOauth',array('type'=>'qq'));?>" target='_blank' onclick="return confirm('学生才可以第三方登录，老师请走正常线路登录，请确认一下您的身份');" style="display:inline-block;width:36px;height:32px;background-image: url('/static/img/login-third-party.png');background-position: -110px;"></a>&nbsp;&nbsp;
-                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
-               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>" style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
+                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" onclick="alert('没有拿到证书呢')" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
+               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>"  onclick="alert('没有拿到证书呢')"  style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
           </div>
 
           </div>

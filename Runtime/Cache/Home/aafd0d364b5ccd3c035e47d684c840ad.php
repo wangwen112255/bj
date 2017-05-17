@@ -49,7 +49,7 @@ vertical-align:middle
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row" style="width:1200px">
+  <div class="row" style="width:100%">
     <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
@@ -82,7 +82,7 @@ vertical-align:middle
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【教师】</b></p> 
@@ -344,7 +344,15 @@ vertical-align:middle
         $('.dropdown-menu').hide();
         
       });
+      var url="/index.php/Teacher/Course";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 6s"}).css({'background':'#0065B3','opacity':'0.7'})
+            }
 
+      });
 
 
 

@@ -12,7 +12,7 @@ class   CourseController extends BaseController{
     }
     else{
       echo "<script>alert(0)</script>";
-      $this->redirect('Teacher/Course');
+      $this->redirect('Teacher/course');
     }
    }
    $this->dao=D('Student');

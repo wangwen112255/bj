@@ -22,7 +22,7 @@ class TeacherController extends BaseController {
     }
     public function index(){
        
-       $this->display();
+       $this->redirect('Teacher/course');
     }
     public function photo(){
         $this->display();

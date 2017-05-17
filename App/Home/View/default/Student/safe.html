@@ -24,7 +24,7 @@
       <input type="password" readonly="true" name='pwd' class="form-control" id="" value="{$Userdata['pwd']}" placeholder="Input field">
     </div>
 
-    <a   class="btn btn-primary" onclick="_openLayerUrl('{:U('safe',array('md'=>'st'))}','修改密码','60%','45%',['250px','28%'])">修改</a>
+    <a   class="btn btn-primary" {eq name='Think.session.auth' value='1'}onclick="alert('不还意思您是授权登录的用户是不可以修改密码的')"{else/} onclick="_openLayerUrl('{:U('safe',array('md'=>'st'))}','修改密码','60%','45%',['250px','28%'])" {/eq}>修改</a>
      </div> 
   </form>
 

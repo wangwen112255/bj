@@ -29,8 +29,9 @@
     .dropdown-menu > li > a{
     line-height: 40px;
     }
-    
-   	</style>
+   
+
+       	</style>
    	
 <style type="text/css">
  
@@ -306,8 +307,15 @@
         $('.dropdown-menu').hide();
       
       });
-      alert("/index.php/Student/course")
+      var url="/index.php/Student/course";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 6s"}).css({'background':'#0065B3','opacity':'0.7','transform':'scale(1,1.1)'})
+            }
 
+      });
 
 
      })

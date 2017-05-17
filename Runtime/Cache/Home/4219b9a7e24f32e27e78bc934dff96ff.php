@@ -47,7 +47,7 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row" style="width:1200px">
+  <div class="row" style="width:100%">
     <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
@@ -75,7 +75,7 @@
 
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【学生】</b></p> 
@@ -307,10 +307,16 @@
         $('.dropdown-menu').show();
       }).mouseleave(function(event) {
         $('.dropdown-menu').hide();
-        
-      });
       
-
+      });
+      var url="/index.php/Student/intro";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css('background','#ccc');
+            }
+      });
 
 
      })

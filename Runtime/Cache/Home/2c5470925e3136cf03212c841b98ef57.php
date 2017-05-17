@@ -265,10 +265,16 @@
         $('.dropdown-menu').show();
       }).mouseleave(function(event) {
         $('.dropdown-menu').hide();
-        
-      });
       
-
+      });
+      var url="/index.php/Student/photo";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css("transition","background #ccc linear 5s")
+            }
+      });
 
 
      })

@@ -47,7 +47,7 @@
   </div> 
   <div class="WU_content"> 
   <div class="WU_navbar">
-  <div class="row" style="width:1200px">
+  <div class="row" style="width:100%">
     <div class="col-sm-2">
       <img src="/static/img/logo.png">
     </div>
@@ -80,7 +80,7 @@
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【教师】</b></p> 
@@ -229,33 +229,25 @@
     <!-- ------ -->
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
-         <p class="text-center text-center-footer ">
-           <span>关于选课</span>
-           <span>联系me</span>
-           <span>关于php</span>
-           <span>我的博客</span>
-         </p>         
-          <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
+   </div>
+    <div class="WU_footer " style="width:100%">
+          <p class="text-center text-center-footer ">
+            <span>关于选课</span>
+            <span>联系me</span>
+            <span>关于php</span>
+            <span>我的博客</span>
+          </p>         
+           <p class="text-center">公安备案号豫ICP备16036348号 </p>
+           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+           <div style="floatright;">
+           <p class="text-center text-center-footer ">
+            <img src="holder.js/80x80">
 
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
-           <img src="holder.js/80x80">
-
-           <img src="holder.js/80x80">
-         </p>         
-  
-       </div>
-     </div>
-    
-    </div>
+            <img src="holder.js/80x80">
+          </p>  
+          </div>       
+   
+      </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
@@ -273,7 +265,15 @@
         $('.dropdown-menu').hide();
         
       });
+      var url="/index.php/Teacher/photo";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 6s"}).css({'background':'#0065B3','opacity':'0.7'})
+            }
 
+      });
 
 
 
@@ -285,42 +285,9 @@
 <script type="text/javascript" src="/static/js/plugins/fileinput/fileinput.min.js"></script>
 <script type="text/javascript" src="/static/js/plugins/fileinput/zh.js"></script>
 <script type="text/javascript">
-    function _uploadFile(uploadid,uploadurl) {
-    $("#" + uploadid).fileinput({
-        language: 'zh', //设置语言
-        uploadUrl: uploadurl, //上传的地址
-        allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
-        //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
-        uploadAsync: true, //默认异步上传
-        showUpload: true, //是否显示上传按钮
-        showRemove: true, //显示移除按钮
-        showPreview: true, //是否显示预览
-        showCaption: false,//是否显示标题
-        autoReplace: true,
-        browseClass: "btn btn-primary", //按钮样式
-        dropZoneEnabled: true,//是否显示拖拽区
-        maxImageHeight: 1000,//图片的最大高度
-        maxFileCount: 1,
-        validateInitialCount: true,
-        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
-        msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！"
-    }).on("fileuploaded", function (e, data) {
-        var remsg=data.response;
-        if(remsg.code==200) {
-        layer.msg(remsg.msg,{icon:1,time:500});
-        $('.WU_login_img ').attr('src',remsg.data);
-
-        }
-        else{
-        $(".progress-bar-success").attr('style','width:20%');
-        layer.alert(remsg.msg, {icon: 5},function(index){
-        layer.close(index);
-        });
-        }
-        // console.log(data.response);
-    });
-}
+          
         $(function () {  
+              
             _uploadFile("file",'<?php echo U("Public/uploadfile",array("itemname"=>"tephoto"));?>');  
               
         })  

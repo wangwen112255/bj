@@ -82,7 +82,7 @@ vertical-align:middle
      </form> -->
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Teacher/course');?>" target="_blank" class="dropdown-toggle" >
-      <img src="<?php echo ((isset($Userdata['photo']) && ($Userdata['photo'] !== ""))?($Userdata['photo']):'/static/img/logo.png'); ?>"   class="WU_login_img img-circle"> 
+      <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
       <p style="margin-left:5px"><b>【教师】</b></p> 
@@ -300,33 +300,25 @@ vertical-align:middle
     <!-- ------ -->
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
-         <p class="text-center text-center-footer ">
-           <span>关于选课</span>
-           <span>联系me</span>
-           <span>关于php</span>
-           <span>我的博客</span>
-         </p>         
-          <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
+   </div>
+    <div class="WU_footer " style="width:100%">
+          <p class="text-center text-center-footer ">
+            <span>关于选课</span>
+            <span>联系me</span>
+            <span>关于php</span>
+            <span>我的博客</span>
+          </p>         
+           <p class="text-center">公安备案号豫ICP备16036348号 </p>
+           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+           <div style="floatright;">
+           <p class="text-center text-center-footer ">
+            <img src="holder.js/80x80">
 
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
-           <img src="holder.js/80x80">
-
-           <img src="holder.js/80x80">
-         </p>         
-  
-       </div>
-     </div>
-    
-    </div>
+            <img src="holder.js/80x80">
+          </p>  
+          </div>       
+   
+      </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
@@ -344,7 +336,15 @@ vertical-align:middle
         $('.dropdown-menu').hide();
         
       });
+      var url="/index.php/Teacher/course";
+      url=url.split('/').pop();
+      $(".WU_personal li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 6s"}).css({'background':'#0065B3','opacity':'0.7'})
+            }
 
+      });
 
 
 

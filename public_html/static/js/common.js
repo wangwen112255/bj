@@ -205,6 +205,42 @@ function _openLayerUrl(url,title,width,height,offset)
               layer.close(index);
         })
         }
+          function _uploadFile(uploadid,uploadurl,receiveid) {
+            $("#" + uploadid).fileinput({
+                language: 'zh', //设置语言
+                uploadUrl: uploadurl, //上传的地址
+                allowedFileExtensions: ['jpg', 'gif', 'png'],//接收的文件后缀
+                //uploadExtraData:{"id": 1, "fileName":'123.mp3'},
+                uploadAsync: true, //默认异步上传
+                showUpload: true, //是否显示上传按钮
+                showRemove: true, //显示移除按钮
+                showPreview: true, //是否显示预览
+                showCaption: false,//是否显示标题
+                autoReplace: true,
+                browseClass: "btn btn-primary", //按钮样式
+                dropZoneEnabled: true,//是否显示拖拽区
+                maxImageHeight: 1000,//图片的最大高度
+                maxFileCount: 1,
+                validateInitialCount: true,
+                previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+                msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！"
+            }).on("fileuploaded", function (e, data) {
+                var remsg=data.response;
+                if(remsg.code==200) {
+                layer.msg(remsg.msg,{icon:1,time:500});
+                $('.WU_login_img ').attr('src',remsg.data);
+                $("#"+receiveid).val(remsg.data);
+                }
+                else{
+                $(".progress-bar-success").attr('style','width:20%');
+                layer.alert(remsg.msg, {icon: 5},function(index){
+                layer.close(index);
+                });
+                }
+                // console.log(data.response);
+            });
+        }
+
     srheight=document.documentElement.scrollHeight;
     clheight=document.documentElement.clientHeight;
     topheight=document.body.scrollTop;

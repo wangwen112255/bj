@@ -46,10 +46,13 @@ public function callback($type = null, $code = null){
 			if($info){
 				session('_username_',$info['username']);
 				session('role','Student');
+				session('_pic_',$info['photo']);	
+				session('auth',1);	
 				$this->redirect('Student/course');
 				}else{
 			$condition['username']=$user_info['name'].time();
 			$Dao->add($condition);
+			session('_username_',$condition['username']);
 			session('_username_',$condition['username']);
 			session('role','Student');
 			$this->redirect('Student/course');
