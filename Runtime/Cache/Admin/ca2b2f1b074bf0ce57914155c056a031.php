@@ -51,7 +51,7 @@
                   <button onclick="_openLayerUrl('<?php echo U('create');?>','添加')" type="button" class="btn btn-outline btn-default" >
                       <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
                   </button>
-                  <button onclick="_delall()" type="button" class="btn btn-outline btn-default">
+                  <button onclick="alert('暂时还没有开通')" type="button" class="btn btn-outline btn-default">
                       <i class="glyphicon glyphicon-trash" aria-hidden="true"></i>
                   </button>
               </div>
@@ -69,19 +69,23 @@
           <tr>
               <th data-field="id" data-checkbox="true"></th>
               <th data-field="name">名称</th>
+              <th data-field="pic">院系图标</th>
               <th>专业数目</th>
               <th>操作</th>
           </tr>
           </thead>
           <tbody>
-          <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr >
-              <td><input type="checkbox" name="id" value="<?php echo ($v["cid"]); ?>" /></td>
+          <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?><tr>
+              <td ><input type="checkbox" name="id" value="<?php echo ($v["cid"]); ?>" /></td>
               <td><?php echo ($v["departname"]); ?></td>
-              <td><?php echo ($v["clnum"]); ?></td>
+              <td><img style="height: 50px;width: 50px;" src="<?php echo ($v["pic"]); ?>"></td>
+              <td><span class="badge badge-danger"><?php echo ($v["clnum"]); ?></span></td>
               <td>
-                  <button onclick="_openLayerUrl('<?php echo U('create', array('pid'=>$v['id']));?>')" class="btn btn-info " type="button"><i class="fa fa-plus"></i> 添加专业</button>
+                  <button onclick="_openLayerUrl('<?php echo U('showclass', array('cid'=>$v['cid']));?>','查看专业','30%','30%','50%')" class="btn btn-info " type="button"><i class="fa fa-file"></i>查看专业</button>
+                  <button onclick="_openLayerUrl('<?php echo U('class/create', array('did'=>$v['cid']));?>','添加专业')" class="btn btn-info " type="button"><i class="fa fa-plus"></i> 添加专业</button>
                   <button onclick="_openLayerUrl('<?php echo U('create',array('cid'=>$v['cid']));?>', '修改')" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
-                  <button onclick="_del(<?php echo ($v["id"]); ?>);" class="btn btn-danger" type="button"><i class="fa fa-trash"></i> 删除</button>
+                  <input type="hidden" name="oid" value="<?php echo ($v["cid"]); ?>">
+                  <button  onclick="_del(this)" class="del btn btn-danger" type="button"><i class="fa fa-trash"></i>删除</button>
               </td>
           </tr><?php endforeach; endif; else: echo "" ;endif; ?>
           </tbody>
@@ -112,7 +116,13 @@
 <script src="/static/js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="/static/js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="/static/js/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+function _del(obj){
+  var oid=$(obj).prev().val();
+  _ajaxmodify({url:'/admin.php/Depart/del',msg:'您确定要删除这个院系？',check:"确定",data:{id:oid}});
+
+}
+</script>
 
 </body>
 </html>

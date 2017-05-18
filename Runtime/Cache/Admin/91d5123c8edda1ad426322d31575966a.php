@@ -62,7 +62,7 @@
                             院系管理
                         </span>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="<?php echo U('Depart/insert');?>">增加院系</a>
+                            <li><a class="J_menuItem" href="<?php echo U('Depart/create');?>">增加院系</a>
                             </li>
                             <li><a class="J_menuItem" href="<?php echo U('Depart/index');?>">查看院系</a>
                             </li>
@@ -75,9 +75,9 @@
                             专业管理
                         </span>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="<?php echo U('Classes/insert');?>">增加专业</a>
+                            <li><a class="J_menuItem" href="<?php echo U('Class/create');?>">增加专业</a>
                             </li>
-                            <li><a class="J_menuItem" href="<?php echo U('Classes/index');?>">查看专业</a>
+                            <li><a class="J_menuItem" href="<?php echo U('Class/index');?>">查看专业</a>
                             </li>
                             </li>
                         </ul>

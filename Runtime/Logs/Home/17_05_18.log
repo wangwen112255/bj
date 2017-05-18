@@ -1,0 +1,459 @@
+[ 2017-05-18T09:05:16+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0830s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0780s ]
+SQL: SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.id>10 )  [ RunTime:0.3670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\999366d19b620cb6e861521131242e5f.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2017-05-18T09:05:16+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0820s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0840s ]
+SQL: SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.id>10 )  [ RunTime:0.3610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\999366d19b620cb6e861521131242e5f.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010000s ]
+
+[ 2017-05-18T11:31:38+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:2.8492s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0880s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.6520s ]
+SQL: SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.id>10 )  [ RunTime:2.3701s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\999366d19b620cb6e861521131242e5f.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.690040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.690040s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:16:59+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_order` [ RunTime:0.0230s ]
+SQL: SELECT departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_class.classname as clname FROM `xk_order` LEFT JOIN xk_student ON xk_order.student_id=xk_student.id LEFT JOIN xk_course ON xk_order.course_id=xk_course.id LEFT JOIN xk_teacher ON xk_course.teacher_id=xk_teacher.id LEFT JOIN xk_depart ON xk_student.depart_id=xk_depart.id LEFT JOIN xk_class ON xk_student.class_id=xk_class.id  WHERE ( xk_order.id>10 )  [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\999366d19b620cb6e861521131242e5f.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-18T17:17:06+08:00 ] 127.0.0.1 /index.php/Teachers/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0090s ]
+SQL: SELECT count(xk_course.id) as total,xk_teacher.realname,xk_teacher.id as idt,`photo`,xk_teacher.desc as desct FROM `xk_teacher` LEFT JOIN xk_course ON xk_course.teacher_id=xk_teacher.id  WHERE `class_id` <> 0 GROUP BY idt  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\6e389f13422694abe52162d0eb33ae58.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:17:07+08:00 ] 127.0.0.1 /index.php/Teachers/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+ERR: 非法操作:holder.js
+
+[ 2017-05-18T17:17:09+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 3 AND `status` = 0  [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:17:10+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 0 AND `status` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:17:14+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 8 AND `status` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:17:16+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/8.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 8 AND `status` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:17:17+08:00 ] 127.0.0.1 /index.php/Teachers/lists/id/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE `teacher_id` = 0 AND `status` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 6 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+NOTIC: [8] Undefined variable: Userinfo D:\phpStudy\WWW\bs\Runtime\Cache\Home\5f76d4aed2a16161c320bd64c3d78583.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-18T17:18:31+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-18T17:18:38+08:00 ] 127.0.0.1 /index.php/Public/checkusername
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-18T17:18:39+08:00 ] 127.0.0.1 /index.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy\WWW\bs\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\bs\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-18T17:18:41+08:00 ] 127.0.0.1 /index.php/Teacher/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 6 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-18T17:18:42+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:holder.js
+
+[ 2017-05-18T17:31:06+08:00 ] 127.0.0.1 /index.php/Teacher/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 6 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:31:07+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:holder.js
+
+[ 2017-05-18T17:38:44+08:00 ] 127.0.0.1 /index.php/Teacher/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_course` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_course` WHERE ( teacher_id=8 ) LIMIT 0,10   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 6 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\bs\Runtime\Cache\Home\28ff5c52acdd42d2eb5b5af634845434.php 第 263 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-18T17:38:45+08:00 ] 127.0.0.1 /index.php/Teacher/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi' LIMIT 1   [ RunTime:0.0010s ]
+ERR: 非法操作:holder.js
+

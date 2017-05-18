@@ -1,33 +1,56 @@
-
-{extend name='Public:layoutteacher'/}
-
+{extend name='Public:layout'/}
 {block name='CSS'}
-<style type="text/css">
- 
 
+<link href="__CSS__plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<style type="text/css">
 
 </style>
 
 {/block}
-{block name="panel-title"}<span>mitain</span>{/block}
+{block name='menu'}教师管理{/block}
+{block name='item'}院系教师{/block}
+{block name="content"}
 
-{block name="panel-body"}
+<div class="col-sm-12">
+      {volist name='dedata' id='data'}
+    <div class="col-sm-2">
+      <div class="thumbnail">
+            <img  width="100%" src="{$data.pic|default='__IMG__a2.jpg'}" alt="...">
+            <div class="caption">
+              <h3>{$data.departname}学院</h3>
+              <p>{$data.desc|default='华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'}</p>
+              <p>
+              <a href="{:U('Teacher/lists',array('id'=>$data['cid']))}" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
+             </p>
+            </div>
+      </div>
+    </div>
 
-<div class="panel-body">
-  sdafds
+    {/volist}   
+
+
+
+
+
+
+  
 </div>
-  
+<div class="col-sm-12">
+<div class="col-sm-12"> {$page}</div>
+</div>
 
 
 {/block}
-
-
-
-{block name='JS'}
+{block name="JS"}
+<script src="__JS__plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="__JS__plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+<script src="__JS__plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript">
-  
+function _del(obj){
+  var oid=$(obj).prev().val();
+  _ajaxmodify({url:'__CONTROLLER__/del',msg:'您确定要删除这个院系？',check:"确定",data:{id:oid}});
+
+}
 </script>
-
 {/block}
-
 

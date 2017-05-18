@@ -1,0 +1,36 @@
+
+  <link href="__CSS__bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="__CSS__plugins/fileinput/fileinput.min.css">
+  <link rel="stylesheet" type="text/css" href="__CSS__base.css">
+  <style type="text/css">
+   body{
+    padding: 10px;
+    margin: 10px;
+   }
+   button{
+    margin: 5px;
+   }
+  </style>
+  
+
+  {volist name='cldata' id='vo'}
+  <button type="button" class="btn btn-success">{$vo.classname}<span class="badge">{$key+1}</span></button>
+  {/volist}
+  {empty name='cldata'}
+         <div class="jumbotron">
+           <div class="container">
+             <h1>已经尽力了</h1>
+             <p>您还没有添加任何专业呢</p>
+             <p>
+               <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">右上角关闭</a>
+             </p>
+           </div>
+         </div>
+   {/empty}
+<script src="__JS__jquery.js"></script>
+<script src="__JS__bootstrap.min.js"></script>
+
+
+</script>
+
+</block>

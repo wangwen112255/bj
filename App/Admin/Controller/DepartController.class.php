@@ -21,7 +21,6 @@ class  DepartController extends Controller {
       if(!empty($_GET['cid'])&&isset($_GET['cid'])){
           $Codata=$this->dao->find($_GET['cid']);
           $this->assign("codata",$Codata);
-          dump($Codata);
           $this->display();
       }else{
           $this->display();
@@ -32,8 +31,8 @@ class  DepartController extends Controller {
       public function saves(){
       if(IS_AJAX){
        if(!empty($_POST['cid'])&&isset($_POST['cid'])){
-         if($Co->create()){
-              if($Co->where('id='.$_POST['cid'])->save())
+         if($this->dao->create()){
+              if($this->dao->where('id='.$_POST['cid'])->save())
               $this->ajaxReturn(toJson(true,"恭喜您,修改成功"));
               else
               $this->ajaxReturn(toJson("修改失败请稍候"));
@@ -56,11 +55,10 @@ class  DepartController extends Controller {
       }
     
     }
-      public function delcourse(){
-      $Co=M("Course");
+      public function del(){
       if(IS_AJAX){
-       if(!empty($_POST['cid'])&&isset($_POST['cid'])){
-              if($Co->delete($_POST['cid']))
+       if(!empty($_POST['id'])&&isset($_POST['id'])){
+              if($this->dao->delete($_POST['id']))
               $this->ajaxReturn(toJson(true,"删除成功"));
               else
               $this->ajaxReturn(toJson("删除失败请稍候"));
@@ -71,6 +69,16 @@ class  DepartController extends Controller {
       else{
           $this->ajaxReturn(toJson('数据来源有误请重新填写'));
       }
+      }
+      public function addclass(){
+
+        $this->display();
+      }
+      public function showclass($cid){
+        $Cl=M('Class');
+        $cldata=$Cl->where('depart_id='.$cid)->select();
+        $this->assign('cldata',$cldata);
+        $this->display();
       }
 }
 

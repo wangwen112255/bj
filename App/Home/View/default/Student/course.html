@@ -75,7 +75,7 @@
 			{if condition="$vo['isreceive'] eq 0"}<span class="badge btn-success">待审核</span></td>
 			<td>
 			<input type="hidden" name="oid" value="{$vo.oid}">
-			<button id="trash" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
+			<button  class="trash btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
 			</td>
 			{else/}
 			{eq name='vo.is_success' value='1'}<span class="badge" style="background: #5cb85c">已正选</span></td>
@@ -108,7 +108,7 @@
 
 {block name='JS'}
 <script type="text/javascript">
-$("#trash").click(function(){
+$(".trash").click(function(){
  var oid=$(this).prev().val();
   _ajaxmodify({url:'__CONTROLLER__/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
 })
