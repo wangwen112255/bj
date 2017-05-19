@@ -3,59 +3,116 @@
 
 <link href="__CSS__plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
 <style type="text/css">
-
+.detailpanel{
+  width: 18%;
+  /* background-color: #ccc; */
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  color: #ffff;
+  font-size: 18px;
+  text-align: center;
+}
+ .imginfo{
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border:1px solid #515151;
+  }
+  tr td {
+  text-align: center;
+  }
 </style>
 
 {/block}
-{block name='menu'}{$codata[0]['realname']}{/block}
-{block name='item'}课程如下{/block}
+{block name='menu'}学生管理{/block}
+{block name='item'}学生选课详情{/block}
 {block name="content"}
 
-  <div class="col-sm-12">
-      
-      <table data-toggle="table" data-click-to-select="true" data-mobile-responsive="true">
-          <thead>
-          <tr>
-              <th >课程编号</th>
-              <th data-field="name">课程题目</th>
-              <th data-field="pic">选课情况</th>
-              <th data-field="">限制人数</th>
-              <th>课程状态</th>
-             
-          </tr>
-          </thead>
-          <tbody>
-         {volist name="codata" id="vo"}
-          <tr>
-              <td >{$key+1}</td>
-              <td>{$vo.coursename}</td>
-              <td>
-                        <div class="progress " style="width:100%;">
-                            <div class="progress-bar progress-bar-{$vo['choosenum']==$vo['limitnum']?'danger':'success'}  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:{$vo['choosenum']/$vo['limitnum']*100}%;font-size: 8px">
-                             <span style="font-size: 8px">
-                             <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
-                              %-{$vo['choosenum']}人</span>
-                            </div>
-                            </div>
-              </td>
-              <td><span class="badge badge-danger">{$vo.limitnum}</span></td>
-              <td>
-                 <button type="button"  cid='{$vo.id}' statusid='{$vo.status}'  class="changestatus {eq name='vo.status' value='0'} btn btn-success{else/}btn btn-default{/eq}"><?php  $m=$vo['status'];echo $status[$m];?></button>
-              </td>
-          </tr>
-          {/volist}
-          </tbody>
-      </table>
-      {$page}
+<div class="col-sm-12">
+ 
+    <div class="ibox-content">
+        <div class="panel-body">
+            <div class="panel-group" id="accordion">
+               {empty name='codata'}
+                <div class="jumbotron">
+                  <div class="container">
+                    <h1>已经尽力了</h1>
+                    <p>在等等吧学生们这会还在选课</p>
+                    <p>
+                      <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+                    </p>
+                  </div>
+                </div>
+                {/empty}
+               {volist name='codata' id='data'}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h5 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne{$data.id}">
+                               <span class="detailpanel">{$data.realname}</span>
+                               <span class="detailpanel">{$data.studentid|default="还没有填写"}</span>
+                               <span class="detailpanel">
+                               <img  class="imginfo" src="{$data.photo|default='__IMG__logo.png'}">
+                               </span>
+                               <span class="detailpanel">{eq name='data.iscomplete' value='0'}
+                               <button type="button" class="btn btn-primary">进行中</button>{else/}
+                               <button type="button" class="btn btn-danger">已结束</button>{/eq}
+                               </span>
+                               <span class="detailpanel">
+                               <button type="button" class="btn btn-danger">查看详情</button>
+                               </span>
+                              
+                               
+                                </a>
+                            </h5>
+                    </div>
+                    <div id="collapseOne{$data.id}" class="panel-collapse collapse {eq name='key' value='0'}in{/eq}">
+                        <div class="panel-body">
+                           <table class="table  table-hover">
+                             <tbody>
+                             {empty name='data["order"]'}
+                                <div class="jumbotron">
+                                  <div class="container">
+                                    <h1>已经尽力了</h1>
+                                    <p>暂时还没有该生的选课信息</p>
+                                    <p>
+                                      <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+                                    </p>
+                                  </div>
+                                </div>
+                                {/empty}
+                             {volist name='data["order"]' id='vo'}
+                               <tr>
+                                 <td>{$vo.coname}</td>
+                                 <td>{$vo.tename}</td>
+                                 <td><span class="badge badge-success">已选{$vo.choosenum}</span></td>
+                                 <td>
+                                 {if condition="$vo['isreceive'] eq 0"}<span class="badge btn-success">待审核</span></td>
+                                 {else/}
+                                 {eq name='vo.is_success' value='1'}<span class="badge" style="background: #5cb85c">已正选</span></td>
+                                 {else/}<span class="badge" style="background: #d9534f">已拒绝</span></td>
+                                 {/eq}
+                                 {/if}
+                               </tr>
+                               {/volist}
+                             </tbody>
+                           </table>
+                        </div>
+                    </div>
+                </div>
+            {/volist}   
+            </div>
+        </div>
+    </div>
 
-  </div>
+</div>
 
-
-  
-
-  
-
-
+<div class="col-sm-12">
+<div class="col-sm-12">
+  <div class="col-sm-12"> {$page}</div>
+</div>
+</div>
 
 {/block}
 {block name="JS"}
@@ -63,8 +120,7 @@
 <script src="__JS__plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
 <script src="__JS__plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
 <script type="text/javascript">
-
-
 </script>
 {/block}
+
 

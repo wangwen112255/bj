@@ -42,6 +42,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated bounceInRight">
+            <div class="col-sm-1 pull-right">
+                <a  href="" class="btn btn-primary btn-outline"><span class="fa fa-refresh fa-spiner"></span>刷新</a>
+            </div>
             
 
 <div class="col-sm-12">
@@ -52,7 +55,7 @@
               <h3><?php echo ($data["departname"]); ?>学院</h3>
               <p><?php echo ((isset($data["desc"]) && ($data["desc"] !== ""))?($data["desc"]):'华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'); ?></p>
               <p>
-              <a href="<?php echo U('Teacher/lists',array('id'=>$data['cid']));?>" class="btn btn-success" style="font-size: 16px" role="button">进行查看</a>
+              <a href="<?php echo U('Teacher/lists',array('id'=>$data['cid']));?>" class="btn btn-success" style="font-size: 16px" role="button">进系查看</a>
              </p>
             </div>
       </div>

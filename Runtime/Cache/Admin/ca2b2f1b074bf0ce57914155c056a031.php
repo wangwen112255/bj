@@ -42,6 +42,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated bounceInRight">
+            <div class="col-sm-1 pull-right">
+                <a  href="" class="btn btn-primary btn-outline"><span class="fa fa-refresh fa-spiner"></span>刷新</a>
+            </div>
             
 
   <div class="col-sm-12">
@@ -82,6 +85,7 @@
               <td><span class="badge badge-danger"><?php echo ($v["clnum"]); ?></span></td>
               <td>
                   <button onclick="_openLayerUrl('<?php echo U('showclass', array('cid'=>$v['cid']));?>','查看专业','30%','30%','50%')" class="btn btn-info " type="button"><i class="fa fa-file"></i>查看专业</button>
+                  <button onclick="_openLayerUrl('<?php echo U('result', array('cid'=>$v['cid']));?>','正选结果')" class="btn btn-info " type="button"><i class="fa fa-file"></i>正选结果</button>
                   <button onclick="_openLayerUrl('<?php echo U('class/create', array('did'=>$v['cid']));?>','添加专业')" class="btn btn-info " type="button"><i class="fa fa-plus"></i> 添加专业</button>
                   <button onclick="_openLayerUrl('<?php echo U('create',array('cid'=>$v['cid']));?>', '修改')" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
                   <input type="hidden" name="oid" value="<?php echo ($v["cid"]); ?>">
@@ -91,7 +95,15 @@
           </tbody>
       </table>
       <?php echo ($page); ?>
-
+  <?php if(empty($codata)): ?><div class="jumbotron">
+       <div class="container">
+         <h1>已经尽力了</h1>
+         <p>暂时还没有专院系信息，抓紧上传吧</p>
+         <p>
+           <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+         </p>
+       </div>
+     </div><?php endif; ?>
   </div>
 
 

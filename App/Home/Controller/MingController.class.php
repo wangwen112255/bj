@@ -22,7 +22,7 @@ public function getOauth($type){
 public function callback($type = null, $code = null){
 		(empty($type) ||empty($code)) && $this->error('参数错误1');
 		$name = ucfirst(strtolower($type)) . 'SDK';
-    	$names="\Common\OauthSDK\sdk"."\\".$name;
+    	$names="\Org\ThinkSDK\sdk"."\\".$name;
 		$oauth=new $names();
 		//腾讯微博需传递的额外参数
 		$extend = null;

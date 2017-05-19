@@ -30,13 +30,13 @@
 
 
 function setUser($user){
- $_SESSION['_username_']=$user;
+ $_SESSION['username']=$user;
 }
 function encryPtion($pass, $prefix=''){
     return md5($prefix.$pass);
    } 
 function getUser(){
-    if(!isset($_SESSION['_username_'])||empty($_SESSION['_username_'])){
+    if(!isset($_SESSION['username'])||empty($_SESSION['username'])){
     redirect('/admin.php/Login/index');
     }
 }

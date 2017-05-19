@@ -42,6 +42,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated bounceInRight">
+            <div class="col-sm-1 pull-right">
+                <a  href="" class="btn btn-primary btn-outline"><span class="fa fa-refresh fa-spiner"></span>刷新</a>
+            </div>
             
 
   <div class="col-sm-12">
@@ -61,14 +64,11 @@
          <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
               <td ><?php echo ($key+1); ?></td>
               <td><?php echo ($vo["coursename"]); ?></td>
-              <td>
-                        <div class="progress " style="width:100%;">
-                            <div class="progress-bar progress-bar-<?php echo ($vo['choosenum']==$vo['limitnum']?'danger':'success'); ?>  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%;font-size: 8px">
-                             <span style="font-size: 8px">
-                             <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
-                              %-<?php echo ($vo['choosenum']); ?>人</span>
-                            </div>
-                            </div>
+              <td class="project-completion">
+                <small>选课进度：<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%--已经报名<?php echo ($vo['choosenum']); ?>人</small>
+                <div class="progress progress-mini">
+                    <div style="width:<?php echo ($vo['choosenum']/$vo['limitnum']*100); ?>%;" class="progress-bar"></div>
+                </div>
               </td>
               <td><span class="badge badge-danger"><?php echo ($vo["limitnum"]); ?></span></td>
               <td>

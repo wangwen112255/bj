@@ -52,15 +52,28 @@
                   <button onclick="_openLayerUrl('{:U('create',array('cid'=>$v['cid']))}', '修改')" class="btn btn-info " type="button"><i class="fa fa-paste"></i> 编辑</button>
                   <input type="hidden" name="oid" value="{$v.cid}">
                   <button  onclick="_del(this)" class="del btn btn-danger" type="button"><i class="fa fa-trash"></i>删除</button>
+                  <button onclick="_openLayerUrl('{:U('result', array('cid'=>$v['cid']))}','正选结果')" class="btn btn-info " type="button"><i class="fa fa-file"></i>正选结果</button>
+
               </td>
           </tr>
           {/volist}
           </tbody>
       </table>
       {$page}
-
+ 
+  {empty name='codata'}
+     <div class="jumbotron">
+       <div class="container">
+         <h1>已经尽力了</h1>
+         <p>暂时还没有专业信息，抓紧上传吧</p>
+         <p>
+           <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+         </p>
+       </div>
+     </div>
+     {/empty}
   </div>
-
+  
 
   
 </div>

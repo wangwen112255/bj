@@ -19,7 +19,7 @@
              <h1>已经尽力了</h1>
              <p>您还没有添加任何专业呢</p>
              <p>
-               <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+               <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">右上角关闭</a>
              </p>
            </div>
          </div><?php endif; ?>

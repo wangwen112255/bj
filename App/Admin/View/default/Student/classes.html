@@ -12,23 +12,31 @@
 {block name="content"}
 
 <div class="col-sm-12">
+  <ul class="notes">
       {volist name='dedata' id='data'}
-    <div class="col-sm-2">
-      <div class="thumbnail">
-            <img  width="100%" src="{$deinfo.pic|default='__IMG__a2.jpg'}" alt="...">
-            <div class="caption">
+      <li>
+          <div>
               <h3>{$data.classname}专业</h3>
-              <p>{$data.desc|default='学校的优秀专业'}</p>
-              <p>
-              <a href="{:U('Teacher/lists',array('id'=>$data['cid']))}" class="btn btn-success" style="font-size: 16px" role="button">专业查看</a>
-             </p>
-            </div>
-      </div>
-    </div>
-
-    {/volist}   
+              <p>{$data.desc|default='该专业是学校的优秀'}</p>
+              <a class="btn btn-primary" href="{:U('Student/detail',array('id'=>$data['id']))}">进专业</a>
+          </div>
+      </li>
+    {/volist} 
+    </ul>  
+    {empty name='dedata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>暂时还没有相关院系的专业信息，抓紧上传吧</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
 
 </div>
+
 <div class="col-sm-12">
 <div class="col-sm-12"> {$page}</div>
 </div>

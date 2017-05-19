@@ -4,7 +4,7 @@ use Think\Controller;
 class TeacherController extends BaseController {
        protected $dao;
        public function _initialize(){
-           //parent::initalize();
+           parent::_initialize();
             $this->dao=D('Teacher');
        } 
        public function index(){
@@ -39,33 +39,11 @@ class TeacherController extends BaseController {
               
          }
          
-       
-     
-       
+        
 
 
         
-         public function del(){
-         if(IS_AJAX){
-          if(!empty($_POST['id'])&&isset($_POST['id'])){
-                 if($this->dao->delete($_POST['id']))
-                 $this->ajaxReturn(toJson(true,"删除成功"));
-                 else
-                 $this->ajaxReturn(toJson("删除失败请稍候"));
-             }else{
-             $this->ajaxReturn(toJson("数据有误，删除失败"));
-             }
-         }
-         else{
-             $this->ajaxReturn(toJson('数据来源有误请重新填写'));
-         }
-         }
-         public function addclasses(){
-
-           $this->display();
-         }
-
-
+         
     
 
     }

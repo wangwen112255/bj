@@ -1,10 +1,10 @@
 <?php
 namespace Admin\Controller;
 use Think\Controller;
-class  DepartController extends Controller {
+class  DepartController extends BaseController {
     protected $dao;
     public function _initialize(){
-    	//parent::initalize();
+        parent::_initialize();
     	 $this->dao=D('Depart');
     } 
     public function index(){
@@ -70,15 +70,42 @@ class  DepartController extends Controller {
           $this->ajaxReturn(toJson('数据来源有误请重新填写'));
       }
       }
-      public function addclass(){
-
-        $this->display();
-      }
+    
       public function showclass($cid){
         $Cl=M('Class');
         $cldata=$Cl->where('depart_id='.$cid)->select();
         $this->assign('cldata',$cldata);
         $this->display();
+      }
+      public function result($cid){
+            $Co=M('Order');
+            $condition['depart_id']=$cid;
+            $condition['is_success']=1;
+            $counts= $Co->where( $condition)->count();
+            $St=M('Student');
+            $total=$St->field("count('id') as num")->where('depart_id='.$cid)->group('iscomplete')->select();
+            $progress=floor(intval($total[1]['num'])/(intval($total[0]['num'])+intval($total[1]['num']))*100);
+            $this->assign('progress',$progress);
+            $this->assign('choose',(int)$total[1]['num']);
+            // $progress= ($counts/$total)*100;
+            $this->assign('progress',$progress);
+            $this->assign('counts',$counts);
+           // dump($progress);
+            $Page=new  \Think\Page($counts,10);
+            $show=$Page->show();
+            $codata= $Co
+            ->where('xk_order.depart_id='.$cid)
+            ->field("departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stid,xk_class.classname as clname")
+            ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
+            ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
+            ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
+            ->join('LEFT JOIN __DEPART__ ON __STUDENT__.depart_id=__DEPART__.id')
+            ->join('LEFT JOIN __CLASS__ ON __STUDENT__.class_id=__CLASS__.id')
+            ->limit($Page->firstRow.','.$Page->listRows)->select();
+            $this->assign('page',$show);
+            $this->assign('codata',$codata);
+            // dump($codata);
+            $this->display();
       }
 }
 

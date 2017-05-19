@@ -4,7 +4,7 @@ use Think\Controller;
 class StudentController extends BaseController {
        protected $dao;
        public function _initialize(){
-           //parent::initalize();
+           parent::_initialize();
             $this->dao=D('Student');
        } 
        public function index(){
@@ -24,31 +24,39 @@ class StudentController extends BaseController {
              $this->assign('deinfo',$deinfo);
              $this->assign('dedata',$Daodata['data']);
              $this->assign('page',$Daodata['page']);
-             dump($Daodata);
+             // dump($Daodata);
              $this->display();
 
         }
-        public function lists($id){
-               $Daodata=$this->dao->selectall($id);
-               $this->assign('codata',$Daodata['data']);
-               $this->assign('page',$Daodata['page']);
-               // dump($Daodata);
-               $this->display();
-
-         }
-         public function detail($id){
-              $Co=M('Course');
-              $counts=$Co->where('teacher_id='.$id)->count();
-              $page=new \Think\Page($counts,10);
-              $show=$page->show();
-              $codata=$Co->where('teacher_id='.$id)->limit($page->firstRow.','.$page->listRows)->select();
-              $this->assign('codata',$codata);
-              $status=array("进行中",'结束了');
-              $this->assign('status',$status);
-              $this->assign("page",$show);
-              // dump($codata);
-              $this->display();  // echo "dfsd";
+        public function detail($id){
+             $St=M('Student');
+             $Or=M('Order');
+             $counts=$St->where("class_id=".$id)->count();
+             $page=new \Think\Page($counts,10);
+             $show=$page->show();
+             $stdata=$St->where("class_id=".$id)->limit($page->firstRow.','.$page->listRows)->select();
+             foreach ($stdata as $key => $v) {
+             $info=$Or->where('student_id='.$v['id'])
+                      ->field("xk_teacher.realname as tename,xk_order.id as oid,xk_course.coursename as coname,choosenum,xk_order.id as oid,is_success,isreceive")
+                      ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
+                      ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
+                      ->select();
+             $v['order']=$info;
+             $stdetaildata[]=$v;
+             }
+             // dump($stdetaildata);
+             $this->assign('codata',$stdetaildata);
+             $this->assign('page',$show);
+             $this->display();  // echo "dfsd";
+             
+        }
               
+         
+        public function realtions()
+         {
+           // code...
+           $data=$this->dao->relation(true)->select();
+           dump($data);
          }
          
        

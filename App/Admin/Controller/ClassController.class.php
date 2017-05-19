@@ -4,7 +4,7 @@ use Think\Controller;
 class ClassController extends BaseController {
 	   protected $dao;
     public function _initialize(){
-        //parent::initalize();
+        parent::_initialize();
          $this->dao=D('Class');
     } 
     public function index(){
@@ -74,8 +74,23 @@ class ClassController extends BaseController {
           $this->ajaxReturn(toJson('数据来源有误请重新填写'));
       }
       }
-      public function addclasses(){
-
-        $this->display();
-      }
+    public function result($cid){
+          $Co=M('Order');
+          $condition['class_id']=$cid;
+          $condition['is_success']=1;
+          $counts= $Co->where( $condition)->count();
+          $Page=new  \Think\Page($counts,10);
+          $show=$Page->show();
+          $codata= $Co
+          ->where('xk_order.class_id='.$cid)
+          ->field("xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stid")
+          ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
+          ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
+          ->join('LEFT JOIN __TEACHER__ ON __COURSE__.teacher_id=__TEACHER__.id')
+          ->limit($Page->firstRow.','.$Page->listRows)->select();
+          $this->assign('page',$show);
+          $this->assign('codata',$codata);
+          // dump($codata);
+          $this->display();
+    }
 }

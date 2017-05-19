@@ -227,7 +227,7 @@
 			<?php if($vo['isreceive'] == 0): ?><span class="badge btn-success">待审核</span></td>
 			<td>
 			<input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
-			<button id="trash" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
+			<button  class="trash btn btn-success"><span class="glyphicon glyphicon-check"></span>&nbsp;&nbsp;撤销选课</button>
 			</td>
 			<?php else: ?>
 			<?php if(($vo["is_success"]) == "1"): ?><span class="badge" style="background: #5cb85c">已正选</span></td>
@@ -263,12 +263,8 @@
     <!-- ------ -->
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
+  </div>
+   <div class="WU_footer " style="width:100%">
          <p class="text-center text-center-footer ">
            <span>关于选课</span>
            <span>联系me</span>
@@ -276,20 +272,17 @@
            <span>我的博客</span>
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
-
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
+          <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+          <div style="floatright;">
+          <p class="text-center text-center-footer ">
            <img src="holder.js/80x80">
 
            <img src="holder.js/80x80">
-         </p>         
+         </p>  
+         </div>       
   
-       </div>
      </div>
     
-    </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
@@ -324,7 +317,7 @@
    	
     
 <script type="text/javascript">
-$("#trash").click(function(){
+$(".trash").click(function(){
  var oid=$(this).prev().val();
   _ajaxmodify({url:'/index.php/Student/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
 })

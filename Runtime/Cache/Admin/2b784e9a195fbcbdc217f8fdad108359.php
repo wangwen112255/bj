@@ -42,6 +42,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated bounceInRight">
+            <div class="col-sm-1 pull-right">
+                <a  href="" class="btn btn-primary btn-outline"><span class="fa fa-refresh fa-spiner"></span>刷新</a>
+            </div>
             
 
   <div class="col-sm-12">

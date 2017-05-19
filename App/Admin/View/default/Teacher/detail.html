@@ -29,14 +29,11 @@
           <tr>
               <td >{$key+1}</td>
               <td>{$vo.coursename}</td>
-              <td>
-                        <div class="progress " style="width:100%;">
-                            <div class="progress-bar progress-bar-{$vo['choosenum']==$vo['limitnum']?'danger':'success'}  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:{$vo['choosenum']/$vo['limitnum']*100}%;font-size: 8px">
-                             <span style="font-size: 8px">
-                             <?php echo floor($vo['choosenum']/$vo['limitnum']*100) ?>
-                              %-{$vo['choosenum']}人</span>
-                            </div>
-                            </div>
+              <td class="project-completion">
+                <small>选课进度：{$vo['choosenum']/$vo['limitnum']*100}%--已经报名{$vo['choosenum']}人</small>
+                <div class="progress progress-mini">
+                    <div style="width:{$vo['choosenum']/$vo['limitnum']*100}%;" class="progress-bar"></div>
+                </div>
               </td>
               <td><span class="badge badge-danger">{$vo.limitnum}</span></td>
               <td>
@@ -47,7 +44,17 @@
           </tbody>
       </table>
       {$page}
-
+  {empty name='codata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>目前还没有查询同学们选课情况呢</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
   </div>
 
 

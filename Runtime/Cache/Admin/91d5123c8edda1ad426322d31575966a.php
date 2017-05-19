@@ -34,11 +34,11 @@
                             <span><img alt="image" class="img-circle" src="/static/img/logo.png" /></span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold"><?php echo ($_SESSION['_username_']['username']); ?></strong></span>
+                               <span class="block m-t-xs"><strong class="font-bold"><?php echo ($_SESSION['username']['username']); ?></strong></span>
                                 <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                                 </span>
                             </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                         <!--    <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
                                 </li>
                                 <li><a class="J_menuItem" href="profile.html">个人资料</a>
@@ -48,23 +48,28 @@
                                 <li><a class="J_menuItem" href="mailbox.html">信箱</a>
                                 </li>
                                 <li class="divider"></li>
-                                <li><a href="login.html">安全退出</a>
+                                <li><a href="<?php echo U('Login/doLogout');?>">安全退出</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <div class="logo-element">H+
                         </div>
                     </li>
                   
-                
+                   <li>
+                       <a href="/admin.php/Index/index"><i class="fa fa-home"></i> <span  id='depart' class="nav-label">
+                           主页
+                       </span>
+                       
+                   </li>
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-map"></i> <span class="nav-label">
+                        <a href="mailbox.html"><i class="fa fa-map"></i> <span  id='depart' class="nav-label">
                             院系管理
                         </span>
                         <ul class="nav nav-second-level">
                             <li><a class="J_menuItem" href="<?php echo U('Depart/create');?>">增加院系</a>
                             </li>
-                            <li><a class="J_menuItem" href="<?php echo U('Depart/index');?>">查看院系</a>
+                            <li id="showdepart" ><a class="J_menuItem" href="<?php echo U('Depart/index');?>">查看院系</a>
                             </li>
                             </li>
                         </ul>
@@ -107,9 +112,9 @@
                             安全管理
                         </span>
                         <ul class="nav nav-second-level">
-                            <li><a class="J_menuItem" href="<?php echo U('Safe/changepwd');?>">修改密码</a>
+                            <li><a class="J_menuItem" href="javascript:" onclick="alert('更新中')">修改密码</a>
                             </li>
-                          <li><a class="J_menuItem" href="<?php echo U('Safe/logout');?>">退出登录</a>
+                          <li><a class="J_menuItem" href="<?php echo U('Login/dologout');?>">退出登录</a>
                           </li>
                            
                         </ul>
@@ -133,7 +138,7 @@
                 </button>
                 <nav class="page-tabs J_menuTabs">
                     <div class="page-tabs-content">
-                        <a href="javascript:;" class="active J_menuTab" data-id="index_v1.html">首页</a>
+                        <a href="javascript:;" class="active J_menuTab" data-id="<?php echo U('step');?>">首页</a>
                     </div>
                 </nav>
                 <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
@@ -152,13 +157,13 @@
                         </li>
                     </ul>
                 </div>
-                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+                <a href="<?php echo U('Login/dologout');?>" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
             </div>
             <div class="row J_mainContent" id="content-main">
-                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="index_v148b2.html?v=4.0" frameborder="0" data-id="index_v1.html" seamless></iframe>
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="<?php echo U('step');?>" frameborder="0" data-id="index_v1.html" seamless></iframe>
             </div>
             <div class="footer">
-                <div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
+                <div class="pull-right">&copy; 2014-2015 <a href="http://bs.equxue.cn target="_blank">zihan's blog</a>
                 </div>
             </div>
         </div>

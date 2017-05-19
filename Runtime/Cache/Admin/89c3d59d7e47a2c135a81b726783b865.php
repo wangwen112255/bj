@@ -26,10 +26,10 @@
         <h2></h2>
         <ol class="breadcrumb">
             <li>
-                <a href="index.html">教师管理</a>
+                <a href="index.html">学生管理</a>
             </li>
             <li class="active">
-                <strong>院系教师</strong>
+                <strong>全部院系</strong>
             </li>
         </ol>
     </div>
@@ -42,6 +42,9 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="wrapper wrapper-content animated bounceInRight">
+            <div class="col-sm-1 pull-right">
+                <a  href="" class="btn btn-primary btn-outline"><span class="fa fa-refresh fa-spiner"></span>刷新</a>
+            </div>
             
 
 <div class="col-sm-12">
@@ -61,7 +64,15 @@
 
 
 
-
+    <?php if(empty($dedata)): ?><div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>暂时还没有院系信息，抓紧上传吧</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div><?php endif; ?>
 
   
 </div>

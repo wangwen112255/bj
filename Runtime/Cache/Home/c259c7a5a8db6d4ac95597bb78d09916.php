@@ -182,8 +182,8 @@
            <div class="col-sm-9 col-sm-offset-3">
                 第三方登陆
                 <a href="<?php echo U('Ming/getOauth',array('type'=>'qq'));?>" target='_blank' onclick="return confirm('学生才可以第三方登录，老师请走正常线路登录，请确认一下您的身份');" style="display:inline-block;width:36px;height:32px;background-image: url('/static/img/login-third-party.png');background-position: -110px;"></a>&nbsp;&nbsp;
-                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" onclick="alert('没有拿到证书呢')" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
-               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>"  onclick="alert('没有拿到证书呢')"  style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
+                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" onclick="alert('没有拿到证书呢');return false;" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
+               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>"  onclick="alert('没有拿到证书呢');return false;"  style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
           </div>
 
           </div>
@@ -264,7 +264,7 @@
        <div class="WU_myscroll">
        <ul >
         <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li class="WU_scrollli" >
-        <span ><?php echo ($data["dename"]); ?></span>
+        <span ><?php echo ($departname['departname']); ?></span>
         <span ><?php echo ($data["clname"]); ?></span>
         <span ><?php echo ($data["stuname"]); ?></span>
         <span ><?php echo ($data["coname"]); ?></span>
@@ -294,12 +294,8 @@
   
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
+  </div>
+     <div class="WU_footer " style="width:100%">
          <p class="text-center text-center-footer ">
            <span>关于选课</span>
            <span>联系me</span>
@@ -308,19 +304,41 @@
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
-
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
+          <div style="floatright;">
+          <p class="text-center text-center-footer ">
            <img src="holder.js/80x80">
 
            <img src="holder.js/80x80">
-         </p>         
+         </p>  
+         </div>       
   
-       </div>
      </div>
     
-    </div>
+   
+   <!--  <div class="row" style="padding-top:10px">
+      <div class="col-md-4 col-md-offset-1">
+        <img src="/static/img//logo.png" alt="">
+      </div>
+       <div class="col-md-3 ">
+        <p class="text-center text-center-footer ">
+          <span>关于选课</span>
+          <span>联系me</span>
+          <span>关于php</span>
+          <span>我的博客</span>
+        </p>         
+         <p class="text-center">公安备案号豫ICP备16036348号 </p>
+         <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+
+      </div>
+       <div class="col-md-4 ">
+        <p class="text-center text-center-footer ">
+          <img src="holder.js/80x80">
+
+          <img src="holder.js/80x80">
+        </p>         
+    
+      </div>
+    </div> -->
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>

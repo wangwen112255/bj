@@ -1,0 +1,77 @@
+{extend name='Public:layout'/}
+{block name='CSS'}
+
+<link href="__CSS__plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+{/block}
+{block name='menu'}院系管理{/block}
+{block name='item'}正选结果{/block}
+{block name="content"}
+
+  <div class="col-sm-12">
+      <div class="fixed-table-toolbar">
+          <div class="columns columns-right btn-group pull-left project-completion">
+               <small>选课进度：{$progress}%--已完成正选的{$choose}人</small>
+               <div class="progress progress-mini">
+                   <div style="width:{$progress}%;" class="progress-bar"></div>
+               </div>
+          </div>
+          <div class="columns columns-right btn-group pull-right">
+              <button class="btn btn-default btn-outline" type="button" title="搜索"><i class="glyphicon glyphicon-search"></i></button>
+              <button onclick="javascript:window.location.reload();" class="btn btn-default btn-outline" type="button" name="refresh" title="刷新"><i class="glyphicon glyphicon-repeat"></i></button>
+          </div>
+          <div class="pull-right search">
+              <input class="form-control input-outline" type="text" placeholder="请输入关键字">
+          </div>
+      </div>
+      <table data-toggle="table" data-click-to-select="true" data-mobile-responsive="true">
+          <thead>
+          <tr>
+              <th>编号</th>
+              <th data-field="stuname">姓名</th>
+              <th data-field="stid">学号</th>
+              <th data-field="clname">专业名称</th>
+              <th data-field="coname">课程名称</th>
+              <th data-field="pic">指导教师</th>
+          </tr>
+          </thead>
+          <tbody>
+          {volist name="codata" id="v"}
+          <tr>
+              <td>{$key+1}</td>
+              <td>{$v.stuname}</td>
+              <td>{$v.stid}</td>
+              <td>{$v.clname}</td>
+              <td>{$v.coname}</td>
+              <td>{$v.tename}</td>
+              
+          </tr>
+          {/volist}
+          </tbody>
+      </table>
+      {$page}
+
+  </div>
+
+
+  
+</div>
+
+
+{/block}
+{block name="JS"}
+<script src="__JS__plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="__JS__plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+<script src="__JS__plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript">
+function _del(obj){
+  var oid=$(obj).prev().val();
+  _ajaxmodify({url:'__CONTROLLER__/del',msg:'您确定要删除这个院系？',check:"确定",data:{id:oid}});
+
+}
+</script>
+{/block}
+
