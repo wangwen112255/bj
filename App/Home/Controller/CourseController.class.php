@@ -5,6 +5,11 @@ class   CourseController extends BaseController{
    public $dao;
    public $datainfo;
    public function _initialize(){
+    $Da=M('Date');
+    $Date=$Da->select();       
+    if(!($Date[0]['starttime']<time()&&time()<$Date[0]['endtime'])){
+      $this->error('不好意思系统选课时间还没有到');
+    }
    parent::_initialize();
    if($_SESSION['role']!='Student'){
     if(IS_AJAX){

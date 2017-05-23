@@ -39,7 +39,7 @@ class IndexController extends BaseController {
 //         $this->assign('user', $user);
 //         $this->display();
 //     }
-
+  
     public function step(){
       $De=M('Depart');
       $Cl=M('Class');
@@ -79,6 +79,22 @@ class IndexController extends BaseController {
     $this->display();
      
     }
+    public function settime(){
+         $Da=M('Date');
+        if(isset($_POST['starttime'])&& !empty($_POST['starttime'])){
+            if(empty($_POST['endtime']))
+            $this->error('请将时间填写完整');
+           $condition['starttime']=strtotime($_POST['starttime']);
+           $condition['endtime']=strtotime($_POST['endtime']);
+           $Da->where('id>0')->save($condition);
+           $this->success('恭喜您设置成功');
+          }else{
+        $Date=$Da->select();       
+        $this->assign('Time',$Date[0]);
+        $this->display();
+        }
+    }
+    
     
 
 }

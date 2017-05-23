@@ -52,9 +52,9 @@
   /* transition:background-color  linear 0.6s; */
   transition:transform   linear 0.6s;
 	}
-  .WU-nav a:hover{
+/*   .WU-nav a:hover{
   transform: rotateY(180deg);
-  }
+  } */
  
 	.WU-nav>li:hover{
     border-bottom: 2px solid #999;

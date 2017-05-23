@@ -52,19 +52,19 @@
        <li><a href="{:U('Teachers/index')}">教师课题</a></li>
        <li><a href="{:U('Course/index')}">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="ming.html" method="post">
-    <div class="input-group " style="position: relative">
-    <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
-    <div class="WU_search">
-    <button  class="btn btn-xs btn-danger" >教师</button>
-    <button class="btn btn-danger btn-xs" >专业</button>
-    </div>
-    <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
-      <input type="submit" class="WU_search_submit" name=""  value="">
-    </div>
-    </div>
-    
-    </form>
+      <form class="navbar-form navbar-left" action="{:U('Index/search',array('role'=>'all'))}" method="post">
+      <div class="input-group " style="position: relative">
+      <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
+      <div class="WU_search">
+      <a href="{:U('search',array('role'=>'Te'))}" class="btn btn-xs btn-danger" >教师</a>
+      <a href="{:U('search',array('role'=>'Cl'))}" class="btn btn-danger btn-xs" >院系</a>
+      </div>
+      <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
+        <input type="submit" class="WU_search_submit" name=""  value="">
+      </div>
+      </div>
+      
+      </form>
     <!-- <form class="navbar-form navbar-right relog ">
     <div class="form-group">
       <a class="btn  btn-success" href="{:U('Index/register')}">注册</a>
