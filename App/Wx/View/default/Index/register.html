@@ -1,0 +1,230 @@
+{extend name='Public:layouts'/}
+{block name='CSS'}
+<!-- <link rel="stylesheet" href="__CSS__plugins/layer/layer.min.css"> -->
+<style type="text/css">
+
+</style>
+
+{/block}
+
+{block name="content"}
+
+
+    
+    <!-- 导航图 -->
+  <div class="container-fluid" >
+
+   <div class="WU_info">
+    <div class="row WU_inforow ">
+   <span class='WU_infoheader'>注册管理</span>
+   
+
+      </div>
+     <div class="row" style="padding-top:15px; ">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">注册用户</h3>
+        </div>
+        <div class="panel-body">
+
+         <!-- <div class="row"> -->
+            <form action="{:U('Login/doregister')}" id='regisform' method="post" role="form" class="form-horizontal">
+              <div class="form-group">
+                <label for="" class='control-label col-sm-3'>用户名</label>
+                <div class="col-sm-6">
+                <input type="text"  name='username' class="form-control " id="" placeholder="请输入正确的用户名(字母或数字)">
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="" class='control-label col-sm-3'>密　　码</label>
+                <div class="col-sm-6">
+                <input type="password"  name='pwd' class="form-control " id="pwd" placeholder="请输入正确的密码">
+              </div>
+              </div>
+              <div class="form-group">
+                <label for="" class='control-label col-sm-3'>重复密码</label>
+                <div class="col-sm-6">
+                <input type="password"  name='repwd' class="form-control " id="" placeholder="请重复输入密码">
+              </div>
+              </div>
+              <div class="form-group">
+               
+                <label class="col-sm-3 control-label">我的身份</label>
+                <div class="col-sm-6">
+                 <select name="role"  class="form-control">
+                   <option value="">--请选择您的身份--</option>
+                   <option value="st">我是学生</option>
+                   <option value="te">我是教师</option>
+                  </select>
+                  </div>
+              </div>
+              <div class="form-group">
+               
+                <div class="col-sm-3 col-md-offset-3">
+                <input type="text"  name='validatecode' class="form-control " id="verify_code" placeholder="请输入验证码">
+              </div>
+                <div class="col-sm-2 ">
+                <!-- <button class="btn btn-success" onclick="return false;">获取验证码</button> -->
+                <img id='verify' src="{:U('Public/verifys',array())}">
+                <!-- <?php  var_dump($_SESSION); ?> -->
+              </div>
+              </div>           
+             
+              <div class="form-group">
+              <div class="col-sm-6 col-md-offset-3">
+              <button type="submit" href="" class="btn btn-primary">注册</button>
+              <button type="reset" class="btn btn-default">取消</button>
+              </div>
+              </div>
+            </form>
+            <!-- </div> -->
+         </div>
+        </div>
+      </div>
+      {notempty name='islog'}
+      <input type="hidden" name="islog" value="1"> 
+      {/notempty}
+     </div>
+
+
+ </div>
+<!-- ------------------ -->
+
+</div>
+
+
+{/block}
+{block name="JS"}
+<script type="text/javascript" src='__JS__hcPwdCheck.js'></script>
+<script type="text/javascript">
+$(function(){
+if($('input[type="hidden"]').val()==1){
+  $('#loging').click();
+}
+  $('#verify').click(function(){
+  // rand=Math.rand()*1000;
+    nowtime=new Date()
+    randtime=nowtime.getTime();
+  // this.src="{:U('Public/verifys','ids="+randtime+"')}"
+  // })
+  this.src="/index.php/Public/verifys/id/"+randtime;
+  // alert('sadfsdaf'+randtime+'fdsfsdaf')
+  
+  })
+  
+
+
+  $('#pwd').hcPwdCheck('showPwdCheckRes');
+  jQuery.validator.addMethod("isChinese", function(value, element) {  
+  return this.optional(element) || /^[a-zA-Z0-9]+$/.test(value);       
+  }, "用户名必须是字母或数字组成");
+  jQuery.validator.addMethod("isChinesepwd", function(value, element) {  
+  return this.optional(element) || !(/^[\u4e00-\u9fa5]+$/.test(value));       
+  }, "密码中不能出现中文");
+  jQuery.validator.addMethod("isRegister", function(value, element) {  
+        var  ok=this.optional(element);
+         if(!ok){
+          $.ajax({
+           url: '/index.php/Public/checkusername',
+           type: 'POST',
+           dataType: 'json',
+           data: {'username': value},
+           async: false,
+           success:function(data){
+           if(data.isExit==1)
+            ok=false;
+          else
+            ok=true;
+           },
+           error:function(){alert('请检查网络');ok=false;}
+         })
+       }
+       return ok;
+        
+         
+  }, "用户名已经存在");
+  jQuery.validator.addMethod("isCode", function(value, element) {  
+        var  ok=this.optional(element);
+         if(!ok){
+          $.ajax({
+           url: '/index.php/Public/check',
+           type: 'POST',
+           dataType: 'json',
+           data: {'code': value},
+           async: false,
+           success:function(data){
+           if(data.isCode==1)
+            ok=true;
+          else
+            ok=false;
+           },
+           error:function(){alert('请检查网络');ok=false;}
+         })
+       }
+       return ok;
+        
+         
+  }, "验证码输入不正确");
+  
+  var icon="<span class='glyphicon glyphicon-remove-sign'></span>";   
+   messageslogin={
+   username:{
+    required:icon+'输进去用户名',
+    minlength:icon+'请输进去正确长度的用户名',
+
+   },
+   pwd:{
+    required:icon+'请输输入正确的密码',
+    minlength:icon+'密码长度不正确'
+   },
+   repwd:{
+    required:icon+'请输输入正确的密码',
+    minlength:icon+'密码长度不正确',
+    equalTo:icon+'两次密码不一致'
+   },
+   validatecode:{
+    required:icon+'请输入验证码',
+    isCode:'验证码不正确'
+   },
+   role:{
+    required:icon+'请选择您的身份'
+   }
+  
+
+  };
+   ruleslogin={
+    username:{
+      isChinese:true,
+      required:true,
+      minlength:5,
+      isRegister:true
+    },
+  
+    pwd:{
+      required:true,
+      minlength:5,
+      isChinesepwd:true
+    },
+    repwd:{
+      required:true,
+      minlength:5,
+      equalTo:'#pwd',
+      isChinesepwd:true
+    },
+    validatecode:{
+     required:true,
+     isCode:true
+    },
+    role:{
+      required:true
+    }
+  };
+
+  _validade({id:'regisform',rules:ruleslogin,messages:messageslogin})
+
+})
+
+</script>
+{/block}
+
+

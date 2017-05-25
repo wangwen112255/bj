@@ -16,6 +16,7 @@ class  DepartController extends Controller {
     	$id=I('id');
     	$departname=$this->dao->field('departname')->find($id);
         // $co=A('Course');
+        $this->dao->where('id='.$id)->setInc('visitnum',1);
         // $codata=$co->departshows($id);
      	$this->assign('departname',$departname);
      	$Co=M('Order');

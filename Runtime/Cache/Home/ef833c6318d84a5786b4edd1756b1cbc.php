@@ -57,12 +57,12 @@
        <li><a href="<?php echo U('Teachers/index');?>">教师课题</a></li>
        <li><a href="<?php echo U('Course/index');?>">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="<?php echo U('Index/search',array('role'=>'all'));?>" method="post">
+      <form class="navbar-form navbar-left" action="<?php echo U('Index/search',array('role'=>'all'));?>" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
     <div class="WU_search">
-    <a href="<?php echo U('search',array('role'=>'Te'));?>" class="btn btn-xs btn-danger" >教师</a>
-    <a href="<?php echo U('search',array('role'=>'Cl'));?>" class="btn btn-danger btn-xs" >院系</a>
+    <a href="<?php echo U('Index/search',array('role'=>'Te'));?>" class="btn btn-xs btn-danger" >教师</a>
+    <a href="<?php echo U('Index/search',array('role'=>'Cl'));?>" class="btn btn-danger btn-xs" >院系</a>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
       <input type="submit" class="WU_search_submit" name=""  value="">
@@ -79,7 +79,7 @@
      <?php else: ?>
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
-      <a href='/index.php/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
+      <a href='/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
       <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -88,14 +88,14 @@
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list ">
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/intro">
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/intro">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
-        <li class="dropdown-menu-li" <?php if(($_SESSION['role']) == "Student"): ?>style="display: none"<?php endif; ?>><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
+        <li class="dropdown-menu-li" <?php if(($_SESSION['role']) == "Student"): ?>style="display: none"<?php endif; ?>><a href="/<?php echo (session('role')); ?>/info">我的消息
         <span class="glyphicon glyphicon-bell"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/course">我的课目
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/course">我的课目
         <span class="glyphicon glyphicon-tasks"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/safe">安全设置
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/safe">安全设置
         <span class="glyphicon glyphicon-wrench"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
@@ -164,7 +164,7 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <span>没有账号,</span><a href="/index.php/Depart/register" style="cursor:pointer">立即注册</a>
+                  <span>没有账号,</span><a href="/Depart/register" style="cursor:pointer">立即注册</a>
                   <a class='pull-right' href="<?php echo U('Public/forgetpwd');?>" target="_blank" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
@@ -380,7 +380,7 @@
       };
 
       _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
-      var url="/index.php/Depart/index";
+      var url="/Depart/index";
       urlarr=url.split('/');
       urlarr.pop();
       url=urlarr.pop();

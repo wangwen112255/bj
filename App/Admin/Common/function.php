@@ -37,7 +37,7 @@ function encryPtion($pass, $prefix=''){
    } 
 function getUser(){
     if(!isset($_SESSION['username'])||empty($_SESSION['username'])){
-    redirect('/admin.php/Login/index');
+    redirect('/admins.php/Login/index');
     }
 }
 function toJson($res,$msg,$data){

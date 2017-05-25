@@ -1,0 +1,69 @@
+
+{extend name='Public:layoutstudent'/}
+
+{block name='CSS'}
+<style type="text/css">
+ 
+
+
+</style>
+
+{/block}
+{block name="panel-title"}<span>正选公示</span>{/block}
+
+{block name="panel-body"}
+
+<div class="panel-body">
+   <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+      <div class="col-sm-12">
+     <div class="WU_myscroll">
+     <ul >
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >指导老师</span>
+      <span >选课结果</span>
+      </li>
+      
+      {volist name="codata" id="vo"}
+       <li class="WU_scrollli" >
+      <span >{$vo.stuid}</span>
+      <span >{$vo.stname}</span>
+      <span >{$vo.coname}</span>
+      <span >{$vo.tename}</span>
+      <span ><button class="btn btn-success"><span class="badge ">正选</span></button></span>
+      </li>
+      {/volist} 
+     </ul>
+     {empty name='codata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>班级中的其他同学正在努力选课中,请稍后再查</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
+     {$show}
+     </div>
+    </div>
+  </div>
+</div>
+  
+
+
+{/block}
+
+
+
+{block name='JS'}
+<script type="text/javascript">
+  
+</script>
+
+{/block}
+
+

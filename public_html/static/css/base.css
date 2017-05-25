@@ -223,7 +223,7 @@
       left: 0px;
       bottom: 100%;
       background: #515151;
-      opacity: 0.4;
+      opacity: 0.6;
       height: 100%;
       transition: bottom linear 0.2s;
     }
@@ -237,3 +237,4 @@
     .layui-layer-setwin .layui-layer-close1 {
         display: none !important;
     }
+   

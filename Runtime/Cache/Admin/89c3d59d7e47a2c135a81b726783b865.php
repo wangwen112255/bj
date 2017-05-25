@@ -101,7 +101,7 @@
 <script type="text/javascript">
 function _del(obj){
   var oid=$(obj).prev().val();
-  _ajaxmodify({url:'/admin.php/Student/del',msg:'您确定要删除这个院系？',check:"确定",data:{id:oid}});
+  _ajaxmodify({url:'/admins.php/Student/del',msg:'您确定要删除这个院系？',check:"确定",data:{id:oid}});
 
 }
 </script>

@@ -49,6 +49,10 @@
 
   <div class="col-sm-12">
       <div class="fixed-table-toolbar">
+          <div class="pull-left search">
+          <a class="btn btn-primary" href="<?php echo U('excel',array('id'=>$id));?>" type="button" title="搜索">导出excel</a>
+
+          </div>
           <div class="columns columns-right btn-group pull-left project-completion">
                <small>选课进度：<?php echo ($progress); ?>%--已完成正选的<?php echo ($choose); ?>人</small>
                <div class="progress progress-mini">

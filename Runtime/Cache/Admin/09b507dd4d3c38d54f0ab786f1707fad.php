@@ -52,8 +52,8 @@
    <?php else: ?>
     <div class="jumbotron">
       <div class="container">
-        <h1>当前的选课时间时间设置的是：</h1>
-        <p>您目前还没有设置选课起始时间为<span class="badge badge-primary"><?php echo (date('Y-m-d H:i:s',$Time["starttime"])); ?></span>结束时间是<span class="badge badge-danger "><?php echo (date('Y-m-d H:i:s',$Time["endtime"])); ?></span></p>
+        <h1>当前的选课时间设置的是：</h1>
+        <p>您目前设置的选课起始时间为<span class="badge badge-primary"><?php echo (date('Y-m-d H:i:s',$Time["starttime"])); ?></span>结束时间是<span class="badge badge-danger "><?php echo (date('Y-m-d H:i:s',$Time["endtime"])); ?></span></p>
         <p>
          
         </p>

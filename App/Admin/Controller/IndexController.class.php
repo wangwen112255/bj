@@ -94,7 +94,17 @@ class IndexController extends BaseController {
         $this->display();
         }
     }
-    
+     public function setlimitnum(){
+         $Da=M('Limitnum');
+        if(isset($_POST['num'])&& !empty($_POST['num'])){
+           $Da->where('id>0')->setField('num',$_POST['num']);
+           $this->success('恭喜您设置成功');
+          }else{
+        $Date=$Da->select();       
+        $this->assign('data',$Date[0]);
+        $this->display();
+        }
+    }
     
 
 }

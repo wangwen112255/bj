@@ -1,0 +1,61 @@
+{extend name='Public:layouts'/}
+{block name="CSS"}
+<style type="text/css">
+  
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+    .hui-media-content{
+      float: left;
+      width: 80%;
+      padding-left: 0px;
+      padding-right: 2px;
+    }
+</style>
+{/block}
+{block name='content'}
+
+ <header class="hui-header" style="background:#26A2FF ;">
+      <div id="hui-header-menu"></div>
+      <h1>{$name.realname}老师</h1>
+  </header>
+  <div class="hui-swipe" id="swipe1">
+    <div class="hui-swipe-pre"><img style='height:220px' src="{$name.photo|default='__IMG__1.png'}"/></div>
+  </div>
+  <div class="hui-wrap">
+    <div class="hui-media-list" style="padding:10px;">
+    {volist name='codata' id='data'}
+      <ul>
+        <li>
+        
+            <!--<div class="hui-media-list-img"><img src="img/1.png" /></div>-->
+            <div class="hui-media-content">
+              <h1>题目：{$data.coursename}</h1>
+              <p>要求：{$data.desc}</p>
+              <p>
+                    已选：<span class="hui-badge hui-primary">{$data.choosenum}</span>
+                    限选：<span class="hui-badge hui-danger">{$data.limitnum}</span>
+                  
+              </p>
+            </div>
+             {eq name='data.choosenum' value="$data['limitnum']"}
+             <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-danger  hui-button-small ">已满</button>
+              {else/}
+              
+            <button  onclick="location.href='{:U('Course/index')}'"  style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">选课</button>
+            {/eq}
+       
+        </li>
+      
+      </ul>
+     {/volist}
+    </div>
+
+  </div>
+
+{/block}
+{block name="JS"}
+<script type="text/javascript">
+
+</script>
+
+{/block}

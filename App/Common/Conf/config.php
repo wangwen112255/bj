@@ -6,7 +6,7 @@ return array(
 	// "SHOW_PAGE_TRACE"=>true,//开启调试页面
 	"URL_CASE_INSENSITIVE"=>true,
 	'URL_HTML_SUFFIX'=>'html|shtml',
-	"URL_MODEL"=>1,
+	"URL_MODEL"=>2,
 	"VAR_MODULE"=>"m",
 	"VAR_CONTROLLER"=>"c",
 	"VAR_ACTION"=>"a",
