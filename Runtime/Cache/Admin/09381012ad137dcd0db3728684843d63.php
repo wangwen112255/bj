@@ -26,7 +26,7 @@
         <h2></h2>
         <ol class="breadcrumb">
             <li>
-                <a href="index.html">院系管理</a>
+                <a href="index.html">专业管理</a>
             </li>
             <li class="active">
                 <strong>正选结果</strong>
@@ -50,12 +50,18 @@
   <div class="col-sm-12">
       <div class="fixed-table-toolbar">
           <div class="columns columns-right btn-group pull-right">
-              <button class="btn btn-default btn-outline" type="button" title="搜索"><i class="glyphicon glyphicon-search"></i></button>
+               <button class="btn btn-default btn-outline" type="button" title="搜索"><i class="glyphicon glyphicon-search"></i></button>
+
               <button onclick="javascript:window.location.reload();" class="btn btn-default btn-outline" type="button" name="refresh" title="刷新"><i class="glyphicon glyphicon-repeat"></i></button>
           </div>
           <div class="pull-right search">
               <input class="form-control input-outline" type="text" placeholder="请输入关键字">
           </div>
+           <div class="pull-left">
+          <a class="btn btn-primary" href="<?php echo U('excel',array('id'=>$id));?>" type="button" title="搜索">导出excel</a>
+
+          </div>
+               
       </div>
       <table data-toggle="table" data-click-to-select="true" data-mobile-responsive="true">
           <thead>

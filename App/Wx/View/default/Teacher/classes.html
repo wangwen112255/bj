@@ -1,0 +1,94 @@
+
+{extend name='Public:layoutteacher'/}
+
+{block name='CSS'}
+<style type="text/css">
+ 
+
+
+</style>
+
+{/block}
+{block name="panel-title"}<span>正选结果公示</span>{/block}
+
+{block name="panel-body"}
+
+<div class="panel-body">
+   <ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="javascript:">全班正选结果</a></li>
+  <li role="presentation" class=""><a href="javascript:">我的课程正选结果</a></li>
+  </ul>
+   <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
+      <div class="col-sm-12">
+     <div class="WU_myscroll">
+     <ul >
+      <li class="WU_scrollli" style="background-color: #ccc" >
+      <span >学生学号</span>
+      <span >学生姓名</span>
+      <span >选课题目</span>
+      <span >指导老师</span>
+      <span >选课结果</span>
+      </li>
+      
+      {volist name="codata" id="vo"}
+       <li class="WU_scrollli {eq name='vo.teid' value='$userid'} myresult{else/}allresult{/eq}"  >
+      <span >{$vo.stid}</span>
+      <span >{$vo.stuname}</span>
+      <span >{$vo.coname}</span>
+      <span >{$vo.tename}</span>
+      <span ><button class="btn btn-success"><span class="badge ">正选</span></button></span>
+      </li>
+      {/volist} 
+     </ul>
+     {empty name='codata'}
+       <div class="jumbotron">
+         <div class="container">
+           <h1>已经尽力了</h1>
+           <p>班级中的所有同学正在努力选课中,请稍后再查</p>
+           <p>
+             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+           </p>
+         </div>
+       </div>
+       {/empty}
+     {$show}
+     </div>
+    </div>
+  </div>
+  <div style="width: 100%;height: 50px">
+    <div class="col-sm-4 pull-right">
+    <form action="ming.html" method="post" >
+   
+         <div class="btn-group pull-right">
+          <button class="btn btn-outline btn-default " title="搜索"><span class="glyphicon glyphicon-search"></span></button>
+          <a  href="" class="btn btn-outline btn-default" title="刷新"><span class="glyphicon glyphicon-repeat"></span></a>
+        
+          </div>
+           <div class="pull-right" style="margin-right: 8px">
+          <input type="text" name="" id="input"  class="form-control " value="" placeholder="搜您想搜得"   title=""> 
+         </div>
+      </form>
+   </div>
+  </div>
+
+
+</div>
+  
+
+
+{/block}
+
+
+
+{block name='JS'}
+<script type="text/javascript">
+   $(".nav-tabs li").click(function(){
+  $(this).siblings().removeClass('active');
+  $(this).addClass('active');
+  $('.allresult').toggle('slow');
+  })
+</script>
+
+{/block}
+
+

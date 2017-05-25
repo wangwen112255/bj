@@ -60,12 +60,12 @@
        <li><a href="<?php echo U('Teachers/index');?>">教师课题</a></li>
        <li><a href="<?php echo U('Course/index');?>">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="ming.html" method="post">
+   <form class="navbar-form navbar-left" action="<?php echo U('Index/search',array('role'=>'all'));?>" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
     <div class="WU_search">
-    <button  class="btn btn-xs btn-danger" >教师</button>
-    <button class="btn btn-danger btn-xs" >专业</button>
+    <a href="<?php echo U('Index/search',array('role'=>'Te'));?>" class="btn btn-xs btn-danger" >教师</a>
+    <a href="<?php echo U('Index/search',array('role'=>'Cl'));?>" class="btn btn-danger btn-xs" >院系</a>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
       <input type="submit" class="WU_search_submit" name=""  value="">
@@ -73,7 +73,6 @@
     </div>
     
     </form>
-
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">
       <a href="<?php echo U('Student/course');?>" target="_blank" class="dropdown-toggle" >
       <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
@@ -300,7 +299,7 @@
         $('.dropdown-menu').hide();
       
       });
-      var url="/index.php/Student/course";
+      var url="/Student/course";
       url=url.split('/').pop();
       $(".WU_personal li a").each(function(){
             var acurl=$(this).attr('href');
@@ -319,7 +318,7 @@
 <script type="text/javascript">
 $(".trash").click(function(){
  var oid=$(this).prev().val();
-  _ajaxmodify({url:'/index.php/Student/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
+  _ajaxmodify({url:'/Student/trashcourse',msg:'您确定要撤销这门选课吗？',check:"我同意",data:{id:oid}});
 })
 </script>
 

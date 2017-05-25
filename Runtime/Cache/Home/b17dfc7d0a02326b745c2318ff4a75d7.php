@@ -58,12 +58,12 @@
        <li><a href="<?php echo U('Teachers/index');?>">教师课题</a></li>
        <li><a href="<?php echo U('Course/index');?>">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="ming.html" method="post">
+      <form class="navbar-form navbar-left" action="<?php echo U('Index/search',array('role'=>'all'));?>" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
     <div class="WU_search">
-    <button  class="btn btn-xs btn-danger" >教师</button>
-    <button class="btn btn-danger btn-xs" >专业</button>
+    <a href="<?php echo U('Index/search',array('role'=>'Te'));?>" class="btn btn-xs btn-danger" >教师</a>
+    <a href="<?php echo U('Index/search',array('role'=>'Cl'));?>" class="btn btn-danger btn-xs" >院系</a>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
       <input type="submit" class="WU_search_submit" name=""  value="">
@@ -80,7 +80,7 @@
      <?php else: ?>
       <form class="navbar-text navbar-right dropdown"  style="margin-bottom: 0px;margin-top: -2px;">  
        
-      <a href='/index.php/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
+      <a href='/<?php echo (session('role')); ?>/course' class="dropdown-toggle" >
       <img src="<?php if(empty($_SESSION['_pic_'])): ?>/static/img/logo.png<?php else: echo (session('_pic_')); endif; ?>"   class="WU_login_img img-circle"> 
       <div class="pull-right">
       <p style="margin-left:5px"><?php echo (session('_username_')); ?></p>
@@ -89,14 +89,14 @@
       </div>
       </a>
       <ul class="dropdown-menu dropdown-menu_list ">
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/intro">
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/photo">我的头像<span class="glyphicon glyphicon-picture"></span></a></li>
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/intro">
        基本资料 <span class=" glyphicon glyphicon-folder-open"></span></a></li>
-        <li class="dropdown-menu-li" <?php if(($_SESSION['role']) == "Student"): ?>style="display: none"<?php endif; ?>><a href="/index.php/<?php echo (session('role')); ?>/info">我的消息
+        <li class="dropdown-menu-li" <?php if(($_SESSION['role']) == "Student"): ?>style="display: none"<?php endif; ?>><a href="/<?php echo (session('role')); ?>/info">我的消息
         <span class="glyphicon glyphicon-bell"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/course">我的课目
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/course">我的课目
         <span class="glyphicon glyphicon-tasks"></span></a></li>
-        <li class="dropdown-menu-li"><a href="/index.php/<?php echo (session('role')); ?>/safe">安全设置
+        <li class="dropdown-menu-li"><a href="/<?php echo (session('role')); ?>/safe">安全设置
         <span class="glyphicon glyphicon-wrench"></span></a></li>
         <li class="dropdown-menu-li"><a href="<?php echo U('Login/logout');?>">退出
         <span class=" glyphicon glyphicon-log-out"></span></a></li>
@@ -165,7 +165,7 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <span>没有账号,</span><a href="/index.php/Login/register" style="cursor:pointer">立即注册</a>
+                  <span>没有账号,</span><a href="/Index/register" style="cursor:pointer">立即注册</a>
                   <a class='pull-right' href="<?php echo U('Public/forgetpwd');?>" target="_blank" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
@@ -183,8 +183,8 @@
            <div class="col-sm-9 col-sm-offset-3">
                 第三方登陆
                 <a href="<?php echo U('Ming/getOauth',array('type'=>'qq'));?>" target='_blank' onclick="return confirm('学生才可以第三方登录，老师请走正常线路登录，请确认一下您的身份');" style="display:inline-block;width:36px;height:32px;background-image: url('/static/img/login-third-party.png');background-position: -110px;"></a>&nbsp;&nbsp;
-                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" onclick="alert('没有拿到证书呢')" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
-               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>"  onclick="alert('没有拿到证书呢')"  style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
+                <a href="<?php echo U('Ming/getOauth',array('type'=>'sina'));?>" onclick="alert('没有拿到证书呢');return false;" style="display:inline-block;width:32px;height:32px;background-image: url('/static/img/login-third-party.png')"></a>&nbsp;&nbsp;
+               <a href="<?php echo U('Ming/getOauth',array('type'=>'wx'));?>"  onclick="alert('没有拿到证书呢');return false;"  style="display:inline-block;width:32px;height:32px;background-position: 32px;background-image: url('/static/img/login-third-party.png')"></a>
           </div>
 
           </div>
@@ -325,12 +325,8 @@
   
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
+  </div>
+     <div class="WU_footer " style="width:100%">
          <p class="text-center text-center-footer ">
            <span>关于选课</span>
            <span>联系me</span>
@@ -339,19 +335,16 @@
          </p>         
           <p class="text-center">公安备案号豫ICP备16036348号 </p>
           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
-
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
+          <div style="floatright;">
+          <p class="text-center text-center-footer ">
            <img src="holder.js/80x80">
 
            <img src="holder.js/80x80">
-         </p>         
+         </p>  
+         </div>       
   
-       </div>
      </div>
     
-    </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
@@ -426,7 +419,17 @@
       };
 
       _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
-    
+      var url="/Index/register";
+      urlarr=url.split('/');
+      urlarr.pop();
+      url=urlarr.pop();
+      $(".WU-nav li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 0.5s"}).css({'border-bottom':'solid 3px #0065B3'})
+            }
+
+      });
      
       })
 

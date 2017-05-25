@@ -1,0 +1,74 @@
+{extend name='Public:layout'/}
+{block name='CSS'}
+
+<link rel="stylesheet" type="text/css" href="__CSS__plugins/jadate/jedate.css">
+{/block}
+
+{block name="content"}
+
+<div class="col-sm-12">
+    {eq  name='data.num' value='0'}
+    <div class="alert alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      对不起您目前的还没有设置，不设置表示不限制人数
+    </div>
+  
+   {else/}
+    <div class="jumbotron">
+      <div class="container">
+        <h1>当前的选课人数限制是：</h1>
+        <p> <button type="button" class="btn btn-primary">每人选择<span class="badge">{$data.num}</span>门课程</button></p>
+        <p>
+         
+        </p>
+      </div>
+    </div>
+     {/eq}
+    <form action=""  id='signupForm' method="post" role="form">
+   
+      <div class="form-group">
+        <div class="col-sm-2">
+        <input type="text"  class="form-control" name="num" required="true" placeholder="请填写限制人数">
+        </div>
+        
+          <button  class="btn btn-primary">点击设置</button>
+      </div>
+  
+    
+    </form>
+
+</div>
+
+  
+
+
+
+{/block}
+{block name="JS"}
+<script type="text/javascript" src="__JS__plugins/jadate/jedate.min.js"></script>
+<script type="text/javascript">
+    var start = {
+        format: 'YYYY-MM-DD hh:mm:ss',
+        minDate: $.nowDate(0), //设定最小日期为当前日期
+        festival:true,
+        //isinitVal:true,
+        maxDate: '2099-06-16 23:59:59', //最大日期
+        choosefun: function(elem,datas){
+            end.minDate = datas; //开始日选好后，重置结束日的最小日期
+        }
+    };
+    var end = {
+        format: 'YYYY-MM-DD hh:mm:ss',
+        minDate: $.nowDate(0), //设定最小日期为当前日期
+        festival:true,
+        //isinitVal:true,
+        maxDate: '2099-06-16 23:59:59', //最大日期
+        choosefun: function(elem,datas){
+            start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+        }
+    };
+    $("#start").jeDate(start);
+    $("#end").jeDate(end);
+</script>
+{/block}
+

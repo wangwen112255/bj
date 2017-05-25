@@ -62,7 +62,15 @@
     </div><?php endforeach; endif; else: echo "" ;endif; ?>   
 
 
-
+    <?php if(empty($dedata)): ?><div class="jumbotron">
+           <div class="container">
+             <h1>已经尽力了</h1>
+             <p>目前还没有找到院系更不要说老师呢</p>
+             <p>
+               <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+             </p>
+           </div>
+         </div><?php endif; ?>
 
 
 

@@ -25,6 +25,7 @@ class StudentController extends BaseController {
        $this->display();
     }
     public function photo(){
+        $this->assign('pic',$this->datainfo['photo']);
     	$this->display();
     }
     public function intro(){
@@ -57,10 +58,7 @@ class StudentController extends BaseController {
     	// $this->display();
         
     }
-    public function info(){
-
-    	$this->display();
-    }
+    
     public function safe(){
         if(IS_AJAX){
             $this->dao=D('Student');

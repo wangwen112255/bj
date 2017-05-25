@@ -53,12 +53,12 @@
        <li><a href="{:U('Teachers/index')}">教师课题</a></li>
        <li><a href="{:U('Course/index')}">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="ming.html" method="post">
+      <form class="navbar-form navbar-left" action="{:U('Index/search',array('role'=>'all'))}" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
     <div class="WU_search">
-    <button  class="btn btn-xs btn-danger" >教师</button>
-    <button class="btn btn-danger btn-xs" >专业</button>
+    <a href="{:U('Index/search',array('role'=>'Te'))}" class="btn btn-xs btn-danger" >教师</a>
+    <a href="{:U('Index/search',array('role'=>'Cl'))}" class="btn btn-danger btn-xs" >院系</a>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
       <input type="submit" class="WU_search_submit" name=""  value="">
@@ -260,31 +260,6 @@
   
      </div>
     
-   
-   <!--  <div class="row" style="padding-top:10px">
-      <div class="col-md-4 col-md-offset-1">
-        <img src="__IMG__/logo.png" alt="">
-      </div>
-       <div class="col-md-3 ">
-        <p class="text-center text-center-footer ">
-          <span>关于选课</span>
-          <span>联系me</span>
-          <span>关于php</span>
-          <span>我的博客</span>
-        </p>         
-         <p class="text-center">公安备案号豫ICP备16036348号 </p>
-         <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
-
-      </div>
-       <div class="col-md-4 ">
-        <p class="text-center text-center-footer ">
-          <img src="holder.js/80x80">
-
-          <img src="holder.js/80x80">
-        </p>         
-    
-      </div>
-    </div> -->
     <script src="__JS__jquery.js"></script>
     <script type="text/javascript" src="__JS__holder.min.js"></script>
     <script type="text/javascript" src='__JS__plugins/validate/jquery.validate.min.js'></script>
@@ -359,7 +334,17 @@
       };
 
       _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
-    
+      var url="__ACTION__";
+      urlarr=url.split('/');
+      urlarr.pop();
+      url=urlarr.pop();
+      $(".WU-nav li a").each(function(){
+            var acurl=$(this).attr('href');
+            if(acurl.match(url)){
+              $(this).parent().css({"transition":"all linear 0.5s"}).css({'border-bottom':'solid 3px #0065B3'})
+            }
+
+      });
      
       })
 

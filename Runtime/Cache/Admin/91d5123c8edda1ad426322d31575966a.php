@@ -57,7 +57,7 @@
                     </li>
                   
                    <li>
-                       <a href="/admin.php/Index/index"><i class="fa fa-home"></i> <span  id='depart' class="nav-label">
+                       <a href="/admins.php/Index/index"><i class="fa fa-home"></i> <span  id='depart' class="nav-label">
                            主页
                        </span>
                        
@@ -112,6 +112,8 @@
                             安全管理
                         </span>
                         <ul class="nav nav-second-level">
+                             <li><a class="J_menuItem" href="<?php echo U('settime');?>" >选课时间</a></li>
+                             <li><a class="J_menuItem" href="<?php echo U('setlimitnum');?>" >选课人数</a></li>
                             <li><a class="J_menuItem" href="javascript:" onclick="alert('更新中')">修改密码</a>
                             </li>
                           <li><a class="J_menuItem" href="<?php echo U('Login/dologout');?>">退出登录</a>

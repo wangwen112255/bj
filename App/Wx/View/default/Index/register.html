@@ -1,0 +1,50 @@
+{extend name='Public:layouts'/}
+{block name='CSS'}
+<style type="text/css">
+
+</style>
+
+{/block}
+
+{block name="content"}
+
+<div class="hui-wrap">
+    <div class="hui-center-title" style="margin-top:35px;"><h1 style="border:0px;">注册新用户</h1></div>
+    <div style="margin:28px; margin-bottom:15px;" class="hui-form" id="form1">
+        <div class="hui-form-items">
+            <input type="text" class="hui-input hui-input-clear" placeholder="用户名" checkType="string" checkData="5,20" checkMsg="用户名应为5-20个字符" />
+        </div>
+        <div class="hui-form-items">
+            <input type="password" class="hui-input hui-pwd-eye" placeholder="登录密码" checkType="string" id="pwd" checkData="6,20" checkMsg="密码应为6-20个字符" />
+        </div>
+        <div class="hui-form-items">
+            <input type="password" class="hui-input hui-pwd-eye" placeholder="确认密码" checkType="sameWithId" checkData="pwd" checkMsg="两次密码不一致"  />
+        </div>
+        <div class="hui-form-items">
+      <div class="hui-form-items-title">身份选取</div>
+      <div class="hui-form-radios">
+      <input type="radio" value="1" name="gender" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
+      <input type="radio" value="2" name="gender" id="g2" onchange="showSelectRes(this);" /><label for="g2">学生</label>
+      </div>
+    </div>
+    </div>
+    <div style="padding:28px; padding-top:0px;">
+        <button type="button" class="hui-button hui-button-large hui-primary" id="submit">立即注册</button>
+    </div>
+</div>
+<p style="padding-left:28px"><a href="{:U('Login/index')}">已有账号，请去登陆</a></p>
+{/block}
+{block name="JS"}
+<script src="js/hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+  hui.formInit();
+hui('#submit').click(function(){
+    //验证
+    var res = huiFormCheck('#form1');
+    //提交
+    if(res){hui.iconToast('验证通过！');}
+});
+</script>
+{/block}
+
+

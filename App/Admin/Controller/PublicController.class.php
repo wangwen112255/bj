@@ -129,7 +129,7 @@ class PublicController extends Controller{
 	  	    	  $image->thumb($wid, $hei,\Think\Image::IMAGE_THUMB_FIXED)->save('.'.$thumurl); 
 	  	    	   session('_pic_',$thumurl); 		
 	  	    	   $this->ajaxReturn(toJson(true,"恭喜您成功上传",$thumurl));
-	  	    		}
+	  	    	  }
 	  	    	 
 	  	    	
 	  	    	}

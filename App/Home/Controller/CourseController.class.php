@@ -5,6 +5,11 @@ class   CourseController extends BaseController{
    public $dao;
    public $datainfo;
    public function _initialize(){
+    $Da=M('Date');
+    $Date=$Da->select();       
+    if(!($Date[0]['starttime']<time()&&time()<$Date[0]['endtime'])){
+      $this->error('不好意思系统选课时间还没有到');
+    }
    parent::_initialize();
    if($_SESSION['role']!='Student'){
     if(IS_AJAX){
@@ -46,13 +51,15 @@ class   CourseController extends BaseController{
         $data['depart_id'] = $this->datainfo['depart_id'];
         $data['class_id'] = $this->datainfo['class_id'];
         $data['course_id'] = $_POST["idc"];
+        $Li=M('Limitnum');
+        $limitdata=$Li->select();
         $isSelect=$Or->where('student_id='.$data['student_id'])->getField('course_id',true);
         if($this->datainfo['iscomplete']==1){
         $this->ajaxReturn(toJson("您已经成功选过课了请把机会留给其他同学吧"));
         exit;
 
         }
-        if(count($isSelect)>2){
+        if(count($isSelect)>$limitdata[0]['num']-1){
         $this->ajaxReturn(toJson("您已经超过选课数量的限制了"));
         exit;
         }
