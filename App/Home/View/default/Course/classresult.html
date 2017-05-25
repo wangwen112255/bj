@@ -48,6 +48,18 @@
         <div class="col-sm-12">
        <div class="WU_myscroll">
        <ul >
+       {empty name='resultdata'}
+        <div class="jumbotron">
+          <div class="container">
+            <h1>已经尽力了</h1>
+            <p>您所在的班级结果还没有呢，请稍等</p>
+            <p>
+              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
+            </p>
+          </div>
+        </div>
+        {/empty}
+
           {volist name="resultdata" id="vo"}
         <li class="WU_scrollli" >
         <span >{$vo.strealname}</span>

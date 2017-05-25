@@ -75,8 +75,9 @@ class   LoginController extends Controller{
 
  }
     public function logout(){
-      session('_username_',null);
-      session('role',null);
+      session(null);
+      // session('_username_',null);
+      // session('role',null);
       // $this->redirect('Index/index');
       $this->success('退出成功',U('Index/index'),3);
     }

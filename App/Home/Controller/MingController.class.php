@@ -54,6 +54,7 @@ public function callback($type = null, $code = null){
 			$Dao->add($condition);
 			session('_username_',$condition['username']);
 			session('_username_',$condition['username']);
+			session('auth',1);	
 			session('role','Student');
 			$this->redirect('Student/course');
 			

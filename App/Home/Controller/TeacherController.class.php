@@ -84,7 +84,7 @@ class TeacherController extends BaseController {
                 $this->dao->pwd=md5($_POST['pwd']);
                 if($this->dao->where($Condition)->save())
                 {
-                session("_username_",null);
+                session(null);
                 $this->ajaxReturn(toJson(true,'密码修改成功'));
             }
                 else

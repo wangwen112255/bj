@@ -93,8 +93,10 @@ class  DepartController extends BaseController {
            // dump($progress);
             $Page=new  \Think\Page($counts,10);
             $show=$Page->show();
+            $cond['xk_order.depart_id']=$cid;
+            $cond['xk_order.is_success']=1;
             $codata= $Co
-            ->where('xk_order.depart_id='.$cid)
+            ->where($cond)
             ->field("departname as dename,xk_student.realname as stuname,xk_teacher.realname as tename,xk_course.coursename as coname,xk_student.studentid as stid,xk_class.classname as clname")
             ->join('LEFT JOIN __STUDENT__ ON __ORDER__.student_id=__STUDENT__.id')
             ->join('LEFT JOIN __COURSE__ ON __ORDER__.course_id=__COURSE__.id') 
