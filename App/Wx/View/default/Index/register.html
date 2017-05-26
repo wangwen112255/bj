@@ -9,13 +9,14 @@
 {block name="content"}
 
 <div class="hui-wrap">
+    <form action="{:U('Login/doregister')}" id='signupForm'>
     <div class="hui-center-title" style="margin-top:35px;"><h1 style="border:0px;">注册新用户</h1></div>
     <div style="margin:28px; margin-bottom:15px;" class="hui-form" id="form1">
         <div class="hui-form-items">
-            <input type="text" class="hui-input hui-input-clear" placeholder="用户名" checkType="string" checkData="5,20" checkMsg="用户名应为5-20个字符" />
+            <input type="text" class="hui-input hui-input-clear" id='username' placeholder="用户名" checkType="string" name="username" checkData="5,20" checkMsg="用户名应为5-20个字符" />
         </div>
         <div class="hui-form-items">
-            <input type="password" class="hui-input hui-pwd-eye" placeholder="登录密码" checkType="string" id="pwd" checkData="6,20" checkMsg="密码应为6-20个字符" />
+            <input type="password"  name="pwd" class="hui-input hui-pwd-eye" placeholder="登录密码" checkType="string" id="pwd" checkData="6,20" checkMsg="密码应为6-20个字符" />
         </div>
         <div class="hui-form-items">
             <input type="password" class="hui-input hui-pwd-eye" placeholder="确认密码" checkType="sameWithId" checkData="pwd" checkMsg="两次密码不一致"  />
@@ -23,27 +24,61 @@
         <div class="hui-form-items">
       <div class="hui-form-items-title">身份选取</div>
       <div class="hui-form-radios">
-      <input type="radio" value="1" name="gender" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
-      <input type="radio" value="2" name="gender" id="g2" onchange="showSelectRes(this);" /><label for="g2">学生</label>
+      <input type="radio" value="te" name="role" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
+      <input type="radio" value="st"  id="g2"  name="role" onchange="showSelectRes(this);" /><label for="g2">学生</label>
+      <input type="hidden"  id='role' value='te'>
       </div>
     </div>
     </div>
     <div style="padding:28px; padding-top:0px;">
         <button type="button" class="hui-button hui-button-large hui-primary" id="submit">立即注册</button>
     </div>
+    </form>
 </div>
 <p style="padding-left:28px"><a href="{:U('Login/index')}">已有账号，请去登陆</a></p>
 {/block}
 {block name="JS"}
-<script src="js/hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script src="__JS__hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script src="__JS__base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-  hui.formInit();
+hui.formInit();
+function showSelectRes(_selfBtn){
+    var val;
+    hui(_selfBtn).parent().find('input').each(function(cObj){
+        if(cObj.checked){val = cObj.value;}
+    });
+    hui('#role').val(val);
+}
+    function _ajaxJson(obj){
+    hui.postJSON(
+          obj.url,
+          obj.data,
+          function(data){
+           if(data.code==200){
+           hui.iconToast(data.msg);
+           if(data.data)
+           window.location.href=data.data;
+           if(action)
+             eval("("+action+")");
+           }
+          else{
+           hui.iconToast(data.msg,'error');
+          }
+           },     
+          function(e){
+              hui.iconToast('数据有误或网络故障', 'warn');
+          }
+      );
+}
+  // hui.formInit();
 hui('#submit').click(function(){
-    //验证
-    var res = huiFormCheck('#form1');
-    //提交
-    if(res){hui.iconToast('验证通过！');}
-});
+    var res = huiFormCheck('#signupForm');
+    if(res){
+      var url=hui('#signupForm').attr('action');
+      var data={'username':hui('#username').val(),'role':hui("#role").val(),'pwd':hui('#pwd').val()}
+       _ajaxJson({'url':url,'data':data});
+      }
+    });
 </script>
 {/block}
 

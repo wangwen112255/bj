@@ -44,7 +44,7 @@ class   LoginController extends Controller{
     }
     public function doregister(){
     $code=$_POST['validatecode'];
-    if(check_verify($code)){
+    // if(check_verify($code)){
     if(I('role')=='st'){
       $this->dao=D('Student');
       if($this->dao->create($_POST,1)){
@@ -69,9 +69,9 @@ class   LoginController extends Controller{
       }
 
     }
-   }else{
-    $this->ajaxReturn(toJson('验证码有误'));
-   }
+   // }else{
+   //  $this->ajaxReturn(toJson('验证码有误'));
+   // }
 
  }
     public function logout(){
@@ -83,7 +83,9 @@ class   LoginController extends Controller{
 public function receive(){
   dump($_POST);
 }
-
+public function dologins(){
+  $this->ajaxReturn(toJson($_POST['name']));
+}
 }
 
 

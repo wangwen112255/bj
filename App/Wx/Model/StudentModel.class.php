@@ -1,5 +1,5 @@
 <?php
-namespace Home\Model;
+namespace Wx\Model;
 use Think\Model;
 
 class StudentModel  extends Model{

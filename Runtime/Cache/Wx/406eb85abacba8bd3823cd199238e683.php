@@ -38,8 +38,8 @@
         </div>
          <div class="hui-form-items">
       <div class="hui-form-radios">
-      <input type="radio" value="st" name="role" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
-      <input type="radio" value="te" name="role" id="g2" onchange="showSelectRes(this);" /><label for="g2">学生</label>
+      <input type="radio" value="te" name="role" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
+      <input type="radio" value="st" name="role" id="g2" onchange="showSelectRes(this);" /><label for="g2">学生</label>
       </div>
     </div>
     
@@ -47,6 +47,7 @@
 
   </form>
      <div style="padding:10px; padding-top:0px;">
+        <input type="hidden" id="url" value="<?php echo U('dologins');?>">
         <button  class="hui-button hui-button-large hui-primary" id="submit">立即登录</button>
     </div>
  
@@ -75,15 +76,23 @@
 
 
 <script src="/static/js/hui/hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/hui/base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 hui.formInit();
 hui('#submit').click(function(){
     var form=document.getElementById('forms');
     var res = huiFormCheck('#form1');
-    if(res){hui.iconToast('验证！');
-    hui('#form2').dom[0].submit();
+    if(res){
+      _ajaxchange({'msg':'确定要进行吗?','url':hui('#url').val(),'data':{'name':'wangwen'}});
   }
 });
+//
+//
+//
+//
+//
+
+
 </script>
 
 

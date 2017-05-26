@@ -729,4 +729,5 @@ function huiJsonLog(data){console.log(JSON.stringify(data));}
 		window.CustomEvent = CustomEvent;
 	}
 })();
+
 hui.ready();
