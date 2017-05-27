@@ -19,6 +19,13 @@
       <h1>在线选课</h1>
   </header>
   <div class="hui-wrap">
+  {empty name='codata'}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
+    </div>
+    {/empty}
     <div class="hui-media-list" style="padding:10px;">
     {volist name='codata' id='data'}
       <ul>
@@ -38,7 +45,8 @@
              <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-danger  hui-button-small ">已满</button>
               {else/}
               
-            <button  onclick="location.href='{:U('Course/index')}'"  style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">选课</button>
+            <button   style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px; " class="selectcourse hui-button hui-primary  hui-button-small ">选课</button>
+            <input type="hidden" name="idc" value='{$data.idc}'>
             {/eq}
        
         </li>
@@ -52,8 +60,14 @@
 
 {/block}
 {block name="JS"}
+<script type="text/javascript" src="__JS__base.js"></script>  
 <script type="text/javascript">
+hui(".selectcourse").click(function(){
+var id=hui(this).next().val();
+// alert(id)
+_ajaxchange({msg:'您确定要选择这门课?',url:'__CONTROLLER__/selectcourse',data:{idc:id}})
 
+})
 </script>
 
 {/block}

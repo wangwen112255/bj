@@ -126,7 +126,7 @@ class StudentController extends BaseController {
         $this->display();
     }
     public function trashcourse(){
-        if(IS_AJAX){
+        // if(IS_AJAX){
             $condition['id']=$_POST['id'];
             $condition['student_id']=$this->datainfo['id'];
             $Or=M('Order');
@@ -138,9 +138,9 @@ class StudentController extends BaseController {
             else{
             $this->ajaxReturn(toJson('撤销失败,稍后重试！'));
             } 
-            }else{
-            $this->ajaxReturn(toJson("对不起,请求数据有误"));
-            }
+            // }else{
+            // $this->ajaxReturn(toJson("对不起,请求数据有误"));
+            // }
         
         }
 

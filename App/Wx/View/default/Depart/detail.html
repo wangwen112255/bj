@@ -39,10 +39,10 @@
 {block name="content"}
   <header class="hui-header" style="background:#26A2FF ;">
       <div id="hui-header-menu" onclick="showMenu();"></div>
-      <h1><span class="hui-icons-home hui-icons"></span>{$depart.departname}学院</h1>
+      <h1><span class="hui-icons-home hui-icons"></span>{$depart.departname}学院正选结果</h1>
   </header>
   <div class="hui-swipe" id="swipe1">
-    <div class="hui-swipe-pre"><img src="{$depart.pic}"/></div>
+    <div class="hui-swipe-pre"><img  style="height: 120px;" src="{$depart.pic}"/></div>
   </div>
   <div class="hui-wrap" style="padding-top: 30px">
     {volist name='codata' id='data'}
@@ -60,16 +60,12 @@
       {/volist}
     <center>{$showpage}</center>  
     {empty name='codata'}
-       <div class="jumbotron">
-         <div class="container">
-           <h1>已经尽力了</h1>
-           <p>暂时还没有选课结果，敬请关注</p>
-           <p>
-             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-           </p>
-         </div>
-       </div>
-       {/empty}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
+    </div>
+    {/empty}
      
  </div>
 

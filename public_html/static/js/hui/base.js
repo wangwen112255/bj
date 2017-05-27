@@ -8,11 +8,12 @@ hui.postJSON(
           function(data){
            if(data.code==200){
            hui.upToast(data.msg);
-            if(action)
+            if(action){
              eval("("+action+")");
-           }
-           if(data.url)
+            }
+            if(data.url)
            window.location.href=data.url;
+           }
           
           else{
            hui.upToast(data.msg,'error');
@@ -30,17 +31,16 @@ function _ajaxPost(obj){
           obj.data,
           function(data){
            if(data.code==200){
-           hui.upToast(data.msg);
+            hui.upToast(data.msg,'success');
             if(action)
              eval("("+action+")");
-           }
-           if(data.url)
+              if(data.url)
            window.location.href=data.url;
-          
-          else{
+            }
+           else{
            hui.upToast(data.msg,'error');
           }
-           },     
+          },     
           function(e){
               hui.iconToast('数据有误或网络故障', 'warn');
           }
@@ -60,7 +60,8 @@ function _ajaxsubmit(obj){
         'data':obj.data,
          success:function(data){
          if(data.code==200){
-         hui.iconToast(data.msg);
+         // hui.iconToast(data.msg,'success');
+          hui.iconToast(data.msg,'success');
          if(action)
            eval("("+action+")");
          if(data.url)

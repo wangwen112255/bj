@@ -1,87 +1,71 @@
-
-{extend name='Public:layoutteacher'/}
-
-{block name='CSS'}
+{extend name='Public:layout'/}
+{block name="CSS"}
 <style type="text/css">
- 
-
-
+  
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+    .hui-media-content{
+      float: left;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
 </style>
-
 {/block}
-{block name="panel-title"}<span>毕业班学生</span>{/block}
+{block name='content'}
 
-{block name="panel-body"}
-
-<div class="panel-body">
- <div class="row WU_scrollinfo" style="padding-top:15px; ">
-  <div class="WU_info">
-  
-    <div class="row WU_scrollinfo">
-  
-    <div class="col-sm-12 infotitle">
-    <span >学生姓名</span>
-    <span >课程题目</span>
-    <span >指导老师</span>
-    <span >课程要求</span>
-    <span >选课状态</span>
+ <header class="hui-header" style="background:#26A2FF ;">
+      <div id="hui-back"></div>
+      <h1>{$Stdetaildata[0]['strealname']}同学选课详情</h1>
+  </header>
+  <div class="hui-wrap">
+   {empty name='Stdetaildata'}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
     </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-         {empty name='Stdetaildata'}
-        <div class="jumbotron">
-          <div class="container">
-            <h1>已经尽力了</h1>
-            <p>该学生给你还没有开始选课，敬请关注</p>
-            <p>
-              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-            </p>
-          </div>
-        </div>
-        {/empty}
-       <ul>
-          {volist name="Stdetaildata" id="vo"}
-        <li class="WU_scrollli" >
-        <span >{$vo.strealname}</span>
-        <span >{$vo.coursename}</span>
-        <span >{$vo.terealname}</span>
-        <span >{$vo.createtime}</span>
-        <span >
-         {eq name='vo.is_success' value='1'}
-         <button class="btn btn-success">成功选课</button>
-          {else/}
-          {eq name='vo.isreceive' value="0"}
-          <button class="btn btn-primary">审核中</button>
-          {else/}
-         <button   class="btn btn-danger">已拒绝</button>
-           {/eq}
-        {/eq}
-        </li>
-       {/volist} 
+    {/empty}
+    <div class="hui-media-list" style="padding:0px;">
+    {volist name='Stdetaildata' id='data'}
+      <ul>
+        <li>
         
-       
-       </ul>
-       </div>
-      </div>
-    </div>
-    </div>
-    </div>
- </div>
-</div>
-  
+            <!--<div class="hui-media-list-img"><img src="img/1.png" /></div>-->
+            <div class="hui-media-content">
+              <h1>题目：{$data.coursename}</h1>
+              <p>指导教师：{$data.terealname}</p>
+              <p>
+                    选课时间：<span class="hui-badge hui-primary">{$data.createtime}</span>
+                    课程状态：
+                    
+                     {eq name='data.is_success' value='1'}
+                        <span class="hui-badge hui-primary">成功选课</span>
+                      {else/}
+                      {eq name='data.isreceive' value="0"}
+                         <span class="hui-badge hui-default">审核中</span>
+                      {else/}
+                         <span class="hui-badge hui-danger">已拒绝</span>
 
+                       {/eq}
+                    {/eq}
+                  
+              </p>
+            </div>
+             
+       
+        </li>
+      
+      </ul>
+     {/volist}
+    </div>
+
+  </div>
 
 {/block}
-
-
-
-{block name='JS'}
+{block name="JS"}
 <script type="text/javascript">
-  
+
 </script>
 
 {/block}
-
-

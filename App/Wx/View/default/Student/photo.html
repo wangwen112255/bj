@@ -87,9 +87,10 @@ hui('#uploadBtn').click(function(){
         var canvas      = document.getElementById('huiImgCuterCanvas');
         var data        = canvas.toDataURL();
         var url=hui('#url').val();
+        setTimeout(function(){hui.toast('上传完毕'); hui.closeLoading();}, 1000);
+        
         _ajaxPost({'url':url,'data':{'pd':data}})
         
-        setTimeout(function(){hui.toast('上传完毕'); hui.closeLoading();}, 1000);
     }else{
         hui.toast('请选择照片');
         hui.closeLoading();

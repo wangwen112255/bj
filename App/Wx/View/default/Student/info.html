@@ -42,13 +42,13 @@
       <span>
       <button class="btn btn-primary"><span class="badge ">待录取</span></button>
 	  </span>
-	  <!-- --------d -->
+	
 	  {eq name='vo.isreceive' value='0'}  
 	  <span>
-	  <input type="hidden" name="cid" value="{$vo.cid}">
-	  <button type="button" oid='{$vo.oid}' class="btn btn-success pass"><span class="glyphicon glyphicon-check">
+	
+	  <button type="button" oid='{$vo.oid}' sid='{$vo.stid}' cid='{$vo.cid}' class="btn btn-success  pass"><span class="glyphicon glyphicon-check">
 	  
-	  </span>审核通过</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" oid='{$vo.oid}' class=" refuse btn btn-success"><span class="glyphicon  glyphicon-remove-circle" ></span>拒绝</button></span>
+	  </span>审核通过</button>&nbsp;&nbsp;&nbsp;&nbsp;<button oid='{$vo.oid}' sid='{$vo.stid}' cid='{$vo.cid}' type="button"  class="refuse btn btn-success"><span class="glyphicon  glyphicon-remove-circle" ></span>拒绝</button></span>
 	  {else/} 
 	  <span ><button class="btn btn-success">已审核</button></span>
 	  {/eq}
@@ -64,17 +64,14 @@
       </li>
       {/volist} 
      </ul>
-     {empty name='codata'}
-       <div class="jumbotron">
-         <div class="container">
-           <h1>已经尽力了</h1>
-           <p>还没有收到同学们的选课申请，请您耐心稍候</p>
-           <p>
-             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-           </p>
-         </div>
-       </div>
-       {/empty}
+      {empty name='codata'}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
+    </div>
+    {/empty}
+
      {$show}
      </div>
     </div>
@@ -88,6 +85,7 @@
 
 
 {block name='JS'}
+<script src="__JS__base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
   $(".nav-tabs li").click(function(){
  	$(this).siblings().removeClass('active');
@@ -96,10 +94,10 @@
  	$('.uncheck').toggle();
   })
   $('.pass').click(function(){
-  	var cid=$(this).prev().val()
-  	var sid=$(this).parent().prevAll().last().html();
   	var oid=$(this).attr('oid');
-  	_ajaxmodify({url:'__CONTROLLER__/accept','msg':'您确定要接受该生的申请吗？','data':{'oid':oid,'sid':sid,'cid':cid}});
+  	var cid=$(this).attr('cid');
+  	var tid=$(this).attr('tid');
+  	_ajaxchange({url:'__CONTROLLER__/accept','data':{'oid':oid,'sid':sid,'cid':cid}});
   })
     $('.sawed').click(function(){
   	var oid=$(this).attr('oid');

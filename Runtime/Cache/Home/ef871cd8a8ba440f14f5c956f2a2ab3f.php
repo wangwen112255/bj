@@ -58,12 +58,12 @@
        <li><a href="<?php echo U('Teachers/index');?>">教师课题</a></li>
        <li><a href="<?php echo U('Course/index');?>">学生选课</a></li>
      </ul>
-    <form class="navbar-form navbar-left" action="ming.html" method="post">
+     <form class="navbar-form navbar-left" action="<?php echo U('Index/search',array('role'=>'all'));?>" method="post">
     <div class="input-group " style="position: relative">
     <input type="text" name="username" id="input" class="form-control" placeholder="搜一搜" value="" >
     <div class="WU_search">
-    <button  class="btn btn-xs btn-danger" >教师</button>
-    <button class="btn btn-danger btn-xs" >专业</button>
+    <a href="<?php echo U('Index/search',array('role'=>'Te'));?>" class="btn btn-xs btn-danger" >教师</a>
+    <a href="<?php echo U('Index/search',array('role'=>'Cl'));?>" class="btn btn-danger btn-xs" >院系</a>
     </div>
     <div class="input-group-addon btn-primary"  style="cursor: pointer;position: relative">搜索
       <input type="submit" class="WU_search_submit" name=""  value="">
@@ -277,33 +277,25 @@
     <!-- ------ -->
   </div>
   </div>
-     <div class="WU_footer ">
-     <div class="row" style="padding-top:10px">
-       <div class="col-md-4 col-md-offset-1">
-         <img src="/static/img//logo.png" alt="">
-       </div>
-        <div class="col-md-3 ">
-         <p class="text-center text-center-footer ">
-           <span>关于选课</span>
-           <span>联系me</span>
-           <span>关于php</span>
-           <span>我的博客</span>
-         </p>         
-          <p class="text-center">公安备案号豫ICP备16036348号 </p>
-          <p class="text-center">友情链接:华北水利水电|中国科技大学 </p>
+   </div>
+    <div class="WU_footer " style="width:100%">
+          <p class="text-center text-center-footer ">
+            <span>关于选课</span>
+            <span>联系me</span>
+            <span>关于php</span>
+            <span>我的博客</span>
+          </p>         
+           <p class="text-center">公安备案号豫ICP备16036348号 </p>
+           <p class="text-center"><span class="glyphicon glyphicon-signal"></span>友情链接:华北水利水电|中国科技大学 </p>
+           <div style="floatright;">
+           <p class="text-center text-center-footer ">
+            <img src="holder.js/80x80">
 
-       </div>
-        <div class="col-md-4 ">
-         <p class="text-center text-center-footer ">
-           <img src="holder.js/80x80">
-
-           <img src="holder.js/80x80">
-         </p>         
-  
-       </div>
-     </div>
-    
-    </div>
+            <img src="holder.js/80x80">
+          </p>  
+          </div>       
+   
+      </div>
     <script src="/static/js/jquery.js"></script>
     <script type="text/javascript" src="/static/js/holder.min.js"></script>
     <script type="text/javascript" src='/static/js/plugins/validate/jquery.validate.min.js'></script>
@@ -321,7 +313,7 @@
         $('.dropdown-menu').hide();
         
       });
-      var url="/index.php/Teacher/classes";
+      var url="/Teacher/classes";
       url=url.split('/').pop();
       $(".WU_personal li a").each(function(){
             var acurl=$(this).attr('href');

@@ -166,7 +166,7 @@ class TeacherController extends BaseController {
 
     }
     public function accept(){
-      if(IS_AJAX){
+      // if(IS_AJAX){
         $Or=M('Order');
         $condition['is_success']=1;
         $condition['isreceive']=1;
@@ -176,35 +176,38 @@ class TeacherController extends BaseController {
         $Co=M('Course');
         // && $Or->where('id='.I('oid'))->setField($condition) && 
         if($Or->where('course_id='.I('cid'))->setField($condition0) && $Or->where('id='.I('oid'))->setField($condition) && $St->where('studentid='.I('sid'))->setField('iscomplete',1) && $Co->where('id='.I('cid'))->setField("status",1) ){
-          $this->ajaxReturn(toJson(true,'恭喜您审核通过,马上提醒同学联系您'));
+         $link=U('Teacher/info',array('timestamp'=>time()));
+          $this->ajaxReturn(toJson(true,'恭喜您审核通过',$link));
         }else{
           $this->ajaxReturn(toJson('数据有误，审核失败'));
 
         }
-      }else {
-          $this->ajaxReturn(toJson('您的数据有误请检查'));
-      }
+      // }else {
+      //     $this->ajaxReturn(toJson('您的数据有误请检查'));
+      // }
 
     }
     public function joincheck(){
-        if(IS_AJAX){
+        // if(IS_AJAX){
         $Or=M('Order');
         $condition['is_success']=0;
         $condition['isreceive']=1;
+         $link=U('Teacher/info',array('timestamp'=>time()));
+
         if($Or->where('id='.I('oid'))->setField($condition)){
-          $this->ajaxReturn(toJson(true,"已加入"));
+          $this->ajaxReturn(toJson(true,"已加入",$link));
         }else{
           $this->ajaxReturn(toJson('数据有误，审核失败'));
 
         }
-      }else {
-          $this->ajaxReturn(toJson('您的数据有误请检查'));
-      }
+      // }else {
+      //     $this->ajaxReturn(toJson('您的数据有误请检查'));
+      // }
 
 
     }
      public function refuse(){
-        if(IS_AJAX){
+        // if(IS_AJAX){
         $Or=M('Order');
         $condition['is_success']=0;
         $condition['isreceive']=1;
@@ -214,9 +217,9 @@ class TeacherController extends BaseController {
           $this->ajaxReturn(toJson('数据有误，审核失败'));
 
         }
-      }else {
-          $this->ajaxReturn(toJson('您的数据有误请检查'));
-      }
+      // }else {
+      //     $this->ajaxReturn(toJson('您的数据有误请检查'));
+      // }
 
     }
   

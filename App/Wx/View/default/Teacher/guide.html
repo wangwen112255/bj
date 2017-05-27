@@ -1,63 +1,55 @@
-
-{extend name='Public:layoutteacher'/}
-
+{extend name='Public:layout'/}
 {block name='CSS'}
 <style type="text/css">
- 
-
 
 </style>
 
 {/block}
-{block name="panel-title"}<span>毕业班学生</span>{/block}
 
-{block name="panel-body"}
+{block name="content"}
+<header class="hui-header" style="background:#26A2FF ;">
+      <div id="hui-back"></div>
+      <h1>毕业班学生</h1>
+  </header>
+ 
+  <div class="hui-wrap" style="padding-top:30px">
+    <!--<div class="hui-center-title" style="margin-top:0px;"><h1 style="margin:0px 10px ;text-align: left;">院系查看</h1></div>-->   
+    <div class="hui-img-list" id='list2'>
+        <ul>
+         {volist name="Tedata" id='vo'}
+            <li>
+                <a href="{:U('Teacher/studentdetail',array('id'=>$vo['id']))}">
+                 {eq name="vo.iscomplete" value='1'}<button style="background: #0f0;font-size:12px;position: absolute;width:80px;top:50%;left:50%;margin-left:-60px;opacity: 0.8">该生已完成选课</button>{/eq}
+                    <img style="border-radius: 200px;" src="{$vo.photo|default='__IMG__a2.jpg'}" />
+                    <div class="hui-img-list-content">
+                        <h1>{$vo.realname}</h1>
+                        <p>{$vo.desct|default='该生是优秀毕业生'}</p>
+                    </div>
+                </a>
+            </li>
+            {/volist}
+        </ul>
+        
+    </div>
+    
 
-<div class="panel-body">
- <div class="row WU_scrollinfo" style="padding-top:15px; ">
-
- {foreach  name='Tedata' item='vo'}
- <div class="col-sm-3">
-
-   <div class="thumbnail">
-         {eq name="vo.iscomplete" value='1'}<button class="btn btn-danger" style="position: absolute;width:120px;top:50%;left:50%;margin-left:-60px;opacity: 0.8">该生已完成选课</button>{/eq}
-         <img src="{$vo.photo|default='__IMG__a2.jpg'}" class="img-circle" alt="...">
-         <div class="caption">
-           <h3 class="text-center">{$vo.realname}</h3>
-           <p class="text-center">{$vo.desct}</p>
-           <p class="text-center">
-           <a href="{:U('Teacher/studentdetail',array('id'=>$vo['id']))}" class="btn btn-primary" role="button">点击查看</a>
-            <!-- /<a  class="btn btn-success" role="button">课程数量<span class="badge">{$vo.total}</span></a></p> -->
-         </div>
-   </div>
- </div>
- {/foreach}
- </div>
-    {empty name='Tedata'}
-       <div class="jumbotron">
-         <div class="container">
-           <h1>已经尽力了</h1>
-           <p>您所在班级的学生给你还没有查询到信息呢</p>
-           <p>
-             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-           </p>
-         </div>
-       </div>
-       {/empty}
-  {$show}
 </div>
-  
 
 
 {/block}
-
-
-
-{block name='JS'}
+{block name="JS"}
+<script src="__JS__hui-swipe.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-  
+var swipe1 = new huiSwpie('#swipe1');
+        swipe1.autoPlay = true;
+        swipe1.delay=3000;
+        swipe1.run();
 </script>
-
 {/block}
+
+
+
+
+
 
 

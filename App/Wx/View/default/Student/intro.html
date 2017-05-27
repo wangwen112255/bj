@@ -11,14 +11,14 @@
 {block name="content"}
 
 <header class="hui-header" style="background:#26A2FF ;">
-    <!-- <div id="hui-back"></div> -->
+    <div id="hui-back"></div>
   <h1>基本资料</h1>
   </header>
   <div class="hui-wrap">
 <form action="{:U('intro')}" id='signupForm' method="post">
     <div style="margin:28px; margin-bottom:15px;" class="hui-form" >
         <div class="hui-form-items">
-            <input type="text" class="hui-input hui-input-clear" value="{$Userdata['realname']}" placeholder="真实姓名" checkType="string" checkData="3,5"  id='realname' checkMsg="真实姓名一般是三到五个汉字" />
+            <input type="text" class="hui-input hui-input-clear" value="{$Userdata['realname']}" placeholder="真实姓名" checkType="string" checkData="2,5"  id='realname' checkMsg="真实姓名一般是三到五个汉字" />
         </div>
         <div class="hui-form-items">
             <input type="text" class="hui-input hui-input-clear" placeholder="学号" checkType="int" id="studentid" checkData="9" checkMsg="学号为9位数字" value="{$Userdata['studentid']}" />

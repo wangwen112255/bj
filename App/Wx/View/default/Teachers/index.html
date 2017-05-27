@@ -18,7 +18,13 @@
     <div class="hui-swipe-pre"><img src="__IMG__1.png"/></div>
   </div>
   <div class="hui-wrap">
-
+   {empty name='tedata'}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
+    </div>
+    {/empty}
     <div class="hui-media-list" style="padding:10px;">
       {volist name='tedata' id="data"}
       <ul>

@@ -53,8 +53,9 @@ overflow:hidden;
      <div class="hui-list" style="background:#FFFFFF; margin-top:58px;">
         <ul>
             <li><a href="<?php echo U('course');?>" class="hui-arrow hui-icons hui-icons-write">&nbsp;&nbsp;我的选题</a></li>
+            <li><a href="<?php echo U('info');?>" class="hui-arrow hui-icons hui-icons-msg">&nbsp;&nbsp;通知信息</a></li>
             <li><a href="<?php echo U('classes');?>" class="hui-arrow hui-icons hui-icons-forum">&nbsp;&nbsp;班级正选</a></li>
-            <li><a href="<?php echo U('guide');?>" class="hui-arrow hui-icons hui-icons-my">&nbsp;&nbsp;指导教师</a></li>
+            <li><a href="<?php echo U('guide');?>" class="hui-arrow hui-icons hui-icons-my">&nbsp;&nbsp;毕业班学生</a></li>
             <li><a href="<?php echo U('intro');?>" class="hui-arrow hui-icons hui-icons-nav">&nbsp;&nbsp;基本资料</a></li>
              <li><a href="<?php echo U('photo');?>" class="hui-arrow hui-icons hui-icons-nav">&nbsp;&nbsp;头像设置</a></li>
             <li><a href="<?php echo U('safe');?>" class="hui-arrow hui-icons hui-icons-check">&nbsp;&nbsp;密码修改</a></li>

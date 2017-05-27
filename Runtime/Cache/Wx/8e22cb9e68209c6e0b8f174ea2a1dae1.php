@@ -57,7 +57,8 @@
              <?php if(($data["choosenum"]) == $data['limitnum']): ?><button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-danger  hui-button-small ">已满</button>
               <?php else: ?>
               
-            <button  onclick="location.href='<?php echo U('Course/index');?>'"  style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">选课</button><?php endif; ?>
+            <button   style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px; " class="selectcourse hui-button hui-primary  hui-button-small ">选课</button>
+            <input type="hidden" name="idc" value='<?php echo ($data["idc"]); ?>'><?php endif; ?>
        
         </li>
       
@@ -89,8 +90,14 @@
 <script type="text/javascript" src="/static/js/hui/hui.js"></script>  
 
 
+<script type="text/javascript" src="/static/js/hui/base.js"></script>  
 <script type="text/javascript">
+hui(".selectcourse").click(function(){
+var id=hui(this).next().val();
+// alert(id)
+_ajaxchange({msg:'您确定要选择这门课?',url:'/wx.php/Course/selectcourse',data:{idc:id}})
 
+})
 </script>
 
 

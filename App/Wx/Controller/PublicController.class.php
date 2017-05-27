@@ -164,8 +164,8 @@ class PublicController extends Controller{
 	    	     if($Dao->where($condition)->setField('photo','/'.$thumimg))
 	    	     {
 	    	      session('_pic_',$thumurl); 	
-	    	    
-	    	      $this->ajaxReturn(toJson(true,"恭喜您成功上传",'/'.$thumimg));
+	    	      $link=U($_SESSION['role'].'/index',array('timestamp'=>time()));
+	    	      $this->ajaxReturn(toJson(true,"恭喜您成功上传",$link));
 	    	     }
 	    	     else
 	    	     $this->ajaxReturn(toJson('服务器有问题上传失败'));

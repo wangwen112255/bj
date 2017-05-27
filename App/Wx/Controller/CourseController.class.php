@@ -12,13 +12,13 @@ class   CourseController extends BaseController{
     }
    parent::_initialize();
    if($_SESSION['role']!='Student'){
-    if(IS_AJAX){
-      $this->ajaxReturn(toJson('请先核实您的身份'));
-    }
-    else{
+    // if(IS_AJAX){
+    //   $this->ajaxReturn(toJson('请先核实您的身份'));
+    // }
+    // else{
       echo "<script>alert(0)</script>";
-      $this->redirect('Teacher/course');
-    }
+      $this->redirect('Teacher/index');
+    // }
    }
    $this->dao=D('Student');
    $condition['username']=session('_username_');
@@ -45,7 +45,7 @@ class   CourseController extends BaseController{
     	dump($mi);
     }
     public function selectcourse(){
-      if(IS_AJAX){
+      // if(IS_AJAX){
         $Or=D('Order');
         $data['student_id'] = $this->datainfo['id'];
         $data['depart_id'] = $this->datainfo['depart_id'];
@@ -60,26 +60,28 @@ class   CourseController extends BaseController{
 
         }
         if(count($isSelect)>$limitdata[0]['num']-1){
-        $this->ajaxReturn(toJson("您已经超过选课数量的限制了"));
+        $this->ajaxReturn(toJson("您已经超过选课数量的限制"));
         exit;
         }
         if(in_array($data['course_id'],$isSelect)){
-        $this->ajaxReturn(toJson("对不起该课程您已经选过了"));
+        $this->ajaxReturn(toJson("该课程您已经选过了"));
       }
         if($Or->create($data)){
           if($Or->add()){
           $Co=M('Course');
           $Co->where("id=".$data['course_id'])->setInc('choosenum',1);
-          $this->ajaxReturn(toJson(true,"恭喜您选课成功"));
+          $link=U('Course/index',array('timestamp'=>time()));
+          // $this->ajaxReturn(toJson(true,"恭喜您选课成功",U('selectcourse',array('timestamp'=>time()))));
+          $this->ajaxReturn(toJson(true,"恭喜您选课成功",$link));
           }
           else
          $this->ajaxReturn(toJson($Or->getError()));
         }else{
       $this->ajaxReturn(toJson("选择失败,数据有误"));
       }
-      }else{
-      $this->ajaxReturn(toJson('网络有问题,请重试'));
-      }
+      // }else{
+      // $this->ajaxReturn(toJson('网络有问题,请重试'));
+      // }
 
     }
     public function classresult(){

@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); session_start(); $role=$_SESSION['role']?$_SESSION['role']:'Student'; $role.='/index'; ?>
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 
 <html>
 
@@ -58,8 +57,8 @@
 <body style="background:#F8F8F8;padding-bottom: 80px;">
   
   <header class="hui-header" style="background:#26A2FF ;">
-      <div id="hui-header-menu" onclick="showMenu();"></div>
-      <h1><span class="hui-icons-home hui-icons"></span><?php echo ($depart["departname"]); ?>学院</h1>
+      <div id="hui-back"></div>
+      <h1>班级正选</h1>
   </header>
   <div class="hui-swipe" id="swipe1">
     <div class="hui-swipe-pre"><img src="<?php echo ($depart["pic"]); ?>"/></div>
@@ -77,37 +76,15 @@
         </div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>
     <center><?php echo ($showpage); ?></center>  
-    <?php if(empty($codata)): ?><div class="jumbotron">
-         <div class="container">
-           <h1>已经尽力了</h1>
-           <p>暂时还没有选课结果，敬请关注</p>
-           <p>
-             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-           </p>
-         </div>
-       </div><?php endif; ?>
+   <?php if(empty($codata)): ?><div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
+    </div><?php endif; ?>
      
  </div>
 
- 
-  <div id="hui-footer">
-    <a href="<?php echo U('Index/index');?>" id="nav-home">
-        <div class="hui-footer-icons hui-icons-home"></div>
-        <div class="hui-footer-text">首页</div>
-    </a>
-    <a href="<?php echo U('Teachers/index');?>" id="nav-teacher">
-        <div class="hui-footer-icons hui-icons-news"></div>
-        <div class="hui-footer-text">教师查看</div>
-    </a>
-    <a href="<?php echo U('Course/index');?>" id="nav-course">
-        <div class="hui-footer-icons hui-icons-forum"></div>
-        <div class="hui-footer-text">学生选课</div>
-    </a>
-    <a href="<?php echo U($role);?>" id="nav-my">
-        <div class="hui-footer-icons hui-icons-my"></div>
-        <div class="hui-footer-text">个人中心</div>
-    </a>
-  </div>
+
 <script type="text/javascript" src="/static/js/hui/hui.js"></script>  
 
 

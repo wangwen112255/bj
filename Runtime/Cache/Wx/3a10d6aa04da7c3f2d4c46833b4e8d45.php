@@ -36,34 +36,44 @@
   
 
  <header class="hui-header" style="background:#26A2FF ;">
-      <div id="hui-header-menu"></div>
-      <h1><?php echo ($name["realname"]); ?>老师</h1>
+      <div id="hui-back"></div>
+      <h1>我的选课</h1>
   </header>
   <div class="hui-wrap">
-   <?php if(empty($codata)): ?><div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+   <?php if(empty($Codata)): ?><div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
   <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
    </span>
    </center> 
     </div><?php endif; ?>
     <div class="hui-media-list" style="padding:10px;">
-    <?php if(is_array($codata)): $i = 0; $__LIST__ = $codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><ul>
+    <?php if(is_array($Codata)): $i = 0; $__LIST__ = $Codata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><ul>
         <li>
         
             <!--<div class="hui-media-list-img"><img src="img/1.png" /></div>-->
             <div class="hui-media-content">
-              <h1>题目：<?php echo ($data["coursename"]); ?></h1>
-              <p>要求：<?php echo ($data["desc"]); ?></p>
+              <h1>题目：<?php echo ($vo["coname"]); ?></h1>
+              <p>指导教师：<?php echo ($vo["tename"]); ?></p>
               <p>
-                    已选：<span class="hui-badge hui-primary"><?php echo ($data["choosenum"]); ?></span>
-                    限选：<span class="hui-badge hui-danger"><?php echo ($data["limitnum"]); ?></span>
-                  
+                    
+                    选课情况：<span class="hui-badge hui-danger">已选<?php echo ($vo["choosenum"]); ?></span>
+            <?php if($vo['isreceive'] == 0): ?>课程状态：<span class="hui-badge hui-default">待审核</span>
               </p>
             </div>
-             <?php if(($data["choosenum"]) == $data['limitnum']): ?><button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-danger  hui-button-small ">已满</button>
-              <?php else: ?>
-              
-            <button  onclick="location.href='<?php echo U('Course/index');?>'"  style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">选课</button><?php endif; ?>
-       
+            <input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
+             <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-default  hui-button-small ">撤销</button>
+            <?php else: ?>
+            <?php if(($vo["is_success"]) == "1"): ?>课程状态：<span class="hui-badge hui-primary">已正选</span>
+              </p>
+            </div>
+            <input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
+             <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;background: green" type="button" class="hui-button  hui-button-small ">恭喜您</button>
+			<?php else: ?>
+			 课程状态：<span class="hui-badge hui-danger">已拒绝</span>
+              </p>
+            </div>
+            <input type="hidden" name="oid" value="<?php echo ($vo["oid"]); ?>">
+             <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;background: green" type="button" class="hui-button hui h
+             ui-button-small "试试其它课程</button><?php endif; endif; ?>
         </li>
       
       </ul><?php endforeach; endif; else: echo "" ;endif; ?>

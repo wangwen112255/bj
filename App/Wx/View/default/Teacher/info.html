@@ -1,118 +1,122 @@
-
-{extend name='Public:layoutteacher'/}
-
-{block name='CSS'}
+{extend name='Public:layout'/}
+{block name="CSS"}
 <style type="text/css">
- .checked{
-	display:none; 
- }
-
+  
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+    .hui-media-content{
+      float: left;
+      width: 80%;
+      padding-left: 0px;
+      padding-right: 2px;
+    }
+    .active{
+      background: #515151 !important;
+    }
+    .check{
+      display: none;
+    }
 
 </style>
-
 {/block}
-{block name="panel-title"}<span>我的通知</span>{/block}
+{block name='content'}
 
-{block name="panel-body"}
-
-<div class="panel-body">
- <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="javascript:">待审核</a></li>
-  <li role="presentation" class=""><a href="javascript:">已审核</a></li>
-</ul>
- <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-      <div class="col-sm-12">
-     <div class="WU_myscroll">
-     <ul >
-      <li class="WU_scrollli" style="background-color: #ccc" >
-      <span >学生学号</span>
-      <span >学生姓名</span>
-      <span >选课题目</span>
-      <span >学生状态</span>
-      <span >操作</span>
-      </li>
-      
-      {volist name="codata" id="vo"}
-       <li class="WU_scrollli {eq name='vo.isreceive' value='0'} uncheck {else/} checked
-       {/eq}" >
-      <span >{$vo.stid}</span>
-      <span >{$vo.stuname}</span>
-      <span >{$vo.coname}</span>
-      {eq name='vo.iscomplete' value='0'}
-      <span>
-      <button class="btn btn-primary"><span class="badge ">待录取</span></button>
-	  </span>
-	  <!-- --------d -->
-	  {eq name='vo.isreceive' value='0'}  
-	  <span>
-	  <input type="hidden" name="cid" value="{$vo.cid}">
-	  <button type="button" oid='{$vo.oid}' class="btn btn-success pass"><span class="glyphicon glyphicon-check">
-	  
-	  </span>审核通过</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" oid='{$vo.oid}' class=" refuse btn btn-success"><span class="glyphicon  glyphicon-remove-circle" ></span>拒绝</button></span>
-	  {else/} 
-	  <span ><button class="btn btn-success">已审核</button></span>
-	  {/eq}
-	  <!-- ------d- -->
-      {else/}
-	  <span>
-      <button class="btn btn-success">
-     <span class="badge"> {eq name='vo.is_success' value='1'}我已录取<span class="glyphicon glyphicon-ok"></span>{else/}已完成选课{/eq}</span></button>
-      </span>
-      <span >
-      {eq name='vo.isreceive' value='0'} <button oid='{$vo.oid}' class="btn btn-success sawed">加入已审核</button>{else/}<button class="btn btn-success">已审核</button>{/eq}</span>
-      {/eq}
-      </li>
-      {/volist} 
-     </ul>
-     {empty name='codata'}
-       <div class="jumbotron">
-         <div class="container">
-           <h1>已经尽力了</h1>
-           <p>还没有收到同学们的选课申请，请您耐心稍候</p>
-           <p>
-             <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-           </p>
-         </div>
-       </div>
-       {/empty}
-     {$show}
-     </div>
+ <header class="hui-header" style="background:#26A2FF ;">
+      <div id="hui-header-menu"></div>
+      <h1>通知消息</h1>
+  </header>
+  <div class="hui-wrap">
+   {empty name='codata'}
+   <div style="padding:30px;"><center><span style="font-size: 50px;color: #f40" class="hui-icons hui-icons-warn">  
+  <button  onclick="history.go(-1)" type="button" class="hui-button  hui-button-large " style="color:#ffff;background: green" >不好意思未查询到相关信息，点击返回</button>
+   </span>
+   </center> 
     </div>
-  </div>
-</div>
-  
+    {/empty}
 
+    <div class="hui-media-list" style="padding:10px;">
+    <button style="display: inline-block;" type="button" class="checks1 active hui-button  hui-primary oid='{$vo.oid}' hui-button-small ">未审核</button>
+        <button style="display: inline-block;background: #0f0;" type="button" class="checks2 hui-button  hui-primary hui-button-small ">已审核</button>
+    {volist name='codata' id='vo'}
+      <ul class="{eq name='vo.isreceive' value='0'} uncheck{else/}check{/eq} ">
+        <li>
+        
+            <!--<div class="hui-media-list-img"><img src="img/1.png" /></div>-->
+            <div class="hui-media-content">
+              <h1>姓名：{$vo.stuname}</h1>
+              <p>学号：<span class="hui-badge hui-default">{$vo.stid}</span></p>
+              <p>课程题目：{$vo.coname}</p>
+
+                    {eq name='vo.iscomplete' value='0'}
+                  <p> <span class="hui-badge hui-default">待录取</span>  </p></div>
+                  {eq name='vo.isreceive' value='0'}  
+                  <button style="position: absolute;right: 5px;height: 30px;top:10%;" type="button" class="hui-button pass hui-primary  hui-button-small " oid='{$vo.oid}' sid='{$vo.stid}' cid='{$vo.cid}'>通过</button>
+
+                  <button style="position: absolute;right: 5px;height: 30px;bottom:10%;;" oid='{$vo.oid}' type="button" class="hui-button hui-danger  refuse hui-button-small ">拒绝</button>
+                  <span>
+                  
+                  {else/} 
+                  <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button"  class="hui-button hui-primary  refuse hui-button-small ">已审核</button>
+                  {/eq}
+                  
+                    {else/}
+                     <p> <span class="hui-badge hui-primary">
+
+                       {eq name='vo.is_success' value='1'}我已录取<span class="glyphicon glyphicon-ok"></span>{else/}已完成选课{/eq}
+
+                     </p></div>
+                    {eq name='vo.isreceive' value='0'}
+                    <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" oid='{$vo.oid}' class="hui-button hui-default sawed   hui-button-small ">加入已审核</button>
+                    {else/}
+                    <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">已审核</button>{/eq}
+                    {/eq}
+              
+
+             
+ 
+         
+       
+        </li>
+      
+      </ul>
+     {/volist}
+    </div>
+
+  </div>
 
 {/block}
-
-
-
-{block name='JS'}
+{block name="JS"}
+<script src="__JS__base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-  $(".nav-tabs li").click(function(){
- 	$(this).siblings().removeClass('active');
- 	$(this).addClass('active');
- 	$('.checked').toggle();
- 	$('.uncheck').toggle();
-  })
-  $('.pass').click(function(){
-  	var cid=$(this).prev().val()
-  	var sid=$(this).parent().prevAll().last().html();
-  	var oid=$(this).attr('oid');
-  	_ajaxmodify({url:'__CONTROLLER__/accept','msg':'您确定要接受该生的申请吗？','data':{'oid':oid,'sid':sid,'cid':cid}});
-  })
-    $('.sawed').click(function(){
-  	var oid=$(this).attr('oid');
-  	_ajaxmodify({url:'__CONTROLLER__/joincheck','msg':'希望该生可以出色的和其他导师完成毕业设计','data':{'oid':oid}
-  	})
-	})
-	 $('.refuse').click(function(){
-  	var oid=$(this).attr('oid');
-  	_ajaxmodify({url:'__CONTROLLER__/refuse','msg':'您确定要拒绝该生的申请吗？','data':{'oid':oid}});
-  	})
 
+hui('.checks1').click(function(){
+hui(this).addClass('active');
+hui('.checks2').removeClass('active');
+hui('.uncheck').show();
+hui('.check').hide();
+})
+hui('.checks2').click(function(){
+hui(this).addClass('active');
+hui('.checks1').removeClass('active');
+hui('.check').show();
+hui('.uncheck').hide();
+})
+  hui('.pass').click(function(){
+    var oid=hui(this).attr('oid');
+    var cid=hui(this).attr('cid');
+    var sid=hui(this).attr('sid');
+    _ajaxchange({url:'__CONTROLLER__/accept','msg':'您确定要接受该申请？','data':{'oid':oid,'sid':sid,'cid':cid}});
+  })
+   hui('.sawed').click(function(){
+    var oid=hui(this).attr('oid');
+    _ajaxchange({url:'__CONTROLLER__/joincheck','msg':'希望该生可以出色的和其他导师完成毕业设计','data':{'oid':oid}
+    })
+  })
+   hui('.refuse').click(function(){
+    var oid=hui(this).attr('oid');
+    _ajaxmodify({url:'__CONTROLLER__/refuse','msg':'您确定要拒绝该生的申请吗？','data':{'oid':oid}});
+    })
 </script>
 
 {/block}
-
 
