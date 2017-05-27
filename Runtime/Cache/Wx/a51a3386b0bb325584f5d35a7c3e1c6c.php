@@ -125,9 +125,9 @@
         <div class="hui-footer-icons hui-icons-forum"></div>
         <div class="hui-footer-text">学生选课</div>
     </a>
-    <a href="<?php echo U('Index/index');?>" id="nav-my">
+    <a href="<?php echo U('Student/index');?>" id="nav-my">
         <div class="hui-footer-icons hui-icons-my"></div>
-        <div class="hui-footer-text">我的</div>
+        <div class="hui-footer-text">个人中心</div>
     </a>
   </div>
 <script type="text/javascript" src="/static/js/hui/hui.js"></script>  
