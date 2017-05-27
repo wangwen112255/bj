@@ -88,34 +88,14 @@ function showSelectRes(_selfBtn){
     });
     hui('#role').val(val);
 }
-    function _ajaxJson(obj){
-    hui.postJSON(
-          obj.url,
-          obj.data,
-          function(data){
-           if(data.code==200){
-           hui.iconToast(data.msg);
-           if(data.data)
-           window.location.href=data.data;
-           if(action)
-             eval("("+action+")");
-           }
-          else{
-           hui.iconToast(data.msg,'error');
-          }
-           },     
-          function(e){
-              hui.iconToast('数据有误或网络故障', 'warn');
-          }
-      );
-}
   // hui.formInit();
 hui('#submit').click(function(){
+    // hui("#submit").loadingButton('加载中...');
     var res = huiFormCheck('#signupForm');
     if(res){
       var url=hui('#signupForm').attr('action');
       var data={'username':hui('#username').val(),'role':hui("#role").val(),'pwd':hui('#pwd').val()}
-       _ajaxJson({'url':url,'data':data});
+       _ajaxsubmit({'url':url,'data':data,'action':"hui('#signupForm').dom[0].reset()"});
       }
     });
 </script>

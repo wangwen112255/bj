@@ -165,7 +165,7 @@
              </div>
             <div class="form-group">
               <div class="col-sm-6 col-sm-offset-3">
-                  <span>没有账号,</span><a href="/Index/register" style="cursor:pointer">立即注册</a>
+                  <span>没有账号,</span><a href="/Login/register" style="cursor:pointer">立即注册</a>
                   <a class='pull-right' href="<?php echo U('Public/forgetpwd');?>" target="_blank" style="cursor:pointer">忘记密码?</a>
               </div>
             </div>
@@ -419,7 +419,7 @@
       };
 
       _validade({id:'loginform',rules:ruleslogin,messages:messageslogin})
-      var url="/Index/register";
+      var url="/Login/index";
       urlarr=url.split('/');
       urlarr.pop();
       url=urlarr.pop();

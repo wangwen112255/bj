@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); session_start(); $role=$_SESSION['role']?$_SESSION['role']:'Student'; $role.='/index'; ?>
+<!DOCTYPE html>
 
 <html>
 
@@ -70,7 +71,7 @@
         <div class="hui-footer-icons hui-icons-forum"></div>
         <div class="hui-footer-text">学生选课</div>
     </a>
-    <a href="<?php echo U('Student/index');?>" id="nav-my">
+    <a href="<?php echo U($role);?>" id="nav-my">
         <div class="hui-footer-icons hui-icons-my"></div>
         <div class="hui-footer-text">个人中心</div>
     </a>

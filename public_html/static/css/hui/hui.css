@@ -294,3 +294,6 @@ h3{font-size:16px}
 .hui-icons-remove:before{content:"\e656";} .hui-icons-edit:before{content:"\e600";} .hui-icons-like:before{content:"\e64a";} 
 .hui-icons-pause:before{content:"\e96b";} .hui-icons-play:before{content:"\e6b1";} .hui-icons-stop:before{content:"\e61b";} 
 .hui-icons-shopping-cart:before{content:"\e633";}
+#hui-up-toast{
+  background: green !important;
+}

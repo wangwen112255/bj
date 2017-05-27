@@ -38,9 +38,9 @@ function getUser(){
 	redirect('/wx.php/Login/index');
 	}
 }
-function toJson($res,$msg,$data){
+function toJson($res,$msg,$url){
 if($res===true){
-	return array('code'=>200,'msg'=>isset($msg)?$msg:'操作成功','data'=>$data);
+	return array('code'=>200,'msg'=>isset($msg)?$msg:'操作成功','url'=>$url);
 	exit;
 }
 else{

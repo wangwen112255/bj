@@ -20,7 +20,7 @@ class   LoginController extends Controller{
           $_SESSION['_username_']=$_POST['username'];
           $_SESSION['_pic_']=$info['photo'];
           $_SESSION['role']=$_POST['role']=="st"?'Student':'Teacher';
-          $link=U($_SESSION['role']."/course");
+          $link=U($_SESSION['role']."/index");
           $this->ajaxReturn(toJson(true,'登录成功',$link));
         }else{
           $this->ajaxReturn(toJson('用户密码有误'));
@@ -43,8 +43,8 @@ class   LoginController extends Controller{
     	 $this->display('Index/register');
     }
     public function doregister(){
-    $code=$_POST['validatecode'];
-    // if(check_verify($code)){
+    // $code=$_POST['validatecode'];
+    
     if(I('role')=='st'){
       $this->dao=D('Student');
       if($this->dao->create($_POST,1)){

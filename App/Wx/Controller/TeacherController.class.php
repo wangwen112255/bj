@@ -7,7 +7,7 @@ class TeacherController extends BaseController {
     public function _initialize(){
         // parent::_initialize();
         if($_SESSION['role']!="Teacher")
-        $this->redirect('Teacher/index');
+        $this->redirect('Student/index');
         $this->dao=D('Teacher');
         $condition['username']=session('_username_');
         $this->datainfo=$this->dao->where($condition)->find();
@@ -22,7 +22,7 @@ class TeacherController extends BaseController {
     }
     public function index(){
        
-       $this->redirect('Teacher/course');
+       $this->display();
     }
     public function photo(){
         $this->display();
@@ -30,12 +30,13 @@ class TeacherController extends BaseController {
     public function intro(){
         $Condition['username']=session('_username_');
         $Userdata=$this->dao->where($Condition)->find();
+        // dump($Userdata);
         if(!empty($_POST['realname']) && isset($_POST['realname'])){
             
             if($this->dao->create($_POST,$_POST['isIntro']==1?1:2)){
 
                 if($this->dao->where('id='.$this->datainfo['id'])->save())
-                $this->ajaxReturn(toJson(true,'修改成功',U(CONTROLLER_NAME.'/intro')));
+                $this->ajaxReturn(toJson(true,'更新成功',U(CONTROLLER_NAME.'/intro')));
                 else
                 $this->ajaxReturn(toJson('修改失败或未进行修改'.$_GET['isIntro']));
             }else{
@@ -50,6 +51,8 @@ class TeacherController extends BaseController {
             $this->assign('Dedata',$Dedata); 
             $this->assign('Cldata',$Cldata); 
             $this->assign('Userdata',$Userdata);
+            dump($Usedata);
+            dump("fsdfsad");
             $this->display();
         
         }
@@ -77,7 +80,8 @@ class TeacherController extends BaseController {
             $this->display();
     }
     public function safe(){
-        if(IS_AJAX){
+
+        if(!empty($_POST['pwd'])){
             $this->dao=D('Teacher');
             if($this->dao->create()){
                 $Condition['id']=$this->datainfo['id'];
@@ -92,16 +96,16 @@ class TeacherController extends BaseController {
             }else{
                 $this->ajaxReturn(toJson($this->dao->getError()));
             } 
-        exit;
-        }else if(!empty($_GET['md'])&&isset($_GET['md'])){
-        $this->display('Public:changepwd');
-        exit;
+    
+        }else{
+        $this->assign('Userdata',$this->datainfo);
+        $this->display();   
         }
         // dump($this->datainfo);
      
-        $this->assign('Userdata',$this->datainfo);
-        $this->display();
+        
     }
+
 
     public function course(){
         // $Or=M('Order');

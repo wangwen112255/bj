@@ -1,5 +1,17 @@
-{extend name='Public:layout'/}
-{block name='CSS'}
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="/static/css/hui/hui.css" />
+
+    <title></title>
+    
 <style type="text/css">
 #hui-up-toast{
   background: green;
@@ -13,9 +25,16 @@
 #huiCuterSelectImg{width:100; text-align:center; background:#F4F5F6;}
 </style>
 
-{/block}
+ 
+    <style>
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+   </style>
 
-{block name="content"}
+</head>
+
+<body style="background:#F8F8F8;padding-bottom: 80px;">
+  
 
   <header class="hui-header" style="background:#26A2FF ;">
     <!-- <div id="hui-back"></div> -->
@@ -38,15 +57,17 @@
 <div id="hui-footer">
 
     <button type="button" class="hui-button hui-fl" style="margin:2px 0px 0px 8px;" id="selectImgBtn">选择照片</button>
-    <input type="hidden" name="url" id='url' value="{:U('Public/uploadfile')}" > 
+    <input type="hidden" name="url" id='url' value="<?php echo U('Public/uploadfile');?>" > 
     <button type="button" class="hui-button hui-primary hui-fr" style="margin:2px 8px 0px 0px;" id="uploadBtn">保存照片</button>
 </div>
 
-{/block}
-{block name="JS"}
-<script src="__JS__hui-form.js" type="text/javascript" charset="utf-8"></script>
-<script src="__JS__hui-image-cuter.js" type="text/javascript" charset="utf-8"></script>
-<script src="__JS__base.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="/static/js/hui/hui.js"></script>  
+
+
+<script src="/static/js/hui/hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/hui/hui-image-cuter.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/hui/base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 var imgCuter = null;
 //绑定选择图片事件
@@ -106,6 +127,8 @@ hui('#uploadBtn').click(function(){
     }
 });
 </script>
-{/block}
 
 
+</body>
+
+</html>

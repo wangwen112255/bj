@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit(); session_start(); $role=$_SESSION['role']?$_SESSION['role']:'Student'; $role.='/index'; ?>
+<!DOCTYPE html>
 
 <html>
 
@@ -28,16 +29,17 @@
   
 
 <div class="hui-wrap">
-<form action="<?php echo U('receive');?>" id='form2' method="post">
+<form action="<?php echo U('dologin');?>" id='signupForm' method="post">
     <div style="margin:10px; margin-bottom:15px;" class="hui-form" id="form1">
         <div class="hui-form-items">
-            <input type="text" name="username" class="hui-input hui-input-clear" placeholder="用户名" checkType="string" checkData="5,20" checkMsg="用户名应为5-20个字符" />
+            <input type="text" name="username"  id='username' class="hui-input hui-input-clear" placeholder="用户名" checkType="string" checkData="5,20" checkMsg="用户名应为5-20个字符" />
         </div>
         <div class="hui-form-items">
-            <input type="password" name="password" class="hui-input hui-pwd-eye" placeholder="登录密码" checkType="string" id="pwd" checkData="6,20" checkMsg="密码应为6-20个字符" />
+            <input type="password" name="password"  class="hui-input hui-pwd-eye" placeholder="登录密码" checkType="string" id="pwd" checkData="6,20" checkMsg="密码应为6-20个字符" />
         </div>
          <div class="hui-form-items">
       <div class="hui-form-radios">
+       <input type="hidden"  id='role' value='te'>
       <input type="radio" value="te" name="role" id="g1" checked="checked" onchange="showSelectRes(this);" /><label for="g1">教师</label>
       <input type="radio" value="st" name="role" id="g2" onchange="showSelectRes(this);" /><label for="g2">学生</label>
       </div>
@@ -67,7 +69,7 @@
         <div class="hui-footer-icons hui-icons-forum"></div>
         <div class="hui-footer-text">学生选课</div>
     </a>
-    <a href="<?php echo U('Student/index');?>" id="nav-my">
+    <a href="<?php echo U($role);?>" id="nav-my">
         <div class="hui-footer-icons hui-icons-my"></div>
         <div class="hui-footer-text">个人中心</div>
     </a>
@@ -79,18 +81,21 @@
 <script src="/static/js/hui/base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 hui.formInit();
+function showSelectRes(_selfBtn){
+    var val;
+    hui(_selfBtn).parent().find('input').each(function(cObj){
+        if(cObj.checked){val = cObj.value;}
+    });
+    hui('#role').val(val);
+}
 hui('#submit').click(function(){
-    var form=document.getElementById('forms');
-    var res = huiFormCheck('#form1');
+    var res = huiFormCheck('#signupForm');
     if(res){
-      _ajaxchange({'msg':'确定要进行吗?','url':hui('#url').val(),'data':{'name':'wangwen'}});
-  }
-});
-//
-//
-//
-//
-//
+      var url=hui('#signupForm').attr('action');
+      var data={'username':hui('#username').val(),'role':hui("#role").val(),'password':hui('#pwd').val()}
+       _ajaxsubmit({'url':url,'data':data});
+      }
+    });
 
 
 </script>
