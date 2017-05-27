@@ -6598,3 +6598,2481 @@ SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'laoshi1' LIMIT 1   [ RunTime
 NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy\WWW\bs\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy\WWW\bs\App\Wx\Common\function.php 第 41 行.
 NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy\WWW\bs\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy\WWW\bs\App\Wx\Common\function.php 第 41 行.
 
+[ 2017-05-26T21:02:20+08:00 ] 127.0.0.1 /wx.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T21:04:14+08:00 ] 127.0.0.1 /wx.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T21:04:20+08:00 ] 127.0.0.1 /wx.php/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.025001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.127008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.127008s ]
+SQL: SHOW COLUMNS FROM `xk_date` [ RunTime:0.0450s ]
+SQL: SELECT * FROM `xk_date`  [ RunTime:0.0010s ]
+
+[ 2017-05-26T21:04:22+08:00 ] 127.0.0.1 /wx.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2017-05-26T21:04:27+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T21:04:38+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('wangwen','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0610s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T21:04:46+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T21:05:19+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 56 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 56 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T21:05:23+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0250s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'wangwens' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_student` (`username`,`pwd`) VALUES ('wangwens','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 53 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T21:05:38+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.024002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.024002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008000s ]
+
+[ 2017-05-26T21:06:47+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.042002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.042002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011001s ]
+
+[ 2017-05-26T21:06:49+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T21:07:10+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'miogntian' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('miogntian','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: data D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T21:07:32+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0270s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T21:08:30+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:28:46+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.023002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024002s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:28:57+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen' LIMIT 1   [ RunTime:0.0780s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:29:05+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('wangwen1212','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0850s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:29:14+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:30:49+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:31:08+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212d' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('wangwen1212d','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:31:17+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212d' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:31:25+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212d6' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('wangwen1212d6','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:32:38+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:32:48+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0190s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'wangwen1212d6d' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('wangwen1212d6d','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:33:08+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:33:20+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtians' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('mingtians','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:33:25+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtians' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:00+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:36:12+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('mingtiansddd','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:36:17+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:20+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0280s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:22+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:24+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:26+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:28+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:36:36+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:37:04+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'mingtiansddd' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:38:38+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.033002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.033002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:38:40+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:38:56+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:39:20+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('xiaoming','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:39:25+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:39:39+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaomings' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('xiaomings','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:40:35+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:40:43+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaomings' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 68 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:40:47+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0250s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaomingsssss' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('xiaomingsssss','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:40:54+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T22:42:51+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:43:16+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:44:27+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:46:19+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:48:03+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0190s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:48:08+08:00 ] 127.0.0.1 /wx.php/Login/receive.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:48:23+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:48:29+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_student` [ RunTime:0.0260s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_student` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: password D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 19 行.
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:48:46+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: password D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 19 行.
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:48:53+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: password D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 19 行.
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:49:15+08:00 ] 127.0.0.1 /wx.php/Login/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:49:28+08:00 ] 127.0.0.1 /wx.php/Login/doregister.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0280s ]
+NOTIC: [8] Undefined index: validatecode D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 46 行.
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `xk_teacher` (`username`,`pwd`) VALUES ('xiaowang','e10adc3949ba59abbe56e057f20f883e') [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 65 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [8] Undefined variable: url D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 43 行.
+
+[ 2017-05-26T22:49:31+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:49:44+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: password D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php 第 19 行.
+NOTIC: [2] Missing argument 2 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+NOTIC: [2] Missing argument 3 for toJson(), called in D:\phpStudy2016\WWW\bj\App\Wx\Controller\LoginController.class.php on line 26 and defined D:\phpStudy2016\WWW\bj\App\Wx\Common\function.php 第 41 行.
+
+[ 2017-05-26T22:52:30+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0260s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T22:52:36+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:54:36+08:00 ] 127.0.0.1 /wx.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:54:43+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0270s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:54:44+08:00 ] 127.0.0.1 /wx.php/Teacher/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:54:46+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0480s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:54:47+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:55:27+08:00 ] 127.0.0.1 /wx.php/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_date` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `xk_date`  [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:55:28+08:00 ] 127.0.0.1 /wx.php/Teacher/course.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:55:29+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:55:31+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaowang' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T22:55:37+08:00 ] 127.0.0.1 /wx.php/Login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:55:37+08:00 ] 127.0.0.1 /wx.php/Login/favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:55:40+08:00 ] 127.0.0.1 /wx.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-26T22:55:44+08:00 ] 127.0.0.1 /wx.php/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_date` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_date`  [ RunTime:0.0010s ]
+
+[ 2017-05-26T22:55:45+08:00 ] 127.0.0.1 /wx.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0280s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T22:55:50+08:00 ] 127.0.0.1 /wx.php/Student/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-26T22:55:50+08:00 ] 127.0.0.1 /wx.php/Student/img/1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-26T23:03:32+08:00 ] 127.0.0.1 /wx.php/Course/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_date` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_date`  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:03:33+08:00 ] 127.0.0.1 /wx.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:03:50+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:03:51+08:00 ] 127.0.0.1 /wx.php/Login/Teacherindex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+ERR: 非法操作:Teacherindex
+
+[ 2017-05-26T23:04:09+08:00 ] 127.0.0.1 /wx.php/Login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:04:14+08:00 ] 127.0.0.1 /wx.php/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: validate D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\phpStudy2016\WWW\bj\TP\Library\Think\Model.class.php 第 1128 行.
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:04:15+08:00 ] 127.0.0.1 /wx.php/Teacher/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-26T23:04:17+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:04:18+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/holder.js/80x80
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: title D:\phpStudy2016\WWW\bj\Runtime\Cache\Wx\79de16a64e75951444c53d464234a8b7.php 第 6 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T23:07:38+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:08:25+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:08:34+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:10:12+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:14:11+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T23:17:16+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:17:48+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:18:01+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-26T23:18:09+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:18:24+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:18:32+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:21:00+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:21:11+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:24:32+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T23:40:36+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0220s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-05-26T23:41:16+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0120s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:41:56+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:43:22+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:43:24+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:44:21+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:44:24+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Class
+
+[ 2017-05-26T23:44:33+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Class
+
+[ 2017-05-26T23:45:15+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-26T23:45:21+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0240s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:47:20+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:47:30+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0220s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 6  [ RunTime:0.0000s ]
+
+[ 2017-05-26T23:50:57+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:51:01+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0200s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:52:25+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:52:30+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0170s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 8  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:53:07+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:53:12+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0160s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:54:56+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0170s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:55:01+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0290s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 8  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:57:12+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0110s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-26T23:57:17+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 6  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:57:30+08:00 ] 127.0.0.1 /wx.php/Teacher/intro/isIntro/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_teacher` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `xk_teacher` WHERE `username` = 'xiaoming' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `xk_depart` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `xk_depart`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 0  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-05-26T23:57:35+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 8  [ RunTime:0.0000s ]
+
+[ 2017-05-26T23:58:01+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0230s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:58:19+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0250s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 6  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:58:32+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0260s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:58:33+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0140s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 6  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:58:48+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0360s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 7  [ RunTime:0.0000s ]
+
+[ 2017-05-26T23:58:52+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0210s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 6  [ RunTime:0.0010s ]
+
+[ 2017-05-26T23:58:57+08:00 ] 127.0.0.1 /wx.php/Class/changeClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `xk_class` [ RunTime:0.0360s ]
+SQL: SELECT `id`,`classname` FROM `xk_class` WHERE `depart_id` = 8  [ RunTime:0.0000s ]
+

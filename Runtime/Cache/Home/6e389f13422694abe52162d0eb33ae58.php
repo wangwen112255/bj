@@ -303,8 +303,9 @@
             </div>
       </div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>
-    </div>
 
+    </div>
+    <?php echo ($showpage); ?>
     
     </div>
     </div>

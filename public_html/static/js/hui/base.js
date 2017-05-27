@@ -1,18 +1,21 @@
 //
 function _ajaxJson(obj){
+   action=obj.action;
 hui.postJSON(
+         
           obj.url,
           obj.data,
           function(data){
            if(data.code==200){
-           hui.iconToast(data.msg);
-           if(data.data)
-           window.location.href=data.data;
-           if(action)
+           hui.upToast(data.msg);
+            if(action)
              eval("("+action+")");
            }
+           if(data.url)
+           window.location.href=data.url;
+          
           else{
-           hui.iconToast(data.msg,'error');
+           hui.upToast(data.msg,'error');
           }
            },     
           function(e){
@@ -20,9 +23,14 @@ hui.postJSON(
           }
       );
 }
+
 function _ajaxsubmit(obj){
-      // action=obj.action||'window.location.reload()';
+      id=obj.id||'submit';
+      // id='submit'
+      action=obj.action;
       hui.ajax({
+         'complete' : function(){hui("#"+id).resetLoadingButton();},
+         'beforeSend' : function(){hui("#"+id).loadingButton('提交中...');},
         'backType':'json',
         'type':'post',
         'url':obj.url,
@@ -30,11 +38,11 @@ function _ajaxsubmit(obj){
          success:function(data){
          if(data.code==200){
          hui.iconToast(data.msg);
-         if(data.data)
-         window.location.href=data.data;
          if(action)
            eval("("+action+")");
-         }
+         if(data.url)
+         window.location.href=data.url;
+          }
         else{
          hui.iconToast(data.msg,'error');
         }

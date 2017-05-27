@@ -1,3 +1,8 @@
+<?php 
+session_start();
+$role=$_SESSION['role']?$_SESSION['role']:'Student';
+$role.='/index';
+ ?>
 <!DOCTYPE html>
 
 <html>
@@ -34,7 +39,7 @@
         <div class="hui-footer-icons hui-icons-forum"></div>
         <div class="hui-footer-text">学生选课</div>
     </a>
-    <a href="{:U('Student/index')}" id="nav-my">
+    <a href="{:U($role)}" id="nav-my">
         <div class="hui-footer-icons hui-icons-my"></div>
         <div class="hui-footer-text">个人中心</div>
     </a>

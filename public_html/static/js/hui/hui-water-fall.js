@@ -11,7 +11,8 @@ function huiWaterfall(idSelector){
 	}
 	this.WaterfallLeft = hui('#hui-water-fall-left');
 	if(this.WaterfallLeft.length < 1){
-		var div = document.createElement('div');
+		var div = document.createElement('div');已升级到最新版本
+当前版本号：10.1.0.6490
 		div.setAttribute('id', 'hui-water-fall-left');
 		this.Waterfall.dom[0].appendChild(div);
 		this.WaterfallLeft = hui('#hui-water-fall-left');

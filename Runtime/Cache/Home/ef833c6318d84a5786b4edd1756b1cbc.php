@@ -253,7 +253,7 @@
      <div class="row" style="padding-top:15px; ">
     <?php if(is_array($dedata)): $i = 0; $__LIST__ = $dedata;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="col-sm-3">
     <div class="thumbnail">
-          <img  width="100%" src="<?php echo ((isset($data["img "]) && ($data["img "] !== ""))?($data["img "]):'/static/img/a2.jpg'); ?>" alt="...">
+          <img  width="100%" src="<?php echo ((isset($data["pic"]) && ($data["pic"] !== ""))?($data["pic"]):'/static/img/icondefault.jpg'); ?>" alt="...">
           <div class="caption">
             <h3><?php echo ($data["departname"]); ?></h3>
             <p><?php echo ((isset($data["desc"]) && ($data["desc"] !== ""))?($data["desc"]):'华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电华北水利水电'); ?></p>

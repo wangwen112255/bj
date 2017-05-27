@@ -18,7 +18,7 @@ function _openLayerUrl(url,title,width,height,offset)
     var iframeWin = window[layero.find('iframe')[0]['name']]; //得到iframe页的窗口对象，执行iframe页的方法：iframeWin.method();
     //alert(body.html()); //得到iframe页的body内容
     // // body.find('input').val('Hi，我是从父页来的')
- 
+
   },
   end: function(){
   // _layOpenSuccess();

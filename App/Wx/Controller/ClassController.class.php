@@ -1,5 +1,5 @@
 <?php
-namespace Home\Controller;
+namespace Wx\Controller;
 use Think\Controller;
 class ClassController extends BaseController {
 	protected $dao;
