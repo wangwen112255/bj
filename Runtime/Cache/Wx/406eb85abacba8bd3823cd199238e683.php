@@ -55,6 +55,7 @@
  
 </div>
 <p style="padding:10px"><a href="<?php echo U('Login/register');?>">没有帐号，请先注册</a></p>
+<p style="padding:10px"><a href="<?php echo U('Ming/getOauth',array('type'=>'qq'));?>" onclick="return confirm('学生才可以第三方登录，老师请走正常线路登录，请确认一下您的身份');"> <center><button  class="hui-button hui-button-small hui-danger" >使用QQ授权登录</button></a></center></p>
  
   <div id="hui-footer">
     <a href="<?php echo U('Index/index');?>" id="nav-home">

@@ -13,9 +13,15 @@
     <title></title>
     
 <style type="text/css">
- 
+#hui-up-toast{
+  background: green;
+}
+body{
+  height: 600px;
+  width: 100%;
+overflow:hidden;
 
-
+}
 </style>
 
  
@@ -28,62 +34,48 @@
 
 <body style="background:#F8F8F8;padding-bottom: 80px;">
   
-<div style="height: 2000px;width:2000px;background: #26A2FF;border-radius:1000px;position: absolute;top:-1750px;left:50%;margin-left: -1000px;;"></div>
-	<div class="hui-wrap">
-	
+
+  <div class="hui-wrap" style="position: relative;overflow: hidden;width: 100%">
+    <!-- <div style="position: relative;"> -->
+
+<div style="height: 2000px;width:2000px;background: #26A2FF;border-radius:1000px;position: absolute;top:-1770px;left:50%;margin-left: -1000px;;"></div>
+<!-- </div> -->
     <div class="hui-media-list" style="background:#26A2FF;height: 200px;position: relative;text-align: center;color:#FFFFFF">
-        		<div style="margin-top:-40px;left:50%;margin-left:-40px;position: absolute;top:50%">
-                <a href="javascript:hui.toast('hi...');">
-                    <img style="width:80px;height:80px;border-radius: 40px;border:solid #fff 1px" src="img/1.png" />
-                	<p style="color:#FFFFFF">用户名</p>
-            	</a>
+            <div style="margin-top:-40px;left:50%;margin-left:-40px;position: absolute;top:50%">
+                <a href="javascript:hui.toast('真实姓名：<?php echo ($Userdata["realname"]); ?>');">
+                    <img style="width:80px;height:80px;border-radius: 40px;border:solid 2px #fff" src="<?php echo ($Userdata["photo"]); ?>" />
+                  <p style="color:#FFFFFF"><?php echo ($Userdata["username"]); if(($_SESSION['role']) == "Student"): ?>[学生]<?php else: ?>[教师]<?php endif; ?></p>
+              </a>
     </div>
     </div>  
        
   
      <div class="hui-list" style="background:#FFFFFF; margin-top:58px;">
         <ul>
-            <li><a href="javascript:void(0);" class="hui-arrow hui-icons hui-icons-write">&nbsp;&nbsp;我的选题</a></li>
-            <li><a href="javascript:void(0);" class="hui-arrow hui-icons hui-icons-forum">&nbsp;&nbsp;班级正选</a></li>
-            <li><a href="javascript:void(0);" class="hui-arrow hui-icons hui-icons-my">&nbsp;&nbsp;班级导师</a></li>
-            <li><a href="javascript:void(0);" class="hui-arrow hui-icons hui-icons-nav">&nbsp;&nbsp;基本资料</a></li>
-            <li><a href="javascript:void(0);" class="hui-arrow hui-icons hui-icons-check">&nbsp;&nbsp;密码修改</a></li>
+            <li><a href="<?php echo U('course');?>" class="hui-arrow hui-icons hui-icons-write">&nbsp;&nbsp;我的选题</a></li>
+            <li><a href="<?php echo U('classes');?>" class="hui-arrow hui-icons hui-icons-forum">&nbsp;&nbsp;班级正选</a></li>
+            <li><a href="<?php echo U('guide');?>" class="hui-arrow hui-icons hui-icons-my">&nbsp;&nbsp;毕业班学生</a></li>
+            <li><a href="<?php echo U('intro');?>" class="hui-arrow hui-icons hui-icons-nav">&nbsp;&nbsp;基本资料</a></li>
+             <li><a href="<?php echo U('photo');?>" class="hui-arrow hui-icons hui-icons-nav">&nbsp;&nbsp;头像设置</a></li>
+            <li><a href="<?php echo U('safe');?>" class="hui-arrow hui-icons hui-icons-check">&nbsp;&nbsp;密码修改</a></li>
         </ul>
     </div>
     <div class="hui-list" style="background:#FFFFFF; margin-top:28px;">
         <ul>
-            <li><a href="javascript:void(0);" class="hui-icons hui-icons-logoff">&nbsp;&nbsp;退出系统</a></li>
+
+            <li><a href="<?php echo U('Index/index');?>" class="hui-icons hui-icons-home">&nbsp;&nbsp;返回首页</a></li>
+           
+            <li><a href="<?php echo U('Login/logout');?>" class="hui-icons hui-icons-logoff">&nbsp;&nbsp;退出系统</a></li>
         </ul>
     </div>
 </div>
+  
 
-
-
- 
-  <div id="hui-footer">
-    <a href="<?php echo U('Index/index');?>" id="nav-home">
-        <div class="hui-footer-icons hui-icons-home"></div>
-        <div class="hui-footer-text">首页</div>
-    </a>
-    <a href="<?php echo U('Teachers/index');?>" id="nav-teacher">
-        <div class="hui-footer-icons hui-icons-news"></div>
-        <div class="hui-footer-text">教师查看</div>
-    </a>
-    <a href="<?php echo U('Course/index');?>" id="nav-course">
-        <div class="hui-footer-icons hui-icons-forum"></div>
-        <div class="hui-footer-text">学生选课</div>
-    </a>
-    <a href="<?php echo U('Student/index');?>" id="nav-my">
-        <div class="hui-footer-icons hui-icons-my"></div>
-        <div class="hui-footer-text">个人中心</div>
-    </a>
-  </div>
 <script type="text/javascript" src="/static/js/hui/hui.js"></script>  
 
 
-<script type="text/javascript">
-  
-</script>
+
+
 
 
 

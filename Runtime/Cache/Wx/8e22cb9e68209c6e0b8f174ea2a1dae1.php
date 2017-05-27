@@ -36,8 +36,8 @@
   
 
  <header class="hui-header" style="background:#26A2FF ;">
-      <div id="hui-header-menu"></div>
-      <h1><?php echo ($name["realname"]); ?>老师</h1>
+      <!-- <div id="hui-header-menu"></div> -->
+      <h1>在线选课</h1>
   </header>
   <div class="hui-wrap">
     <div class="hui-media-list" style="padding:10px;">
@@ -63,6 +63,7 @@
       
       </ul><?php endforeach; endif; else: echo "" ;endif; ?>
     </div>
+   <center><?php echo ($show); ?></center>  
 
   </div>
 

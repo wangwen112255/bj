@@ -37,7 +37,7 @@
   
 
   <header class="hui-header" style="background:#26A2FF ;">
-    <!-- <div id="hui-back"></div> -->
+    <div id="hui-back"></div>
   <h1>头像设置</h1>
   </header>
   
@@ -57,7 +57,7 @@
 <div id="hui-footer">
 
     <button type="button" class="hui-button hui-fl" style="margin:2px 0px 0px 8px;" id="selectImgBtn">选择照片</button>
-    <input type="hidden" name="url" id='url' value="<?php echo U('Public/uploadfile');?>" > 
+    <input type="hidden" name="url" id='url' value="<?php echo U('Public/uploadfilewx');?>" > 
     <button type="button" class="hui-button hui-primary hui-fr" style="margin:2px 8px 0px 0px;" id="uploadBtn">保存照片</button>
 </div>
 
@@ -108,19 +108,9 @@ hui('#uploadBtn').click(function(){
         var canvas      = document.getElementById('huiImgCuterCanvas');
         var data        = canvas.toDataURL();
         var url=hui('#url').val();
-        _ajaxJson({'url':url,'data':data})
-        /* 提交代码
-        hui.post(
-            'http://your url...',
-            {pd:data},
-            function(data){
-                hui.closeLoading();
-                hui.upToast('上传成功!')
-                console.log(data);
-            }
-        );
-        */
-        setTimeout(function(){hui.toast('上传成功，演示的！'); hui.closeLoading();}, 2000);
+        _ajaxPost({'url':url,'data':{'pd':data}})
+        
+        setTimeout(function(){hui.toast('上传完毕'); hui.closeLoading();}, 1000);
     }else{
         hui.toast('请选择照片');
         hui.closeLoading();

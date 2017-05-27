@@ -126,11 +126,7 @@
         <div class="hui-footer-icons hui-icons-forum"></div>
         <div class="hui-footer-text">学生选课</div>
     </a>
-<<<<<<< HEAD
-    <a href="<?php echo U('Student/index');?>" id="nav-my">
-=======
     <a href="<?php echo U($role);?>" id="nav-my">
->>>>>>> d3e4e072281c30ced34d373ec9e78ca9a60507e1
         <div class="hui-footer-icons hui-icons-my"></div>
         <div class="hui-footer-text">个人中心</div>
     </a>

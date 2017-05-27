@@ -48,7 +48,10 @@ public function callback($type = null, $code = null){
 				session('role','Student');
 				session('_pic_',$info['photo']);	
 				session('auth',1);	
-				$this->redirect('Student/course');
+				if(session('src')=='wx'){
+				$this->redirect('/wx.php/Student/index');
+				}
+				$this->redirect('Student/index');
 				}else{
 			$condition['username']=$user_info['name'].time();
 			$Dao->add($condition);
@@ -56,7 +59,10 @@ public function callback($type = null, $code = null){
 			session('_username_',$condition['username']);
 			session('auth',1);	
 			session('role','Student');
-			$this->redirect('Student/course');
+			if(session('src')=='wx'){
+				$this->redirect('/wx.php/Student/index');
+				}
+			$this->redirect('Student/index');
 			
 			}
 			

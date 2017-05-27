@@ -1,14 +1,33 @@
-{extend name='Public:layout'/}
-{block name='CSS'}
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="/static/css/hui/hui.css" />
+
+    <title></title>
+    
 <style type="text/css">
 #hui-up-toast{
   background: green;
 }
 </style>
 
-{/block}
+ 
+    <style>
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+   </style>
 
-{block name="content"}
+</head>
+
+<body style="background:#F8F8F8;padding-bottom: 80px;">
+  
 
   <header class="hui-header" style="background:#26A2FF ;">
     <div id="hui-back"></div>
@@ -16,7 +35,7 @@
   </header>
   
   <div class="hui-wrap">
-<form action="__ACTION__" id='signupForm' method="post">
+<form action="/wx.php/Student/safe" id='signupForm' method="post">
 
     <div style="margin:28px; margin-bottom:15px;" class="hui-form" id="form1">
        <div class="hui-form-items">
@@ -31,17 +50,19 @@
   
 
   <div style="padding:28px; padding-top:0px;">
-        <button type="button"  {eq name='Think.session.auth' value='1'}onclick="alert('不还意思您是授权登录的用户是不可以修改密码的');return false;"  {/eq} class="hui-button hui-button-large hui-primary" id="submit">更新密码</button>
+        <button type="button"  <?php if(($_SESSION['auth']) == "1"): ?>onclick="alert('不还意思您是授权登录的用户是不可以修改密码的');return false;"<?php endif; ?> class="hui-button hui-button-large hui-primary" id="submit">更新密码</button>
     </div>
   
        
 
   </div>
 
-{/block}
-{block name="JS"}
-<script src="__JS__hui-form.js" type="text/javascript" charset="utf-8"></script>
-<script src="__JS__base.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="/static/js/hui/hui.js"></script>  
+
+
+<script src="/static/js/hui/hui-form.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/js/hui/base.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 hui.formInit();
 // alert(0)
@@ -58,6 +79,8 @@ hui('#submit').click(function(){
     });
 
 </script>
-{/block}
 
 
+</body>
+
+</html>

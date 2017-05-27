@@ -23,6 +23,29 @@ hui.postJSON(
           }
       );
 }
+function _ajaxPost(obj){
+   action=obj.action;
+    hui.post(
+          obj.url,
+          obj.data,
+          function(data){
+           if(data.code==200){
+           hui.upToast(data.msg);
+            if(action)
+             eval("("+action+")");
+           }
+           if(data.url)
+           window.location.href=data.url;
+          
+          else{
+           hui.upToast(data.msg,'error');
+          }
+           },     
+          function(e){
+              hui.iconToast('数据有误或网络故障', 'warn');
+          }
+      );
+}
 
 function _ajaxsubmit(obj){
       id=obj.id||'submit';

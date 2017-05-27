@@ -21,8 +21,8 @@ class StudentController extends BaseController {
         $this->assign('Userdata',$this->datainfo);
     }
     public function index(){
-       
-       $this->display();
+       $this->redirect('course');
+       // $this->display();
     }
     public function photo(){
         $this->assign('pic',$this->datainfo['photo']);

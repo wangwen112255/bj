@@ -1,5 +1,5 @@
 <?php 
-namespace Home\Controller;
+namespace Wx\Controller;
 use Think\Controller;
 // use Org\ThinkSDK\sdk\QqSDK;
 // require_once("ming.class.php");
@@ -16,6 +16,7 @@ public function getOauth($type){
     // $sns = \Org\ThinkSDK\ThinkOauth::getInstance('qq');
     		$classname=getOauth($type)?getOauth($type):$this->error("参数不退");
     		$oauth=new  $classname();
+    		session('src','wx');
     		redirect($oauth->getRequestCodeURL());
     
 }
@@ -48,14 +49,14 @@ public function callback($type = null, $code = null){
 				session('role','Student');
 				session('_pic_',$info['photo']);	
 				session('auth',1);	
-				$this->redirect('Student/course');
+				$this->redirect('Student/index');
 				}else{
 			$condition['username']=$user_info['name'].time();
 			$Dao->add($condition);
 			session('_username_',$condition['username']);
 			session('_username_',$condition['username']);
 			session('role','Student');
-			$this->redirect('Student/course');
+			$this->redirect('Student/index');
 			
 			}
 			

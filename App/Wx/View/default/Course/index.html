@@ -1,134 +1,59 @@
 {extend name='Public:layouts'/}
-{block name='CSS'}
+{block name="CSS"}
 <style type="text/css">
-  .WU_scrollli {
-    border-bottom: 1px dashed #ccc !important; 
-  } 
   
-  .WU_scrollinfo > .infotitle span:hover{
-  opacity: 0.5;
-  }
-
-.relog a{ 
-
-}
- .relog .active{
-     opacity: 0.3;
-  }
+    #list2 li{width:50%; float:left; margin:5px 0px;}
+    #hui-footer a{width: 25%;}
+    .hui-media-content{
+      float: left;
+      width: 80%;
+      padding-left: 0px;
+      padding-right: 2px;
+    }
 </style>
-
 {/block}
+{block name='content'}
 
-{block name="content"}
-
-
-    
-<div class="modal fade" id="modals" style="z-index: 999999999;">
-  <div class="modal-dialog">
-    <div class="modal-content">
-    
-      </div>
-    </div>
-  </div>
-    <!-- 导航图 -->
-  <div class="container-fluid" >
-
-  <div class="WU_info">
-   <div class="row WU_inforow">
-   <span class='WU_infoheader'>毕设选课详情</span>
-
-     </div>
-    <div class="row WU_scrollinfo" style="padding-top:15px; ">
-    <div class="col-sm-12 relog" style='margin-bottom: 20px'>
-      <a  href="{:U('index')}" class="btn btn-info btn-lg ">班级选题</a>
-      <a  href="{:U('classresult')}" class="btn btn-info btn-lg active">选课结果</a>
-    </div>
-    <div class="col-sm-12 infotitle">
-    <span >课程题目</span>
-    <span >指导教师</span>
-    <span >已选人数</span>
-    <span >课程要求</span>
-    <span >选课/</span>
-    </div>
-    </div>
-     <div class="row WU_scrollinfo" style="padding-top:3px;height:600px;overflow: hidden ">
-        <div class="col-sm-12">
-       <div class="WU_myscroll">
-       {empty name='codata'}
-        <div class="jumbotron">
-          <div class="container">
-            <h1>已经尽力了</h1>
-            <p>您所在的班级教师还没有准备就绪，请稍等</p>
-            <p>
-              <a class="btn btn-primary btn-lg" onclick="javascript:history.go(-1)">返回</a>
-            </p>
-          </div>
-        </div>
-        {/empty}
-       <ul >
-       {volist name="codata" id="vo"}
-        <li class="WU_scrollli" >
-        <span >{$vo.coursename}</span>
-        <span ><a href="{:U('Teachers/lists',array('id'=>$vo['idt']))}" target="_blank">{$vo.realname}</a></span>
-        <span >
-          <div class="progress " style="width:60%;margin:10px auto;">
-          <div class="progress-bar progress-bar-{$data['choosenum']==$data['limitnum']?'danger':'success'}  progress-bar-striped active" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:{$vo['choosenum']/$vo['limitnum']*100}%">
-           <?php echo floor($vo['choosenum']/$vo['limitnum']*100)  ?> %({$vo['choosenum']}人)
-          </div>
-        </div>
-         
-
-        </span>
-        <span ><a  numid="{:U('Teachers/detail',array('numid'=>$vo['idc']))}" href="javascript:" class="showdetail">查看详情</a></span>
-        <span >
-         {eq name='vo.status' value='1'}
-         <button class="btn">选课结束</button>
-          {else/}
-          {eq name='vo.choosenum' value="$vo['limitnum']"}
-          <button class="btn btn-danger ">选课已满</button>
-          {else/}
-          <input type="hidden" name="idc" value='{$vo.idc}'>
-         <button  class=" selectcourse btn btn-success">在线选课</button>
-           {/eq}
-        {/eq}
-        </li>
-       {/volist} 
+ <header class="hui-header" style="background:#26A2FF ;">
+      <!-- <div id="hui-header-menu"></div> -->
+      <h1>在线选课</h1>
+  </header>
+  <div class="hui-wrap">
+    <div class="hui-media-list" style="padding:10px;">
+    {volist name='codata' id='data'}
+      <ul>
+        <li>
+        
+            <!--<div class="hui-media-list-img"><img src="img/1.png" /></div>-->
+            <div class="hui-media-content">
+              <h1>题目：{$data.coursename}</h1>
+              <p>要求：{$data.desc}</p>
+              <p>
+                    已选：<span class="hui-badge hui-primary">{$data.choosenum}</span>
+                    限选：<span class="hui-badge hui-danger">{$data.limitnum}</span>
+                  
+              </p>
+            </div>
+             {eq name='data.choosenum' value="$data['limitnum']"}
+             <button style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-danger  hui-button-small ">已满</button>
+              {else/}
+              
+            <button  onclick="location.href='{:U('Course/index')}'"  style="position: absolute;right: 5px;height: 30px;top:50%;margin-top: -15px;" type="button" class="hui-button hui-primary  hui-button-small ">选课</button>
+            {/eq}
        
-       </ul>
-       </div>
-      {$show}
+        </li>
       
-      </div>
+      </ul>
+     {/volist}
+    </div>
+   <center>{$show}</center>  
 
-    </div>
-    </div>
-    </div>
-
+  </div>
 
 {/block}
 {block name="JS"}
 <script type="text/javascript">
-$('.showdetail').click(function(){
-    var numids=$(this).attr('numid');
-    $('#modals').modal({
-     show : true,
-     backdrop : false,
-     keyboard : true,
-     remote :numids
-    })
-  });
-$("#modals").on("show.bs.modal", function() {  
-    $(this).removeData("bs.modal");  
-});
-
-$(".selectcourse").click(function(){
-var id=$(this).prev().val();
-_ajaxmodify({msg:'您确定要选择这门课?',check:'我确定',url:'__CONTROLLER__/selectcourse',data:{idc:id}})
-
-})
-
-
 
 </script>
-{/block}
 
+{/block}

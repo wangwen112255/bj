@@ -11,6 +11,7 @@ class   LoginController extends Controller{
    }
     public function index(){
       $this->assign('islog',rand(1,1000));
+      session('src','wx');
     	$this->display('Index/login');
     }
     public function dologin(){

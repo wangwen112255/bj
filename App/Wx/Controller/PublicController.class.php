@@ -1,5 +1,5 @@
 <?php
-namespace Home\Controller;
+namespace Wx\Controller;
 use Think\Controller;
 class PublicController extends Controller{
 	public $dao;
@@ -141,6 +141,43 @@ class PublicController extends Controller{
 	  	    	}
 	  	    }
 	  	
+	    }
+	    public function uploadfilewx(){
+	    	if(session('_username_')){
+	  	    	$Dao=M(session('role'));
+	    	if(!empty($_POST)){
+	    	    if(isset($_POST['pd'])){
+	    	      $_POST['pd'] = str_replace('data:image/png;base64,', '', $_POST['pd']);
+	    	    $ymdfolder=date('Ymd',time());
+	    	    $role=$_SESSION['role']=='Teacher'?'tephoto':'stphoto';
+	    	    if(!file_exists('Uploads/'.$role.'/'.$ymdfolder))
+	    	    	mkdir('Uploads/'.$role.'/'.$ymdfolder);
+	    	    $img = date('YmdHis',time()).'_'.mt_rand().'.png';
+	    	    $img='Uploads/'.$role.'/'.$ymdfolder.'/'.$img;
+	    	    file_put_contents($img, base64_decode($_POST['pd']));
+	    	    $image = new \Think\Image();
+	  	    	$image->open($img);
+	  	    	$thumimg=substr($img,0,strripos($img,'.')).'_thumb'.".png";
+	  	    	unlink($img);
+	  	    	$image->thumb(200, 200,\Think\Image::IMAGE_THUMB_FIXED)->save($thumimg); 
+	  	    	$condition['username']=session('_username_');
+	    	     if($Dao->where($condition)->setField('photo','/'.$thumimg))
+	    	     {
+	    	      session('_pic_',$thumurl); 	
+	    	    
+	    	      $this->ajaxReturn(toJson(true,"恭喜您成功上传",'/'.$thumimg));
+	    	     }
+	    	     else
+	    	     $this->ajaxReturn(toJson('服务器有问题上传失败'));
+	    	   
+	    	   
+
+	    	   }
+	    	}
+	    }else{
+	    	 $this->ajaxReturn(toJson('数据有误'));
+	    }
+
 	    } 
      }
 

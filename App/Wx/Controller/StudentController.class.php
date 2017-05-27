@@ -5,21 +5,21 @@ class StudentController extends BaseController {
     protected $dao;
     protected $datainfo;
     public function _initialize(){
-        // parent::_initialize();
-        // if($_SESSION['role']!="Student")
-        // $this->redirect('Teacher/index');
-        // $this->dao=D('Student');
-        // $condition['username']=session('_username_');
-        // $this->datainfo=$this->dao->where($condition)->find();
-        // if(ACTION_NAME!='intro'){
-        // if($this->datainfo['class_id']==0){
-        //     // echo "<script>alert('请先完善信息')</script>";
-        //     $this->redirect('Student/intro',array('isIntro'=>1));
-        //     // $this->display('intro');
-        // }
-        // }
-        // $this->assign('Userdata',$this->datainfo);
-        echo "dasd";
+        parent::_initialize();
+        if($_SESSION['role']!="Student")
+        $this->redirect('Teacher/index');
+        $this->dao=D('Student');
+        $condition['username']=session('_username_');
+        $this->datainfo=$this->dao->where($condition)->find();
+        if(ACTION_NAME!='intro'){
+        if($this->datainfo['class_id']==0){
+            // echo "<script>alert('请先完善信息')</script>";
+            $this->redirect('Student/intro',array('isIntro'=>1));
+            // $this->display('intro');
+        }
+        }
+        $this->assign('Userdata',$this->datainfo);
+        // echo "dasd";
     }
     public function index(){
        
@@ -60,31 +60,31 @@ class StudentController extends BaseController {
         
     }
     
-    public function safe(){
-        if(IS_AJAX){
+     public function safe(){
+
+        if(!empty($_POST['pwd'])){
             $this->dao=D('Student');
             if($this->dao->create()){
                 $Condition['id']=$this->datainfo['id'];
                 $this->dao->pwd=md5($_POST['pwd']);
-                if($this->dao->where($Condition)->save()){
-                // $_SESSION['_username_']="null"
-                session("_username_",null);
-                $this->ajaxReturn(toJson(true,'密码修改成功'));
-                }
+                if($this->dao->where($Condition)->save())
+                {
+                session(null);
+                $this->ajaxReturn(toJson(true,'密码修改成功',U('Login/index')));
+            }
                 else
                 $this->ajaxReturn(toJson('密码修改失败或未修改'));
             }else{
                 $this->ajaxReturn(toJson($this->dao->getError()));
             } 
-        exit;
-        }else if(!empty($_GET['md'])&&isset($_GET['md'])){
-        $this->display('Public:changepwd');
-        exit;
+    
+        }else{
+        $this->assign('Userdata',$this->datainfo);
+        $this->display();   
         }
         // dump($this->datainfo);
      
-        $this->assign('Userdata',$this->datainfo);
-    	$this->display();
+        
     }
 
     public function course(){

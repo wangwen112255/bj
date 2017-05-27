@@ -51,8 +51,8 @@ class TeacherController extends BaseController {
             $this->assign('Dedata',$Dedata); 
             $this->assign('Cldata',$Cldata); 
             $this->assign('Userdata',$Userdata);
-            dump($Usedata);
-            dump("fsdfsad");
+            // dump($Usedata);
+            // dump("fsdfsad");
             $this->display();
         
         }
@@ -88,8 +88,8 @@ class TeacherController extends BaseController {
                 $this->dao->pwd=md5($_POST['pwd']);
                 if($this->dao->where($Condition)->save())
                 {
-                session("_username_",null);
-                $this->ajaxReturn(toJson(true,'密码修改成功'));
+                session(null);
+                $this->ajaxReturn(toJson(true,'密码修改成功',U('Login/index')));
             }
                 else
                 $this->ajaxReturn(toJson('密码修改失败或未修改'));
